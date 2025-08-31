@@ -1,0 +1,35 @@
+{
+  "navigation": {
+    "home": "Accueil",
+    "work": "Travaux",
+    "about": "À propos",
+    "contact": "Contact"
+  },
+  "home": {
+    "title": "Portfolio 2025",
+    "subtitle": "Développeur Full Stack",
+    "description": "Bienvenue sur mon portfolio"
+  },
+  "work": {
+    "title": "Mes Travaux",
+    "clients": "Clients",
+    "technologies": "Technologies"
+  },
+  "about": {
+    "title": "À propos",
+    "description": "Développeur passionné"
+  },
+  "contact": {
+    "title": "Contact",
+    "email": "Email",
+    "phone": "Téléphone",
+    "address": "Adresse"
+  },
+  "common": {
+    "loading": "Chargement...",
+    "error": "Erreur",
+    "close": "Fermer",
+    "open": "Ouvrir",
+    "language": "Langue"
+  }
+}

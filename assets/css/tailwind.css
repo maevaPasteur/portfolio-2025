@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+    .reveal {
+        @apply translate-y-[10px] opacity-0 transition-[opacity,transform] duration-[1200ms] ease-[cubic-bezier(.19,1,.22,1)] will-change-transform;
+    }
+    
+    .reveal.reveal-show {
+        @apply translate-y-0 opacity-100;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .reveal,
+    .reveal.reveal-show { 
+        @apply opacity-100 translate-y-0 transition-none; 
+    }
+}

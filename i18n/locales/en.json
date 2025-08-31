@@ -1,0 +1,16 @@
+{
+  "header": {
+    "contact": "Contact",
+    "index": "Home",
+    "works": "Works",
+    "about": "About"
+  },
+  "home": {
+    "developer": "Developer",
+    "front": "Front",
+    "text": "Driven by curiosity and a love for challenges, \nI thrive at the intersection of creativity and technology. \nBeyond coding, I bring vision, leadership, and a relentless focus on efficiency. \nTurning ideas into scalable solutions that empower teams and brands to grow."
+  },
+  "works": {
+    "title": "Réalisations"
+  }
+}

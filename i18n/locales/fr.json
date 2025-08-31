@@ -1,0 +1,81 @@
+{
+  "header": {
+    "contact": "Contact",
+    "index": "Accueil",
+    "works": "Réalisations",
+    "about": "À propos"
+  },
+  "home": {
+    "developer": "Développeur",
+    "front": "Front",
+    "text": "Guidée par la curiosité et le goût du défi,\nj’évolue à la croisée de la créativité et de la technologie.\nAu-delà du code, j’apporte une vision, du leadership et une quête d'efficacité.\nJe transforme les idées en solutions scalables qui font grandir les équipes et les marques.",
+    "seo": {
+      "title": "Maëva Pasteur | Développeur Front-End Freelance",
+      "description": "Développeur front-end freelance spécialisée vue.js et Nuxt. Je conçois des interfaces rapides, accessibles et scalables pour des marques ambitieuses, du prototype au déploiement."
+    }
+  },
+  "works": {
+    "title": "Réalisations",
+    "seo": {
+      "title": "Réalisations - Maëva Pasteur | Développeur Front-End Freelance",
+      "description": "Études de cas et réalisations : e-commerce, design system, performance et accessibilité. Stack : vue.js, Nuxt, TypeScript, Shopify. Travaux menés en freelance pour des marques exigeantes."
+    }
+  },
+  "about": {
+    "title": "À propos",
+    "seo": {
+      "title": "À propos - Maëva Pasteur | Développeur Front-End Freelance",
+      "description": "Parcours, méthodologie et valeurs d’un développeur front-end freelance vue.js : vision produit, leadership et efficacité au service de solutions scalables pour les équipes et les marques."
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "seo": {
+      "title": "Contact - Maëva Pasteur | Développeur Front-End Freelance",
+      "description": "Discutons de votre projet front-end (vue.js, Nuxt, e-commerce, PWA, MVP). Disponibilités, devis et modalités de collaboration en freelance."
+    }
+  },
+  "client": {
+    "seo": {
+      "title": "{name} - Maëva Pasteur | Développeur Front-End Freelance"
+    },
+    "see_website": "Voir le site"
+  },
+  "clients": {
+    "citadium": {
+      "seo": {
+        "description": "Site e-commerce développé seule à +95%, dans un environnement PHP."
+      },
+      "description": "Official e-commerce website for Citadium<br>Developed 95% of the whole front-end alone,  while working for W3Lead Agency<br>Work in a custom PHP environnement<br>Creative development",
+      "highlights": "+20M$ yearly<br>+400 000 unique user monthly<br>Conversion rate : 2,3 %"
+    },
+    "isabel-marant": {
+      "seo": {
+        "description": "Site e-commerce sur-mesure dédié à la seconde main de Isabel Marant. Thème Shopify développé from scratch."
+      },
+      "description": "Site e-commerce dédié aux pièces Isabel Marant de seconde main.<br>Les utilisateurs peuvent acheter des articles ou revendre les leurs en échange d'une carte-cadeau à dépenser chez la marque.<br>Thème Shopify sur mesure, développé de A à Z pour refléter à l'identique la charte du site officiel de la maison.",
+      "highlights": "+500 000€ annuel<br>+200 000 visites<br>Nouveau branding en cours de développement<br>Multilingue"
+    },
+    "jimmy-fairly": {
+      "seo": {
+        "description": "Refonte Shopify du site officiel de Jimmy Fairly sur Shopify avec essayage de lunettes virtuellement."
+      },
+      "description": "E-commerce website for Jimmy Fairly. Creation and improvement of their Shopify theme. Focus on performance, design consistency and seamless user experience.<br>Integration of the FittingBox API to enable virtual try-on of glasses.",
+      "highlights": "Virtual try-on with FittingBox API<br>Integration of Weglot to increase visits by 70%<br>+6M website revenue"
+    },
+    "lacoste": {
+      "seo": {
+        "description": ""
+      },
+      "description": "E-commerce website dedicated for Lacoste second hand.<br>Users can buy articles, or sell their in exchange for a gift card to spend on Lacoste. This concept powered by Faume create a circular economy for fashion brands.<br>The website use a custom CMS in Nuxt and Vue 3.",
+      "highlights": "Launched this year<br>200 000 unique users<br>Lighthouse : 61% - 78% - 74% - 100%"
+    },
+    "ami": {
+      "seo": {
+        "description": ""
+      },
+      "description": "E-commerce website dedicated for Ami second hand.\nUsers can buy articles, or sell their in exchange for a gift card to spend on Ami online, store or on second hand. This concept powered by Faume create a circular economy for fashion brands. The website use a custom CMS in Nuxt and Vue 3.",
+      "highlights": ""
+    }
+  }
+}
