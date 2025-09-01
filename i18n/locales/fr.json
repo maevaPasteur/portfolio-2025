@@ -195,7 +195,7 @@
     }
   },
   "contact": {
-    "title": "Contact",
+    "title": "For any request :",
     "seo": {
       "title": "Contact - Maëva Pasteur | Développeur Front-End Freelance",
       "description": "Discutons de votre projet front-end (vue.js, Nuxt, e-commerce, PWA, MVP). Disponibilités, devis et modalités de collaboration en freelance."
@@ -226,7 +226,6 @@
       "seo": {
         "description": "Refonte Shopify du site officiel de Jimmy Fairly sur Shopify avec essayage de lunettes virtuellement."
       },
-      "description": "E-commerce website for Jimmy Fairly. Creation and improvement of their Shopify theme. Focus on performance, design consistency and seamless user experience.<br>Integration of the FittingBox API to enable virtual try-on of glasses.",
       "highlights": "Virtual try-on with FittingBox API<br>Integration of Weglot to increase visits by 70%<br>+6M website revenue"
     },
     "lacoste": {

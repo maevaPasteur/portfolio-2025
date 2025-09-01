@@ -121,7 +121,7 @@ onMounted(async () => {
             el.style.width = `${toPct(e) - toPct(s)}%`
         })
 
-        const scrollDistance = window.innerHeight * 3g
+        const scrollDistance = window.innerHeight * 3
         scrollContainerHeight.value = scrollDistance
         
         const st = ScrollTrigger.create({

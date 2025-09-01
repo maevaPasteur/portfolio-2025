@@ -2,7 +2,7 @@
     <div class="min-h-screen from-slate-50 to-slate-200 overflow-hidden relative">
         <div class="sticky top-0 h-screen flex items-start pt-20 flex items-center" ref="timelineWrapper">
 
-            <h2 class="font-[Neutral] text-lg uppercase absolute top-[60px] left-6 z-[3]">
+            <h2 class="font-[Neutral] text-lg uppercase absolute top-[60px] left-6 z-[3]" v-reveal>
                 {{ $t('about.timeline.title') }}
             </h2>
 
@@ -92,7 +92,7 @@
                 </div>
             </div>
 
-            <div class="absolute top-0 left-0 w-full h-full flex z-[0] p-3">
+            <div class="absolute top-0 left-0 w-full h-full flex z-[0] p-3" v-reveal>
                 <div class="flex w-full gap-3 pt-[100px]">
                     <span v-for="i in 12" class="bg-gray-50 rounded-xl block w-full"></span>
                 </div>

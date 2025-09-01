@@ -3,9 +3,8 @@
         <div
             v-for="competence in ['front', 'back', 'strategy']"
              class="w-full grid grid-cols-12 gap-3"
-            v-reveal-group
         >
-            <h2 class="text-xl mb-2 font-[Neutral] col-span-4">{{ $t(`about.competences.${competence}.title`) }}</h2>
+            <h2 class="text-xl mb-2 font-[Neutral] col-span-4" v-reveal>{{ $t(`about.competences.${competence}.title`) }}</h2>
             <div class="grid grid-cols-3 gap-3 grow flex-grow col-span-8" v-reveal-group>
                 <template v-for="i in 3">
                     <div

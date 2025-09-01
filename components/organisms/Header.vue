@@ -9,7 +9,7 @@
                     <li v-for="page in menu" class="py-4 flex items-center">
                         <NuxtLink
                             :to="localePath({name: page})"
-                            class="hover:text-gray-500 transition-colors"
+                            class="hover:opacity-60 transition-opacity duration-200 ease"
                             active-class="underline underline-offset-[5px]"
                         >
                             {{ $t(`header.${page}`) }}
