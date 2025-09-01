@@ -5,7 +5,7 @@
             <div ref="barsWrap" class="about-skills-bars absolute inset-x-6 top-24 bottom-28 flex items-end">
                 <div class="space-y-[var(--bar-gap)] w-full" :style="vars">
                     <div v-for="s in skills" :key="s.label" class="relative h-[var(--bar-h)]">
-                        <div class="absolute inset-x-0 top-0 h-[var(--bar-h)]">
+                        <div class="bg-gray-50 absolute inset-x-0 top-0 h-[var(--bar-h)]  rounded-md">
                             <div class="absolute inset-0" />
                         </div>
                         <div
@@ -13,13 +13,12 @@
                                 :data-start="s.start" :data-end="s.end"
                         >
                             <div
-                                    class="about-skills-fill h-full overflow-hidden"
-                                    :class="s.bgColor"
+                                    class="about-skills-fill h-full overflow-hidden p-[2px]"
                                     :data-start="s.start" :data-end="s.end"
                                     style="width: 0%"
                             >
-                                <div class="h-full px-4 flex items-center whitespace-nowrap">
-                  <span class="inline-flex items-center px-3 py-1 text-xs lg:text-sm font-mono">
+                                <div class="h-full flex items-center whitespace-nowrap">
+                  <span class="inline-flex items-center min-w-full px-3 py-1 text-xs lg:text-sm font-mono bg-white border rounded-md">
                     {{ s.label }}
                   </span>
                                 </div>
