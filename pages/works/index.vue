@@ -22,6 +22,7 @@
                 <li
                         v-for="(client, i) in clients"
                         class="border-b group/client-li hover:bg-gray-100 duration-[800ms] ease-[cubic-bezier(.19,1,.22,1)]"
+                        :class="{'hidden': selectedFilter && !client.filters?.includes(selectedFilter)}"
                         @mouseenter="setImage(client.portrait)"
                 >
                     <NuxtLink

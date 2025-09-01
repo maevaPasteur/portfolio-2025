@@ -124,6 +124,11 @@ export const useClientsStore = defineStore('clients', {
       role: 'Front-End',
       tech: ['Shopify', 'SCSS', 'JavaScript', 'Liquid', 'VUE 2', 'VUEX'],
       keywords: ['SHOPIFY', 'LIQUID', 'SCSS', 'JAVASCRIPT', 'ES6', 'VUE 2', 'VUEX', 'SEO', 'MAPBOX', 'PIXEL PERFECT', 'TRANSCY'],
+      mockups: {
+        desktop: '/mockups/cabaia2.png',
+        tablet: '/mockups/cabaia1.png',
+        mobile: '/mockups/cabaia3.png',
+      },
     },
     {
       id: 'claudie-pierlot',
@@ -136,6 +141,12 @@ export const useClientsStore = defineStore('clients', {
       role: 'Front-End',
       tech: ['Shopify', 'SCSS', 'JavaScript', 'Liquid', 'VUE 2', 'VUEX'],
       keywords: ['SHOPIFY', 'LIQUID', 'SCSS', 'JAVASCRIPT', 'ES6', 'VUE 2', 'VUEX', 'SEO', 'MAPBOX', 'PIXEL PERFECT', 'TRANSCY'],
+      mockups: {
+        desktop: '/mockups/claudie-pierlot2.png',
+        tablet: '/mockups/claudie-pierlot3.png',
+        mobile: '/mockups/claudie-pierlot1.png',
+      },
+      url: "https://secondemain.claudiepierlot.com/"
     },
     {
       id: 'g-star',
@@ -148,6 +159,12 @@ export const useClientsStore = defineStore('clients', {
       role: 'Front-End',
       tech: ['Shopify', 'SCSS', 'JavaScript', 'Liquid', 'VUE 2', 'VUEX'],
       keywords: ['SHOPIFY', 'LIQUID', 'SCSS', 'JAVASCRIPT', 'ES6', 'VUE 2', 'VUEX', 'SEO', 'MAPBOX', 'PIXEL PERFECT', 'TRANSCY'],
+      mockups: {
+        desktop: '/mockups/g-star2.png',
+        tablet: '/mockups/g-star1.png',
+        mobile: '/mockups/g-star3.png',
+      },
+      url: 'https://rewear.g-star.com/'
     },
     {
       id: 'hugo-boss',
@@ -160,29 +177,30 @@ export const useClientsStore = defineStore('clients', {
       role: 'Front-End',
       tech: ['VUE 3', 'Pinia', 'NUXT', 'SCSS', 'TypeScript'],
       keywords: ['VUE 3', 'NUXT', 'SCSS', 'SEO', 'TYPESCRIPT', 'MAPBOX', 'Atomic Design'],
+      mockups: {
+        desktop: '/mockups/hugo-boss2.png',
+        tablet: '/mockups/hugo-boss1.png',
+        mobile: '/mockups/hugo-boss3.png',
+      },
     },
       {
         id: 'isotoner',
         title: 'Isotoner',
         logo: '/logos/isotoner.svg',
         portrait: '/portraits/isotoner.webp',
-        url: 'https://www.isotoner.fr/',
         startup: null,
         agency: "W3lead",
+        filters: ['SHOPIFY', "FRONT", "VUE"],
+        role: 'Front-End',
+        tech: ['Shopify', 'SCSS', 'JavaScript', 'Liquid', 'VUE 2', 'VUEX'],
+        keywords: ['SHOPIFY', 'LIQUID', 'SCSS', 'JAVASCRIPT', 'ES6', 'VUE 2', 'VUEX', 'SEO', 'PIXEL PERFECT'],
+        mockups: {
+          desktop: '/mockups/isotoner2.png',
+          tablet: '/mockups/isotoner1.png',
+          mobile: '/mockups/isotoner3.png',
+        },
+        url: 'https://www.isotoner.fr/',
       },
-    {
-      id: 'lancaster',
-      title: 'Lancaster',
-      logo: '/logos/lancaster.svg',
-      portrait: '/portraits/lancaster.webp',
-      startup: 'Faume',
-      agency: null,
-      filters: ['SHOPIFY', "FRONT", "VUE"],
-      role: 'Front-End',
-      tech: ['Shopify', 'SCSS', 'JavaScript', 'Liquid', 'VUE 2', 'VUEX'],
-      keywords: ['SHOPIFY', 'LIQUID', 'SCSS', 'JAVASCRIPT', 'ES6', 'VUE 2', 'VUEX', 'SEO', 'MAPBOX', 'PIXEL PERFECT'],
-      url: 'https://seconde-main.lancaster.com/'
-    },
     {
       id: 'leo-violette',
       title: 'Leo Violette',
@@ -193,6 +211,11 @@ export const useClientsStore = defineStore('clients', {
       filters: ['SHOPIFY', "FRONT"],
       tech: ['Shopify', 'SCSS', 'JavaScript', 'Liquid'],
       keywords: ['SHOPIFY', 'LIQUID', 'SCSS', 'JAVASCRIPT', 'ES6', 'SEO', 'MAPBOX', 'PIXEL PERFECT'],
+      mockups: {
+        desktop: '/mockups/leo-et-violette3.png',
+        tablet: '/mockups/leo-et-violette2.png',
+        mobile: '/mockups/leo-et-violette1.png',
+      },
       url: 'https://www.leoetviolette.com/'
     },
     {
@@ -206,6 +229,11 @@ export const useClientsStore = defineStore('clients', {
       role: 'Front-End',
       tech: ['Shopify', 'SCSS', 'JavaScript', 'Liquid', 'VUE 2', 'VUEX'],
       keywords: ['SHOPIFY', 'LIQUID', 'SCSS', 'JAVASCRIPT', 'ES6', 'VUE 2', 'VUEX', 'SEO', 'MAPBOX', 'PIXEL PERFECT', 'TRANSCY'],
+      mockups: {
+        desktop: '/mockups/sandro2.png',
+        tablet: '/mockups/sandro1.png',
+        mobile: '/mockups/sandro3.png',
+      },
       url: 'https://secondemain.sandro-paris.com/'
     },
     {
@@ -219,8 +247,25 @@ export const useClientsStore = defineStore('clients', {
       role: 'Front-End',
       tech: ['Shopify', 'SCSS', 'JavaScript', 'Liquid', 'VUE 2', 'VUEX'],
       keywords: ['SHOPIFY', 'LIQUID', 'SCSS', 'JAVASCRIPT', 'ES6', 'VUE 2', 'VUEX', 'SEO', 'MAPBOX', 'PIXEL PERFECT', 'TRANSCY'],
-      url: 'https://secondlove.thekooples.com/'
-    }
+    },
+      {
+        id: 'lancaster',
+        title: 'Lancaster',
+        logo: '/logos/lancaster.svg',
+        portrait: '/portraits/lancaster.webp',
+        startup: 'Faume',
+        agency: null,
+        filters: ['SHOPIFY', "FRONT", "VUE"],
+        role: 'Front-End',
+        tech: ['Shopify', 'SCSS', 'JavaScript', 'Liquid', 'VUE 2', 'VUEX'],
+        keywords: ['SHOPIFY', 'LIQUID', 'SCSS', 'JAVASCRIPT', 'ES6', 'VUE 2', 'VUEX', 'SEO', 'MAPBOX', 'PIXEL PERFECT'],
+        mockups: {
+          desktop: '/mockups/lancaster2.png',
+          tablet: '/mockups/lancaster1.png',
+          mobile: '/mockups/lancaster3.png',
+        },
+        url: 'https://seconde-main.lancaster.com/'
+      },
     ] as Client[],
   }),
 

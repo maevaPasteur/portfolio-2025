@@ -10,7 +10,7 @@
             <span class="whitespace-nowrap inline-flex">
                <span
                    v-for="(letter, y) in word"
-                   class="block overflow-hidden letter-container"
+                   class="block overflow-hidden letter-container pt-[.05em]"
                    :style="{'animation-delay': `${(i*100) + (y*30)}ms`}"
                >
                    <span

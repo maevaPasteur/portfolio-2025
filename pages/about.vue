@@ -1,13 +1,16 @@
 <template>
-    <div class="pt-10 px-6">
-        <h1 class="px-6 font-[Neutral] text-9xl">
-            <AnimationLetterFromLeft :text="$t('about.title')"/>
-        </h1>
-    </div>
+    <AboutIntroduction/>
+    <AboutSkillsTimeline/>
+    <AboutCompetences/>
+    <AboutTimeline/>
 </template>
 
 <script setup lang="ts">
-import AnimationLetterFromLeft from "@/components/atoms/AnimationLetterFromLeft.vue";
+import AboutTimeline from "@/components/organisms/AboutTimeline.vue";
+import AboutIntroduction from "@/components/organisms/AboutIntroduction.vue";
+import AboutCompetences from "@/components/organisms/AboutCompetences.vue";
+import AboutSkillsTimeline from "@/components/organisms/AboutSkillsTimeline.vue";
+
 
 const { t } = useI18n();
 

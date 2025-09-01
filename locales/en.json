@@ -17,7 +17,119 @@
   },
   "about": {
     "title": "About",
-    "description": "Passionate developer"
+    "description": "Passionate developer",
+    "timeline": {
+      "title": "Skills Journey",
+      "skillsByYear": {
+        "2013": ["Algorithms basics", "C programming", "Photoshop"],
+        "2015": ["Java", "Arduino"],
+        "2016": ["HTML CSS", "JavaScript", "jQuery", "PHP MySQL", "JSON", "SVG", "Illustrator", "Adobe XD"],
+        "2017": ["SCSS", "AngularJS", "WordPress", "Bootstrap", "SEO", "Git"],
+        "2018": ["Angular 2", "Code review", "Zeplin", "CSS Animations", "Front in PHP env (Drupal & Symfony)"],
+        "2019": ["React", "TypeScript", "UX Design", "Kotlin Arduino", "Shopify Plus", "PWA", "Heroku"],
+        "2020": ["React & Gatsby", "Vue.js 2 & Vuex", "Node/Express", "MongoDB", "Web performance", "NestJS"],
+        "2021": ["Web Accessibility", "JSON-LD", "Laravel", "Symfony", "Figma", "Mapbox"],
+        "2022": ["Lead training sessions for teams", "Git fork process", "ChatGPT"],
+        "2023": ["Storybook", "Prettier & ESLint", "Tailwind", "Chart.js", "Vue.js 3 & Pinia"],
+        "2024": ["AWS", "Solidity", "Atomic design", "Nuxt"],
+        "2025": ["Cloudinary", "Vuetify", "Vercel", "Datadog", "Claude AI"]
+      },
+      "labels": {
+        "education": "Education",
+        "experience": "Experience",
+        "projects": "Highlighted projects"
+      },
+      "milestones": {
+        "edu_bac_science": {
+          "type": "education",
+          "title": "French Baccalauréat — Science track",
+          "subtitle": "Engineering Sciences with Computer Science option",
+          "location": "Lycée Duhamel, Dole, France",
+          "projects": {
+            "1": "Programmed an Arduino-powered baby walker with ultrasonic sensors.",
+            "2": "Java app to train kids on French conjugation."
+          }
+        },
+        "edu_fine_arts": {
+          "type": "education",
+          "title": "School of Fine Arts",
+          "subtitle": "Art History and Drawing & Painting courses",
+          "location": "Dole, France"
+        },
+        "edu_assoc_frontend": {
+          "type": "education",
+          "title": "Associate degree in multimedia, web development and digital communication",
+          "subtitle": "Specialization in Front-End",
+          "location": "Franche-Comté University, France"
+        },
+        "edu_exchange_vanier": {
+          "type": "education",
+          "title": "Exchange Semester",
+          "subtitle": "Multimedia and Web Development",
+          "location": "Vanier Cégep, Montreal, Canada"
+        },
+        "edu_bachelor_hetic": {
+          "type": "education",
+          "title": "Bachelor’s Degree in Web Development",
+          "subtitle": "Full-stack and UI/UX Design · Ranked the #1 web school in France",
+          "location": "HETIC, Paris, France"
+        },
+        "xp_fidesio": {
+          "type": "experience",
+          "title": "Front-end Developer",
+          "subtitle": "Fidesio · Ranked #12 web agency in France",
+          "location": "Paris, France",
+          "bullets": {
+            "1": "Worked on high-impact projects for Butagaz, Airbus, Soufflet Group, Habiliv, Leo Pharma…"
+          }
+        },
+        "edu_master_ecv": {
+          "type": "education",
+          "title": "Master’s Degree — Full-stack Development",
+          "subtitle": "Ranked top of class (M1 & M2)",
+          "location": "ECV Digital, Paris, France"
+        },
+        "xp_w3lead": {
+          "type": "experience",
+          "title": "Front-end Developer",
+          "subtitle": "W3lead · E-commerce web agency",
+          "location": "Paris, France",
+          "bullets": {
+            "1": "Rebuilt the agency website in React & Gatsby.",
+            "2": "Shipped 10 Shopify themes (5 > €1M, 1 > €50M) for Cabaïa, Léo & Violette, French Bandit, Madura, Isotoner…",
+            "3": "Became the first Shopify Expert; within a year the agency became a Shopify Plus Partner.",
+            "4": "Delivered 95% of the new Citadium front alone, contributing to +$100M revenue."
+          }
+        },
+        "xp_shopify_consultant": {
+          "type": "experience",
+          "title": "Shopify Consultant",
+          "subtitle": "Les Robinsons du Bio · Freelance"
+        },
+        "xp_faume_lead": {
+          "type": "experience",
+          "title": "Lead Front-end Developer",
+          "subtitle": "Faume · Freelance · 100% remote",
+          "bullets": {
+            "1": "E-commerce websites with Vue 3 & Nuxt for Victoria Beckham, Ami Paris, Carel, Marni, Armor Lux, Sud Express, Temperley London, Kids Around, Longchamp, Lacoste…",
+            "2": "Custom CMS & Page Builder in Vue 3, Nuxt & Tailwind.",
+            "3": "Variable-driven design system designed in Figma and integrated in Vue/Nuxt; reduced CSS delivery from 2 weeks to 2 hours.",
+            "4": "Back-office built from scratch in Vue.js for 2,000+ monthly users and 50+ pages.",
+            "5": "30+ Shopify websites with custom apps for Isabel Marant, Sandro, Balzac, Aigle, Ba&sh, Hugo Boss, The Kooples, Bonpoint, Jérôme Dreyfuss, Lancaster, Maison 123, Tara Jarmon, Essentiel…",
+            "6": "Modular Shopify theme cutting implementation from 4 weeks to 2 weeks."
+          }
+        },
+        "xp_mali_hakika_pwa": {
+          "type": "experience",
+          "title": "Mali Hakika — PWA",
+          "subtitle": "Freelance · Full-stack Vue 3 + REST API"
+        }
+      }
+    },
+    "seo": {
+      "title": "À propos - Maëva Pasteur | Développeur Front-End Freelance",
+      "description": "Parcours, méthodologie et valeurs d’un développeur front-end freelance vue.js : vision produit, leadership et efficacité au service de solutions scalables pour les équipes et les marques."
+    }
   },
   "contact": {
     "title": "Contact",

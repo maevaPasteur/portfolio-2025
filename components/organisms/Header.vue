@@ -1,7 +1,7 @@
 <template>
     <div class="font-mono fixed z-20 top-0 left-0 w-full text-white mix-blend-difference">
         <div class="px-6 flex items-center">
-            <h1 class="font-[Neutral] uppercase text-lg">
+            <h1 class="font-[Neutral] uppercase text-md font-medium">
                 <AnimationLetterFromLeft text="Maëva Pasteur"/>
             </h1>
             <nav class="ml-auto text-xs uppercase">

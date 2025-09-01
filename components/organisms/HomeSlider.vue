@@ -13,15 +13,15 @@
                     @mouseleave="handleMouseLeave"
                     @click.prevent="e => selectImage(e, client)"
             >
-                <div class="w-full h-full overflow-hidden">
+                <div class="w-full h-full overflow-hidden duration-[1250ms] ease-[cubic-bezier(.19,1,.22,1)] group-hover/home-slide:scale-105 will-change-[transform]">
                     <NuxtImg
                             :src="client.portrait"
                             :alt="client.title"
-                            class="w-full h-full object-cover duration-[1250ms] ease-[cubic-bezier(.19,1,.22,1)] group-hover/home-slide:scale-105 transform-gpu will-change-[transform] grayscale group-hover/home-slide:grayscale-0"
+                            class="w-full h-full object-cover scale-105 duration-[1250ms] ease-[cubic-bezier(.19,1,.22,1)] group-hover/home-slide:scale-100 transform-gpu will-change-[transform] grayscale group-hover/home-slide:grayscale-0"
                             loading="lazy"
                     />
                 </div>
-                <div class="absolute left-0 top-0 w-full pb-1 -translate-y-full text-right font-mono text-xs overflow-hidden">
+                <div class="absolute left-0 top-[-2%] w-full pb-1 -translate-y-full text-right font-mono text-xs overflow-hidden">
                     <span class="flex gap-2 overflow-hidden">
                         <span
                                 v-for="(techno, i) in client.tech"

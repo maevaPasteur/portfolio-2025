@@ -23,6 +23,172 @@
   },
   "about": {
     "title": "À propos",
+    "subtitle": "I bridge creativity and engineering.<br>Delivering clean, scalable solutions trusted by leading brands.",
+    "metrics": {
+      "1": {
+        "title": "8",
+        "subtitle": "Years of experience",
+        "text": "2021 - 2025 | Independant<br>2019 - 2021 | W3Lead<br>2017 - 2019 | Fidesio"
+      },
+      "2": {
+        "title": "50",
+        "subtitle": "Websites developed",
+        "text": "+35 E-commerce websites<br>+200M generated yearly<br>Showcase websites<br>Backoffice PWA<br>Custom CMS<br>REST API<br>PWA<br>MVP"
+      },
+      "3": {
+        "title": "First",
+        "subtitle": "Ranked of Master 1 & 2",
+        "text": "ECV Digital Paris<br>Fullstack Programming"
+      }
+    },
+    "competences": {
+      "front": {
+        "title": "Front-End",
+        "paragraphs": {
+          "1": {
+            "title": "Vue.js & Nuxt",
+            "text": "Complex architecture from scratch<br>Custom CMS & scalable back-office<br>nHigh-traffic e-commerce platforms<br>Progressive Web Apps (PWA)<br>ES6+ / TypeScript<br>SSR & CSR<br>Advanced state management<br>(Vuex / Pinia)<br>Seamless API integration<br>Server-side API orchestration<br>Storybook"
+          },
+          "2": {
+            "title": "Shopify",
+            "text": "30+ custom themes delivered<br>+5 Shopify Plus<br>$150M+ annual GMV across clients<br>Multi-language (10+ locales)<br>Shopify Plus expertise<br>Performance-driven (Core Web Vitals, SEO, json+ld)<br>Custom apps"
+          },
+          "3": {
+            "title": "Pixel Perfect",
+            "text": "Pixel-accurate integration from Figma/Sketch<br>Responsive design across devices<br>Complex UI animations & micro-interactions<br>PHP ecosystem integration (Symfony, Laravel, Drpual, custom)<br>Accessibility<br>Atomic design systems for scalability"
+          }
+        }
+      },
+      "back": {
+        "title": "FullStack",
+        "paragraphs": {
+          "1": {
+            "title": "API & Architecture",
+            "text": "REST API<br>Node.js / Express<br>Authentication & Authorization (JWT, OAuth)<br>Encrypted data handling"
+          },
+          "2": {
+            "title": "Data & DevOps",
+            "text": "MongoDB & MySQL<br>Cloud hosting (AWS, Vercel, Cloudinary, Railway, Heroku)<br>CI/CD pipelines (GitHub Actions)<br>Logging & monitoring (Datadog)"
+          }
+        }
+      },
+      "strategy": {
+        "title": "Stratégie",
+        "paragraphs": {
+          "1": {
+            "title": "Design",
+            "text": "Advanced web animations (CSS calc, SVG, transitions)<br>Figma expert, built a design system used for 15+ e-commerce sites<br>Ability to design & integrate new pages without mockups<br>Strong UX & Accessibility knowledge"
+          },
+          "2": {
+            "title": "Scalabilité",
+            "text": "Future-proof code anticipating client needs<br>Modular & reusable architecture for fast delivery<br>Design-to-code system generating new brand identities in 2h<br>Performance-first development<br>(Core Web Vitals, SEO)<br>Solutions built for growth & long-term maintainability"
+          }
+        }
+      }
+    },
+    "timeline": {
+      "title": "Expériences",
+      "skills": "Nouvelles compétences :",
+      "scroll": "Scroll pour explorer",
+      "skillsByYear": {
+        "2013": ["Algorithms basics", "C programming", "Photoshop"],
+        "2015": ["Java", "Arduino"],
+        "2016": ["HTML CSS", "JavaScript", "jQuery", "PHP MySQL", "JSON", "SVG", "Illustrator", "Adobe XD"],
+        "2017": ["SCSS", "AngularJS", "WordPress", "Bootstrap", "SEO", "Git"],
+        "2018": ["Angular 2", "Code review", "Zeplin", "CSS Animations", "Front in PHP env (Drupal & Symfony)"],
+        "2019": ["React", "TypeScript", "UX Design", "Kotlin Arduino", "Shopify Plus", "PWA", "Heroku"],
+        "2020": ["React & Gatsby", "Vue.js 2 & Vuex", "Node/Express", "MongoDB", "Web performance", "NestJS"],
+        "2021": ["Web Accessibility", "JSON-LD", "Laravel", "Symfony", "Figma", "Mapbox"],
+        "2022": ["Lead training sessions for teams", "Git fork process", "ChatGPT"],
+        "2023": ["Storybook", "Prettier & ESLint", "Tailwind", "Chart.js", "Vue.js 3 & Pinia"],
+        "2024": ["AWS", "Solidity", "Atomic design", "Nuxt"],
+        "2025": ["Cloudinary", "Vuetify", "Vercel", "Datadog", "Claude AI"]
+      },
+      "labels": {
+        "education": "Education",
+        "experience": "Experience",
+        "projects": "Highlighted projects"
+      },
+      "milestones": {
+        "edu_bac_science": {
+          "title": "French Baccalauréat — Science track",
+          "subtitle": "Engineering Sciences with Computer Science option",
+          "location": "Lycée Duhamel, Dole, France",
+          "projects": {
+            "1": "Programmed an Arduino-powered baby walker with ultrasonic sensors.",
+            "2": "Java app to train kids on French conjugation."
+          }
+        },
+        "edu_fine_arts": {
+          "title": "School of Fine Arts",
+          "subtitle": "Art History and Drawing & Painting courses",
+          "location": "Dole, France"
+        },
+        "edu_assoc_frontend": {
+          "title": "Associate degree in multimedia, web development and digital communication",
+          "subtitle": "Specialization in Front-End",
+          "location": "Franche-Comté University, France"
+        },
+        "edu_exchange_vanier": {
+          "title": "Exchange Semester",
+          "subtitle": "Multimedia and Web Development",
+          "location": "Vanier Cégep, Montreal, Canada"
+        },
+        "edu_bachelor_hetic": {
+          "title": "Bachelor’s Degree in Web Development",
+          "subtitle": "Full-stack and UI/UX Design · Ranked the #1 web school in France",
+          "location": "HETIC, Paris, France"
+        },
+        "xp_fidesio": {
+          "title": "Front-end Developer",
+          "subtitle": "Fidesio · Ranked #12 web agency in France",
+          "location": "Paris, France",
+          "bullets": {
+            "1": "Worked on high-impact projects for Butagaz, Airbus, Soufflet Group, Habiliv, Leo Pharma…"
+          }
+        },
+        "edu_master_ecv": {
+          "type": "education",
+          "title": "Master’s Degree — Full-stack Development",
+          "subtitle": "Ranked top of class (M1 & M2)",
+          "location": "ECV Digital, Paris, France"
+        },
+        "xp_w3lead": {
+          "title": "Front-end Developer",
+          "subtitle": "W3lead · E-commerce web agency",
+          "location": "Paris, France",
+          "bullets": {
+            "1": "Rebuilt the agency website in React & Gatsby.",
+            "2": "Shipped 10 Shopify themes (5 > €1M, 1 > €50M) for Cabaïa, Léo & Violette, French Bandit, Madura, Isotoner…",
+            "3": "Became the first Shopify Expert; within a year the agency became a Shopify Plus Partner.",
+            "4": "Delivered 95% of the new Citadium front alone, contributing to +$100M revenue."
+          }
+        },
+        "xp_shopify_consultant": {
+          "type": "experience",
+          "title": "Shopify Consultant",
+          "subtitle": "Les Robinsons du Bio · Freelance"
+        },
+        "xp_faume_lead": {
+          "type": "experience",
+          "title": "Lead Front-end Developer",
+          "subtitle": "Faume · Freelance · 100% remote",
+          "bullets": {
+            "1": "E-commerce websites with Vue 3 & Nuxt for Victoria Beckham, Ami Paris, Carel, Marni, Armor Lux, Sud Express, Temperley London, Kids Around, Longchamp, Lacoste…",
+            "2": "Custom CMS & Page Builder in Vue 3, Nuxt & Tailwind.",
+            "3": "Variable-driven design system designed in Figma and integrated in Vue/Nuxt; reduced CSS delivery from 2 weeks to 2 hours.",
+            "4": "Back-office built from scratch in Vue.js for 2,000+ monthly users and 50+ pages.",
+            "5": "30+ Shopify websites with custom apps for Isabel Marant, Sandro, Balzac, Aigle, Ba&sh, Hugo Boss, The Kooples, Bonpoint, Jérôme Dreyfuss, Lancaster, Maison 123, Tara Jarmon, Essentiel…",
+            "6": "Modular Shopify theme cutting implementation from 4 weeks to 2 weeks."
+          }
+        },
+        "xp_mali_hakika_pwa": {
+          "type": "experience",
+          "title": "Mali Hakika — PWA",
+          "subtitle": "Freelance · Full-stack Vue 3 + REST API"
+        }
+      }
+    },
     "seo": {
       "title": "À propos - Maëva Pasteur | Développeur Front-End Freelance",
       "description": "Parcours, méthodologie et valeurs d’un développeur front-end freelance vue.js : vision produit, leadership et efficacité au service de solutions scalables pour les équipes et les marques."
@@ -46,8 +212,8 @@
       "seo": {
         "description": "Site e-commerce développé seule à +95%, dans un environnement PHP."
       },
-      "description": "Official e-commerce website for Citadium<br>Developed 95% of the whole front-end alone,  while working for W3Lead Agency<br>Work in a custom PHP environnement<br>Creative development",
-      "highlights": "+20M$ yearly<br>+400 000 unique user monthly<br>Conversion rate : 2,3 %"
+      "description": "Official e-commerce website for Citadium<br>Developed 95% of the whole front-end alone,  while working for W3Lead Agency<br>Work in a custom PHP environnement",
+      "highlights": "+20M$ yearly<br>+400 000 unique user monthly<br>Conversion rate : 2,3 %<br>Creative development"
     },
     "isabel-marant": {
       "seo": {

@@ -41,7 +41,8 @@ const colors = {
     'lancaster': 'bg-pink-100',
     'leo-violette': "bg-yellow-100",
     'sandro': 'bg-orange-100',
-    'the-kooples': 'bg-indigo-100'
+    'the-kooples': 'bg-indigo-100',
+    'isotoner': 'bg-red-100',
 }
 
 const currentClient = ref<null | string>(null);
