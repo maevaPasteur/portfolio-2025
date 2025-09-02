@@ -48,10 +48,10 @@
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted, onBeforeUnmount, nextTick, computed } from 'vue'
 import gsap from 'gsap'
 import type { Ref } from 'vue'
 import type { Client } from '~/stores/clients'
+import { storeToRefs } from 'pinia'
 
 interface SliderState {
   target: number
@@ -80,7 +80,7 @@ const clientsStore = useClientsStore();
 
 const currentClient = defineModel<string | null>();
 
-const clients: Client[] = clientsStore.clients;
+const { clients } = storeToRefs(clientsStore);
 
 const slider: Ref<HTMLElement | null> = ref(null);
 const sliderWrapper: Ref<HTMLElement | null> = ref(null);

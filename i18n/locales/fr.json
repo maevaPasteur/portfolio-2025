@@ -210,39 +210,119 @@
   },
   "clients": {
     "citadium": {
-      "seo": {
-        "description": "Site e-commerce développé seule à +95%, dans un environnement PHP."
-      },
-      "description": "Site e-commerce officiel pour Citadium<br>Développement de 95% de tout le front-end seule, en travaillant pour l'agence W3Lead<br>Travail dans un environnement PHP personnalisé",
-      "highlights": "+20M$ annuels<br>+400 000 utilisateurs uniques mensuels<br>Taux de conversion : 2,3%<br>Développement créatif"
+      "seo": { "description": "E-commerce website developed alone at +95%, in a PHP environment." },
+      "description": "Official e-commerce website for Citadium<br>Developed 95% of the whole front-end alone, while working for W3Lead Agency<br>Work in a custom PHP environment",
+      "highlights": "+20M$ yearly<br>+400 000 unique user monthly<br>Conversion rate: 2.3%<br>Creative development"
     },
     "isabel-marant": {
-      "seo": {
-        "description": "Site e-commerce sur-mesure dédié à la seconde main de Isabel Marant. Thème Shopify développé from scratch."
-      },
-      "description": "Site e-commerce dédié aux pièces Isabel Marant de seconde main.<br>Les utilisateurs peuvent acheter des articles ou revendre les leurs en échange d'une carte-cadeau à dépenser chez la marque.<br>Thème Shopify sur mesure, développé de A à Z pour refléter à l'identique la charte du site officiel de la maison.",
-      "highlights": "+500 000€ annuel<br>+200 000 visites<br>Nouveau branding en cours de développement<br>Multilingue"
+      "seo": { "description": "Custom e-commerce website dedicated to Isabel Marant second-hand. Shopify theme developed from scratch." },
+      "description": "E-commerce website dedicated to second-hand Isabel Marant pieces.<br>Users can buy articles or resell theirs in exchange for a gift card to spend at the brand.<br>Custom Shopify theme, developed from A to Z to perfectly reflect the official brand charter.",
+      "highlights": "+€500,000 annual<br>+200,000 visits<br>New branding under development<br>Multilingual"
     },
     "jimmy-fairly": {
-      "seo": {
-        "description": "Refonte Shopify du site officiel de Jimmy Fairly sur Shopify avec essayage de lunettes virtuellement."
-      },
-      "description": "Site e-commerce pour Jimmy Fairly. Création et amélioration de leur thème Shopify. Focus sur la performance, cohérence du design et expérience utilisateur fluide.<br>Intégration de l'API FittingBox pour permettre l'essayage virtuel de lunettes.",
-      "highlights": "Essayage virtuel avec l'API FittingBox<br>Intégration de Weglot pour augmenter les visites de 70%<br>+6M de revenus du site web"
+      "seo": { "description": "Shopify redesign of Jimmy Fairly's official website on Shopify with virtual glasses try-on." },
+      "description": "E-commerce website for Jimmy Fairly. Creation and improvement of their Shopify theme. Focus on performance, design consistency and seamless user experience.<br>Integration of the FittingBox API to enable virtual try-on of glasses.",
+      "highlights": "Virtual try-on with FittingBox API<br>Integration of Weglot to increase visits by 70%<br>+6M website revenue"
     },
     "lacoste": {
-      "seo": {
-        "description": "Site e-commerce dédié à la seconde main Lacoste avec CMS personnalisé en Nuxt et Vue 3."
-      },
-      "description": "Site e-commerce dédié à la seconde main Lacoste.<br>Les utilisateurs peuvent acheter des articles ou vendre les leurs en échange d'une carte-cadeau à dépenser chez Lacoste. Ce concept propulsé par Faume crée une économie circulaire pour les marques de mode.<br>Le site utilise un CMS personnalisé en Nuxt et Vue 3.",
-      "highlights": "Lancé cette année<br>200 000 utilisateurs uniques<br>Lighthouse : 61% - 78% - 74% - 100%"
+      "seo": { "description": "E-commerce website dedicated to Lacoste second-hand with custom CMS in Nuxt and Vue 3." },
+      "description": "E-commerce website dedicated for Lacoste second hand.<br>Users can buy articles, or sell their in exchange for a gift card to spend on Lacoste. This concept powered by Faume create a circular economy for fashion brands.<br>The website use a custom CMS in Nuxt and Vue 3.",
+      "highlights": "Launched this year<br>200,000 unique users<br>Lighthouse: 61% - 78% - 74% - 100%"
     },
     "ami": {
-      "seo": {
-        "description": "Site e-commerce dédié à la seconde main Ami avec CMS personnalisé en Nuxt et Vue 3."
-      },
-      "description": "Site e-commerce dédié à la seconde main Ami.<br>Les utilisateurs peuvent acheter des articles ou vendre les leurs en échange d'une carte-cadeau à dépenser chez Ami en ligne, en magasin ou en seconde main. Ce concept propulsé par Faume crée une économie circulaire pour les marques de mode. Le site utilise un CMS personnalisé en Nuxt et Vue 3.",
-      "highlights": "Concept d'économie circulaire<br>CMS personnalisé<br>Architecture Vue 3 & Nuxt"
+      "seo": { "description": "E-commerce website dedicated to Ami second-hand with custom CMS in Nuxt and Vue 3." },
+      "description": "E-commerce website dedicated for Ami second hand.<br>Users can buy articles, or sell their in exchange for a gift card to spend on Ami online, store or on second hand. This concept powered by Faume create a circular economy for fashion brands. The website use a custom CMS in Nuxt and Vue 3.",
+      "highlights": "Circular economy concept<br>Custom CMS<br>Vue 3 & Nuxt architecture"
+    },
+    "victoria-beckham": {
+      "seo": { "description": "Recommerce platform for Victoria Beckham powered by a Vue 3 + Nuxt front." },
+      "description": "Second-hand experience for Victoria Beckham, built on a Vue 3 + Nuxt front-end.<br>Design-system driven UI and performance-first build.",
+      "highlights": "Nuxt + Vue 3<br>Design system components<br>SEO-focused structure"
+    },
+    "carel": {
+      "seo": { "description": "Recommerce website for Carel with a Vue/Nuxt front-end." },
+      "description": "Circular e-commerce for Carel with a Vue 3 + Nuxt front-end and component-driven UI.",
+      "highlights": "Atomic components<br>Accessible UI<br>Fast load"
+    },
+    "marni": {
+      "seo": { "description": "Marni recommerce experience built with Vue 3 and Nuxt." },
+      "description": "Front-end for Marni circular store, leveraging Vue 3, Nuxt and a variable-based design system.",
+      "highlights": "Nuxt routing<br>TypeScript codebase<br>Reusable modules"
+    },
+    "armor-lux": {
+      "seo": { "description": "Armor Lux second-hand storefront with Vue 3 + Nuxt." },
+      "description": "Responsive Vue 3 + Nuxt front-end for Armor Lux's circular economy experience.",
+      "highlights": "SSR rendering<br>Image optimization<br>Great CLS"
+    },
+    "sud-express": {
+      "seo": { "description": "Sud Express recommerce site with Nuxt front-end." },
+      "description": "Vue 3 + Nuxt interface for Sud Express second-hand program, focused on clarity and speed.",
+      "highlights": "Reusable UI kit<br>Clean animations<br>Analytics-ready"
+    },
+    "temperley-london": {
+      "seo": { "description": "Temperley London recommerce front built with Vue 3 and Nuxt." },
+      "description": "Elegant UI for Temperley London circular store, crafted with Vue 3 + Nuxt.",
+      "highlights": "Editorial layouts<br>Responsive grids<br>Strong a11y"
+    },
+    "kids-around": {
+      "seo": { "description": "Kids Around recommerce interface in Nuxt." },
+      "description": "Vue 3 + Nuxt front-end for Kids Around's second-hand program.",
+      "highlights": "Composable architecture<br>Pinia store<br>Fast navigation"
+    },
+    "longchamp": {
+      "seo": { "description": "Longchamp second-hand website with Nuxt front-end." },
+      "description": "Nuxt-powered front-end for Longchamp's circular economy initiative.",
+      "highlights": "Server-side rendering<br>Optimized images<br>Scalable components"
+    },
+    "bonpoint": {
+      "seo": { "description": "Bonpoint recommerce site front built with Nuxt." },
+      "description": "Vue 3 + Nuxt interface for Bonpoint’s second-hand store.",
+      "highlights": "Clean typography<br>Cart UX polish<br>SEO basics"
+    },
+    "jerome-dreyfuss": {
+      "seo": { "description": "Shopify theme work for Jérôme Dreyfuss with custom features." },
+      "description": "Customizations and performance improvements on a Shopify theme for Jérôme Dreyfuss.",
+      "highlights": "Liquid templates<br>Theme sections<br>Perf passes"
+    },
+    "tara-jarmon": {
+      "seo": { "description": "Shopify theme work for Tara Jarmon." },
+      "description": "Front-end work on Tara Jarmon’s Shopify theme: sections, styles and UX refinements.",
+      "highlights": "Reusable sections<br>Design fidelity<br>Theme editorial"
+    },
+    "maison-123": {
+      "seo": { "description": "Shopify improvements for Maison 123." },
+      "description": "Shopify theme enhancements for Maison 123 with focus on performance and UX.",
+      "highlights": "Speed improvements<br>SEO tweaks<br>UI consistency"
+    },
+    "vanessa-bruno": {
+      "seo": { "description": "Vanessa Bruno recommerce front-end in Nuxt." },
+      "description": "Nuxt-based front for Vanessa Bruno’s circular platform.",
+      "highlights": "Nuxt + Vue 3<br>Design tokens<br>Smooth transitions"
+    },
+    "bash": {
+      "seo": { "description": "ba&sh second-hand storefront on Shopify." },
+      "description": "Front-end and theme work for ba&sh recommerce experience on Shopify.",
+      "highlights": "Liquid sections<br>Theme performance<br>Pixel-perfect UI"
+    },
+    "petites-jupes-de-prune": {
+      "seo": { "description": "Shopify front-end for Les Petites Jupes de Prune with pixel-perfect theme work." },
+      "description": "E-commerce website on Shopify for Les Petites Jupes de Prune.<br>Custom theme work with focus on performance, SEO and faithful design implementation.",
+      "highlights": "Theme sections & templates<br>SEO & performance passes<br>Animations and micro-interactions"
+    },
+    "faume-backoffice": {
+      "seo": { "description": "Vue 3 + TypeScript admin back-office for Faume with a component-driven architecture." },
+      "description": "Admin back-office built with Vue 3, TypeScript, Pinia and Tailwind.<br>Large-scale component system, accessible forms and high-density data grids.",
+      "highlights": "Design system integration<br>Form builder & validation<br>Scalable state management"
+    },
+    "faume-page-builder": {
+      "seo": { "description": "Nuxt-powered Page Builder for content teams with reusable blocks and editorial control." },
+      "description": "Page Builder in Nuxt & Vue 3 with reusable blocks, content presets and editorial workflows.<br>Optimized output for SEO and performance.",
+      "highlights": "Reusable block library<br>WYSIWYG / schema-driven content<br>SEO-ready rendering"
+    },
+    "faume-design-system": {
+      "seo": { "description": "Atomic Design system with tokens, themes and Storybook for Vue/Nuxt apps." },
+      "description": "Atomic Design system defined in Figma, exposed as tokens and stories in Storybook, and implemented in Tailwind + Vue/Nuxt.",
+      "highlights": "Design tokens & theming<br>Accessible components (A11y)<br>Faster delivery & consistency"
     }
   }
 }
