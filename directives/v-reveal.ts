@@ -8,13 +8,6 @@ type RevealOptions = {
 }
 
 export const vReveal: Directive<HTMLElement, RevealOptions | undefined> = {
-    getSSRProps(binding) {
-        const { delay = 0 } = binding.value || {}
-        return {
-            class: 'reveal',
-            style: delay ? { transitionDelay: `${delay}ms` } : undefined
-        }
-    },
     mounted(el, binding) {
         const {
             threshold = 0.1,

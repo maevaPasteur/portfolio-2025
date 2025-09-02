@@ -8,14 +8,6 @@ type RevealGroupOptions = {
 }
 
 export const vRevealGroup: Directive<HTMLElement, RevealGroupOptions | undefined> = {
-    getSSRProps(binding) {
-        const { staggerDelay = 100 } = binding.value || {}
-        return {
-            style: {
-                '--stagger-delay': `${staggerDelay}ms`
-            }
-        }
-    },
     mounted(el, binding) {
         const {
             threshold = 0.1,
