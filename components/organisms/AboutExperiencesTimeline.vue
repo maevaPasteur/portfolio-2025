@@ -148,7 +148,7 @@ const timeline = {
         skills: ["Angular 2", "Code review", "Zeplin", "CSS Animations", "Front in PHP env (Drupal & Symfony)"],
         milestones: [
             {key: 'edu_bachelor_hetic', start: 2, end: 6, row: 1, type: 'education'},
-            {key: 'xp_fidesio', start: 1, end: 5, row: 2, type: 'experience'}
+            {key: 'xp_fidesio', start: 0, end: 5, row: 2, type: 'experience'}
         ],
     },
     2019: {
