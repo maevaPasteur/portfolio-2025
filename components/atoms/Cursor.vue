@@ -5,7 +5,7 @@
         style="will-change: transform; transform: translate3d(0, 0, 0);"
     >
         <div class="cursor__circle w-[8px] h-[8px] bg-white rounded-full duration-200 ease-in-out" />
-        <div v-if="hasText" class="ml-3 text-xs text-white whitespace-nowrap">
+        <div v-if="hasText" class="ml-3 text-sm font-medium text-white whitespace-nowrap">
             {{ text }}
         </div>
         <NuxtImg v-if="hasImage" :src="image" class="invert absolute top-0 left-0 translate-x-[50px] w-[100px] h-[140px] max-w-none object-cover" />

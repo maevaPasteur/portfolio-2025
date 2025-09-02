@@ -17,7 +17,7 @@
                     <NuxtImg
                             :src="client.portrait"
                             :alt="client.title"
-                            class="w-full h-full object-cover scale-105 duration-[1250ms] ease-[cubic-bezier(.19,1,.22,1)] group-hover/home-slide:scale-100 transform-gpu will-change-[transform] grayscale group-hover/home-slide:grayscale-0"
+                            class="w-full h-full bg-gray-100 object-cover scale-105 duration-[1250ms] ease-[cubic-bezier(.19,1,.22,1)] group-hover/home-slide:scale-100 transform-gpu will-change-[transform] grayscale group-hover/home-slide:grayscale-0"
                             loading="lazy"
                     />
                 </div>
