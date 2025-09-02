@@ -23,7 +23,21 @@ export const vRevealGroup: Directive<HTMLElement, RevealGroupOptions | undefined
         children.forEach((child, index) => {
             child.classList.add('reveal')
             // Set staggered delay only for showing (not for hiding)
-            child.style.transitionDelay = `${index * staggerDelay}ms`
+            // First 5 children: increment by staggerDelay (100ms)
+            // From 6th child onwards: increment by 10ms from the 5th child delay
+            let delay
+            if (index <= 4) {
+                delay = index * staggerDelay
+            } else if (index === 5) {
+                delay = 4 * staggerDelay+ 40
+            } else if (index === 6) {
+                delay = 4 * staggerDelay + 40 + 30
+            } else if (index === 7) {
+                delay = 4 * staggerDelay + 40 + 30 + 20
+            } else {
+                delay = 4 * staggerDelay + 40 + 30 + 20 + (index - 4) * 10
+            }
+            child.style.transitionDelay = `${delay}ms`
         })
 
         const observer = new IntersectionObserver((entries) => {
@@ -31,9 +45,17 @@ export const vRevealGroup: Directive<HTMLElement, RevealGroupOptions | undefined
                 if (entry.isIntersecting) {
                     // Show children with staggered delays
                     children.forEach((child, index) => {
+                        // First 5 children: increment by staggerDelay (100ms)
+                        // From 6th child onwards: increment by 10ms from the 5th child delay
+                        let delay
+                        if (index <= 4) {
+                            delay = index * staggerDelay
+                        } else {
+                            delay = 4 * staggerDelay + (index - 4) * 10
+                        }
                         setTimeout(() => {
                             child.classList.add('reveal-show')
-                        }, index * staggerDelay)
+                        }, delay)
                     })
                     if (once) observer.unobserve(el)
                 } else if (!once) {
@@ -44,7 +66,15 @@ export const vRevealGroup: Directive<HTMLElement, RevealGroupOptions | undefined
                         // Restore staggered delay for next show
                         setTimeout(() => {
                             const index = children.indexOf(child)
-                            child.style.transitionDelay = `${index * staggerDelay}ms`
+                            // First 5 children: increment by staggerDelay (100ms)
+                            // From 6th child onwards: increment by 10ms from the 5th child delay
+                            let delay
+                            if (index <= 4) {
+                                delay = index * staggerDelay
+                            } else {
+                                delay = 4 * staggerDelay + (index - 4) * 10
+                            }
+                            child.style.transitionDelay = `${delay}ms`
                         }, 50) // Small delay to allow transition to complete
                     })
                 }
