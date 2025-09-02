@@ -15,7 +15,7 @@
                     </span>
                     <span v-reveal class="block text-gray-900 font-medium" v-html="$t(`about.metrics.${i}.subtitle`)"></span>
                 </h2>
-                <p v-reveal="{delay: 100}" class="text-gray-700" v-html="$t(`about.metrics.${i}.text`)"></p>
+                <p class="text-gray-700" v-reveal="{delay: 100}" v-html="$t(`about.metrics.${i}.text`)"></p>
             </div>
         </div>
     </section>

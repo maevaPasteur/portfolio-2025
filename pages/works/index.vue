@@ -5,7 +5,7 @@
         </h1>
         <LogoList class="mt-12 mb-6"/>
         <div class="border-b px-6 pb-3 sticky z-[1] pt-10 top-0 bg-white flex gap-3 items-center" v-reveal>
-            <p class="font-mono text-xs">Filtrer par :</p>
+            <p class="font-mono text-xs">{{ $t('client.filter') }}</p>
             <div class="flex wrap gap-2">
                 <button
                         v-for="filter in clientFilters"
@@ -26,7 +26,7 @@
                         @mouseenter="setImage(client.portrait)"
                 >
                     <NuxtLink
-                            :to="localePath({name: 'words', params: {id: client.id}})"
+                            :to="localePath({name: 'works-id', params: {id: client.id}})"
                             class="flex font-[Neutral] pl-[100px] py-3 items-center"
                     >
                         <span class="text-gray-300 pr-3 ease duration-[300ms] shrink-0 min-w-40 text-5xl group-hover/client-li:text-black">{{ getNumber(i+1) }}</span>
@@ -63,5 +63,9 @@ definePageMeta({
 useSeoMeta({
     title: t('works.seo.title'),
     description: t('works.seo.description'),
+})
+
+onBeforeUnmount(() => {
+    setImage(null);
 })
 </script>

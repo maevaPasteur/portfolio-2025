@@ -10,35 +10,35 @@
     "front": "Front",
     "text": "Guidée par la curiosité et le goût du défi,\nj’évolue à la croisée de la créativité et de la technologie.\nAu-delà du code, j’apporte une vision, du leadership et une quête d'efficacité.\nJe transforme les idées en solutions scalables qui font grandir les équipes et les marques.",
     "seo": {
-      "title": "Maëva Pasteur | Développeur Front-End Freelance",
+      "title": "Maëva Pasteur { '|' } Développeur Front-End Freelance",
       "description": "Développeur front-end freelance spécialisée vue.js et Nuxt. Je conçois des interfaces rapides, accessibles et scalables pour des marques ambitieuses, du prototype au déploiement."
     }
   },
   "works": {
     "title": "Réalisations",
     "seo": {
-      "title": "Réalisations - Maëva Pasteur | Développeur Front-End Freelance",
+      "title": "Réalisations - Maëva Pasteur { '|' } Développeur Front-End Freelance",
       "description": "Études de cas et réalisations : e-commerce, design system, performance et accessibilité. Stack : vue.js, Nuxt, TypeScript, Shopify. Travaux menés en freelance pour des marques exigeantes."
     }
   },
   "about": {
     "title": "À propos",
-    "subtitle": "I bridge creativity and engineering.<br>Delivering clean, scalable solutions trusted by leading brands.",
+    "subtitle": "Je fais le pont entre créativité et ingénierie.<br>Livrant des solutions propres et scalables en qui les grandes marques ont confiance.",
     "metrics": {
       "1": {
         "title": "7",
-        "subtitle": "Years of experience",
-        "text": "2021 - 2025 | Independant<br>2019 - 2021 | W3Lead<br>2017 - 2019 | Fidesio"
+        "subtitle": "Années d'expérience",
+        "text": "2021 - 2025 { '|' } Indépendante<br>2019 - 2021 { '|' } W3Lead<br>2017 - 2019 { '|' } Fidesio"
       },
       "2": {
         "title": "50",
-        "subtitle": "Websites developed",
-        "text": "+35 E-commerce websites<br>+200M generated yearly<br>Showcase websites<br>Backoffice PWA<br>Custom CMS<br>REST API<br>PWA<br>MVP"
+        "subtitle": "Sites web développés",
+        "text": "+35 sites e-commerce<br>+200M générés annuellement<br>Sites vitrine<br>PWA back-office<br>CMS sur mesure<br>API REST<br>PWA<br>MVP"
       },
       "3": {
-        "title": "First",
-        "subtitle": "Ranked of Master 1 & 2",
-        "text": "ECV Digital Paris<br>Fullstack Programming"
+        "title": "1",
+        "subtitle": "Major de promo Master 1 & 2",
+        "text": "ECV Digital Paris<br>Programmation Fullstack"
       }
     },
     "competences": {
@@ -47,15 +47,15 @@
         "paragraphs": {
           "1": {
             "title": "Vue.js & Nuxt",
-            "text": "Complex architecture from scratch<br>Custom CMS & scalable back-office<br>nHigh-traffic e-commerce platforms<br>Progressive Web Apps (PWA)<br>ES6+ / TypeScript<br>SSR & CSR<br>Advanced state management<br>(Vuex / Pinia)<br>Seamless API integration<br>Server-side API orchestration<br>Storybook"
+            "text": "Architecture complexe from scratch<br>CMS sur mesure & back-office scalable<br>Plateformes e-commerce à fort trafic<br>Progressive Web Apps (PWA)<br>ES6+ / TypeScript<br>SSR & CSR<br>Gestion d'état avancée<br>(Vuex / Pinia)<br>Intégration API transparente<br>Orchestration API côté serveur<br>Storybook"
           },
           "2": {
             "title": "Shopify",
-            "text": "30+ custom themes delivered<br>+5 Shopify Plus<br>$150M+ annual GMV across clients<br>Multi-language (10+ locales)<br>Shopify Plus expertise<br>Performance-driven (Core Web Vitals, SEO, json+ld)<br>Custom apps"
+            "text": "30+ thèmes sur mesure livrés<br>+5 Shopify Plus<br>$150M+ GMV annuel à travers les clients<br>Multi-langues (10+ locales)<br>Expertise Shopify Plus<br>Axé performance (Core Web Vitals, SEO, json+ld)<br>Apps personnalisées"
           },
           "3": {
             "title": "Pixel Perfect",
-            "text": "Pixel-accurate integration from Figma/Sketch<br>Responsive design across devices<br>Complex UI animations & micro-interactions<br>PHP ecosystem integration (Symfony, Laravel, Drpual, custom)<br>Accessibility<br>Atomic design systems for scalability"
+            "text": "Intégration pixel perfect depuis Figma/Sketch<br>Design responsive sur tous appareils<br>Animations UI complexes & micro-interactions<br>Intégration écosystème PHP (Symfony, Laravel, Drupal, custom)<br>Accessibilité<br>Design systems atomiques pour la scalabilité"
           }
         }
       },
@@ -64,11 +64,11 @@
         "paragraphs": {
           "1": {
             "title": "API & Architecture",
-            "text": "REST API<br>Node.js / Express<br>Authentication & Authorization (JWT, OAuth)<br>Encrypted data handling"
+            "text": "API REST<br>Node.js / Express<br>Authentification & Autorisation (JWT, OAuth)<br>Gestion de données chiffrées"
           },
           "2": {
             "title": "Data & DevOps",
-            "text": "MongoDB & MySQL<br>Cloud hosting (AWS, Vercel, Cloudinary, Railway, Heroku)<br>CI/CD pipelines (GitHub Actions)<br>Logging & monitoring (Datadog)"
+            "text": "MongoDB & MySQL<br>Hébergement cloud (AWS, Vercel, Cloudinary, Railway, Heroku)<br>Pipelines CI/CD (GitHub Actions)<br>Logging & monitoring (Datadog)"
           }
         }
       },
@@ -77,11 +77,11 @@
         "paragraphs": {
           "1": {
             "title": "Design",
-            "text": "Advanced web animations (CSS calc, SVG, transitions)<br>Figma expert, built a design system used for 15+ e-commerce sites<br>Ability to design & integrate new pages without mockups<br>Strong UX & Accessibility knowledge"
+            "text": "Animations web avancées (CSS calc, SVG, transitions)<br>Expert Figma, création d'un design system utilisé pour 15+ sites e-commerce<br>Capacité à designer & intégrer de nouvelles pages sans maquettes<br>Solides connaissances UX & Accessibilité"
           },
           "2": {
             "title": "Scalabilité",
-            "text": "Future-proof code anticipating client needs<br>Modular & reusable architecture for fast delivery<br>Design-to-code system generating new brand identities in 2h<br>Performance-first development<br>(Core Web Vitals, SEO)<br>Solutions built for growth & long-term maintainability"
+            "text": "Code pérenne anticipant les besoins clients<br>Architecture modulaire & réutilisable pour livraisons rapides<br>Système design-to-code générant de nouvelles identités de marque en 2h<br>Développement axé performance<br>(Core Web Vitals, SEO)<br>Solutions conçues pour la croissance & maintenabilité long terme"
           }
         }
       }
@@ -91,95 +91,95 @@
       "skills": "Nouvelles compétences :",
       "scroll": "Scroll pour explorer",
       "skillsByYear": {
-        "2013": ["Algorithms basics", "C programming", "Photoshop"],
+        "2013": ["Bases des algorithmes", "Programmation C", "Photoshop"],
         "2015": ["Java", "Arduino"],
         "2016": ["HTML CSS", "JavaScript", "jQuery", "PHP MySQL", "JSON", "SVG", "Illustrator", "Adobe XD"],
         "2017": ["SCSS", "AngularJS", "WordPress", "Bootstrap", "SEO", "Git"],
-        "2018": ["Angular 2", "Code review", "Zeplin", "CSS Animations", "Front in PHP env (Drupal & Symfony)"],
+        "2018": ["Angular 2", "Revue de code", "Zeplin", "Animations CSS", "Front dans env PHP (Drupal & Symfony)"],
         "2019": ["React", "TypeScript", "UX Design", "Kotlin Arduino", "Shopify Plus", "PWA", "Heroku"],
-        "2020": ["React & Gatsby", "Vue.js 2 & Vuex", "Node/Express", "MongoDB", "Web performance", "NestJS"],
-        "2021": ["Web Accessibility", "JSON-LD", "Laravel", "Symfony", "Figma", "Mapbox"],
-        "2022": ["Lead training sessions for teams", "Git fork process", "ChatGPT"],
+        "2020": ["React & Gatsby", "Vue.js 2 & Vuex", "Node/Express", "MongoDB", "Performance web", "NestJS"],
+        "2021": ["Accessibilité web", "JSON-LD", "Laravel", "Symfony", "Figma", "Mapbox"],
+        "2022": ["Sessions de formation d'équipes", "Processus Git fork", "ChatGPT"],
         "2023": ["Storybook", "Prettier & ESLint", "Tailwind", "Chart.js", "Vue.js 3 & Pinia"],
-        "2024": ["AWS", "Solidity", "Atomic design", "Nuxt"],
+        "2024": ["AWS", "Solidity", "Design atomique", "Nuxt"],
         "2025": ["Cloudinary", "Vuetify", "Vercel", "Datadog", "Claude AI"]
       },
       "labels": {
-        "education": "Education",
-        "experience": "Experience",
-        "projects": "Highlighted projects"
+        "education": "Formation",
+        "experience": "Expérience",
+        "projects": "Projets mis en avant"
       },
       "milestones": {
         "edu_bac_science": {
-          "title": "French Baccalauréat — Science track",
-          "subtitle": "Engineering Sciences with Computer Science option",
+          "title": "Baccalauréat français — Filière scientifique",
+          "subtitle": "Sciences de l'ingénieur option informatique",
           "location": "Lycée Duhamel, Dole, France",
           "projects": {
-            "1": "Programmed an Arduino-powered baby walker with ultrasonic sensors.",
-            "2": "Java app to train kids on French conjugation."
+            "1": "Programmation d'un trotteur bébé alimenté par Arduino avec capteurs à ultrasons.",
+            "2": "Application Java pour entraîner les enfants à la conjugaison française."
           }
         },
         "edu_fine_arts": {
-          "title": "School of Fine Arts",
-          "subtitle": "Art History and Drawing & Painting courses",
+          "title": "École des Beaux-Arts",
+          "subtitle": "Cours d'Histoire de l'art et Dessin & Peinture",
           "location": "Dole, France"
         },
         "edu_assoc_frontend": {
-          "title": "Associate degree in multimedia, web development and digital communication",
-          "subtitle": "Specialization in Front-End",
-          "location": "Franche-Comté University, France"
+          "title": "DUT multimédia, développement web et communication numérique",
+          "subtitle": "Spécialisation Front-End",
+          "location": "Université de Franche-Comté, France"
         },
         "edu_exchange_vanier": {
-          "title": "Exchange Semester",
-          "subtitle": "Multimedia and Web Development",
-          "location": "Vanier Cégep, Montreal, Canada"
+          "title": "Semestre d'échange",
+          "subtitle": "Multimédia et Développement Web",
+          "location": "Vanier Cégep, Montréal, Canada"
         },
         "edu_bachelor_hetic": {
-          "title": "Bachelor’s Degree in Web Development",
-          "subtitle": "Full-stack and UI/UX Design · Ranked the #1 web school in France",
+          "title": "Bachelor Développement Web",
+          "subtitle": "Full-stack et Design UI/UX · École web #1 en France",
           "location": "HETIC, Paris, France"
         },
         "xp_fidesio": {
-          "title": "Front-end Developer",
+          "title": "Développeur Front-end",
           "subtitle": "Fidesio · Ranked #12 web agency in France",
           "location": "Paris, France",
           "bullets": {
-            "1": "Worked on high-impact projects for Butagaz, Airbus, Soufflet Group, Habiliv, Leo Pharma…"
+            "1": "Travail sur des projets à fort impact pour Butagaz, Airbus, Soufflet Group, Habiliv, Leo Pharma…"
           }
         },
         "edu_master_ecv": {
           "type": "education",
-          "title": "Master’s Degree — Full-stack Development",
-          "subtitle": "Ranked top of class (M1 & M2)",
+          "title": "Master — Développement Full-stack",
+          "subtitle": "Major de promo (M1 & M2)",
           "location": "ECV Digital, Paris, France"
         },
         "xp_w3lead": {
-          "title": "Front-end Developer",
+          "title": "Développeur Front-end",
           "subtitle": "W3lead · E-commerce web agency",
           "location": "Paris, France",
           "bullets": {
-            "1": "Rebuilt the agency website in React & Gatsby.",
-            "2": "Shipped 10 Shopify themes (5 > €1M, 1 > €50M) for Cabaïa, Léo & Violette, French Bandit, Madura, Isotoner…",
-            "3": "Became the first Shopify Expert; within a year the agency became a Shopify Plus Partner.",
-            "4": "Delivered 95% of the new Citadium front alone, contributing to +$100M revenue."
+            "1": "Refonte du site de l'agence en React & Gatsby.",
+            "2": "Livraison de 10 thèmes Shopify (5 > 1M€, 1 > 50M€) pour Cabaïa, Léo & Violette, French Bandit, Madura, Isotoner…",
+            "3": "Devenue la première Shopify Expert ; en un an l'agence est devenue Shopify Plus Partner.",
+            "4": "Livraison de 95% du nouveau front Citadium seule, contribuant à +100M$ de revenus."
           }
         },
         "xp_shopify_consultant": {
           "type": "experience",
-          "title": "Shopify Consultant",
+          "title": "Consultante Shopify",
           "subtitle": "Les Robinsons du Bio · Freelance"
         },
         "xp_faume_lead": {
           "type": "experience",
-          "title": "Lead Front-end Developer",
+          "title": "Lead Développeur Front-end",
           "subtitle": "Faume · Freelance · 100% remote",
           "bullets": {
-            "1": "E-commerce websites with Vue 3 & Nuxt for Victoria Beckham, Ami Paris, Carel, Marni, Armor Lux, Sud Express, Temperley London, Kids Around, Longchamp, Lacoste…",
-            "2": "Custom CMS & Page Builder in Vue 3, Nuxt & Tailwind.",
-            "3": "Variable-driven design system designed in Figma and integrated in Vue/Nuxt; reduced CSS delivery from 2 weeks to 2 hours.",
-            "4": "Back-office built from scratch in Vue.js for 2,000+ monthly users and 50+ pages.",
-            "5": "30+ Shopify websites with custom apps for Isabel Marant, Sandro, Balzac, Aigle, Ba&sh, Hugo Boss, The Kooples, Bonpoint, Jérôme Dreyfuss, Lancaster, Maison 123, Tara Jarmon, Essentiel…",
-            "6": "Modular Shopify theme cutting implementation from 4 weeks to 2 weeks."
+            "1": "Sites e-commerce avec Vue 3 & Nuxt pour Victoria Beckham, Ami Paris, Carel, Marni, Armor Lux, Sud Express, Temperley London, Kids Around, Longchamp, Lacoste…",
+            "2": "CMS sur mesure & Page Builder en Vue 3, Nuxt & Tailwind.",
+            "3": "Design system piloté par des variables conçu dans Figma et intégré en Vue/Nuxt ; réduction de la livraison CSS de 2 semaines à 2 heures.",
+            "4": "Back-office développé from scratch en Vue.js pour +2 000 utilisateurs mensuels et +50 pages.",
+            "5": "30+ sites Shopify avec apps personnalisées pour Isabel Marant, Sandro, Balzac, Aigle, Ba&sh, Hugo Boss, The Kooples, Bonpoint, Jérôme Dreyfuss, Lancaster, Maison 123, Tara Jarmon, Essentiel…",
+            "6": "Thème Shopify modulaire réduisant l'implémentation de 4 semaines à 2 semaines."
           }
         },
         "xp_mali_hakika_pwa": {
@@ -190,30 +190,31 @@
       }
     },
     "seo": {
-      "title": "À propos - Maëva Pasteur | Développeur Front-End Freelance",
+      "title": "À propos - Maëva Pasteur { '|' } Développeur Front-End Freelance",
       "description": "Parcours, méthodologie et valeurs d’un développeur front-end freelance vue.js : vision produit, leadership et efficacité au service de solutions scalables pour les équipes et les marques."
     }
   },
   "contact": {
-    "title": "For any request :",
+    "title": "Pour toute demande :",
     "seo": {
-      "title": "Contact - Maëva Pasteur | Développeur Front-End Freelance",
+      "title": "Contact - Maëva Pasteur { '|' } Développeur Front-End Freelance",
       "description": "Discutons de votre projet front-end (vue.js, Nuxt, e-commerce, PWA, MVP). Disponibilités, devis et modalités de collaboration en freelance."
     }
   },
   "client": {
     "seo": {
-      "title": "{name} - Maëva Pasteur | Développeur Front-End Freelance"
+      "title": "{name} - Maëva Pasteur { '|' } Développeur Front-End Freelance"
     },
-    "see_website": "Voir le site"
+    "see_website": "Voir le site",
+    "filter": "Filtrer par : "
   },
   "clients": {
     "citadium": {
       "seo": {
         "description": "Site e-commerce développé seule à +95%, dans un environnement PHP."
       },
-      "description": "Official e-commerce website for Citadium<br>Developed 95% of the whole front-end alone,  while working for W3Lead Agency<br>Work in a custom PHP environnement",
-      "highlights": "+20M$ yearly<br>+400 000 unique user monthly<br>Conversion rate : 2,3 %<br>Creative development"
+      "description": "Site e-commerce officiel pour Citadium<br>Développement de 95% de tout le front-end seule, en travaillant pour l'agence W3Lead<br>Travail dans un environnement PHP personnalisé",
+      "highlights": "+20M$ annuels<br>+400 000 utilisateurs uniques mensuels<br>Taux de conversion : 2,3%<br>Développement créatif"
     },
     "isabel-marant": {
       "seo": {
@@ -226,21 +227,22 @@
       "seo": {
         "description": "Refonte Shopify du site officiel de Jimmy Fairly sur Shopify avec essayage de lunettes virtuellement."
       },
-      "highlights": "Virtual try-on with FittingBox API<br>Integration of Weglot to increase visits by 70%<br>+6M website revenue"
+      "description": "Site e-commerce pour Jimmy Fairly. Création et amélioration de leur thème Shopify. Focus sur la performance, cohérence du design et expérience utilisateur fluide.<br>Intégration de l'API FittingBox pour permettre l'essayage virtuel de lunettes.",
+      "highlights": "Essayage virtuel avec l'API FittingBox<br>Intégration de Weglot pour augmenter les visites de 70%<br>+6M de revenus du site web"
     },
     "lacoste": {
       "seo": {
-        "description": ""
+        "description": "Site e-commerce dédié à la seconde main Lacoste avec CMS personnalisé en Nuxt et Vue 3."
       },
-      "description": "E-commerce website dedicated for Lacoste second hand.<br>Users can buy articles, or sell their in exchange for a gift card to spend on Lacoste. This concept powered by Faume create a circular economy for fashion brands.<br>The website use a custom CMS in Nuxt and Vue 3.",
-      "highlights": "Launched this year<br>200 000 unique users<br>Lighthouse : 61% - 78% - 74% - 100%"
+      "description": "Site e-commerce dédié à la seconde main Lacoste.<br>Les utilisateurs peuvent acheter des articles ou vendre les leurs en échange d'une carte-cadeau à dépenser chez Lacoste. Ce concept propulsé par Faume crée une économie circulaire pour les marques de mode.<br>Le site utilise un CMS personnalisé en Nuxt et Vue 3.",
+      "highlights": "Lancé cette année<br>200 000 utilisateurs uniques<br>Lighthouse : 61% - 78% - 74% - 100%"
     },
     "ami": {
       "seo": {
-        "description": ""
+        "description": "Site e-commerce dédié à la seconde main Ami avec CMS personnalisé en Nuxt et Vue 3."
       },
-      "description": "E-commerce website dedicated for Ami second hand.\nUsers can buy articles, or sell their in exchange for a gift card to spend on Ami online, store or on second hand. This concept powered by Faume create a circular economy for fashion brands. The website use a custom CMS in Nuxt and Vue 3.",
-      "highlights": ""
+      "description": "Site e-commerce dédié à la seconde main Ami.<br>Les utilisateurs peuvent acheter des articles ou vendre les leurs en échange d'une carte-cadeau à dépenser chez Ami en ligne, en magasin ou en seconde main. Ce concept propulsé par Faume crée une économie circulaire pour les marques de mode. Le site utilise un CMS personnalisé en Nuxt et Vue 3.",
+      "highlights": "Concept d'économie circulaire<br>CMS personnalisé<br>Architecture Vue 3 & Nuxt"
     }
   }
 }

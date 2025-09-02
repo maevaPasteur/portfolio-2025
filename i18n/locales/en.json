@@ -10,14 +10,14 @@
     "front": "Front",
     "text": "Driven by curiosity and a love for challenges, \nI thrive at the intersection of creativity and technology. \nBeyond coding, I bring vision, leadership, and a relentless focus on efficiency. \nTurning ideas into scalable solutions that empower teams and brands to grow.",
     "seo": {
-      "title": "Maëva Pasteur | Front-End Developer Freelance",
+      "title": "Maëva Pasteur { '|' } Front-End Developer Freelance",
       "description": "Freelance front-end developer specialized in Vue.js and Nuxt. I design fast, accessible and scalable interfaces for ambitious brands, from prototype to deployment."
     }
   },
   "works": {
     "title": "Works",
     "seo": {
-      "title": "Works - Maëva Pasteur | Front-End Developer Freelance",
+      "title": "Works - Maëva Pasteur { '|' } Front-End Developer Freelance",
       "description": "Case studies and achievements: e-commerce, design system, performance and accessibility. Stack: Vue.js, Nuxt, TypeScript, Shopify. Freelance work for demanding brands."
     }
   },
@@ -28,7 +28,7 @@
       "1": {
         "title": "7",
         "subtitle": "Years of experience",
-        "text": "2021 - 2025 | Independent<br>2019 - 2021 | W3Lead<br>2017 - 2019 | Fidesio"
+        "text": "2021 - 2025 { '|' } Independent<br>2019 - 2021 { '|' } W3Lead<br>2017 - 2019 { '|' } Fidesio"
       },
       "2": {
         "title": "50",
@@ -190,22 +190,23 @@
       }
     },
     "seo": {
-      "title": "About - Maëva Pasteur | Front-End Developer Freelance",
+      "title": "About - Maëva Pasteur { '|' } Front-End Developer Freelance",
       "description": "Background, methodology and values of a freelance front-end developer Vue.js: product vision, leadership and efficiency in service of scalable solutions for teams and brands."
     }
   },
   "contact": {
     "title": "For any request:",
     "seo": {
-      "title": "Contact - Maëva Pasteur | Front-End Developer Freelance",
+      "title": "Contact - Maëva Pasteur { '|' } Front-End Developer Freelance",
       "description": "Let's discuss your front-end project (Vue.js, Nuxt, e-commerce, PWA, MVP). Availability, quotes and freelance collaboration terms."
     }
   },
   "client": {
     "seo": {
-      "title": "{name} - Maëva Pasteur | Front-End Developer Freelance"
+      "title": "{name} - Maëva Pasteur { '|' } Front-End Developer Freelance"
     },
-    "see_website": "View website"
+    "see_website": "View website",
+    "filter": "Filter by:"
   },
   "clients": {
     "citadium": {
@@ -220,7 +221,7 @@
         "description": "Custom e-commerce website dedicated to Isabel Marant second-hand. Shopify theme developed from scratch."
       },
       "description": "E-commerce website dedicated to second-hand Isabel Marant pieces.<br>Users can buy articles or resell theirs in exchange for a gift card to spend at the brand.<br>Custom Shopify theme, developed from A to Z to perfectly reflect the official brand charter.",
-      "highlights": "+500 000€ annual<br>+200 000 visits<br>New branding under development<br>Multilingual"
+      "highlights": "+€500,000 annual<br>+200,000 visits<br>New branding under development<br>Multilingual"
     },
     "jimmy-fairly": {
       "seo": {
@@ -234,7 +235,7 @@
         "description": "E-commerce website dedicated to Lacoste second-hand with custom CMS in Nuxt and Vue 3."
       },
       "description": "E-commerce website dedicated for Lacoste second hand.<br>Users can buy articles, or sell their in exchange for a gift card to spend on Lacoste. This concept powered by Faume create a circular economy for fashion brands.<br>The website use a custom CMS in Nuxt and Vue 3.",
-      "highlights": "Launched this year<br>200 000 unique users<br>Lighthouse: 61% - 78% - 74% - 100%"
+      "highlights": "Launched this year<br>200,000 unique users<br>Lighthouse: 61% - 78% - 74% - 100%"
     },
     "ami": {
       "seo": {
