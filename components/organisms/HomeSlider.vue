@@ -2,7 +2,7 @@
     <div v-if="clients?.length" ref="slider" class="fixed h-full w-full z-0">
         <div
                 ref="sliderWrapper"
-                class="absolute h-full w-[12000px] px-[600px] flex items-center gap-[100px]"
+                class="absolute h-full px-[600px] flex items-center gap-[100px]"
         >
             <div
                     v-for="client in clients"
