@@ -7,6 +7,22 @@ type RevealGroupOptions = {
     staggerDelay?: number // ms delay between each child (default: 100ms)
 }
 
+const getDelay = (index: number, staggerDelay: number) => {
+    let delay
+    if (index <= 4) {
+        delay = index * staggerDelay
+    } else if (index === 5) {
+        delay = 4 * staggerDelay+ 40
+    } else if (index === 6) {
+        delay = 4 * staggerDelay + 40 + 30
+    } else if (index === 7) {
+        delay = 4 * staggerDelay + 40 + 30 + 20
+    } else {
+        delay = 4 * staggerDelay + 40 + 30 + 20 + (index - 4) * 10
+    }
+    return delay;
+}
+
 export const vRevealGroup: Directive<HTMLElement, RevealGroupOptions | undefined> = {
     mounted(el, binding) {
         const {
@@ -16,64 +32,31 @@ export const vRevealGroup: Directive<HTMLElement, RevealGroupOptions | undefined
             staggerDelay = 100,
         } = binding.value || {}
 
-        // Get all direct children
         const children = Array.from(el.children) as HTMLElement[]
         
-        // Add reveal class to all children and set staggered delays
         children.forEach((child, index) => {
-            child.classList.add('reveal')
-            // Set staggered delay only for showing (not for hiding)
-            // First 5 children: increment by staggerDelay (100ms)
-            // From 6th child onwards: increment by 10ms from the 5th child delay
-            let delay
-            if (index <= 4) {
-                delay = index * staggerDelay
-            } else if (index === 5) {
-                delay = 4 * staggerDelay+ 40
-            } else if (index === 6) {
-                delay = 4 * staggerDelay + 40 + 30
-            } else if (index === 7) {
-                delay = 4 * staggerDelay + 40 + 30 + 20
-            } else {
-                delay = 4 * staggerDelay + 40 + 30 + 20 + (index - 4) * 10
-            }
+            child.classList.add('reveal');
+            const delay = getDelay(index, staggerDelay);
             child.style.transitionDelay = `${delay}ms`
         })
 
         const observer = new IntersectionObserver((entries) => {
             for (const entry of entries) {
                 if (entry.isIntersecting) {
-                    // Show children with staggered delays
                     children.forEach((child, index) => {
-                        // First 5 children: increment by staggerDelay (100ms)
-                        // From 6th child onwards: increment by 10ms from the 5th child delay
-                        let delay
-                        if (index <= 4) {
-                            delay = index * staggerDelay
-                        } else {
-                            delay = 4 * staggerDelay + (index - 4) * 10
-                        }
+                        const delay = getDelay(index, staggerDelay);
                         setTimeout(() => {
                             child.classList.add('reveal-show')
                         }, delay)
                     })
                     if (once) observer.unobserve(el)
                 } else if (!once) {
-                    // Hide children immediately (no delay)
                     children.forEach((child) => {
                         child.style.transitionDelay = '0ms'
                         child.classList.remove('reveal-show')
-                        // Restore staggered delay for next show
                         setTimeout(() => {
                             const index = children.indexOf(child)
-                            // First 5 children: increment by staggerDelay (100ms)
-                            // From 6th child onwards: increment by 10ms from the 5th child delay
-                            let delay
-                            if (index <= 4) {
-                                delay = index * staggerDelay
-                            } else {
-                                delay = 4 * staggerDelay + (index - 4) * 10
-                            }
+                            const delay = getDelay(index, staggerDelay);
                             child.style.transitionDelay = `${delay}ms`
                         }, 50) // Small delay to allow transition to complete
                     })
