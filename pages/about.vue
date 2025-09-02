@@ -1,8 +1,10 @@
 <template>
-    <AboutIntroduction/>
-    <AboutSkillsTimeline/>
-    <AboutCompetences/>
-    <AboutExperiencesTimeline/>
+    <div>
+        <AboutIntroduction/>
+        <AboutSkillsTimeline/>
+        <AboutCompetences/>
+        <AboutExperiencesTimeline/>
+    </div>
 </template>
 
 <script setup lang="ts">
