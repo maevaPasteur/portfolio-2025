@@ -1,0 +1,29 @@
+<template>
+    <NuxtImg
+            v-if="image"
+            :src="image"
+            :alt="alt || 'Maëva Pasteur | Portfolio'"
+            :custom="true"
+            v-slot="{ src, imgAttrs, isLoaded }"
+    >
+        <img
+                v-bind="imgAttrs"
+                :src="src"
+                class="transition-all duration-[1500ms] ease-[cubic-bezier(.19,1,.22,1)]"
+                :class="[{
+                                'opacity-0': !isLoaded,
+                                'opacity-100': isLoaded,
+                                'translate-y-[50px]': !isLoaded,
+                                'translate-y-[0px]': isLoaded,
+                            }, imgClass]"
+        />
+    </NuxtImg>
+</template>
+
+<script setup lang="ts">
+defineProps<{
+    image?: string;
+    alt?: string;
+    imgClass?: string;
+}>();
+</script>

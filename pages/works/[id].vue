@@ -1,60 +1,52 @@
 <template>
     <div>
-        <div v-if="client" class="px-6 min-h-screen flex justify-between gap-12 w-full">
-            <div class="grow pt-[100px] pb-6 ">
-                <h1 class="font-[Neutral] text-9xl mb-6">
-                    <AnimationLetterFromLeft :text="client.title"/>
-                </h1>
-                <AnimationWordFromBottom
-                        v-if="client.keywords?.length"
-                        class="gap-2 font-mono flex-wrap gap-y-1"
-                        :words="client.keywords"
-                />
-                <p v-if="description" v-html="description" v-reveal class="mt-2 font-light text-sm max-w-xl"></p>
-                <div v-if="highlights" class="mt-8">
-                    <ul class="text-sm font-light" v-reveal-group>
-                        <li
-                                v-for="item in highlights.split('<br>')"
-                                class="flex gap-2 items-center"
-                        >
-                            <span class="w-[30px] border-b border-black"></span>
-                            <span>{{ item }}</span>
-                        </li>
-                    </ul>
-                </div>
-                <Button v-if="client.url" v-reveal :to="client.url" icon="mdi:arrow-top-right" class="mt-10">
-                    {{ $t('client.see_website') }}
-                </Button>
-            </div>
-            <div class="media-3-container w-[50%] shrink-0 flex items-center">
-                <div class="flex flex-col relative gap-3 relative">
+        <div v-if="client" class="px-6 min-h-screen pb-10">
 
-                    <NuxtImg
-                            v-for="(image, i) in [mockupTablet, mockupDesktop, mockupMobile]"
-                            :src="image"
-                            :alt="client.title"
-                            :custom="true"
-                            v-slot="{ src, imgAttrs, isLoaded }"
-                    >
-                        <img
-                                v-bind="imgAttrs"
-                                :src="src"
-                                class="h-auto transition-all duration-[1500ms] ease-[cubic-bezier(.19,1,.22,1)] opacity-0 translate-y-[50px]"
-                                :class="{
-                                'is-visible': isLoaded,
-                                'relative z-0 w-full': i === 0,
-                                'relative z-[1] ml-auto w-[70%] delay-100': i === 1,
-                                'absolute z-[2] w-[35%] bottom-[10%] left-[-5%] delay-200': i === 2
-                            }"
-                        />
-                    </NuxtImg>
+            <div class="pt-[100px] grid gap-9 w-full grid-cols-[1fr_50%] grid-rows-[auto_1fr]">
 
+                <div>
+                    <h1 class="font-[Neutral] mb-6" :class="{'text-8xl': client.title?.length < 15, 'text-7xl': client.title?.length >= 15}">
+                        <AnimationLetterFromLeft :text="client.title"/>
+                    </h1>
+                    <AnimationWordFromBottom
+                            v-if="client.keywords?.length"
+                            class="gap-2 font-mono flex-wrap gap-y-1"
+                            :words="client.keywords"
+                    />
                 </div>
-                <div v-if="previousClient?.id || nextClient?.id" class="fixed z-[2] bottom-6 left-6 flex gap-2">
-                    <ButtonClient :client="previousClient" :is-previous="true"/>
-                    <ButtonClient :client="nextClient" :is-next="true"/>
+
+                <div class="row-span-2 col-start-2 flex justify-center items-center">
+                    <div class="media-container flex items-center">
+                        <ImageAnimated v-if="mockupSingleImage" :image="mockupSingleImage" :alt="client.title"/>
+                        <div v-else-if="mockupMobile && mockupTablet && mockupDesktop" class="flex flex-col relative gap-3 relative">
+                            <ImageAnimated
+                                    v-for="(image, i) in [mockupTablet, mockupDesktop, mockupMobile]"
+                                    :alt="client.title"
+                                    :image="image"
+                                    :img-class="i === 0 ? 'h-auto relative z-0 w-full' : i === 1 ? 'h-auto relative z-[1] ml-auto w-[70%] delay-100' : 'h-auto absolute z-[2] w-[35%] bottom-[10%] left-[-5%] delay-200'"
+                            />
+                        </div>
+                    </div>
                 </div>
+
+                <div class="w-full grid grid-cols-[25%_1fr] pr-[5vw] gap-4" v-reveal-group>
+                    <h2 class="font-[Neutral] uppercase text-lg">Client</h2>
+                    <div v-html="description" class="prose text-sm prose-strong:font-medium prose-ul:pl-3"></div>
+                    <h2 class="font-[Neutral] uppercase text-lg">Mission</h2>
+                    <div>
+                        <div v-html="mission" class="prose text-sm prose-strong:font-medium prose-ul:pl-3"></div>
+                        <Button v-if="client.url" :to="client.url" icon="mdi:arrow-top-right" class="mt-6">
+                            {{ $t('client.see_website') }}
+                        </Button>
+                    </div>
+                    <div v-if="previousClient?.id || nextClient?.id" class="fixed z-[3] bottom-6 left-6 flex gap-2">
+                        <ButtonClient :client="previousClient" :is-previous="true"/>
+                        <ButtonClient :client="nextClient" :is-next="true"/>
+                    </div>
+                </div>
+
             </div>
+
         </div>
     </div>
 </template>
@@ -65,6 +57,7 @@ import AnimationLetterFromLeft from "@/components/atoms/AnimationLetterFromLeft.
 import AnimationWordFromBottom from "@/components/atoms/AnimationWordFromBottom.vue";
 import ButtonClient from "@/components/atoms/ButtonClient.vue";
 import Button from "@/components/atoms/Button.vue";
+import ImageAnimated from "@/components/atoms/ImageAnimated.vue";
 
 const route = useRoute();
 const {t, te} = useI18n();
@@ -81,10 +74,11 @@ const prevNextClients = computed(() => getPrevNextClientsById(clientId.value));
 const previousClient = computed(() => prevNextClients.value?.[0]);
 const nextClient = computed(() => prevNextClients.value?.[1]);
 const description = computed(() => getClientText('description'));
-const highlights = computed(() => getClientText('highlights'));
+const mission = computed(() => getClientText('mission'));
 const mockupDesktop = computed(() => client.value?.mockups?.desktop);
 const mockupTablet = computed(() => client.value?.mockups?.tablet);
 const mockupMobile = computed(() => client.value?.mockups?.mobile);
+const mockupSingleImage = computed(() => client.value?.mockups?.image);
 
 watch(client, (data) => {
     if (data) {
@@ -102,12 +96,7 @@ definePageMeta({
 </script>
 
 <style scoped>
-.media-3-container {
+.media-container {
     max-width: calc(85vh - 100px);
-}
-
-.media-3-container img.is-visible {
-    opacity: 1;
-    transform: translateY(0);
 }
 </style>

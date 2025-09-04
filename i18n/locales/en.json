@@ -211,38 +211,311 @@
   "clients": {
     "citadium": {
       "seo": {
-        "description": "E-commerce website developed alone at +95%, in a PHP environment."
+        "description": "Redesign of Citadium’s international e-commerce front end, 95% delivered solo in a PHP/Twig environment. Performance, SEO, accessibility, and well-crafted animations."
       },
-      "description": "Official e-commerce website for Citadium<br>Developed 95% of the whole front-end alone, while working for W3Lead Agency<br>Work in a custom PHP environment",
-      "highlights": "+20M$ yearly<br>+400 000 unique user monthly<br>Conversion rate: 2.3%<br>Creative development"
+      "description": "Citadium is a flagship fashion retail brand in France with a demanding and engaged community. Its international e-commerce platform handles high volumes and targets ambitious business goals.<ul><li><strong>+400,000</strong> unique users / month</li><li><strong>~2.3%</strong> conversion rate</li><li><strong>~$20M</strong> annual revenue</li><li>Desktop and mobile journeys with high UX/UI stakes</li></ul>",
+      "mission": "As part of the full brand overhaul led by W3lead, I redeveloped the entire front end of Citadium’s international e-commerce site in a PHP/Twig environment. Ambitious project with very high expectations in UX, UI, and animation. I delivered <strong>95%</strong> of the front end solo.<ul><li><strong>Architecture</strong>: modular templates (Twig partials), reusable layout system, <em>pixel-perfect</em> UI components.</li><li><strong>Stack</strong>: HTML · SCSS (clear architecture) · JavaScript ES6.</li><li><strong>Performance & Core Web Vitals</strong>: media lazy loading, responsive images (<code>srcset</code>/<code>sizes</code>), <code>preload</code>/<code>preconnect</code>, critical CSS, minification.</li><li><strong>Technical SEO</strong>: clean semantic markup, metadata, carefully designed internal linking.</li><li><strong>Accessibility</strong>: keyboard navigation, focus states, contrasts, essential ARIA roles.</li><li><strong>Creative development</strong>: micro-interactions and refined animations with no impact on load and overall fluidity.</li></ul>"
     },
     "isabel-marant": {
       "seo": {
-        "description": "Custom e-commerce website dedicated to Isabel Marant second-hand. Shopify theme developed from scratch."
+        "description": "Custom Shopify theme for Isabel Marant’s resale channel, with a trade-in flow in Vue 2 and performance optimization."
       },
-      "description": "E-commerce website dedicated to second-hand Isabel Marant pieces.<br>Users can buy articles or resell theirs in exchange for a gift card to spend at the brand.<br>Custom Shopify theme, developed from A to Z to perfectly reflect the official brand charter.",
-      "highlights": "+€500,000 annual<br>+200,000 visits<br>New branding under development<br>Multilingual"
+      "description": "Isabel Marant is a Parisian fashion house with international reach, known for its effortless chic style and its Isabel Marant and Marant Étoile lines.<ul><li><strong>Founded</strong>: 1994</li><li><strong>Network</strong>: 66 stores worldwide</li><li><strong>€200 million</strong> in revenue</li></ul>",
+      "mission": "Full development, as a freelancer for Faume, of a circular e-commerce platform: customers can sell their Isabel Marant pieces in exchange for store credits to spend on refurbished second-hand articles authenticated by the brand.<ul><li>Shopify theme built end-to-end in HTML · SCSS · ES6</li><li>Interactive resale journey coded in <strong>Vue.js 2</strong></li><li>Performance optimizations: image <strong>lazy loading</strong>, minification</li><li>Foundational technical SEO with clean semantic markup</li><li><em>Pixel-perfect</em> integration, continuous deployment, and maintenance</li><li>Redesign planned</li></ul>"
     },
     "jimmy-fairly": {
       "seo": {
-        "description": "Shopify redesign of Jimmy Fairly's official website on Shopify with virtual glasses try-on."
+        "description": "Creation and continuous evolution of a Shopify theme for Jimmy Fairly with FittingBox virtual try-on and cross-sell mechanisms."
       },
-      "description": "E-commerce website for Jimmy Fairly. Creation and improvement of their Shopify theme. Focus on performance, design consistency and seamless user experience.<br>Integration of the FittingBox API to enable virtual try-on of glasses.",
-      "highlights": "Virtual try-on with FittingBox API<br>Integration of Weglot to increase visits by 70%<br>+6M website revenue"
+      "description": "Jimmy Fairly is an eyewear brand founded in Paris, positioned on quality frames at fair prices and expanding rapidly across Europe.<ul><li><strong>Revenue</strong>: €95M</li><li><strong>Network</strong>: 147 stores in Europe</li><li><strong>Team</strong>: 380 employees</li></ul>",
+      "mission": "Theme design and ongoing improvements at W3Lead, with a focus on performance and boosting average order value.<ul><li>Integration in HTML · SCSS · ES6 on Shopify</li><li>Virtual try-on via the <strong>FittingBox API</strong></li><li>Cross-sell: listings and carousels with <strong>smart suggestions</strong></li><li><strong>GitHub CI/CD</strong> pipeline and regular deployments</li><li>Post-launch follow-up: optimizations and fixes</li></ul>"
     },
     "lacoste": {
       "seo": {
-        "description": "E-commerce website dedicated to Lacoste second-hand with custom CMS in Nuxt and Vue 3."
+        "description": "Nuxt/Vue 3 front end for Lacoste Second Hand, with trade-in flow and interactive map."
       },
-      "description": "E-commerce website dedicated for Lacoste second hand.<br>Users can buy articles, or sell their in exchange for a gift card to spend on Lacoste. This concept powered by Faume create a circular economy for fashion brands.<br>The website use a custom CMS in Nuxt and Vue 3.",
-      "highlights": "Launched this year<br>200,000 unique users<br>Lighthouse: 61% - 78% - 74% - 100%"
+      "description": "Lacoste is an iconic French brand founded by René Lacoste, with a major global retail and digital footprint.<ul><li><strong>Stores</strong>: 1,100</li><li><strong>Countries</strong>: 98</li><li><strong>Employees</strong>: 8,200</li><li><strong>Revenue level</strong>: brand near <strong>€3B</strong></li></ul>",
+      "mission": "Development, as a freelancer for Faume, of a circular e-commerce experience in Vue 3 and Nuxt: dedicated site where Lacoste customers can exchange their worn items for store credits to acquire refurbished pieces from the brand.<ul><li>Vue 3 · Nuxt component architecture and modular SCSS</li><li><strong>Clothing-for-credit exchange system</strong> and second-hand marketplace</li><li>Interactive <strong>Mapbox</strong> map</li><li>SSR and responsive media for performance</li><li>Integration without mockups, based solely on existing brand guidelines</li></ul>"
     },
     "ami": {
       "seo": {
-        "description": "E-commerce website dedicated to Ami second-hand with custom CMS in Nuxt and Vue 3."
+        "description": "Second-hand platform for AMI with a Nuxt/Vue 3 front end and pixel-perfect mockup integration."
       },
-      "description": "E-commerce website dedicated for Ami second hand.<br>Users can buy articles, or sell their in exchange for a gift card to spend on Ami online, store or on second hand. This concept powered by Faume create a circular economy for fashion brands. The website use a custom CMS in Nuxt and Vue 3.",
-      "highlights": "Circular economy concept<br>Custom CMS<br>Vue 3 & Nuxt architecture"
+      "description": "AMI Paris is a fast-growing ready-to-wear house distributed worldwide across retail and wholesale.<ul><li><strong>Revenue</strong>: > €300M</li><li><strong>Boutiques</strong>: 75</li><li><strong>Points of sale</strong>: 700+</li><li><strong>Presence</strong>: 100+ countries</li></ul>",
+      "mission": "Development, as a freelancer for Faume, of a circular AMI boutique in Vue 3 and Nuxt: platform enabling customers to exchange their AMI garments for credits to purchase second-hand pieces certified by the brand.<ul><li>Reusable component UI kit</li><li>Dual journey: resale + circular shopping</li><li>SSR focused on SEO and load times</li><li>Refined micro-interactions</li><li>Multi-device quality checks</li></ul>"
+    },
+    "victoria-beckham": {
+      "seo": {
+        "description": "Recommerce experience for Victoria Beckham with a Nuxt/Vue 3 front end integrated to the pixel."
+      },
+      "description": "Victoria Beckham is a British fashion and beauty brand gaining momentum, with strong growth in recent years.<ul><li><strong>2024 Revenue</strong>: £112.7M</li><li><strong>2024 EBITDA</strong>: £2.2M</li><li><strong>Growth</strong>: fourth consecutive year of increase</li></ul>",
+      "mission": "Implementation, as a freelancer for Faume, of an eco-responsible Victoria Beckham boutique in Nuxt/Vue 3: customers can sell their authentic pieces for store credits to spend on second-hand articles curated by the brand.<ul><li>Modular components and editorial layouts</li><li>Server-side rendering and asset optimization</li><li>Harmonized exchange-purchase journeys</li><li>Strict respect for visual identity</li><li>Testing and QA prior to go-live</li></ul>"
+    },
+    "carel": {
+      "seo": {
+        "description": "Carel second-hand interface built in Nuxt/Vue 3 with pixel-perfect integration."
+      },
+      "description": "Carel is a Parisian footwear house founded in 1952, renowned for its Mary Janes and Italian craftsmanship.<ul><li><strong>Founded</strong>: 1952</li><li><strong>Revenue</strong>: €20M in 2023</li><li><strong>Distribution</strong>: direct network, e-shop, and ~100 retailers</li></ul>",
+      "mission": "Development, as a freelancer for Faume, of a circular e-commerce space for Carel in Nuxt/Vue 3: site enabling customers to bring their worn shoes in exchange for store credits to acquire refurbished second-hand models.<ul><li>Component design system and editorial grids</li><li>Modular SCSS and responsive images</li><li>SSR and solid technical SEO</li><li>Subtle micro-interactions</li><li>Qualification on key devices</li></ul>"
+    },
+    "marni": {
+      "seo": {
+        "description": "Marni second-hand front end with Nuxt/Vue 3 and pixel-faithful integration."
+      },
+      "description": "Marni is an Italian luxury house founded in 1994 and part of the OTB group, with an international retail network.<ul><li><strong>Boutiques</strong>: 96 worldwide</li><li><strong>Group</strong>: OTB</li><li><strong>HQ</strong>: Milan</li></ul>",
+      "mission": "Creation, as a freelancer for Faume, of a circular Marni marketplace in Nuxt/Vue 3: customers can trade their worn Marni pieces for vouchers to explore a curated selection of second-hand articles from the brand.<ul><li>Library of reusable components</li><li>SSR and media optimization</li><li>Smooth trading and circular shopping journey</li><li><em>Pixel-perfect</em> fidelity to mockups</li><li>QA and validations before go-live</li></ul>"
+    },
+    "armor-lux": {
+      "seo": {
+        "description": "Armor-Lux second-hand front end in Nuxt/Vue 3 with faithful mockup integration."
+      },
+      "description": "Armor-Lux is a French company founded in Quimper, known for maritime apparel and local manufacturing.<ul><li><strong>Revenue</strong>: €119M in 2023</li><li><strong>Staff</strong>: 600 employees</li><li><strong>Industrial sites</strong>: 3 in France</li><li><strong>Boutiques</strong>: 100 in France</li></ul>",
+      "mission": "Development, as a freelancer for Faume, of an Armor-Lux circular exchange platform in Nuxt/Vue 3: customers can bring their worn maritime pieces in exchange for store credits to discover second-hand articles authenticated by the brand.<ul><li>UI components and modular SCSS</li><li>SSR, technical SEO, and responsive images</li><li>Drop-off and circular purchase flows</li><li>Visual alignment with brand DNA</li><li>Testing and fine-tuning before launch</li></ul>"
+    },
+    "sud-express": {
+      "seo": {
+        "description": "Sud Express second-hand front end in Nuxt/Vue 3, integrated without mockups from the brand guidelines."
+      },
+      "description": "Sud Express is a Parisian women’s ready-to-wear brand founded in 1977 with an extensive retail and wholesale network in France.<ul><li><strong>Boutiques</strong>: 170 in France</li><li><strong>Team</strong>: 320+ employees</li><li><strong>Wholesale</strong>: 400 retailers</li></ul>",
+      "mission": "Design and development, as a freelancer for Faume, of a second-hand interface in Vue 3 and Nuxt, integrated without mockups based on the existing guidelines.<ul><li><strong>Atomic design</strong> approach in Vue and SCSS</li><li>Unified trade-in and second-hand shop</li><li>SSR and perceived performance</li><li>Reusable editorial components</li><li>QA and quality controls</li></ul>"
+    },
+    "temperley-london": {
+      "seo": {
+        "description": "Second-hand e-commerce platform for Temperley London with Nuxt and Vue 3. Reusable design system and tuned performance."
+      },
+      "description": "Temperley London is a British house founded by Alice Temperley, recognized for boho-luxury style and artisanal know-how. The brand enjoys international reach with a high-end clientele devoted to its iconic pieces.",
+      "mission": "Deployment, as a freelancer for Faume, of a recommerce experience faithful to the brand’s DNA, with a Nuxt and Vue 3 front end focused on performance and modularity.<ul><li><strong>Architecture</strong> typed components and token-driven design system</li><li><strong>UX</strong> clear purchase and trade-in journeys, detailed product pages</li><li><strong>Performance</strong> SSR, code splitting, and responsive images</li><li><strong>SEO</strong> clean semantics, internal linking, and metadata</li><li><strong>Accessibility</strong> focus management and essential ARIA roles</li></ul>"
+    },
+    "kids-around": {
+      "seo": {
+        "description": "Kids Around recommerce with Nuxt and Vue 3. Optimized purchase and trade-in journeys for childrenswear."
+      },
+      "description": "Kids Around brings together premium kids’ brands within a broad retail and digital ecosystem. The second-hand offer extends product life and strengthens parent engagement.",
+      "mission": "Implementation, as a freelancer for Faume, of a modular front end in Nuxt and Vue 3 for purchasing and trading in kids’ items, with an emphasis on clarity and speed.<ul><li><strong>Architecture</strong> reusable components and theming</li><li><strong>UX</strong> relevant filters by sizes, ages, and categories</li><li><strong>Performance</strong> prefetch of critical views and HTTP caching</li><li><strong>SEO</strong> clean routes and structured data</li><li><strong>Quality</strong> strict typing and basic unit tests</li></ul>"
+    },
+    "longchamp": {
+      "seo": {
+        "description": "Longchamp second-hand experience with Nuxt and Vue 3. Design system and perceived quality at accessible-luxury level."
+      },
+      "description": "Longchamp is a French leather goods house known for its iconic bags and strong international presence. The circular platform emphasizes durability and material quality.",
+      "mission": "Development, as a freelancer for Faume, of a Nuxt and Vue 3 front end respecting the visual identity and performance standards of the brand.<ul><li><strong>Architecture</strong> design system with variables and tokens</li><li><strong>UX</strong> sorting by condition, material, and availability</li><li><strong>Performance</strong> optimized SSR and resource prioritization</li><li><strong>SEO</strong> semantic markup and internal linking</li><li><strong>Accessibility</strong> contrast and keyboard navigation</li></ul>"
+    },
+    "bonpoint": {
+      "seo": {
+        "description": "Multilingual Bonpoint second-hand site. Nuxt and Vue 3 front end, trade-in flow in Vue 2, and Mapbox interactive map."
+      },
+      "description": "Bonpoint is a French luxury childrenswear house recognized for its craftsmanship and international network. The circular site extends product use and supports a sustainable approach.",
+      "mission": "Development for Faume of a multilingual theme with a Nuxt and Vue 3 front end, Vue 2 modules for trade-in and account, and Mapbox cartography.<ul><li><strong>i18n</strong> multilingual management and hreflang</li><li><strong>Trade-in</strong> guided flow in <strong>Vue 2</strong></li><li><strong>Account</strong> order tracking and history in <strong>Vue 2</strong></li><li><strong>Map</strong> <strong>Mapbox</strong> integration for service points</li><li><strong>Performance</strong> lazy media and code splitting</li></ul>"
+    },
+    "jerome-dreyfuss": {
+      "seo": {
+        "description": "High-end Shopify theme for Jérôme Dreyfuss. Pixel-perfect integration and Vue 2 modules for trade-in and account."
+      },
+      "description": "Jérôme Dreyfuss is a Parisian leather goods house prized for its leathers and functional design. A high standard of finish and consistency shapes the entire digital experience.",
+      "mission": "Freelance development for Faume of a pixel-perfect Shopify theme and Vue 2 modules dedicated to trade-in and customer account.<ul><li><strong>Integration</strong> faithful mockups, SCSS and ES6</li><li><strong>Shopify</strong> maintainable sections and templates</li><li><strong>Trade-in</strong> implemented in <strong>Vue 2</strong></li><li><strong>Account</strong> order tracking in <strong>Vue 2</strong></li><li><strong>Performance</strong> responsive images and minification</li></ul>"
+    },
+    "tara-jarmon": {
+      "seo": {
+        "description": "Shopify theme for Tara Jarmon with pixel-perfect integration. Vue 2 modules for trade-in and customer space."
+      },
+      "description": "Tara Jarmon is a Parisian women’s ready-to-wear brand recognized for cuts and colors. The digital experience highlights silhouettes and finish quality.",
+      "mission": "Delivery, as a freelancer for Faume, of a demanding Shopify theme and Vue 2 features around circularity and the customer account.<ul><li><strong>Integration</strong> pixel-perfect SCSS and ES6</li><li><strong>Shopify</strong> reusable sections, blocks, and patterns</li><li><strong>Trade-in</strong> customer journey in <strong>Vue 2</strong></li><li><strong>Account</strong> order tracking in <strong>Vue 2</strong></li><li><strong>Performance</strong> lazy loading and critical CSS</li></ul>"
+    },
+    "maison-123": {
+      "seo": {
+        "description": "Multilingual Maison 123 second-hand platform. Nuxt and Vue 3 front end, Vue 2 modules, and Mapbox map."
+      },
+      "description": "Maison 123 is a brand of the Etam group focused on refined womenswear. The circular platform highlights durability and streamlines trade-in.",
+      "mission": "Development, as a freelancer for Faume, of a multilingual experience with a Nuxt and Vue 3 front end, Vue 2 modules for trade-in and account, and Mapbox cartography.<ul><li><strong>i18n</strong> multiple locales and hreflang</li><li><strong>Trade-in</strong> flow in <strong>Vue 2</strong> with validations</li><li><strong>Account</strong> tracking and notifications in <strong>Vue 2</strong></li><li><strong>Map</strong> <strong>Mapbox</strong> integration of key locations</li><li><strong>Performance</strong> SSR and image optimization</li></ul>"
+    },
+    "vanessa-bruno": {
+      "seo": {
+        "description": "Vanessa Bruno recommerce in Nuxt and Vue 3. Scalable architecture and refined rendering."
+      },
+      "description": "Vanessa Bruno is a Parisian house recognized for modern womenswear and iconic accessories. The second-hand initiative strengthens brand affinity.",
+      "mission": "Design, as a freelancer for Faume, of a Nuxt and Vue 3 front end aligned with the guidelines, on a performant and reusable foundation.<ul><li><strong>Architecture</strong> shared components and design system</li><li><strong>UX</strong> relevant filters and sorting</li><li><strong>Performance</strong> SSR, prefetching, and caching</li><li><strong>SEO</strong> clean semantics and internal linking</li><li><strong>Accessibility</strong> contrasts and focus states</li></ul>"
+    },
+    "bash": {
+      "seo": {
+        "description": "Multilingual ba&sh second-hand site with Nuxt and Vue 3. Vue 2 modules and Mapbox integration."
+      },
+      "description": "ba&sh is a Parisian brand with international reach, appreciated for its contemporary feminine style. The second-hand channel complements the offer and boosts engagement.",
+      "mission": "Launch, as a freelancer for Faume, of a multilingual front end with Vue 2 modules and a Mapbox map for brand services.<ul><li><strong>i18n</strong> internationalization and hreflang</li><li><strong>Trade-in</strong> guided journey in <strong>Vue 2</strong></li><li><strong>Account</strong> order tracking in <strong>Vue 2</strong></li><li><strong>Map</strong> <strong>Mapbox</strong> to locate points</li><li><strong>Performance</strong> code splitting and asset optimization</li></ul>"
+    },
+    "petites-jupes-de-prune": {
+      "seo": {
+        "description": "Shopify themes for Les Petites Jupes de Prune and Les Mariés de Prune. CI/CD, SEO, and performance with advanced animations."
+      },
+      "description": "Les Petites Jupes de Prune is a French brand with a creative, digital-native positioning, an engaged audience, and strong social potential. The site showcases highly visual womenswear collections.",
+      "mission": "Front-end development at W3Lead of highly interactive Shopify themes, with strict pixel-perfect standards and a CI/CD pipeline.<ul><li><strong>Integration</strong> refined animations and micro-interactions</li><li><strong>Shopify</strong> flexible sections and maintainable templates</li><li><strong>Growth</strong> smart suggestions for cross-sell</li><li><strong>Ops</strong> continuous GitHub integration and controlled deployments</li><li><strong>Performance</strong> lazy loading, minification, and Lighthouse audits</li></ul>"
+    },
+    "faume-backoffice": {
+      "seo": {
+        "description": "Faume Back Office PWA in Vue 2 and TypeScript. 50+ business pages, advanced RBAC, complex filters, and dynamic forms."
+      },
+      "description": "Central back office of the startup Faume, a recommerce solution for fashion brands. Progressive web app in continuous production, used daily by diverse roles: Faume admins, brand teams, retail, logistics, and customer service. Architecture designed for scale and security.",
+      "mission": "Design and development, as a freelancer for Faume, of a robust and modular PWA in Vue 2 and TypeScript, evolving for 3 years and covering more than 50 unique pages.<ul><li><strong>Architecture</strong> typed components, shared stores, secure routing, and signed URLs</li><li><strong>RBAC</strong> role-based conditional views and actions for admins, employees, partners</li><li><strong>Data</strong> large tables, advanced filters, dynamic forms, and validation</li><li><strong>International</strong> multi-market and multilingual</li><li><strong>Quality</strong> CI, code reviews, targeted tests, and application monitoring</li></ul>"
+    },
+    "faume-page-builder": {
+      "seo": {
+        "description": "Page Builder and faume-nuxt NPM package. Vue 3 + Nuxt + TypeScript base to generate high-performance e-commerce sites."
+      },
+      "description": "A scalable front-end foundation combining the faume-nuxt NPM package and a Page Builder interface to configure structure and design without code. Embeds the atomic design system and custom CMS logic to launch sites very quickly.",
+      "mission": "Design, as a freelancer for Faume, of the package and visual interface to industrialize e-commerce site creation.<ul><li><strong>Stack</strong> Vue 3, Nuxt, TypeScript, Pinia, Tailwind, ES6, SEO</li><li><strong>Gains</strong> integration time reduced from several weeks to less than a day</li><li><strong>Production</strong> 10+ sites generated on this base</li><li><strong>Maps</strong> Mapbox integrations when needed</li><li><strong>Extensibility</strong> atomic components and configurable schemas</li></ul>"
+    },
+    "faume-design-system": {
+      "seo": {
+        "description": "Comprehensive Figma design system implemented in Vue 3 and SCSS. Generate brands with near-zero custom CSS."
+      },
+      "description": "Multi-brand design system stemming from experience on 40+ e-commerce sites. Exhaustive definition of UI patterns, variables, and variants in Figma, then pixel-perfect implementation in Vue 3 and SCSS to deliver a stable, modular base that deploys very fast.",
+      "mission": "Atomic strategy and unified component library, delivered as a freelancer for Faume, to accelerate production and ensure UX consistency.<ul><li><strong>Figma</strong> tokens, variants, guidelines, and page kits</li><li><strong>Front end</strong> typed Vue 3 components, organized SCSS styles</li><li><strong>Delivery</strong> new brand generated in a few hours</li><li><strong>Quality</strong> cross-site consistency and minimized CSS debt</li></ul>"
+    },
+    "airbus": {
+      "seo": {
+        "description": "Front-end work on an Airbus scope. Clean integrations and industrial-grade requirements."
+      },
+      "description": "Airbus is a global leader in aerospace with civil and military products and services. Interfaces follow high standards of reliability and accessibility in a critical industrial context.",
+      "mission": "Front-end development within Fidesio with precise integrations and adherence to software quality standards.<ul><li><strong>UI</strong> reusable components and accessibility</li><li><strong>Performance</strong> performance budgets and controlled loading</li><li><strong>Delivery</strong> collaboration with product teams and tooled workflows</li></ul>"
+    },
+    "editions-didier": {
+      "seo": {
+        "description": "Website for Éditions Didier, a publishing house founded in 1898 specializing in foreign languages and educational resources."
+      },
+      "description": "Éditions Didier is part of the Hachette group and is recognized for expertise in foreign languages and educational content. The house publishes for French and international markets and relies on innovative digital offerings.",
+      "mission": "Front-end development within Fidesio, pixel-perfect from mockups, with emphasis on readability and editorial SEO.<ul><li><strong>UI</strong> editorial templates, lists, and book pages</li><li><strong>Accessibility</strong> typographic hierarchy and keyboard navigation</li><li><strong>SEO</strong> semantic markup, metadata, and internal linking</li></ul>"
+    },
+    "epycure": {
+      "seo": {
+        "description": "Front-end improvements to Epycure’s e-commerce in React. Headless Shopify architecture and atomic design."
+      },
+      "description": "Epycure is a wellness DNVB running a headless e-commerce on Shopify. The goal is to offer a fast, clear experience for personalization and subscription.",
+      "mission": "Front-end interventions at W3Lead on a headless storefront for performance and conversion.<ul><li><strong>Pattern</strong> atomic design and reusable components</li><li><strong>SEO</strong> headless best practices and optimized rendering</li><li><strong>Growth</strong> integrations for cross-sell and recommendations</li></ul>"
+    },
+    "balzac": {
+      "seo": {
+        "description": "Recommerce platform for Balzac Paris in Nuxt and Vue 3. Modular architecture and responsible UX."
+      },
+      "description": "Balzac Paris is a French brand committed to more responsible fashion. Its retail and digital ecosystem relies on an active community and reissued capsules.",
+      "mission": "Setup, as a freelancer for Faume, of a Nuxt/Vue 3 front end aligned with the responsible DNA and performance expectations.<ul><li><strong>Architecture</strong> token-based design system and shared components</li><li><strong>UX</strong> useful filters and clear journey</li><li><strong>Performance</strong> SSR, code splitting, and responsive images</li></ul>"
+    },
+    "french-bandit": {
+      "seo": {
+        "description": "Enhancements to French Bandit Paris’s Shopify theme. UX and conversion focus."
+      },
+      "description": "French Bandit offers premium pet accessories with a strong identity. E-commerce carries the brand and its product storytelling.",
+      "mission": "Theme evolutions at W3Lead to improve readability, average order value, and perceived speed.<ul><li><strong>UI</strong> optimized product and listing templates</li><li><strong>Growth</strong> cross-sell blocks and recommendations</li><li><strong>Performance</strong> optimized assets and lighter scripts</li></ul>"
+    },
+    "butagaz": {
+      "seo": {
+        "description": "Front end of Butagaz’s online subscription platform. Customer-experience POC for green energy."
+      },
+      "description": "Butagaz is a multi-energy provider in France offering, among other things, green gas. The project aimed to test a modern, educational subscription experience around the energy transition.",
+      "mission": "Front-end development within the Fidesio team for a POC focused on clarity and efficiency.<ul><li><strong>Journey</strong> guided subscription and explicit states</li><li><strong>Data</strong> consumption view and refill anticipation</li><li><strong>UX</strong> accessible, responsive interfaces</li></ul>"
+    },
+    "groupe-soufflet": {
+      "seo": {
+        "description": "Front interfaces for a major agri-industrial player. Performance and robustness standards."
+      },
+      "description": "Groupe Soufflet, now within InVivo, is a key European player in cereals and agri-industrial processing, operating from collection to international markets.",
+      "mission": "Front-end integrations within Fidesio, compliant with business constraints and sector data volumes.<ul><li><strong>UI</strong> data tables and business views</li><li><strong>Performance</strong> progressive loading and pagination</li><li><strong>Quality</strong> tooling and consistency checks</li></ul>"
+    },
+    "leo-pharma": {
+      "seo": {
+        "description": "Doctolien medical application for LEO Pharma in Angular. Refined journey and healthcare-grade compliance."
+      },
+      "description": "LEO Pharma is a Danish group focused on dermatology, majority-owned by the LEO Foundation. International presence and strong R&D culture.",
+      "mission": "Development within Fidesio of an Angular application with quality and accessibility requirements specific to healthcare.<ul><li><strong>UI</strong> reliable forms and clear messages</li><li><strong>Security</strong> best practices and role management</li><li><strong>Performance</strong> optimized packaging and controlled loading</li></ul>"
+    },
+    "theater-in-paris": {
+      "seo": {
+        "description": "Theater in Paris cultural platform. Booking journey for an international audience."
+      },
+      "description": "Theater in Paris makes Parisian shows accessible to a global audience through an online booking experience and multilingual support.",
+      "mission": "Front-end developments within Fidesio focused on conversion and instant understanding of the offer.<ul><li><strong>UX</strong> explicit booking steps and reassurance</li><li><strong>SEO</strong> structured show pages and internal linking</li><li><strong>Performance</strong> optimized media and clean tracking</li></ul>"
+    },
+    "aigle": {
+      "seo": {
+        "description": "Multilingual Aigle second-hand platform. Nuxt and Vue 3 front end with Vue 2 modules and Mapbox cartography."
+      },
+      "description": "Aigle is a heritage French outdoor brand known for its boots and functional wardrobe. The second-hand initiative extends product use and durability.",
+      "mission": "Development, as a freelancer for Faume, of a multilingual site based on the Nuxt/Vue 3 foundation, with Vue 2 modules and an interactive map.<ul><li><strong>i18n</strong> locales and hreflang</li><li><strong>Trade-in</strong> customer journey in <strong>Vue 2</strong></li><li><strong>Map</strong> <strong>Mapbox</strong> integration</li><li><strong>Performance</strong> SSR and responsive images</li></ul>"
+    },
+    "lancaster": {
+      "seo": {
+        "description": "Lancaster second-hand platform. Multilingual Nuxt and Vue 3 front end with Vue 2 modules and Mapbox map."
+      },
+      "description": "Lancaster is a French leather goods house founded in 1990, renowned for premium bags and accessories. The second-hand approach underscores durability and a high-end image.",
+      "mission": "Development, as a freelancer for Faume, of a multilingual circular experience in Nuxt and Vue 3, enhanced with Vue 2 modules and Mapbox cartography.<ul><li><strong>i18n</strong> locale management and hreflang</li><li><strong>Trade-in</strong> customer flow built in <strong>Vue 2</strong></li><li><strong>Account</strong> tracking and history in <strong>Vue 2</strong></li><li><strong>Map</strong> <strong>Mapbox</strong> integration</li><li><strong>Performance</strong> SSR and optimized images</li></ul>"
+    },
+    "cabaia": {
+      "seo": {
+        "description": "Optimization of Cabaia’s Shopify theme to boost sales. Vue.js mini-cart with smart cross-sell and gift-tier system."
+      },
+      "description": "Cabaia is a French brand known for customizable bags and accessories. Its e-commerce channel plays a key role in growth and creative marketing strategies.",
+      "mission": "Improvements to the existing Shopify theme at W3Lead to maximize performance and conversion, with specific Vue.js developments.<ul><li><strong>Mini-cart</strong> built in <strong>Vue 2 + Vuex</strong> with smart cross-sell and gift tiers</li><li><strong>UI</strong> dynamic bag color selection</li><li><strong>Stack</strong> Shopify Liquid, SCSS, JavaScript ES6</li><li><strong>Performance</strong> SEO and Lighthouse optimizations</li><li><strong>Delivery</strong> pixel-perfect integrations and CI follow-up</li></ul>"
+    },
+    "claudie-pierlot": {
+      "seo": {
+        "description": "Claudie Pierlot second-hand site. Multilingual experience developed in Nuxt and Vue 3 with Vue 2 modules and Mapbox."
+      },
+      "description": "Claudie Pierlot is a French house of the SMCP group, embodying a Parisian feminine wardrobe. The circular platform strengthens the brand’s sustainability image.",
+      "mission": "Development, as a freelancer for Faume, of a multilingual front end in Nuxt and Vue 3, with Vue 2 modules and Mapbox integration.<ul><li><strong>i18n</strong> multiple locales</li><li><strong>Trade-in</strong> customer journey in <strong>Vue 2</strong></li><li><strong>Account</strong> order tracking in <strong>Vue 2</strong></li><li><strong>Map</strong> <strong>Mapbox</strong> integration</li><li><strong>Performance</strong> SSR and optimized assets</li></ul>"
+    },
+    "g-star": {
+      "seo": {
+        "description": "G-Star RAW second-hand platform in Nuxt and Vue 3. Modular architecture and Mapbox interactive map."
+      },
+      "description": "G-Star RAW is a Dutch international brand known for premium denim and textile innovation. The second-hand experience supports its sustainability commitments.",
+      "mission": "Creation, as a freelancer for Faume, of a sustainable denim marketplace G-Star RAW with Nuxt and Vue 3: customers can bring their worn jeans in exchange for store credits for second-hand articles certified by the brand.<ul><li><strong>Stack</strong> Nuxt, Vue 3, SCSS</li><li><strong>Map</strong> Mapbox for collection points</li><li><strong>UX</strong> product filters and denim exchange flow</li><li><strong>Performance</strong> prefetch and responsive images</li><li><strong>SEO</strong> clear semantics and structured data</li></ul>"
+    },
+    "hugo-boss": {
+      "seo": {
+        "description": "Hugo Boss second-hand experience with a Nuxt and Vue 3 front end. Modularity and optimized circular journey."
+      },
+      "description": "Hugo Boss is a global leader in premium apparel and accessible luxury, present in more than 120 countries. The circular channel aligns with its sustainability initiatives.",
+      "mission": "Development, as a freelancer for Faume, of a luxury resale experience Hugo Boss with Nuxt and Vue 3: customers can exchange their suits and premium pieces for credits to acquire expertised second-hand articles.<ul><li><strong>Stack</strong> Nuxt, Vue 3, SCSS</li><li><strong>Luxury exchange</strong> smooth buy/sell journey</li><li><strong>Map</strong> integrated Mapbox</li><li><strong>Performance</strong> optimized SSR</li><li><strong>SEO</strong> clean markup and metadata</li></ul>"
+    },
+    "isotoner": {
+      "seo": {
+        "description": "Isotoner Shopify e-commerce site. Pixel-perfect integration, smooth UX, and scalable architecture."
+      },
+      "description": "Isotoner is a global leader in gloves, slippers, and umbrellas, distributed in over 40 countries and generating more than $100M in annual revenue. Millions of products are sold each year across retail and online channels.",
+      "mission": "Development of Isotoner’s Shopify site at W3Lead with a high standard of integration and UX.<ul><li><strong>Stack</strong> Shopify Liquid, SCSS, JavaScript ES6</li><li><strong>Integration</strong> pixel-perfect product and listing templates</li><li><strong>UX</strong> fluid navigation and simple purchase journey</li><li><strong>Performance</strong> Lighthouse optimization and baseline SEO</li><li><strong>Scalability</strong> modular integrations suited to internationalization</li></ul>"
+    },
+    "leo-violette": {
+      "seo": {
+        "description": "Improvements to Léo et Violette’s Shopify theme. New custom sections and no-code integrations for the marketing team."
+      },
+      "description": "Léo et Violette is a young French luxury leather goods house, with €1.5M in annual revenue and steady growth. E-commerce is a central channel with excellent Lighthouse scores.",
+      "mission": "Theme development and enhancements at W3Lead for greater flexibility and conversion.<ul><li><strong>UI</strong> new custom sections</li><li><strong>UX</strong> dynamic product color selection</li><li><strong>Ops</strong> Shogun integration for no-code commercial pages</li><li><strong>Performance</strong> Lighthouse 76-93-96-100</li><li><strong>SEO</strong> clean markup and metadata</li></ul>"
+    },
+    "sandro": {
+      "seo": {
+        "description": "International Sandro second-hand platform. Multilingual development in Nuxt and Vue 3 with Vue 2 modules."
+      },
+      "description": "Sandro is a French house of the SMCP group, with strong international retail and digital presence. The second-hand site supports loyalty and a sustainable image.",
+      "mission": "Deployment, as a freelancer for Faume, of a multilingual front end in Nuxt and Vue 3 with Vue 2 modules and interactive mapping.<ul><li><strong>i18n</strong> multiple languages</li><li><strong>Trade-in</strong> flow built in <strong>Vue 2</strong></li><li><strong>Account</strong> order tracking in <strong>Vue 2</strong></li><li><strong>Map</strong> Mapbox integration</li><li><strong>Performance</strong> SSR and optimized images</li></ul>"
+    },
+    "soeur": {
+      "seo": {
+        "description": "Soeur recommerce experience in Nuxt and Vue 3. Modularity and optimized circular journey."
+      },
+      "description": "Soeur is a French womenswear brand founded in 2008, with a minimalist identity and international growth. The circular platform extends product durability.",
+      "mission": "Creation, as a freelancer for Faume, of a shared wardrobe concept Soeur with Nuxt and Vue 3: customers can give their pieces for credits to buy second-hand clothes validated by the creative team.<ul><li><strong>Stack</strong> Nuxt, Vue 3, SCSS</li><li><strong>UX</strong> relevant filters and sorting</li><li><strong>Map</strong> Mapbox for service points</li><li><strong>Performance</strong> optimized SSR</li><li><strong>SEO</strong> semantic markup and structured data</li></ul>"
+    },
+    "mali-hakika": {
+      "seo": {
+        "description": "Mali Hakika PWA for the Kenyan real-estate market. Vue 3 + Nuxt + Vuetify front end and Node + Express + MongoDB API."
+      },
+      "description": "Mali Hakika is an agency and digital real-estate platform in Kenya. Every property is manually verified by an agent to guarantee trust and safety. The application is a Progressive Web App designed for both desktop and mobile.",
+      "mission": "Full development, as a freelancer, of the PWA front end and a scalable back end.<ul><li><strong>Front end</strong> Vue 3, Nuxt, Vuetify, Pinia, Mapbox</li><li><strong>API</strong> Node, Express, MongoDB, TypeScript, Cloudinary</li><li><strong>Features</strong> accounts, roles, verified listings, restricted access</li><li><strong>Ops</strong> CI/CD with Vercel and Railway</li><li><strong>Performance</strong> optimized, responsive, fast PWA</li></ul>"
+    },
+    "the-kooples": {
+      "seo": {
+        "description": "International The Kooples second-hand platform in Nuxt and Vue 3. Vue 2 modules and multilingual."
+      },
+      "description": "The Kooples is a French house of the SMCP group, present in 30+ countries with a strong rock-chic DNA. The second-hand initiative supports its sustainability strategy and retains its community.",
+      "mission": "Implementation, as a freelancer for Faume, of a sustainable rock-chic boutique The Kooples multilingual with Nuxt and Vue 3: customers can resell their iconic pieces for store credits for second-hand articles selected by the stylists.<ul><li><strong>i18n</strong> internationalization and hreflang</li><li><strong>Resale</strong> journey in <strong>Vue 2</strong></li><li><strong>Account</strong> order tracking in <strong>Vue 2</strong></li><li><strong>Map</strong> Mapbox integration</li><li><strong>Performance</strong> SSR and Lighthouse optimization</li></ul>"
     }
   }
 }

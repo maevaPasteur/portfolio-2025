@@ -265,7 +265,11 @@ export const useClientsStore = defineStore('clients', {
                 role: 'Front-End',
                 tech: ['VUE 2', 'Vuex', 'TypeScript', 'PWA', 'CHARTJS'],
                 keywords: ['VUE 2', 'Vuex', 'TypeScript', 'PWA', 'CHARTJS'],
-                mockups: {},
+                mockups: {
+                    desktop: '/mockups/faume-backoffice2.png',
+                    tablet: '/mockups/faume-backoffice1.png',
+                    mobile: '/mockups/faume-backoffice3.png',
+                },
                 url: ''
             },
             {
@@ -279,7 +283,9 @@ export const useClientsStore = defineStore('clients', {
                 role: 'Front-End',
                 tech: ['VUE 3', 'Nuxt', 'TypeScript', 'Tailwind'],
                 keywords: ['PAGE BUILDER', 'CMS', 'BLOCS', 'WYSIWYG', 'NUXT', 'VUE 3', 'TYPESCRIPT', 'A/B TEST', 'SEO', 'ANIMATIONS', 'ATOMIC DESIGN'],
-                mockups: {},
+                mockups: {
+                    image: '/portraits/faume-page-builder.webp'
+                },
                 url: ''
             },
             {

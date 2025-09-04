@@ -2,7 +2,7 @@
     <NuxtLink
             v-if="client?.id"
             :to="localePath({name: 'works-id', params: {id: client.id}})"
-            class="group/btn border min-h-10 min-w-10 px-3 flex items-center justify-center"
+            class="group/btn border min-h-10 min-w-10 bg-white px-3 flex items-center justify-center"
     >
         <Icon v-if="isPrevious" name="mdi:arrow-left"/>
         <span class="max-w-0 overflow-hidden whitespace-nowrap duration-[700ms] ease group-hover/btn:max-w-xs">
