@@ -1,8 +1,8 @@
 <template>
-    <div v-if="clients?.length" ref="slider" class="fixed h-full w-full z-0">
+    <div v-if="clients?.length" ref="slider" class="fixed w-full z-0 md:h-full md:top-0 h-[calc(100vh-270px)] bottom-0">
         <div
                 ref="sliderWrapper"
-                class="absolute h-full px-[50vw] lg:px-[600px] flex items-center gap-4 md:gap-[100px]"
+                class="md:absolute absolute md:h-full h-full px-6 md:px-[50vw] lg:px-[600px] flex items-center gap-1 md:gap-[100px]"
         >
             <div
                     v-for="client in clients"
@@ -21,12 +21,13 @@
                             loading="lazy"
                     />
                 </div>
-                <div class="absolute left-0 top-[-2%] w-full pb-1 -translate-y-full text-right font-mono text-xs overflow-hidden">
+                <span class="absolute left-O top-0 w-full pb-1 -translate-y-full text-xs font-semibold">{{ client.title }}</span>
+                <div class="absolute left-0 -bottom-[2%] lg:bottom-auto lg:top-[-2%] w-full pb-1 translate-y-full lg:-translate-y-full text-right font-mono text-xs overflow-hidden">
                     <span class="flex gap-2 overflow-hidden">
                         <span
                                 v-for="(techno, i) in client.tech"
                                 :style="{'transition-delay': `${i*50}ms`}"
-                                class="shrink-0 block opacity-0 duration-[700ms] ease-[cubic-bezier(.19,1,.22,1)] translate-y-2 group-hover/home-slide:translate-y-0 group-hover/home-slide:opacity-100"
+                                class="shrink-0 block lg:opacity-0 duration-[700ms] ease-[cubic-bezier(.19,1,.22,1)] lg:translate-y-2 group-hover/home-slide:translate-y-0 group-hover/home-slide:opacity-100"
                         >{{ techno }}</span>
                     </span>
                 </div>
@@ -98,6 +99,9 @@ const sliderState: SliderState = reactive({
 
 const windowHalfWidth = computed(() => window?.innerWidth / 2 || 0)
 const isDesktop = ref(false)
+const touchStart = ref(0)
+const touchCurrent = ref(0)
+const isDragging = ref(false)
 
 const clamp = (value: number, min: number, max: number): number =>
   Math.max(min, Math.min(max, value))
@@ -158,16 +162,53 @@ const update = () => {
 }
 
 const handleWheel = (event: WheelEvent) => {
-  sliderState.target = clamp(
-    sliderState.target + event.deltaY, 
-    0, 
-    sliderState.maxScroll
-  )
+  if (isDesktop.value) {
+    // Desktop: scroll vertical contrôle le slider horizontal
+    sliderState.target = clamp(
+      sliderState.target + event.deltaY, 
+      0, 
+      sliderState.maxScroll
+    )
+  } else {
+    // Mobile: scroll horizontal natif
+    if (Math.abs(event.deltaX) > Math.abs(event.deltaY)) {
+      sliderState.target = clamp(
+        sliderState.target + event.deltaX, 
+        0, 
+        sliderState.maxScroll
+      )
+    }
+  }
 }
 
 const handleResize = () => {
   sliderState.maxScroll = computeMaxScroll()
   sliderState.target = clamp(sliderState.target, 0, sliderState.maxScroll)
+}
+
+const handleTouchStart = (event: TouchEvent) => {
+  if (isDesktop.value) return
+  touchStart.value = event.touches[0].clientX
+  touchCurrent.value = sliderState.target
+  isDragging.value = true
+}
+
+const handleTouchMove = (event: TouchEvent) => {
+  if (isDesktop.value || !isDragging.value) return
+  
+  const touchX = event.touches[0].clientX
+  const deltaX = touchStart.value - touchX
+  
+  sliderState.target = clamp(
+    touchCurrent.value + deltaX * 2, // Multiplication par 2 pour plus de sensibilité
+    0,
+    sliderState.maxScroll
+  )
+}
+
+const handleTouchEnd = () => {
+  if (isDesktop.value) return
+  isDragging.value = false
 }
 
 const handleMouseEnter = (client: Client) => {
@@ -214,6 +255,12 @@ onMounted(async (): Promise<void> => {
   window.addEventListener('wheel', handleWheel, { passive: true })
   window.addEventListener('resize', handleResize)
   
+  if (!isDesktop.value && sliderWrapper.value) {
+    sliderWrapper.value.addEventListener('touchstart', handleTouchStart, { passive: true })
+    sliderWrapper.value.addEventListener('touchmove', handleTouchMove, { passive: true })
+    sliderWrapper.value.addEventListener('touchend', handleTouchEnd, { passive: true })
+  }
+  
   sliderState.rafId = requestAnimationFrame(update)
 })
 
@@ -226,5 +273,11 @@ onBeforeUnmount(() => {
   
   window.removeEventListener('wheel', handleWheel)
   window.removeEventListener('resize', handleResize)
+  
+  if (!isDesktop.value && sliderWrapper.value) {
+    sliderWrapper.value.removeEventListener('touchstart', handleTouchStart)
+    sliderWrapper.value.removeEventListener('touchmove', handleTouchMove)
+    sliderWrapper.value.removeEventListener('touchend', handleTouchEnd)
+  }
 });
 </script>
