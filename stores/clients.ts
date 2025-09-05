@@ -48,7 +48,7 @@ export const useClientsStore = defineStore('clients', {
                 portrait: '/portraits/jimmyfairly2.webp',
                 startup: null,
                 agency: 'W3lead',
-                filters: ["SHOPIFY", "FRONT", "VUE"],
+                filters: ["SHOPIFY", "FRONT"],
                 role: 'Front-End',
                 tech: ['Shopify', 'Liquid', 'SCSS', 'JavaScript'],
                 keywords: ['SHOPIFY', 'LIQUID', 'SCSS', 'JAVASCRIPT', 'SEO', 'PIXEL PERFECT'],
@@ -210,8 +210,8 @@ export const useClientsStore = defineStore('clients', {
                 agency: null,
                 filters: ['FRONT', 'VUE'],
                 role: 'Front-End',
-                tech: ['VUE 3', 'Nuxt', 'Pinia', 'SCSS'],
-                keywords: ['VUE 3', 'NUXT'],
+                tech: ['VUE 3', 'Nuxt', 'Pinia', 'SCSS', 'Typescript', 'SEO'],
+                keywords: ['VUE 3', 'NUXT', 'Typescript', 'SCSS', 'SEO', 'PINIA'],
                 mockups: {
                     desktop: '/mockups/temperley3.png',
                     tablet: '/mockups/temperley2.png',
@@ -228,8 +228,8 @@ export const useClientsStore = defineStore('clients', {
                 agency: null,
                 filters: ['FRONT', 'VUE'],
                 role: 'Front-End',
-                tech: ['VUE 3', 'Nuxt', 'Pinia', 'SCSS'],
-                keywords: ['VUE 3', 'NUXT'],
+                tech: ['VUE 3', 'Nuxt', 'Pinia', 'SCSS', 'Typescript'],
+                keywords: ['VUE 3', 'NUXT', 'TYPESCRIPT', 'SCSS', 'ES6', 'SEO'],
                 mockups: {
                     desktop: '/mockups/kids-around2.png',
                     tablet: '/mockups/kids-around1.png',
@@ -244,10 +244,10 @@ export const useClientsStore = defineStore('clients', {
                 portrait: '/portraits/faume-page-builder.webp',
                 startup: 'Faume',
                 agency: null,
-                filters: ['APP', 'FRONT', 'VUE'],
+                filters: ['FRONT', 'VUE'],
                 role: 'Front-End',
                 tech: ['VUE 3', 'Nuxt', 'TypeScript', 'Tailwind'],
-                keywords: ['PAGE BUILDER', 'CMS', 'BLOCS', 'WYSIWYG', 'NUXT', 'VUE 3', 'TYPESCRIPT', 'A/B TEST', 'SEO', 'ANIMATIONS', 'ATOMIC DESIGN'],
+                keywords: ['PAGE BUILDER', 'CMS', 'WYSIWYG', 'NUXT', 'VUE 3', 'PINIA', 'TYPESCRIPT',  'SEO', 'ATOMIC DESIGN'],
                 mockups: {
                     image: '/portraits/faume-page-builder.webp'
                 },
@@ -263,7 +263,7 @@ export const useClientsStore = defineStore('clients', {
                 filters: ['SHOPIFY', 'FRONT'],
                 role: 'Front-End',
                 tech: ['Shopify', 'Liquid', 'SCSS', 'JavaScript'],
-                keywords: ['SHOPIFY', 'LIQUID', 'SCSS', 'JAVASCRIPT', 'ES6', 'SEO', 'MAPBOX', 'PIXEL PERFECT'],
+                keywords: ['SHOPIFY', 'LIQUID', 'SCSS', 'JAVASCRIPT', 'ES6', 'SEO', 'PIXEL PERFECT'],
                 mockups: {
                     desktop: '/mockups/french-bandit2.png',
                     tablet: '/mockups/french-bandit1.png',
@@ -291,15 +291,15 @@ export const useClientsStore = defineStore('clients', {
             },
             {
                 id: 'faume-design-system',
-                title: 'Faume Design System (Atomic)',
+                title: 'Atomic Design System',
                 logo: '',
                 portrait: '/portraits/faume-design-system.webp',
                 startup: 'Faume',
                 agency: null,
-                filters: ['DESIGN SYSTEM', 'FRONT', 'VUE'],
+                filters: ['DESIGN', 'FRONT', 'VUE'],
                 role: 'Front-End',
-                tech: ['Figma', 'Storybook', 'Tailwind', 'VUE 3', 'Nuxt', 'TypeScript'],
-                keywords: ['ATOMIC DESIGN', 'DESIGN TOKENS', 'THEMING', 'DARK MODE', 'STORYBOOK', 'A11Y', 'TAILWIND', 'VUE 3', 'NUXT', 'PERFORMANCES', 'UX CONSISTENCY'],
+                tech: ['Figma', 'Storybook', 'VUE 3', 'Nuxt', 'TypeScript'],
+                keywords: ['ATOMIC DESIGN', 'THEMING', 'STORYBOOK', 'VUE 3', 'NUXT', 'UI UX Design', 'FIGMA'],
                 mockups: {
                     image: '/portraits/faume-design-system.webp'
                 },
@@ -315,7 +315,7 @@ export const useClientsStore = defineStore('clients', {
                 filters: ['FRONT', 'VUE'],
                 role: 'Front-End',
                 tech: ['VUE 3', 'Pinia', 'Nuxt', 'TypeScript', 'SCSS'],
-                keywords: ['VUE 3', 'NUXT', 'TYPESCRIPT', 'Atomic Design', 'SEO'],
+                keywords: ['VUE 3', 'NUXT', 'TYPESCRIPT', 'Atomic Design', 'SEO', 'PINIA'],
                 mockups: {
                     desktop: '/mockups/victoria-beckham2.png',
                     tablet: '/mockups/victoria-beckham1.png',
@@ -333,7 +333,7 @@ export const useClientsStore = defineStore('clients', {
                 filters: ['FRONT', 'VUE'],
                 role: 'Front-End',
                 tech: ['VUE 3', 'Nuxt', 'Pinia', 'SCSS'],
-                keywords: ['VUE 3', 'NUXT', 'SEO', 'Design System'],
+                keywords: ['VUE 3', 'NUXT', 'SEO', 'Atomic Design', 'Typescript'],
                 mockups: {
                     desktop: '/mockups/carel3.png',
                     tablet: '/mockups/carel2.png',
@@ -367,7 +367,7 @@ export const useClientsStore = defineStore('clients', {
                 filters: ['FRONT', 'VUE'],
                 role: 'Front-End',
                 tech: ['VUE 3', 'Nuxt', 'Pinia', 'SCSS'],
-                keywords: ['VUE 3', 'NUXT', 'SEO'],
+                keywords: ['VUE 3', 'NUXT', 'SEO', 'PINIA', 'SCSS', 'PIXEL PERFECT'],
                 mockups: {
                     desktop: '/mockups/armor-lux3.png',
                     tablet: '/mockups/armor-lux2.png',
@@ -385,7 +385,7 @@ export const useClientsStore = defineStore('clients', {
                 filters: ['FRONT', 'VUE'],
                 role: 'Front-End',
                 tech: ['VUE 3', 'Nuxt', 'Pinia', 'SCSS'],
-                keywords: ['VUE 3', 'NUXT', 'Atomic Design'],
+                keywords: ['VUE 3', 'NUXT', 'Atomic Design', 'PINIA', 'SCSS', 'PIXEL PERFECT'],
                 mockups: {
                     desktop: '/mockups/sud-express2.png',
                     tablet: '/mockups/sud-express1.png',
@@ -419,8 +419,8 @@ export const useClientsStore = defineStore('clients', {
                 agency: null,
                 filters: ['FRONT', 'VUE'],
                 role: 'Front-End',
-                tech: ['VUE 3', 'Nuxt', 'Pinia', 'SCSS'],
-                keywords: ['VUE 3', 'NUXT'],
+                tech: ['VUE 3', 'Nuxt', 'Pinia', 'SCSS', 'Typescript'],
+                keywords: ['VUE 3', 'NUXT', 'SCSS', 'SEO', 'TYPESCRIPT', 'MAPBOX', 'Atomic Design'],
                 mockups: {
                     desktop: '/mockups/soeur2.png',
                     tablet: '/mockups/soeur1.png',
@@ -452,7 +452,7 @@ export const useClientsStore = defineStore('clients', {
                 portrait: '/portraits/mali-hakika.webp',
                 startup: null,
                 agency: null,
-                filters: ['FRONT', 'VUE'],
+                filters: ['FRONT', 'VUE', 'PWA', 'BACK', 'DESIGN'],
                 role: 'Front-End',
                 tech: ['VUE 3', 'Nuxt', 'Pinia', 'Vuetify', 'PWA'],
                 keywords: ['VUE 3', 'Nuxt', 'Pinia', 'Vuetify', 'PWA'],
@@ -470,10 +470,10 @@ export const useClientsStore = defineStore('clients', {
                 portrait: '/portraits/jerome-dreyfuss.webp',
                 startup: null,
                 agency: 'W3lead',
-                filters: ['SHOPIFY', 'FRONT'],
+                filters: ['SHOPIFY', 'FRONT', 'VUE'],
                 role: 'Front-End',
-                tech: ['Shopify', 'Liquid', 'SCSS', 'JavaScript'],
-                keywords: ['SHOPIFY', 'LIQUID', 'PIXEL PERFECT'],
+                tech: ['Shopify', 'Liquid', 'SCSS', 'JavaScript', 'Vue 2', 'VUEX'],
+                keywords: ['SHOPIFY', 'LIQUID', 'PIXEL PERFECT', 'VUE 2', 'VUEX', 'SCSS'],
                 mockups: {
                     desktop: '/mockups/jerome-dreyfuss2.png',
                     tablet: '/mockups/jerome-dreyfuss1.png',
@@ -488,10 +488,10 @@ export const useClientsStore = defineStore('clients', {
                 portrait: '/portraits/tara-jarmon.webp',
                 startup: null,
                 agency: 'W3lead',
-                filters: ['SHOPIFY', 'FRONT'],
+                filters: ['SHOPIFY', 'FRONT', 'VUE'],
                 role: 'Front-End',
-                tech: ['Shopify', 'Liquid', 'SCSS', 'JavaScript'],
-                keywords: ['SHOPIFY', 'LIQUID'],
+                tech: ['Shopify', 'Liquid', 'SCSS', 'JavaScript', 'Vue 2', 'Vuex'],
+                keywords: ['SHOPIFY', 'LIQUID', 'VUE 2', 'VUEX', 'SCSS', 'PIXEL PERFECT'],
                 mockups: {
                     desktop: '/mockups/tara-jarmon2.png',
                     tablet: '/mockups/tara-jarmon1.png',
@@ -506,10 +506,10 @@ export const useClientsStore = defineStore('clients', {
                 portrait: '/portraits/maison123.webp',
                 startup: null,
                 agency: 'W3lead',
-                filters: ['SHOPIFY', 'FRONT'],
+                filters: ['SHOPIFY', 'FRONT', 'VUE'],
                 role: 'Front-End',
-                tech: ['Shopify', 'Liquid', 'SCSS', 'JavaScript'],
-                keywords: ['SHOPIFY', 'LIQUID'],
+                tech: ['Shopify', 'Liquid', 'SCSS', 'JavaScript', 'Vue 2', 'Vuex'],
+                keywords: ['SHOPIFY', 'LIQUID', 'VUE 2', 'VUEX', 'SCSS', 'PIXEL PERFECT'],
                 mockups: {
                     desktop: '/mockups/maison123-3.png',
                     tablet: '/mockups/maison123-2.png',
@@ -526,8 +526,8 @@ export const useClientsStore = defineStore('clients', {
                 agency: null,
                 filters: ['FRONT', 'VUE'],
                 role: 'Front-End',
-                tech: ['VUE 3', 'Nuxt', 'Pinia', 'SCSS'],
-                keywords: ['VUE 3', 'NUXT'],
+                tech: ['VUE 3', 'Nuxt', 'Pinia', 'SCSS', 'Typescript'],
+                keywords: ['VUE 3', 'NUXT', 'SCSS', 'SEO', 'TYPESCRIPT', 'MAPBOX', 'Atomic Design'],
                 mockups: {
                     desktop: '/mockups/vanessa-bruno2.png',
                     tablet: '/mockups/vanessa-bruno1.png',
@@ -542,10 +542,10 @@ export const useClientsStore = defineStore('clients', {
                 portrait: '/portraits/bonpoint.webp',
                 startup: 'Faume',
                 agency: null,
-                filters: ['FRONT', 'VUE'],
+                filters: ['FRONT', 'VUE', 'SHOPIFY'],
                 role: 'Front-End',
-                tech: ['VUE 3', 'Nuxt', 'Pinia', 'SCSS'],
-                keywords: ['VUE 3', 'NUXT'],
+                tech: ['VUE 2', 'Vuex', 'Shopify', 'SCSS', 'ES6'],
+                keywords: ['VUE 2', 'Vuex', 'Shopify', 'Liquid', 'Scss', 'MapBox', 'JAVASCRIPT', 'ES6'],
                 mockups: {
                     desktop: '/mockups/bonpoint2.png',
                     tablet: '/mockups/bonpoint1.png',
@@ -560,10 +560,10 @@ export const useClientsStore = defineStore('clients', {
                 portrait: '/portraits/bash.webp',
                 startup: 'Faume',
                 agency: null,
-                filters: ['SHOPIFY', 'FRONT'],
+                filters: ['SHOPIFY', 'FRONT', 'VUE'],
                 role: 'Front-End',
-                tech: ['Shopify', 'Liquid', 'SCSS', 'JavaScript'],
-                keywords: ['SHOPIFY', 'LIQUID'],
+                tech: ['Shopify', 'Liquid', 'SCSS', 'JavaScript', 'VUE'],
+                keywords: ['SHOPIFY', 'LIQUID', 'SCSS', 'JavaScript', 'ES6', 'VUE 2', 'VUEX'],
                 mockups: {
                     desktop: '/mockups/bash1.png',
                     tablet: '/mockups/bash2.png',
@@ -596,7 +596,7 @@ export const useClientsStore = defineStore('clients', {
                 portrait: '/portraits/editions-didier.webp',
                 startup: null,
                 agency: 'W3lead',
-                filters: ['SHOPIFY', 'FRONT'],
+                filters: ['SHOPIFY', 'FRONT', 'PHP ENV'],
                 role: 'Front-End',
                 tech: ['Shopify', 'Liquid', 'SCSS', 'JavaScript'],
                 keywords: ['SHOPIFY', 'LIQUID', 'SCSS', 'JAVASCRIPT', 'ES6', 'SEO', 'PERFORMANCES', 'PIXEL PERFECT', 'THEME SECTIONS'],
@@ -612,10 +612,10 @@ export const useClientsStore = defineStore('clients', {
                 portrait: '/portraits/epycure.webp',
                 startup: null,
                 agency: 'W3lead',
-                filters: ['SHOPIFY', 'FRONT'],
+                filters: ['SHOPIFY', 'FRONT', 'REACT'],
                 role: 'Front-End',
-                tech: ['Shopify', 'Liquid', 'SCSS', 'JavaScript'],
-                keywords: ['SHOPIFY', 'LIQUID', 'SCSS', 'JAVASCRIPT', 'ES6', 'SEO', 'A/B TEST', 'PIXEL PERFECT', 'PERFORMANCES'],
+                tech: ['REACT', 'SCSS', 'JavaScript'],
+                keywords: ['REACT', 'SCSS', 'JAVASCRIPT', 'ES6', 'SEO', 'PIXEL PERFECT', 'PERFORMANCES', 'Atomic Design'],
                 mockups: {
                     desktop: '/mockups/epycure1.png',
                     tablet: '/mockups/epycure2.png',
@@ -630,7 +630,7 @@ export const useClientsStore = defineStore('clients', {
                 portrait: '/portraits/faume-backoffice.webp',
                 startup: 'Faume',
                 agency: null,
-                filters: ['APP', 'FRONT', 'VUE'],
+                filters: ['PWA', 'FRONT', 'VUE'],
                 role: 'Front-End',
                 tech: ['VUE 2', 'Vuex', 'TypeScript', 'PWA', 'CHARTJS'],
                 keywords: ['VUE 2', 'Vuex', 'TypeScript', 'PWA', 'CHARTJS'],
@@ -651,7 +651,7 @@ export const useClientsStore = defineStore('clients', {
                 filters: ['FRONT', 'VUE'],
                 role: 'Front-End',
                 tech: ['VUE 3', 'Nuxt', 'Pinia', 'SCSS', 'TypeScript'],
-                keywords: ['VUE 3', 'NUXT', 'PINIA', 'SCSS', 'TYPESCRIPT', 'SEO', 'ATOMIC DESIGN', 'DESIGN TOKENS', 'PERFORMANCES'],
+                keywords: ['VUE 3', 'NUXT', 'PINIA', 'SCSS', 'TYPESCRIPT', 'SEO', 'ATOMIC DESIGN', 'PERFORMANCES'],
                 mockups: {
                     desktop: '/mockups/balzac2.png',
                     tablet: '/mockups/balzac1.png',
@@ -716,10 +716,10 @@ export const useClientsStore = defineStore('clients', {
                 portrait: '/portraits/theater-in-paris.webp',
                 startup: null,
                 agency: 'W3lead',
-                filters: ['SHOPIFY', 'FRONT'],
+                filters: ['SHOPIFY', 'FRONT', 'PHP ENV'],
                 role: 'Front-End',
-                tech: ['Shopify', 'Liquid', 'SCSS', 'JavaScript'],
-                keywords: ['SHOPIFY', 'LIQUID', 'SCSS', 'JAVASCRIPT', 'ES6', 'SEO', 'INTERNATIONAL', 'PIXEL PERFECT'],
+                tech: ['SCSS', 'JavaScript', 'PHP Env'],
+                keywords: ['PHP ENV', 'SCSS', 'JAVASCRIPT', 'ES6', 'SEO', 'INTERNATIONAL', 'PIXEL PERFECT'],
                 mockups: {
                     desktop: '/mockups/theater-in-paris1.png',
                     tablet: '/mockups/theater-in-paris2.png',
@@ -734,10 +734,10 @@ export const useClientsStore = defineStore('clients', {
                 portrait: '/portraits/aigle.webp',
                 startup: 'Faume',
                 agency: null,
-                filters: ['FRONT', 'VUE'],
+                filters: ['FRONT', 'VUE', 'SHOPIFY'],
                 role: 'Front-End',
-                tech: ['VUE 3', 'Nuxt', 'Pinia', 'SCSS', 'TypeScript'],
-                keywords: ['VUE 3', 'NUXT', 'PINIA', 'SCSS', 'TYPESCRIPT', 'SEO', 'PERFORMANCES', 'ANIMATIONS'],
+                tech: ['Shopify', 'VUE 2', 'Vuex', 'SCSS', 'JavaScript'],
+                keywords: ['Shopify', 'VUE 2', 'VUEX', 'SCSS', 'JavaScript', 'SEO', 'PERFORMANCES'],
                 mockups: {
                     desktop: '/mockups/aigle2.png',
                     tablet: '/mockups/aigle1.png',
@@ -752,7 +752,7 @@ export const useClientsStore = defineStore('clients', {
                 portrait: '/portraits/leo-pharma.webp',
                 startup: null,
                 agency: 'Fidesio',
-                filters: ['FRONT', 'ANGULAR'],
+                filters: ['FRONT', 'ANGULAR', 'PWA'],
                 role: 'Front-End',
                 tech: ['ANGULAR 2', 'CSS', 'TypeScript', 'PWA'],
                 keywords: ['ANGULAR 2', 'CSS', 'TypeScript', 'PWA'],
@@ -830,14 +830,35 @@ export const useClientsStore = defineStore('clients', {
                     mobile: '/mockups/order-tracking3.png',
                 },
                 url: null
+            },
+            {
+                id: 'w3lead',
+                title: "W3lead",
+                logo: null,
+                portrait: null,
+                startup: null,
+                agency: 'W3lead',
+                filters: ['REACT', 'FRONT'],
+                role: 'Front-End',
+                tech: ['REACT', 'GATSBY', 'TypeScript', 'SCSS', 'ANIMATIONS'],
+                keywords: ['REACT', 'GATSBY', 'TypeScript', 'SCSS', 'ANIMATIONS', 'SEO', 'ES6'],
+                mockups: {
+                    image: '/mockups/W3lead.png',
+                },
+                url: null
             }
         ] as Client[],
     }),
 
     getters: {
         clientFilters: (state): string[] => {
-            const allFilters = state.clients.flatMap(client => client.filters || [])
-            return [...new Set(allFilters)].sort()
+            const counts: Record<string, number> = {};
+            state.clients.forEach(client => {
+                client.filters?.forEach(filter => {
+                    counts[filter] = (counts[filter] || 0) + 1
+                })
+            });
+            return Object.keys(counts).sort((a, b) => counts[b] - counts[a])
         },
         filteredClients: (state): Client[] => {
             if (!state.selectedFilter) return state.clients

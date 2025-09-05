@@ -538,6 +538,13 @@
       },
       "description": "Faume provides turnkey recommerce solutions for fashion brands with a shared technical foundation and reusable modules to ensure performance, reliability, and a consistent user experience across its portfolio of websites.",
       "mission": "As a freelancer for Faume, I developed an NPM package dedicated to Shopify order tracking, built within a GitHub monorepo alongside the Account module to share dependencies, standards, and maintenance. Implemented in Vue 2 with Vuex, the package is scalable and modular, centralizes versioning, and ensures a consistent user experience across multiple e-commerce sites. Continuously deployed via GitHub CI/CD, it is used by more than 25 websites and has been actively maintained for over 3 years.<ul><li><strong>Scope</strong> standardized tracking UI, state management, Shopify integration patterns</li><li><strong>Stack</strong> Vue 2, Vuex, SCSS, NPM</li><li><strong>Ops</strong> GitHub CI/CD, monorepo</li></ul>"
+    },
+    "w3lead": {
+      "seo": {
+        "description": "Landing page for W3Lead Agency built with React and Gatsby. Advanced animations, responsive clip-path effects, and SEO optimization."
+      },
+      "description": "W3Lead is a French web agency specializing in e-commerce and high-end digital projects. Known for delivering pixel-perfect Shopify themes and custom front-end architectures, the agency emphasizes technical precision and strong design integration.",
+      "mission": "As a front-end developer at W3Lead, I created the agency’s showcase website using React and Gatsby. The project pushed technical boundaries with advanced animations based on complex mathematical calculations, including responsive clip-path effects. By prioritizing CSS over heavy JavaScript, I delivered a smooth, performant, and visually striking user experience aligned with the agency’s cutting-edge standards.<ul><li><strong>Stack</strong> React, Gatsby, TypeScript, SCSS, ES6</li><li><strong>Animations</strong> advanced motion design and clip-path effects with mathematical calculations</li><li><strong>Performance</strong> CSS-driven rendering prioritized over JS for smoother UX</li><li><strong>SEO</strong> Gatsby static rendering and meta optimization</li><li><strong>Outcome</strong> one of the most technically demanding projects reflecting W3Lead’s expertise</li></ul>"
     }
   }
 }
