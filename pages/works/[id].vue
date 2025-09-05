@@ -53,11 +53,11 @@
 
 <script setup lang="ts">
 import {watch} from "vue";
-import AnimationLetterFromLeft from "@/components/atoms/AnimationLetterFromLeft.vue";
-import AnimationWordFromBottom from "@/components/atoms/AnimationWordFromBottom.vue";
-import ButtonClient from "@/components/atoms/ButtonClient.vue";
-import Button from "@/components/atoms/Button.vue";
-import ImageAnimated from "@/components/atoms/ImageAnimated.vue";
+import AnimationLetterFromLeft from "@/components/animations/AnimationLetterFromLeft.vue";
+import AnimationWordFromBottom from "@/components/animations/AnimationWordFromBottom.vue";
+import ButtonClient from "@/components/ui/ButtonClient.vue";
+import Button from "@/components/ui/Button.vue";
+import ImageAnimated from "@/components/animations/ImageAnimated.vue";
 
 const route = useRoute();
 const {t, te} = useI18n();

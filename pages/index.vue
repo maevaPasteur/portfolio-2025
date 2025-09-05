@@ -23,8 +23,8 @@
 </template>
 
 <script setup lang="ts">
-import HomeSlider from "@/components/organisms/HomeSlider.vue";
-import AnimationLetterFromLeft from "@/components/atoms/AnimationLetterFromLeft.vue";
+import HomeSlider from "@/components/pages/home/HomeSlider.vue";
+import AnimationLetterFromLeft from "@/components/animations/AnimationLetterFromLeft.vue";
 
 const { t } = useI18n();
 

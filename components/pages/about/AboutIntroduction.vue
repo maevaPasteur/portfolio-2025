@@ -25,7 +25,7 @@
 import { ref, onMounted, onUnmounted } from 'vue'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
-import AnimationLetterFromLeft from "@/components/atoms/AnimationLetterFromLeft.vue";
+import AnimationLetterFromLeft from "@/components/animations/AnimationLetterFromLeft.vue";
 
 gsap.registerPlugin(ScrollTrigger)
 

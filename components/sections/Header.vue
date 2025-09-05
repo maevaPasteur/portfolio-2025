@@ -28,7 +28,7 @@
 </template>
 
 <script setup lang="ts">
-import AnimationLetterFromLeft from "@/components/atoms/AnimationLetterFromLeft.vue";
+import AnimationLetterFromLeft from "@/components/animations/AnimationLetterFromLeft.vue";
 
 const { locale, setLocale } = useI18n()
 const localePath = useLocalePath()

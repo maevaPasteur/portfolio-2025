@@ -19,6 +19,28 @@
     "seo": {
       "title": "Réalisations - Maëva Pasteur { '|' } Développeur Front-End Freelance",
       "description": "Études de cas et réalisations : e-commerce, design system, performance et accessibilité. Stack : vue.js, Nuxt, TypeScript, Shopify. Travaux menés en freelance pour des marques exigeantes."
+    },
+    "sectors": {
+      "title": "Secteurs d'activité",
+      "subtitle": "Mon parcours m’a conduit à explorer des univers multiples : de l’élégance du luxe à l’innovation du digital, en passant par la rigueur du médical et la créativité culturelle. Chaque secteur m’a offert de nouveaux défis et de nouvelles perspectives, nourrissant ma capacité à concevoir des solutions sur mesure, pertinentes et performantes.",
+      "types": {
+        "fashion": "Mode",
+        "accessories": "Accessoires",
+        "beauty": "Beauté",
+        "medical": "Médical",
+        "culture": "Culture",
+        "real-estate": "Immobilier",
+        "aerospace": "Aérospatial",
+        "agriculture": "Agriculture",
+        "technology": "Technologie",
+        "luxury": "Luxe",
+        "ecommerce": "E-Commerce",
+        "animal": "Animaux",
+        "design": "Design",
+        "energy": "Energies",
+        "agency": "Agence",
+        "administration": "Administration"
+      }
     }
   },
   "about": {
@@ -546,5 +568,8 @@
       "description": "W3Lead est une agence web française spécialisée dans l’e-commerce et les projets digitaux haut de gamme. Reconnue pour ses thèmes Shopify pixel perfect et ses architectures front-end sur mesure, l’agence se distingue par sa précision technique et son exigence en design.",
       "mission": "En tant que développeur front chez W3Lead, j’ai conçu le site vitrine de l’agence avec React et Gatsby. Le projet a repoussé les limites techniques avec un système d’animations avancées basé sur des calculs mathématiques complexes, notamment pour créer des effets clip-path responsives. En privilégiant le CSS à du JavaScript lourd, j’ai assuré une expérience fluide, performante et visuellement marquante, fidèle aux standards pointus de l’agence.<ul><li><strong>Stack</strong> React, Gatsby, TypeScript, SCSS, ES6</li><li><strong>Animations</strong> motion design avancé et effets clip-path avec calculs mathématiques</li><li><strong>Performance</strong> rendu priorisé en CSS pour une UX plus fluide</li><li><strong>SEO</strong> rendu statique Gatsby et optimisation des métadonnées</li><li><strong>Résultat</strong> l’un des projets les plus techniques, vitrine de l’expertise W3Lead</li></ul>"
     }
+  },
+  "footer": {
+    "follow": "Réseaux sociaux :"
   }
 }

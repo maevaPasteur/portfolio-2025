@@ -21,5 +21,5 @@
 </style>
 
 <script setup lang="ts">
-import Cursor from "@/components/atoms/Cursor.vue";
+import Cursor from "@/components/ui/Cursor.vue";
 </script>

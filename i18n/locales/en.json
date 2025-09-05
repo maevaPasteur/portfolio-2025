@@ -18,7 +18,29 @@
     "title": "Works",
     "seo": {
       "title": "Works - Maëva Pasteur { '|' } Front-End Developer Freelance",
+      "subtitle": "My journey has led me to explore multiple worlds: from the elegance of luxury to the innovation of digital, through the rigor of healthcare and the creativity of culture. Each sector has offered me new challenges and perspectives, strengthening my ability to design tailored, relevant, and high-performing solutions.",
       "description": "Case studies and achievements: e-commerce, design system, performance and accessibility. Stack: Vue.js, Nuxt, TypeScript, Shopify. Freelance work for demanding brands."
+    },
+    "sectors": {
+      "title": "Activity sectors",
+      "types": {
+        "fashion": "Fashion",
+        "accessories": "Accessories",
+        "beauty": "Beauty",
+        "medical": "Medical",
+        "culture": "Culture",
+        "real-estate": "Real Estate",
+        "aerospace": "Aerospace",
+        "agriculture": "Agriculture",
+        "technology": "Technology",
+        "luxury": "Luxury",
+        "ecommerce": "E-Commerce",
+        "animal": "Animal",
+        "design": "Design",
+        "energy": "Energy",
+        "agency": "Agency",
+        "administration": "Administration"
+      }
     }
   },
   "about": {
@@ -546,5 +568,8 @@
       "description": "W3Lead is a French web agency specializing in e-commerce and high-end digital projects. Known for delivering pixel-perfect Shopify themes and custom front-end architectures, the agency emphasizes technical precision and strong design integration.",
       "mission": "As a front-end developer at W3Lead, I created the agency’s showcase website using React and Gatsby. The project pushed technical boundaries with advanced animations based on complex mathematical calculations, including responsive clip-path effects. By prioritizing CSS over heavy JavaScript, I delivered a smooth, performant, and visually striking user experience aligned with the agency’s cutting-edge standards.<ul><li><strong>Stack</strong> React, Gatsby, TypeScript, SCSS, ES6</li><li><strong>Animations</strong> advanced motion design and clip-path effects with mathematical calculations</li><li><strong>Performance</strong> CSS-driven rendering prioritized over JS for smoother UX</li><li><strong>SEO</strong> Gatsby static rendering and meta optimization</li><li><strong>Outcome</strong> one of the most technically demanding projects reflecting W3Lead’s expertise</li></ul>"
     }
+  },
+  "footer": {
+    "follow": "Follow me:"
   }
 }

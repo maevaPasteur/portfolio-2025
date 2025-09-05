@@ -1,5 +1,5 @@
 <template>
-    <div class="w-full overflow-hidden">
+    <section class="w-full overflow-hidden">
         <Vue3Marquee
             v-for="(row, i) in logoRows"
             :key="i"
@@ -20,7 +20,7 @@
                 />
             </div>
         </Vue3Marquee >
-    </div>
+    </section>
 </template>
 
 <script setup lang="ts">
@@ -35,7 +35,6 @@ const logos = [
     "maison123", "cabaia", "petites-jupes-de-prune", "sandro", "tara-jarmon", "temperley",
     "the-kooples", "theater-in-paris", "vanessa-bruno", "victoria-beckham"
 ]
-
 
 const chunkArray = <T>(array: T[], chunkSize: number): T[][] => {
     const chunks: T[][] = []
