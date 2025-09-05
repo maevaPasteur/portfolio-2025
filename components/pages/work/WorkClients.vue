@@ -1,5 +1,5 @@
 <template>
-    <section v-if="clients?.length">
+    <section v-if="clients?.length" ref="sectionRef">
         <div class="border-b md:px-6 pb-3 sticky z-[1] pt-12 md:pt-10 top-0 bg-white block md:flex md-flex-row gap-2 md:gap-3 items-baseline" v-reveal>
             <p class="pl-6 md:pl-0 font-mono text-xs shrink-0 mb-1 md:mb-0">{{ $t('client.filter') }}</p>
             <div class="w-full px-6 md:px-0 flex wrap gap-2 flex-grow overflow-x-auto no-scrollbar">
@@ -7,7 +7,7 @@
                         v-for="filter in clientFilters"
                         class="border shrink-0 px-2 py-1 text-sm uppercase font-mono duration-[100ms] ease hover:border-black"
                         :class="{'text-white bg-black' : filter === selectedFilter}"
-                        @click.prevent="selectedFilter === filter ? selectedFilter = null : selectedFilter = filter"
+                        @click.prevent="handleFilterClick(filter)"
                 >
                     {{ filter }}
                 </button>
@@ -44,12 +44,25 @@ import {storeToRefs} from "pinia";
 const clientsStore = useClientsStore();
 const { setImage } = useCursorStore();
 const localePath = useLocalePath();
+const sectionRef = ref(null);
 
 const { clients, clientFilters, selectedFilter } = storeToRefs(clientsStore);
 
 const getNumber = (value: number) => {
     if (value < 10) return `0${value}`;
     return value;
+}
+
+const handleFilterClick = (filter: string) => {
+    selectedFilter.value = selectedFilter.value === filter ? null : filter;
+    
+    // Scroll vers le top de la section
+    if (sectionRef.value) {
+        sectionRef.value.scrollIntoView({ 
+            behavior: 'smooth', 
+            block: 'start' 
+        });
+    }
 }
 
 onBeforeUnmount(() => {
