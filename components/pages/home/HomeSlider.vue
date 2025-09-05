@@ -97,6 +97,7 @@ const sliderState: SliderState = reactive({
 })
 
 const windowHalfWidth = computed(() => window?.innerWidth / 2 || 0)
+const isDesktop = ref(false)
 
 const clamp = (value: number, min: number, max: number): number =>
   Math.max(min, Math.min(max, value))
@@ -170,11 +171,13 @@ const handleResize = () => {
 }
 
 const handleMouseEnter = (client: Client) => {
+  if (!isDesktop.value) return;
   setText(client.title);
     currentClient.value = client.id;
 };
 
 const handleMouseLeave = () => {
+  if (!isDesktop.value) return;
   clearText();
     currentClient.value = null;
 };
@@ -203,6 +206,8 @@ const selectImage = (e: Event, client: Client) => {
 
 onMounted(async (): Promise<void> => {
   await nextTick()
+  
+  isDesktop.value = window.matchMedia('(min-width: 1024px)').matches
   
   sliderState.maxScroll = computeMaxScroll()
   

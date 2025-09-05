@@ -3,6 +3,7 @@
         ref="cursorFollower"
         class="cursor fixed top-0 left-0 pointer-events-none z-[9999] flex items-center duration-[50ms] ease-in-out  mix-blend-difference"
         style="will-change: transform; transform: translate3d(0, 0, 0);"
+        aria-hidden="true"
     >
         <div class="cursor__circle w-[8px] h-[8px] bg-white rounded-full duration-200 ease-in-out" />
         <div v-if="hasText" class="ml-3 text-sm font-medium text-white whitespace-nowrap">
