@@ -10,6 +10,13 @@
     .reveal.reveal-show {
         @apply translate-y-0 opacity-100;
     }
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+    .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
 }
 
 @media (prefers-reduced-motion: reduce) {

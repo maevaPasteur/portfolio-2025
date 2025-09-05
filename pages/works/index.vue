@@ -1,6 +1,6 @@
 <template>
     <div class="pt-[100px]">
-        <h1 class="px-6 font-[Neutral] text-9xl">
+        <h1 class="px-6 font-[Neutral] text-4xl md:text-6xl lg:text-8xl xl:text-9xl">
             <AnimationLetterFromLeft :text="$t('works.title')"/>
         </h1>
         <WorkLogos class="mt-12 mb-6"/>

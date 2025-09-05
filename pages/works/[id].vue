@@ -2,20 +2,24 @@
     <div>
         <div v-if="client" class="px-6 min-h-screen pb-10">
 
-            <div class="pt-[100px] grid gap-9 w-full grid-cols-[1fr_50%] grid-rows-[auto_1fr]">
+            <div class="pt-16 md:pt-[100px] grid gap-9 w-full grid-cols-1 lg:grid-cols-[1fr_50%] md:grid-rows-[auto_1fr]">
 
                 <div>
-                    <h1 class="font-[Neutral] mb-6" :class="{'text-8xl': client.title?.length < 15, 'text-7xl': client.title?.length >= 15}">
+                    <h1 class="font-[Neutral] mb-6"
+                        :class="{
+                        'text-5xl md:text-6xl lg:text-7xl xl:text-8xl': client.title?.length < 15,
+                        'text-4xl md:text-5xl lg:text-6xl xl:text-7xl': client.title?.length >= 15
+                    }">
                         <AnimationLetterFromLeft :text="client.title"/>
                     </h1>
                     <AnimationWordFromBottom
                             v-if="client.keywords?.length"
-                            class="gap-2 font-mono flex-wrap gap-y-1"
+                            class="gap-2 font-mono text-sm md:text-md flex-wrap gap-y-1"
                             :words="client.keywords"
                     />
                 </div>
 
-                <div class="row-span-2 col-start-2 flex justify-center items-center">
+                <div class="pl-6 md:pl-0 max-w-xl order-3 lg:order-none mx-auto lg:max-w-full lg:row-span-2 lg:col-start-2 flex justify-center items-center">
                     <div class="media-container flex items-center">
                         <ImageAnimated v-if="mockupSingleImage" :image="mockupSingleImage" :alt="client.title"/>
                         <div v-else-if="mockupMobile && mockupTablet && mockupDesktop" class="flex flex-col relative gap-3 relative">
@@ -29,12 +33,13 @@
                     </div>
                 </div>
 
-                <div class="w-full grid grid-cols-[25%_1fr] pr-[5vw] gap-4" v-reveal-group>
-                    <h2 class="font-[Neutral] uppercase text-lg">Client</h2>
+                <div class="w-full grid grid-cols-1 md:grid-cols-[25%_1fr] pr-[5vw] gap-1 md:gap-4" v-reveal-group>
+                    <h2 class="font-[Neutral] uppercase text-lg">{{ $t('client.client') }}</h2>
                     <div v-html="description" class="prose text-sm prose-strong:font-medium prose-ul:pl-3"></div>
-                    <h2 class="font-[Neutral] uppercase text-lg">Mission</h2>
+                    <h2 class="font-[Neutral] uppercase text-lg mt-6 md:mt-0">{{ $t('client.mission') }}</h2>
                     <div>
                         <div v-html="mission" class="prose text-sm prose-strong:font-medium prose-ul:pl-3"></div>
+                        <p v-if="info?.length" class="text-xs text-gray-400 mt-6 italic">{{ info }}</p>
                         <Button v-if="client.url" :to="client.url" icon="mdi:arrow-top-right" class="mt-6">
                             {{ $t('client.see_website') }}
                         </Button>
@@ -75,6 +80,7 @@ const previousClient = computed(() => prevNextClients.value?.[0]);
 const nextClient = computed(() => prevNextClients.value?.[1]);
 const description = computed(() => getClientText('description'));
 const mission = computed(() => getClientText('mission'));
+const info = computed(() => getClientText('info'));
 const mockupDesktop = computed(() => client.value?.mockups?.desktop);
 const mockupTablet = computed(() => client.value?.mockups?.tablet);
 const mockupMobile = computed(() => client.value?.mockups?.mobile);

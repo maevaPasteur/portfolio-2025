@@ -3,7 +3,12 @@
     "contact": "Contact",
     "index": "Accueil",
     "works": "Réalisations",
-    "about": "À propos"
+    "about": "À propos",
+    "locale": {
+      "title": "Changer la langue :",
+      "fr": "Français",
+      "en": "English"
+    }
   },
   "home": {
     "developer": "Développeur",
@@ -228,7 +233,10 @@
       "title": "{name} - Maëva Pasteur { '|' } Développeur Front-End Freelance"
     },
     "see_website": "Voir le site",
-    "filter": "Filtrer par : "
+    "filter": "Filtrer par : ",
+
+    "mission": "Mission",
+    "client": "Client"
   },
   "clients": {
     "citadium": {

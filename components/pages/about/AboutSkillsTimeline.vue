@@ -2,7 +2,7 @@
 <template>
     <section ref="root" class="relative bg-white" :style="{ height: scrollContainerHeight + 'px' }">
         <div ref="stage" class="sticky top-0 h-screen w-full bg-white z-10 overflow-hidden">
-            <div ref="barsWrap" class="about-skills-bars absolute inset-x-6 top-24 bottom-28 flex items-end">
+            <div ref="barsWrap" class="about-skills-bars absolute inset-x-1 md:inset-x-6 top-24 bottom-28 flex items-end">
                 <div class="space-y-[var(--bar-gap)] w-full" :style="vars">
                     <div v-for="s in skills" :key="s.label" class="relative h-[var(--bar-h)]">
                         <div class="bg-gray-50 absolute inset-x-0 top-0 h-[var(--bar-h)]  rounded-md">
@@ -18,7 +18,7 @@
                                     style="width: 0%"
                             >
                                 <div class="h-full flex items-center whitespace-nowrap">
-                  <span class="inline-flex items-center min-w-full px-3 py-1 text-xs lg:text-sm font-mono bg-white border rounded-md">
+                  <span class="inline-flex items-center min-w-full px-1 md:px-3 py-1 text-xs lg:text-sm font-mono bg-white border rounded-md overflow-visible">
                     {{ s.label }}
                   </span>
                                 </div>
@@ -35,14 +35,15 @@
                         <div class="w-3 h-3 bg-black rounded-full"></div>
                     </div>
                     <div
-                            v-for="y in Array.from({ length: (years.max - years.min) + 1 }, (_, k) => years.min + k)"
+                            v-for="(y, i) in Array.from({ length: (years.max - years.min) + 1 }, (_, k) => years.min + k)"
                             :key="`tick-${y}`"
                             class="about-skills-tick absolute -translate-x-1/2 opacity-40 transition-opacity top-4"
+                            :class="{'hidden md-d-block': i%2 !== 0}"
                             :style="{ left: toPct(y) + '%' }"
                             :data-year="y"
                     >
                         <div class="mx-auto w-2.5 h-2.5 bg-black rounded-full"></div>
-                        <div class="mt-2 text-lg md:text-xl font-semibold text-black">{{ y }}</div>
+                        <div class="-translate-y-[35px] md:translate-y-0 mt-2 text-xs md:text-lg md:text-xl font-semibold text-black">{{ y }}</div>
                     </div>
                 </div>
             </div>
@@ -99,7 +100,7 @@ const recalcHeights = () => {
     const rows = skills.length
     const H = wrap.clientHeight
     const per = Math.floor((H - gap * (rows - 1)) / rows)
-    const h = Math.min(30, Math.max(18, per))
+    const h = Math.min(40, Math.max(18, per))
     vars.value = { '--bar-h': `${h}px`, '--bar-gap': `${gap}px` }
 }
 

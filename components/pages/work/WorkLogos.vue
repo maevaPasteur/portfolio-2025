@@ -10,12 +10,12 @@
         >
             <div
                 v-for="logo in row"
-                class="shrink-0 w-32 h-20 bg-gray-100  flex items-center justify-center mr-2"
+                class="shrink-0 w-[80px] h-[50px] md:w-32 md:h-20 bg-gray-100  flex items-center justify-center mr-2"
             >
                 <img 
                     :src="`/images/logos/${logo}.svg`"
                     :alt="logo" 
-                    class="w-20 h-10 object-contain grayscale hover:grayscale-0 duration-200 ease"
+                    class="w-14 h-7 md:w-20 md:h-10 object-contain grayscale hover:grayscale-0 duration-200 ease"
                     loading="lazy"
                 />
             </div>

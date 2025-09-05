@@ -1,5 +1,5 @@
 <template>
-    <footer class="bg-gray-900 w-full text-white px-6 py-6 flex gap-4 items-center justify-between">
+    <footer class="bg-gray-900 w-full text-white px-6 py-6 flex flex-col md:flex-row gap-4 items-center justify-between">
         <div v-reveal class="flex gap-4 items-center">
             <p class="text-sm font-mono">{{ $t('footer.follow') }}</p>
             <div class="flex gap-1 items-center text-2xl">

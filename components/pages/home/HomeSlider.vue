@@ -2,12 +2,12 @@
     <div v-if="clients?.length" ref="slider" class="fixed h-full w-full z-0">
         <div
                 ref="sliderWrapper"
-                class="absolute h-full px-[600px] flex items-center gap-[100px]"
+                class="absolute h-full px-[50vw] lg:px-[600px] flex items-center gap-4 md:gap-[100px]"
         >
             <div
                     v-for="client in clients"
                     :key="client.id"
-                    class="group/home-slide w-[400px] h-[500px] shrink-0 relative"
+                    class="group/home-slide w-[250px] h-[312px] md:w-[400px] md:h-[500px] shrink-0 relative"
                     :ref="setSlideRef"
                     @mouseenter="handleMouseEnter(client)"
                     @mouseleave="handleMouseLeave"

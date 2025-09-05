@@ -1,7 +1,7 @@
 <template>
   <div class="relative z-0">
-      <div class="fixed bottom-8 left-8 flex flex-col-reverse gap-8">
-          <h2 class="font-[Neutral] text-9xl">
+      <div class="fixed top-[80px] md:top-auto md:bottom-8 w-full left-0 px-6 md:px-8 flex flex-col md:flex-col-reverse gap-4 md:gap-8">
+          <h2 class="font-[Neutral] text-3xl sm:text-4xl md:text-6xl lg:text-9xl">
               <AnimationLetterFromLeft :text="$t('home.developer')" class="block"/>
               <span class="flex">
                   <span class="italic relative">
