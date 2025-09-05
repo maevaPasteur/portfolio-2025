@@ -354,14 +354,16 @@
         "description": "Backoffice PWA de Faume en Vue 2 et TypeScript. +50 pages métiers, RBAC avancé, filtres complexes et formulaires dynamiques."
       },
       "description": "Backoffice central de la startup Faume, solution de recommerce pour les marques mode. Application web progressive en production continue, utilisée quotidiennement par des fonctions variées administrateurs Faume, équipes marque, retail, logistique et service client. Architecture pensée pour l’échelle et la sécurité.",
-      "mission": "Conception et développement, en freelance pour Faume, d’une PWA robuste et modulaire en Vue 2 et TypeScript, évolutive depuis 3 ans et couvrant plus de 50 pages uniques.<ul><li><strong>Architecture</strong> composants typés, stores partagés, routing sécurisé et URLs signées</li><li><strong>RBAC</strong> vues et actions conditionnelles selon rôles admin employés partenaires</li><li><strong>Données</strong> tableaux volumineux, filtres avancés, formulaires dynamiques et validation</li><li><strong>International</strong> multi-marchés et multilingue</li><li><strong>Qualité</strong> CI, revues de code, tests ciblés et monitoring applicatif</li></ul>"
+      "mission": "Conception et développement, en freelance pour Faume, d’une PWA robuste et modulaire en Vue 2 et TypeScript, évolutive depuis 3 ans et couvrant plus de 50 pages uniques.<ul><li><strong>Architecture</strong> composants typés, stores partagés, routing sécurisé et URLs signées</li><li><strong>RBAC</strong> vues et actions conditionnelles selon rôles admin employés partenaires</li><li><strong>Données</strong> tableaux volumineux, filtres avancés, formulaires dynamiques et validation</li><li><strong>International</strong> multi-marchés et multilingue</li><li><strong>Qualité</strong> CI, revues de code, tests ciblés et monitoring applicatif</li></ul>",
+      "info": "Les données affichées dans les images ont été remplacées par des valeurs aléatoires pour des raisons de confidentialité."
     },
     "faume-page-builder": {
       "seo": {
         "description": "Page Builder et package NPM faume-nuxt. Base Vue 3 Nuxt TypeScript pour générer des sites e-commerce hautes performances."
       },
       "description": "Un socle front scalable combinant package NPM faume-nuxt et une interface Page Builder pour configurer structure et design sans code. Intègre le design system atomique et une logique CMS sur mesure pour lancer des sites très rapidement.",
-      "mission": "Conception, en freelance pour Faume, du package et de l’interface visuelle pour industrialiser la création de sites e-commerce.<ul><li><strong>Stack</strong> Vue 3 Nuxt TypeScript Pinia Tailwind ES6 SEO</li><li><strong>Gains</strong> temps d’intégration réduit de plusieurs semaines à moins d’une journée</li><li><strong>Production</strong> plus de 10 sites générés sur la base</li><li><strong>Carto</strong> intégrations Mapbox lorsque nécessaire</li><li><strong>Extensibilité</strong> composants atomiques et schémas configurables</li></ul>"
+      "mission": "Conception, en freelance pour Faume, du package et de l’interface visuelle pour industrialiser la création de sites e-commerce.<ul><li><strong>Stack</strong> Vue 3 Nuxt TypeScript Pinia Tailwind ES6 SEO</li><li><strong>Gains</strong> temps d’intégration réduit de plusieurs semaines à moins d’une journée</li><li><strong>Production</strong> plus de 10 sites générés sur la base</li><li><strong>Carto</strong> intégrations Mapbox lorsque nécessaire</li><li><strong>Extensibilité</strong> composants atomiques et schémas configurables</li></ul>",
+      "info": "L'illustration n'est pas représentative de la solution, je ne peux pas partager l'outil pour des raisons de confidentialité."
     },
     "faume-design-system": {
       "seo": {
@@ -382,7 +384,8 @@
         "description": "Site pour les Éditions Didier, maison d’édition fondée en 1898 spécialisée en langues étrangères et ressources éducatives."
       },
       "description": "Les Éditions Didier font partie du groupe Hachette et sont reconnues pour leur expertise en langues étrangères et ressources pédagogiques. La maison publie pour le marché français et international et s’appuie sur des offres numériques innovantes.",
-      "mission": "Développement front au sein de Fidesio, pixel perfect à partir de maquettes, avec une attention portée à la lisibilité et au SEO éditorial.<ul><li><strong>UI</strong> gabarits éditoriaux, listes et fiches ouvrage</li><li><strong>Accessibilité</strong> hiérarchie typographique et navigation clavier</li><li><strong>SEO</strong> balisage sémantique, métadonnées et maillage interne</li></ul>"
+      "mission": "Développement front au sein de Fidesio, pixel perfect à partir de maquettes, avec une attention portée à la lisibilité et au SEO éditorial.<ul><li><strong>UI</strong> gabarits éditoriaux, listes et fiches ouvrage</li><li><strong>Accessibilité</strong> hiérarchie typographique et navigation clavier</li><li><strong>SEO</strong> balisage sémantique, métadonnées et maillage interne</li></ul>",
+      "info": "Ce site n'existe plus depuis sa fusion avec le groupe Hatier."
     },
     "epycure": {
       "seo": {
@@ -410,21 +413,24 @@
         "description": "Front de la plateforme de souscription en ligne Butagaz. POC d’expérience client pour l’énergie verte."
       },
       "description": "Butagaz est un fournisseur multi-énergies en France proposant des offres dont du gaz vert. Le projet visait à tester une expérience de souscription moderne et pédagogique autour de la transition énergétique.",
-      "mission": "Développement front au sein de l’équipe Fidesio pour un POC centré sur clarté et efficacité.<ul><li><strong>Parcours</strong> souscription guidée et états explicites</li><li><strong>Data</strong> consultation de consommation et anticipation des recharges</li><li><strong>UX</strong> interfaces accessibles et responsive</li></ul>"
+      "mission": "Développement front au sein de l’équipe Fidesio pour un POC centré sur clarté et efficacité.<ul><li><strong>Parcours</strong> souscription guidée et états explicites</li><li><strong>Data</strong> consultation de consommation et anticipation des recharges</li><li><strong>UX</strong> interfaces accessibles et responsive</li></ul>",
+      "info": "Cette plateforme n'existe plus car Butagaz a arrêté de proposer ce service aux particuliers."
     },
     "groupe-soufflet": {
       "seo": {
         "description": "Interfaces front pour un acteur agro-industriel majeur. Standards de performance et robustesse."
       },
       "description": "Le Groupe Soufflet désormais au sein d’InVivo est un acteur européen clé des céréales et de la transformation agro-industrielle, opérant de la collecte aux marchés internationaux.",
-      "mission": "Intégrations front au sein de Fidesio, conformes aux contraintes métiers et aux volumes de données sectoriels.<ul><li><strong>UI</strong> tableaux et vues métier</li><li><strong>Perf</strong> chargement progressif et pagination</li><li><strong>Qualité</strong> outillage et contrôles de cohérence</li></ul>"
+      "mission": "Intégrations front au sein de Fidesio, conformes aux contraintes métiers et aux volumes de données sectoriels.<ul><li><strong>UI</strong> tableaux et vues métier</li><li><strong>Perf</strong> chargement progressif et pagination</li><li><strong>Qualité</strong> outillage et contrôles de cohérence</li></ul>",
+      "info": "Cette version du site n'est plus d'actualité depuis le rachat du Groupe Soufflet par le Groupe InVivo."
     },
     "leo-pharma": {
       "seo": {
         "description": "Application médicale Doctolien pour LEO Pharma en Angular. Parcours soigné et conformité secteur santé."
       },
       "description": "LEO Pharma est un groupe danois centré sur la dermatologie, détenu majoritairement par la LEO Foundation. Présence internationale et forte culture R&D.",
-      "mission": "Développement, au sein de Fidesio, d’une application Angular avec exigences de qualité et d’accessibilité propres au médical.<ul><li><strong>UI</strong> formulaires fiables et messages clairs</li><li><strong>Sécurité</strong> bonnes pratiques et gestion des rôles</li><li><strong>Perf</strong> packaging optimisé et chargement maîtrisé</li></ul>"
+      "mission": "Développement, au sein de Fidesio, d’une application Angular avec exigences de qualité et d’accessibilité propres au médical.<ul><li><strong>UI</strong> formulaires fiables et messages clairs</li><li><strong>Sécurité</strong> bonnes pratiques et gestion des rôles</li><li><strong>Perf</strong> packaging optimisé et chargement maîtrisé</li></ul>",
+      "info": "Cette plateforme n'existe plus."
     },
     "theater-in-paris": {
       "seo": {
@@ -452,7 +458,8 @@
         "description": "Optimisation du thème Shopify Cabaia pour booster les ventes. Mini-cart Vue.js avec cross-sell intelligent et système de paliers cadeaux."
       },
       "description": "Cabaia est une marque française connue pour ses sacs et accessoires personnalisables. Son canal e-commerce occupe une place clé dans sa croissance et ses stratégies marketing créatives.",
-      "mission": "Amélioration du thème Shopify existant chez W3Lead pour maximiser performance et conversion, avec des développements Vue.js spécifiques.<ul><li><strong>Mini-cart</strong> développé en <strong>Vue 2 + Vuex</strong> avec cross-sell intelligent et paliers cadeaux</li><li><strong>UI</strong> sélection dynamique des couleurs de sacs</li><li><strong>Stack</strong> Shopify Liquid, SCSS, JavaScript ES6</li><li><strong>Perf</strong> optimisations SEO et Lighthouse</li><li><strong>Delivery</strong> intégrations pixel perfect et suivi CI</li></ul>"
+      "mission": "Amélioration du thème Shopify existant chez W3Lead pour maximiser performance et conversion, avec des développements Vue.js spécifiques.<ul><li><strong>Mini-cart</strong> développé en <strong>Vue 2 + Vuex</strong> avec cross-sell intelligent et paliers cadeaux</li><li><strong>UI</strong> sélection dynamique des couleurs de sacs</li><li><strong>Stack</strong> Shopify Liquid, SCSS, JavaScript ES6</li><li><strong>Perf</strong> optimisations SEO et Lighthouse</li><li><strong>Delivery</strong> intégrations pixel perfect et suivi CI</li></ul>",
+      "info": "Cette version a été remplacée par un site Shopify Headless."
     },
     "claudie-pierlot": {
       "seo": {
@@ -473,7 +480,8 @@
         "description": "Expérience seconde main Hugo Boss avec front Nuxt et Vue 3. Modularité et parcours circulaire optimisé."
       },
       "description": "Hugo Boss est un leader mondial du prêt-à-porter premium et du luxe accessible, présent dans plus de 120 pays. Le lancement d’un canal circulaire s’inscrit dans ses initiatives de durabilité.",
-      "mission": "Développement, en freelance pour Faume, d'une expérience luxury resale Hugo Boss avec Nuxt et Vue 3 : les clients peuvent échanger leurs costumes et pièces premium contre des crédits pour acquérir des articles de seconde main expertisés.<ul><li><strong>Stack</strong> Nuxt, Vue 3, SCSS</li><li><strong>Échange luxury</strong> parcours achat/vente fluide</li><li><strong>Carte</strong> Mapbox intégrée</li><li><strong>Perf</strong> SSR optimisé</li><li><strong>SEO</strong> balisage propre et métadonnées</li></ul>"
+      "mission": "Développement, en freelance pour Faume, d'une expérience luxury resale Hugo Boss avec Nuxt et Vue 3 : les clients peuvent échanger leurs costumes et pièces premium contre des crédits pour acquérir des articles de seconde main expertisés.<ul><li><strong>Stack</strong> Nuxt, Vue 3, SCSS</li><li><strong>Échange luxury</strong> parcours achat/vente fluide</li><li><strong>Carte</strong> Mapbox intégrée</li><li><strong>Perf</strong> SSR optimisé</li><li><strong>SEO</strong> balisage propre et métadonnées</li></ul>",
+      "info": "Ce site n'existe plus car Hugo Boss a arrêté ce service."
     },
     "isotoner": {
       "seo": {
@@ -516,6 +524,20 @@
       },
       "description": "The Kooples est une maison française du groupe SMCP, présente dans plus de 30 pays avec un fort ADN rock-chic. L’initiative seconde main soutient sa stratégie de durabilité et fidélise sa communauté.",
       "mission": "Mise en place, en freelance pour Faume, d'une boutique rock-chic durable The Kooples multilingue avec Nuxt et Vue 3 : les clients peuvent revendre leurs pièces iconiques contre des bons d'achat pour des articles de seconde main sélectionnés par les stylistes.<ul><li><strong>i18n</strong> internationalisation et hreflang</li><li><strong>Revente</strong> parcours en <strong>Vue 2</strong></li><li><strong>Compte</strong> suivi commandes en <strong>Vue 2</strong></li><li><strong>Carte</strong> intégration Mapbox</li><li><strong>Perf</strong> SSR et optimisation Lighthouse</li></ul>"
+    },
+    "account-package": {
+      "seo": {
+        "description": "Package Compte modulaire pour l’écosystème Faume. Vue 2 et Vuex, CI/CD GitHub, déployé sur 30+ sites et maintenu depuis 4 ans."
+      },
+      "description": "Faume est une startup française spécialisée dans le recommerce pour les marques de mode. Elle opère des plateformes de reprise et de seconde main en marque blanche et outille les équipes retail logistique service client et marketing pour industrialiser l’économie circulaire.",
+      "mission": "En freelance pour Faume j’ai conçu et développé un package Compte entièrement modulaire en Vue 2 avec Vuex afin d’accélérer le déploiement e-commerce multi-marques. Le système de configuration par variables et variantes permet d’adapter l’UI à chaque identité de marque. Le module est versionné et propose au choix des textes statiques ou des traductions via API. Il est déployé sur plus de 30 sites et maintenu activement depuis plus de 4 ans avec un pipeline CI/CD GitHub.<ul><li><strong>Fonctionnalités</strong> historique de commandes avec pages de détail initiation de retours et suivi temps réel retours et remboursements tableau de bord des articles vendus carnet d’adresses profil et informations de compte gestion des cartes cadeaux et du solde</li><li><strong>Stack</strong> Vue 2 Vuex SCSS NPM</li><li><strong>Ops</strong> Git CI/CD déploiement continu</li></ul>"
+    },
+    "order-tracking": {
+      "seo": {
+        "description": "Package NPM de suivi de commandes Shopify pour Faume. Vue 2 et Vuex monorepo GitHub CI/CD 25+ sites et 3 ans de maintenance."
+      },
+      "description": "Faume est une solution de recommerce clé en main pour les marques mode avec un socle technique commun et des briques partagées afin d’assurer performance fiabilité et cohérence d’expérience sur l’ensemble du parc de sites.",
+      "mission": "En freelance pour Faume j’ai développé un package NPM dédié au suivi de commandes Shopify construit dans un monorepo GitHub aux côtés du module Compte pour mutualiser dépendances normes et maintenance. Implémenté en Vue 2 et Vuex le module est scalable et modulable centralise le versioning et garantit une expérience homogène sur le parc e-commerce. Il est déployé en continu via GitHub CI/CD utilisé par plus de 25 sites et maintenu activement depuis plus de 3 ans.<ul><li><strong>Scope</strong> UI de suivi standardisée gestion d’état intégrations Shopify patterns d’implémentation</li><li><strong>Stack</strong> Vue 2 Vuex SCSS NPM</li><li><strong>Ops</strong> Git CI/CD monorepo</li></ul>"
     }
   }
 }

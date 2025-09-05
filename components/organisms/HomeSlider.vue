@@ -80,7 +80,7 @@ const clientsStore = useClientsStore();
 
 const currentClient = defineModel<string | null>();
 
-const { clients } = storeToRefs(clientsStore);
+const { highlightClients: clients } = storeToRefs(clientsStore);
 
 const slider: Ref<HTMLElement | null> = ref(null);
 const sliderWrapper: Ref<HTMLElement | null> = ref(null);

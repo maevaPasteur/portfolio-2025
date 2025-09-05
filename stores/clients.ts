@@ -42,28 +42,10 @@ export const useClientsStore = defineStore('clients', {
                 url: "https://www.citadium.com/"
             },
             {
-                id: 'isabel-marant',
-                title: 'Isabel Marant',
-                logo: '/logos/isabelmarant.svg',
-                portrait: '/portraits/isabelmarant.webp',
-                startup: "Faume",
-                agency: null,
-                filters: ["SHOPIFY", "FRONT", "VUE"],
-                role: 'Front-End',
-                tech: ['Shopify', 'SCSS', 'JavaScript', 'Liquid', 'VUE 2', 'VUEX'],
-                keywords: ['SHOPIFY', 'LIQUID', 'SCSS', 'JAVASCRIPT', 'ES6', 'VUE 2', 'VUEX', 'SEO', 'MAPBOX', 'PIXEL PERFECT', 'TRANSCY'],
-                mockups: {
-                    desktop: '/mockups/isabel-marant2.png',
-                    tablet: '/mockups/isabel-marant1.png',
-                    mobile: '/mockups/isabel-marant3.png',
-                },
-                url: "https://www.isabelmarant-vintage.com/",
-            },
-            {
                 id: 'jimmy-fairly',
                 title: 'Jimmy Fairly',
                 logo: '/logos/jimmyfairly.svg',
-                portrait: '/portraits/jimmyfairly.webp',
+                portrait: '/portraits/jimmyfairly2.webp',
                 startup: null,
                 agency: 'W3lead',
                 filters: ["SHOPIFY", "FRONT", "VUE"],
@@ -81,7 +63,7 @@ export const useClientsStore = defineStore('clients', {
                 id: 'lacoste',
                 title: 'Lacoste',
                 logo: '/logos/lacoste.svg',
-                portrait: '/portraits/lacoste.webp',
+                portrait: '/portraits/lacoste3.webp',
                 startup: 'Faume',
                 agency: null,
                 filters: ["FRONT", "VUE"],
@@ -131,24 +113,6 @@ export const useClientsStore = defineStore('clients', {
                 },
             },
             {
-                id: 'claudie-pierlot',
-                title: 'Claudie Pierlot',
-                logo: '/logos/claudiepierlot.svg',
-                portrait: '/portraits/claudiepierlot.webp',
-                startup: "Faume",
-                agency: null,
-                filters: ['SHOPIFY', "FRONT", "VUE"],
-                role: 'Front-End',
-                tech: ['Shopify', 'SCSS', 'JavaScript', 'Liquid', 'VUE 2', 'VUEX'],
-                keywords: ['SHOPIFY', 'LIQUID', 'SCSS', 'JAVASCRIPT', 'ES6', 'VUE 2', 'VUEX', 'SEO', 'MAPBOX', 'PIXEL PERFECT', 'TRANSCY'],
-                mockups: {
-                    desktop: '/mockups/claudie-pierlot2.png',
-                    tablet: '/mockups/claudie-pierlot3.png',
-                    mobile: '/mockups/claudie-pierlot1.png',
-                },
-                url: "https://secondemain.claudiepierlot.com/"
-            },
-            {
                 id: 'g-star',
                 title: 'G-Star',
                 logo: '/logos/gstar.svg',
@@ -165,23 +129,6 @@ export const useClientsStore = defineStore('clients', {
                     mobile: '/mockups/g-star3.png',
                 },
                 url: 'https://rewear.g-star.com/'
-            },
-            {
-                id: 'hugo-boss',
-                title: 'Hugo Boss',
-                logo: '/logos/hugoboss.svg',
-                portrait: '/portraits/hugoboss.webp',
-                startup: 'Faume',
-                agency: null,
-                filters: ["FRONT", "VUE"],
-                role: 'Front-End',
-                tech: ['VUE 3', 'Pinia', 'NUXT', 'SCSS', 'TypeScript'],
-                keywords: ['VUE 3', 'NUXT', 'SCSS', 'SEO', 'TYPESCRIPT', 'MAPBOX', 'Atomic Design'],
-                mockups: {
-                    desktop: '/mockups/hugo-boss2.png',
-                    tablet: '/mockups/hugo-boss1.png',
-                    mobile: '/mockups/hugo-boss3.png',
-                },
             },
             {
                 id: 'isotoner',
@@ -219,22 +166,22 @@ export const useClientsStore = defineStore('clients', {
                 url: 'https://www.leoetviolette.com/'
             },
             {
-                id: 'sandro',
-                title: 'Sandro',
-                logo: '/logos/sandro.svg',
-                portrait: '/portraits/sandro.webp',
-                startup: 'Faume',
-                agency: null,
-                filters: ['SHOPIFY', "FRONT", "VUE"],
+                id: 'airbus',
+                title: 'Airbus',
+                logo: '',
+                portrait: '/portraits/airbus.webp',
+                startup: null,
+                agency: 'Fidesio',
+                filters: ['FRONT', 'PHP ENV'],
                 role: 'Front-End',
-                tech: ['Shopify', 'SCSS', 'JavaScript', 'Liquid', 'VUE 2', 'VUEX'],
-                keywords: ['SHOPIFY', 'LIQUID', 'SCSS', 'JAVASCRIPT', 'ES6', 'VUE 2', 'VUEX', 'SEO', 'MAPBOX', 'PIXEL PERFECT', 'TRANSCY'],
+                tech: ['HTML', 'SCSS', 'JavaScript', 'TWIG'],
+                keywords: ['HTML', 'SCSS', 'JAVASCRIPT', 'TWIG', 'ANIMATIONS', 'SEO', 'PERFORMANCES', 'PIXEL PERFECT'],
                 mockups: {
-                    desktop: '/mockups/sandro2.png',
-                    tablet: '/mockups/sandro1.png',
-                    mobile: '/mockups/sandro3.png',
+                    desktop: '/mockups/airbus2.png',
+                    tablet: '/mockups/airbus1.png',
+                    mobile: '/mockups/airbus3.png',
                 },
-                url: 'https://secondemain.sandro-paris.com/'
+                url: 'https://www.airbus.com/fr'
             },
             {
                 id: 'petites-jupes-de-prune',
@@ -255,22 +202,40 @@ export const useClientsStore = defineStore('clients', {
                 url: 'https://www.lespetitesjupesdeprune.com/'
             },
             {
-                id: 'faume-backoffice',
-                title: 'Faume Back-Office',
+                id: 'temperley-london',
+                title: 'Temperley London',
                 logo: '',
-                portrait: '/portraits/faume-backoffice.webp',
+                portrait: '/portraits/temperley-london.webp',
                 startup: 'Faume',
                 agency: null,
-                filters: ['APP', 'FRONT', 'VUE'],
+                filters: ['FRONT', 'VUE'],
                 role: 'Front-End',
-                tech: ['VUE 2', 'Vuex', 'TypeScript', 'PWA', 'CHARTJS'],
-                keywords: ['VUE 2', 'Vuex', 'TypeScript', 'PWA', 'CHARTJS'],
+                tech: ['VUE 3', 'Nuxt', 'Pinia', 'SCSS'],
+                keywords: ['VUE 3', 'NUXT'],
                 mockups: {
-                    desktop: '/mockups/faume-backoffice2.png',
-                    tablet: '/mockups/faume-backoffice1.png',
-                    mobile: '/mockups/faume-backoffice3.png',
+                    desktop: '/mockups/temperley3.png',
+                    tablet: '/mockups/temperley2.png',
+                    mobile: '/mockups/temperley1.png',
                 },
-                url: ''
+                url: 'https://vintage.temperleylondon.com/'
+            },
+            {
+                id: 'kids-around',
+                title: 'Kids Around',
+                logo: '',
+                portrait: '/portraits/kids-around.webp',
+                startup: 'Faume',
+                agency: null,
+                filters: ['FRONT', 'VUE'],
+                role: 'Front-End',
+                tech: ['VUE 3', 'Nuxt', 'Pinia', 'SCSS'],
+                keywords: ['VUE 3', 'NUXT'],
+                mockups: {
+                    desktop: '/mockups/kids-around2.png',
+                    tablet: '/mockups/kids-around1.png',
+                    mobile: '/mockups/kids-around3.png',
+                },
+                url: 'https://secondround.kidsaround.com/'
             },
             {
                 id: 'faume-page-builder',
@@ -289,6 +254,42 @@ export const useClientsStore = defineStore('clients', {
                 url: ''
             },
             {
+                id: 'french-bandit',
+                title: 'French Bandit',
+                logo: '',
+                portrait: '/portraits/french-bandit.webp',
+                startup: null,
+                agency: 'W3lead',
+                filters: ['SHOPIFY', 'FRONT'],
+                role: 'Front-End',
+                tech: ['Shopify', 'Liquid', 'SCSS', 'JavaScript'],
+                keywords: ['SHOPIFY', 'LIQUID', 'SCSS', 'JAVASCRIPT', 'ES6', 'SEO', 'MAPBOX', 'PIXEL PERFECT'],
+                mockups: {
+                    desktop: '/mockups/french-bandit2.png',
+                    tablet: '/mockups/french-bandit1.png',
+                    mobile: '/mockups/french-bandit3.png',
+                },
+                url: 'https://www.french-bandit.com/'
+            },
+            {
+                id: 'sandro',
+                title: 'Sandro',
+                logo: '/logos/sandro.svg',
+                portrait: '/portraits/sandro.webp',
+                startup: 'Faume',
+                agency: null,
+                filters: ['SHOPIFY', "FRONT", "VUE"],
+                role: 'Front-End',
+                tech: ['Shopify', 'SCSS', 'JavaScript', 'Liquid', 'VUE 2', 'VUEX'],
+                keywords: ['SHOPIFY', 'LIQUID', 'SCSS', 'JAVASCRIPT', 'ES6', 'VUE 2', 'VUEX', 'SEO', 'MAPBOX', 'PIXEL PERFECT', 'TRANSCY'],
+                mockups: {
+                    desktop: '/mockups/sandro2.png',
+                    tablet: '/mockups/sandro1.png',
+                    mobile: '/mockups/sandro3.png',
+                },
+                url: 'https://secondemain.sandro-paris.com/'
+            },
+            {
                 id: 'faume-design-system',
                 title: 'Faume Design System (Atomic)',
                 logo: '',
@@ -299,7 +300,9 @@ export const useClientsStore = defineStore('clients', {
                 role: 'Front-End',
                 tech: ['Figma', 'Storybook', 'Tailwind', 'VUE 3', 'Nuxt', 'TypeScript'],
                 keywords: ['ATOMIC DESIGN', 'DESIGN TOKENS', 'THEMING', 'DARK MODE', 'STORYBOOK', 'A11Y', 'TAILWIND', 'VUE 3', 'NUXT', 'PERFORMANCES', 'UX CONSISTENCY'],
-                mockups: {},
+                mockups: {
+                    image: '/portraits/faume-design-system.webp'
+                },
                 url: ''
             },
             {
@@ -313,8 +316,12 @@ export const useClientsStore = defineStore('clients', {
                 role: 'Front-End',
                 tech: ['VUE 3', 'Pinia', 'Nuxt', 'TypeScript', 'SCSS'],
                 keywords: ['VUE 3', 'NUXT', 'TYPESCRIPT', 'Atomic Design', 'SEO'],
-                mockups: {},
-                url: ''
+                mockups: {
+                    desktop: '/mockups/victoria-beckham2.png',
+                    tablet: '/mockups/victoria-beckham1.png',
+                    mobile: '/mockups/victoria-beckham3.png',
+                },
+                url: 'https://reloved-archive.victoriabeckham.com/'
             },
             {
                 id: 'carel',
@@ -327,9 +334,14 @@ export const useClientsStore = defineStore('clients', {
                 role: 'Front-End',
                 tech: ['VUE 3', 'Nuxt', 'Pinia', 'SCSS'],
                 keywords: ['VUE 3', 'NUXT', 'SEO', 'Design System'],
-                mockups: {},
-                url: ''
+                mockups: {
+                    desktop: '/mockups/carel3.png',
+                    tablet: '/mockups/carel2.png',
+                    mobile: '/mockups/carel1.png',
+                },
+                url: 'https://archives.carel-paris.com/'
             },
+            /*
             {
                 id: 'marni',
                 title: 'Marni',
@@ -344,6 +356,7 @@ export const useClientsStore = defineStore('clients', {
                 mockups: {},
                 url: ''
             },
+             */
             {
                 id: 'armor-lux',
                 title: 'Armor Lux',
@@ -355,8 +368,12 @@ export const useClientsStore = defineStore('clients', {
                 role: 'Front-End',
                 tech: ['VUE 3', 'Nuxt', 'Pinia', 'SCSS'],
                 keywords: ['VUE 3', 'NUXT', 'SEO'],
-                mockups: {},
-                url: ''
+                mockups: {
+                    desktop: '/mockups/armor-lux3.png',
+                    tablet: '/mockups/armor-lux2.png',
+                    mobile: '/mockups/armor-lux1.png',
+                },
+                url: 'https://secondemain.armorlux.com/'
             },
             {
                 id: 'sud-express',
@@ -369,37 +386,14 @@ export const useClientsStore = defineStore('clients', {
                 role: 'Front-End',
                 tech: ['VUE 3', 'Nuxt', 'Pinia', 'SCSS'],
                 keywords: ['VUE 3', 'NUXT', 'Atomic Design'],
-                mockups: {},
-                url: ''
+                mockups: {
+                    desktop: '/mockups/sud-express2.png',
+                    tablet: '/mockups/sud-express1.png',
+                    mobile: '/mockups/sud-express3.png',
+                },
+                url: 'https://secondemain.sudexpress.fr/'
             },
-            {
-                id: 'temperley-london',
-                title: 'Temperley London',
-                logo: '',
-                portrait: '/portraits/temperley-london.webp',
-                startup: 'Faume',
-                agency: null,
-                filters: ['FRONT', 'VUE'],
-                role: 'Front-End',
-                tech: ['VUE 3', 'Nuxt', 'Pinia', 'SCSS'],
-                keywords: ['VUE 3', 'NUXT'],
-                mockups: {},
-                url: ''
-            },
-            {
-                id: 'kids-around',
-                title: 'Kids Around',
-                logo: '',
-                portrait: '/portraits/kids-around.webp',
-                startup: 'Faume',
-                agency: null,
-                filters: ['FRONT', 'VUE'],
-                role: 'Front-End',
-                tech: ['VUE 3', 'Nuxt', 'Pinia', 'SCSS'],
-                keywords: ['VUE 3', 'NUXT'],
-                mockups: {},
-                url: ''
-            },
+            /*
             {
                 id: 'longchamp',
                 title: 'Longchamp',
@@ -414,6 +408,8 @@ export const useClientsStore = defineStore('clients', {
                 mockups: {},
                 url: ''
             },
+
+             */
             {
                 id: 'soeur',
                 title: 'Soeur',
@@ -425,22 +421,29 @@ export const useClientsStore = defineStore('clients', {
                 role: 'Front-End',
                 tech: ['VUE 3', 'Nuxt', 'Pinia', 'SCSS'],
                 keywords: ['VUE 3', 'NUXT'],
-                mockups: {},
-                url: ''
+                mockups: {
+                    desktop: '/mockups/soeur2.png',
+                    tablet: '/mockups/soeur1.png',
+                    mobile: '/mockups/soeur3.png',
+                },
+                url: 'https://secondhand.soeur.fr/'
             },
             {
-                id: 'bonpoint',
-                title: 'Bonpoint',
-                logo: '',
-                portrait: '/portraits/bonpoint.webp',
+                id: 'hugo-boss',
+                title: 'Hugo Boss',
+                logo: '/logos/hugoboss.svg',
+                portrait: '/portraits/hugoboss.webp',
                 startup: 'Faume',
                 agency: null,
-                filters: ['FRONT', 'VUE'],
+                filters: ["FRONT", "VUE"],
                 role: 'Front-End',
-                tech: ['VUE 3', 'Nuxt', 'Pinia', 'SCSS'],
-                keywords: ['VUE 3', 'NUXT'],
-                mockups: {},
-                url: ''
+                tech: ['VUE 3', 'Pinia', 'NUXT', 'SCSS', 'TypeScript'],
+                keywords: ['VUE 3', 'NUXT', 'SCSS', 'SEO', 'TYPESCRIPT', 'MAPBOX', 'Atomic Design'],
+                mockups: {
+                    desktop: '/mockups/hugo-boss2.png',
+                    tablet: '/mockups/hugo-boss1.png',
+                    mobile: '/mockups/hugo-boss3.png',
+                },
             },
             {
                 id: 'mali-hakika',
@@ -453,7 +456,11 @@ export const useClientsStore = defineStore('clients', {
                 role: 'Front-End',
                 tech: ['VUE 3', 'Nuxt', 'Pinia', 'Vuetify', 'PWA'],
                 keywords: ['VUE 3', 'Nuxt', 'Pinia', 'Vuetify', 'PWA'],
-                mockups: {},
+                mockups: {
+                    desktop: '/mockups/mali-hakika2.png',
+                    tablet: '/mockups/mali-hakika1.png',
+                    mobile: '/mockups/mali-hakika3.png',
+                },
                 url: ''
             },
             {
@@ -467,8 +474,12 @@ export const useClientsStore = defineStore('clients', {
                 role: 'Front-End',
                 tech: ['Shopify', 'Liquid', 'SCSS', 'JavaScript'],
                 keywords: ['SHOPIFY', 'LIQUID', 'PIXEL PERFECT'],
-                mockups: {},
-                url: ''
+                mockups: {
+                    desktop: '/mockups/jerome-dreyfuss2.png',
+                    tablet: '/mockups/jerome-dreyfuss1.png',
+                    mobile: '/mockups/jerome-dreyfuss3.png',
+                },
+                url: 'https://vintage.jerome-dreyfuss.com/'
             },
             {
                 id: 'tara-jarmon',
@@ -481,8 +492,12 @@ export const useClientsStore = defineStore('clients', {
                 role: 'Front-End',
                 tech: ['Shopify', 'Liquid', 'SCSS', 'JavaScript'],
                 keywords: ['SHOPIFY', 'LIQUID'],
-                mockups: {},
-                url: ''
+                mockups: {
+                    desktop: '/mockups/tara-jarmon2.png',
+                    tablet: '/mockups/tara-jarmon1.png',
+                    mobile: '/mockups/tara-jarmon3.png',
+                },
+                url: 'https://secondemain.tarajarmon.com'
             },
             {
                 id: 'maison-123',
@@ -495,8 +510,12 @@ export const useClientsStore = defineStore('clients', {
                 role: 'Front-End',
                 tech: ['Shopify', 'Liquid', 'SCSS', 'JavaScript'],
                 keywords: ['SHOPIFY', 'LIQUID'],
-                mockups: {},
-                url: ''
+                mockups: {
+                    desktop: '/mockups/maison123-3.png',
+                    tablet: '/mockups/maison123-2.png',
+                    mobile: '/mockups/maison123-1.png',
+                },
+                url: 'https://secondevie.maison123.com/'
             },
             {
                 id: 'vanessa-bruno',
@@ -509,8 +528,30 @@ export const useClientsStore = defineStore('clients', {
                 role: 'Front-End',
                 tech: ['VUE 3', 'Nuxt', 'Pinia', 'SCSS'],
                 keywords: ['VUE 3', 'NUXT'],
-                mockups: {},
-                url: ''
+                mockups: {
+                    desktop: '/mockups/vanessa-bruno2.png',
+                    tablet: '/mockups/vanessa-bruno1.png',
+                    mobile: '/mockups/vanessa-bruno3.png',
+                },
+                url: 'https://secondemain.vanessabruno.fr/'
+            },
+            {
+                id: 'bonpoint',
+                title: 'Bonpoint',
+                logo: '',
+                portrait: '/portraits/bonpoint.webp',
+                startup: 'Faume',
+                agency: null,
+                filters: ['FRONT', 'VUE'],
+                role: 'Front-End',
+                tech: ['VUE 3', 'Nuxt', 'Pinia', 'SCSS'],
+                keywords: ['VUE 3', 'NUXT'],
+                mockups: {
+                    desktop: '/mockups/bonpoint2.png',
+                    tablet: '/mockups/bonpoint1.png',
+                    mobile: '/mockups/bonpoint3.png',
+                },
+                url: 'https://bonpoint-vintage.com/'
             },
             {
                 id: 'bash',
@@ -523,9 +564,14 @@ export const useClientsStore = defineStore('clients', {
                 role: 'Front-End',
                 tech: ['Shopify', 'Liquid', 'SCSS', 'JavaScript'],
                 keywords: ['SHOPIFY', 'LIQUID'],
-                mockups: {},
-                url: ''
+                mockups: {
+                    desktop: '/mockups/bash1.png',
+                    tablet: '/mockups/bash2.png',
+                    mobile: '/mockups/bash3.png',
+                },
+                url: 'https://seconde-main.ba-sh.com/'
             },
+            /*
             {
                 id: 'the-kooples',
                 title: 'The Kooples',
@@ -537,21 +583,12 @@ export const useClientsStore = defineStore('clients', {
                 role: 'Front-End',
                 tech: ['Shopify', 'SCSS', 'JavaScript', 'Liquid', 'VUE 2', 'VUEX'],
                 keywords: ['SHOPIFY', 'LIQUID', 'SCSS', 'JAVASCRIPT', 'ES6', 'VUE 2', 'VUEX', 'SEO', 'MAPBOX', 'PIXEL PERFECT', 'TRANSCY'],
+                mockups: {
+
+                },
             },
-            {
-                id: 'airbus',
-                title: 'Airbus',
-                logo: '',
-                portrait: '/portraits/airbus.webp',
-                startup: null,
-                agency: 'Fidesio',
-                filters: ['FRONT', 'PHP ENV'],
-                role: 'Front-End',
-                tech: ['HTML', 'SCSS', 'JavaScript', 'TWIG'],
-                keywords: ['HTML', 'SCSS', 'JAVASCRIPT', 'TWIG', 'ANIMATIONS', 'SEO', 'PERFORMANCES', 'PIXEL PERFECT'],
-                mockups: {},
-                url: ''
-            },
+
+             */
             {
                 id: 'editions-didier',
                 title: 'Éditions Didier',
@@ -563,7 +600,9 @@ export const useClientsStore = defineStore('clients', {
                 role: 'Front-End',
                 tech: ['Shopify', 'Liquid', 'SCSS', 'JavaScript'],
                 keywords: ['SHOPIFY', 'LIQUID', 'SCSS', 'JAVASCRIPT', 'ES6', 'SEO', 'PERFORMANCES', 'PIXEL PERFECT', 'THEME SECTIONS'],
-                mockups: {},
+                mockups: {
+                    full: '/mockup/editions-didier.png'
+                },
                 url: ''
             },
             {
@@ -577,7 +616,29 @@ export const useClientsStore = defineStore('clients', {
                 role: 'Front-End',
                 tech: ['Shopify', 'Liquid', 'SCSS', 'JavaScript'],
                 keywords: ['SHOPIFY', 'LIQUID', 'SCSS', 'JAVASCRIPT', 'ES6', 'SEO', 'A/B TEST', 'PIXEL PERFECT', 'PERFORMANCES'],
-                mockups: {},
+                mockups: {
+                    desktop: '/mockups/epycure1.png',
+                    tablet: '/mockups/epycure2.png',
+                    mobile: '/mockups/epycure3.png',
+                },
+                url: 'https://epycure.com/'
+            },
+            {
+                id: 'faume-backoffice',
+                title: 'Faume Back-Office',
+                logo: '',
+                portrait: '/portraits/faume-backoffice.webp',
+                startup: 'Faume',
+                agency: null,
+                filters: ['APP', 'FRONT', 'VUE'],
+                role: 'Front-End',
+                tech: ['VUE 2', 'Vuex', 'TypeScript', 'PWA', 'CHARTJS'],
+                keywords: ['VUE 2', 'Vuex', 'TypeScript', 'PWA', 'CHARTJS'],
+                mockups: {
+                    desktop: '/mockups/faume-backoffice2.png',
+                    tablet: '/mockups/faume-backoffice1.png',
+                    mobile: '/mockups/faume-backoffice3.png',
+                },
                 url: ''
             },
             {
@@ -591,22 +652,12 @@ export const useClientsStore = defineStore('clients', {
                 role: 'Front-End',
                 tech: ['VUE 3', 'Nuxt', 'Pinia', 'SCSS', 'TypeScript'],
                 keywords: ['VUE 3', 'NUXT', 'PINIA', 'SCSS', 'TYPESCRIPT', 'SEO', 'ATOMIC DESIGN', 'DESIGN TOKENS', 'PERFORMANCES'],
-                mockups: {},
-                url: ''
-            },
-            {
-                id: 'french-bandit',
-                title: 'French Bandit',
-                logo: '',
-                portrait: '/portraits/french-bandit.webp',
-                startup: null,
-                agency: 'W3lead',
-                filters: ['SHOPIFY', 'FRONT'],
-                role: 'Front-End',
-                tech: ['Shopify', 'Liquid', 'SCSS', 'JavaScript'],
-                keywords: ['SHOPIFY', 'LIQUID', 'SCSS', 'JAVASCRIPT', 'ES6', 'SEO', 'MAPBOX', 'PIXEL PERFECT'],
-                mockups: {},
-                url: ''
+                mockups: {
+                    desktop: '/mockups/balzac2.png',
+                    tablet: '/mockups/balzac1.png',
+                    mobile: '/mockups/balzac3.png',
+                },
+                url: 'https://secondevie.balzac-paris.fr/'
             },
             {
                 id: 'butagaz',
@@ -619,7 +670,9 @@ export const useClientsStore = defineStore('clients', {
                 role: 'Front-End',
                 tech: ['HTML', 'SCSS', 'JavaScript', 'TWIG'],
                 keywords: ['HTML', 'SCSS', 'JAVASCRIPT', 'TWIG', 'PERFORMANCES', 'SEO', 'ACCESSIBILITÉ', 'PIXEL PERFECT'],
-                mockups: {},
+                mockups: {
+                    full: '/mockup/butagaz.png'
+                },
                 url: ''
             },
             {
@@ -633,8 +686,28 @@ export const useClientsStore = defineStore('clients', {
                 role: 'Front-End',
                 tech: ['HTML', 'SCSS', 'JavaScript', 'TWIG'],
                 keywords: ['HTML', 'SCSS', 'JAVASCRIPT', 'TWIG', 'SEO', 'PERFORMANCES', 'ANIMATIONS', 'PIXEL PERFECT'],
-                mockups: {},
+                mockups: {
+                    full: '/mockup/groupe-soufflet.png'
+                },
                 url: ''
+            },
+            {
+                id: 'claudie-pierlot',
+                title: 'Claudie Pierlot',
+                logo: '/logos/claudiepierlot.svg',
+                portrait: '/portraits/claudiepierlot.webp',
+                startup: "Faume",
+                agency: null,
+                filters: ['SHOPIFY', "FRONT", "VUE"],
+                role: 'Front-End',
+                tech: ['Shopify', 'SCSS', 'JavaScript', 'Liquid', 'VUE 2', 'VUEX'],
+                keywords: ['SHOPIFY', 'LIQUID', 'SCSS', 'JAVASCRIPT', 'ES6', 'VUE 2', 'VUEX', 'SEO', 'MAPBOX', 'PIXEL PERFECT', 'TRANSCY'],
+                mockups: {
+                    desktop: '/mockups/claudie-pierlot2.png',
+                    tablet: '/mockups/claudie-pierlot3.png',
+                    mobile: '/mockups/claudie-pierlot1.png',
+                },
+                url: "https://secondemain.claudiepierlot.com/"
             },
             {
                 id: 'theater-in-paris',
@@ -647,8 +720,12 @@ export const useClientsStore = defineStore('clients', {
                 role: 'Front-End',
                 tech: ['Shopify', 'Liquid', 'SCSS', 'JavaScript'],
                 keywords: ['SHOPIFY', 'LIQUID', 'SCSS', 'JAVASCRIPT', 'ES6', 'SEO', 'INTERNATIONAL', 'PIXEL PERFECT'],
-                mockups: {},
-                url: ''
+                mockups: {
+                    desktop: '/mockups/theater-in-paris1.png',
+                    tablet: '/mockups/theater-in-paris2.png',
+                    mobile: '/mockups/theater-in-paris3.png',
+                },
+                url: 'https://www.theatreinparis.com/'
             },
             {
                 id: 'aigle',
@@ -661,8 +738,26 @@ export const useClientsStore = defineStore('clients', {
                 role: 'Front-End',
                 tech: ['VUE 3', 'Nuxt', 'Pinia', 'SCSS', 'TypeScript'],
                 keywords: ['VUE 3', 'NUXT', 'PINIA', 'SCSS', 'TYPESCRIPT', 'SEO', 'PERFORMANCES', 'ANIMATIONS'],
+                mockups: {
+                    desktop: '/mockups/aigle2.png',
+                    tablet: '/mockups/aigle1.png',
+                    mobile: '/mockups/aigle3.png',
+                },
+                url: 'https://aigle-second-souffle.com/'
+            },
+            {
+                id: 'leo-pharma',
+                title: 'Doctolien',
+                logo: '',
+                portrait: '/portraits/leo-pharma.webp',
+                startup: null,
+                agency: 'Fidesio',
+                filters: ['FRONT', 'ANGULAR'],
+                role: 'Front-End',
+                tech: ['ANGULAR 2', 'CSS', 'TypeScript', 'PWA'],
+                keywords: ['ANGULAR 2', 'CSS', 'TypeScript', 'PWA'],
                 mockups: {},
-                url: ''
+                url: null
             },
             {
                 id: 'lancaster',
@@ -682,6 +777,60 @@ export const useClientsStore = defineStore('clients', {
                 },
                 url: 'https://seconde-main.lancaster.com/'
             },
+            {
+                id: 'account-package',
+                title: "Account Package",
+                logo: null,
+                portrait: null,
+                startup: 'Faume',
+                agency: null,
+                filters: ['VUE', 'FRONT'],
+                role: 'Front-End',
+                tech: ['VUE 2', 'VUEX', 'JavaScript', 'SCSS', 'NPM'],
+                keywords: ['VUE 2', 'VUEX', 'JavaScript', 'SCSS', 'NPM Package', 'ES6', 'CI/CD'],
+                mockups: {
+                    desktop: '/mockups/account-package2.png',
+                    tablet: '/mockups/account-package1.png',
+                    mobile: '/mockups/account-package3.png',
+                },
+                url: null
+            },
+            {
+                id: 'isabel-marant',
+                title: 'Isabel Marant',
+                logo: '/logos/isabelmarant.svg',
+                portrait: '/portraits/isabelmarant.webp',
+                startup: "Faume",
+                agency: null,
+                filters: ["SHOPIFY", "FRONT", "VUE"],
+                role: 'Front-End',
+                tech: ['Shopify', 'SCSS', 'JavaScript', 'Liquid', 'VUE 2', 'VUEX'],
+                keywords: ['SHOPIFY', 'LIQUID', 'SCSS', 'JAVASCRIPT', 'ES6', 'VUE 2', 'VUEX', 'SEO', 'MAPBOX', 'PIXEL PERFECT', 'TRANSCY'],
+                mockups: {
+                    desktop: '/mockups/isabel-marant2.png',
+                    tablet: '/mockups/isabel-marant1.png',
+                    mobile: '/mockups/isabel-marant3.png',
+                },
+                url: "https://www.isabelmarant-vintage.com/",
+            },
+            {
+                id: 'order-tracking',
+                title: "Order Tracking",
+                logo: null,
+                portrait: null,
+                startup: 'Faume',
+                agency: null,
+                filters: ['VUE', 'FRONT'],
+                role: 'Front-End',
+                tech: ['VUE 2', 'VUEX', 'JavaScript', 'SCSS', 'NPM'],
+                keywords: ['VUE 2', 'VUEX', 'JavaScript', 'SCSS', 'NPM Package', 'ES6', 'CI/CD', 'MONO REPO'],
+                mockups: {
+                    desktop: '/mockups/order-tracking2.png',
+                    tablet: '/mockups/order-tracking1.png',
+                    mobile: '/mockups/order-tracking3.png',
+                },
+                url: null
+            }
         ] as Client[],
     }),
 
@@ -697,6 +846,7 @@ export const useClientsStore = defineStore('clients', {
             )
         },
         getAllClients: (state): Client[] => state.clients,
+        highlightClients: (state): Client[] => state.clients?.filter(client => client.portrait?.length),
     },
 
     actions: {
