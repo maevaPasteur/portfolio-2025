@@ -21,7 +21,7 @@
                             loading="lazy"
                     />
                 </div>
-                <span class="absolute left-O top-0 w-full pb-1 -translate-y-full text-xs font-semibold">{{ client.title }}</span>
+                <span class="lg:hidden absolute left-O top-0 w-full pb-1 -translate-y-full text-xs font-semibold">{{ client.title }}</span>
                 <div class="absolute left-0 -bottom-[2%] lg:bottom-auto lg:top-[-2%] w-full pb-1 translate-y-full lg:-translate-y-full text-right font-mono text-xs overflow-hidden">
                     <span class="flex gap-2 overflow-hidden">
                         <span

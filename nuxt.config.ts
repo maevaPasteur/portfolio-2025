@@ -7,7 +7,8 @@ export default defineNuxtConfig({
     '@nuxtjs/i18n',
     '@nuxtjs/tailwindcss',
     '@nuxt/eslint',
-    '@nuxt/icon'
+    '@nuxt/icon',
+    '@nuxtjs/sitemap'
   ],
   i18n: {
     locales: [
@@ -31,7 +32,7 @@ export default defineNuxtConfig({
   css: ['~/assets/css/fonts.css', '~/assets/css/tailwind.css'],
   nitro: {
     prerender: {
-      routes: ['/sitemap.xml', '/robots.txt']
+      routes: ['/robots.txt', '/sitemap.xml']
     }
   },
   app: {
@@ -40,6 +41,13 @@ export default defineNuxtConfig({
       title: 'Portfolio 2025',
       meta: [
         { name: 'description', content: 'Portfolio 2025' }
+      ],
+      link: [
+        { rel: 'icon', type: 'image/x-icon', href: '/images/favicon/favicon.ico' },
+        { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/images/favicon/favicon-32x32.png' },
+        { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/images/favicon/favicon-16x16.png' },
+        { rel: 'apple-touch-icon', sizes: '180x180', href: '/images/favicon/apple-touch-icon.png' },
+        { rel: 'manifest', href: '/images/favicon/site.webmanifest' }
       ]
     },
     pageTransition: { name: 'page', mode: 'out-in' },
@@ -53,5 +61,13 @@ export default defineNuxtConfig({
   },
   icon: {
     mode: 'svg'
+  },
+  site: {
+    url: 'https://maevapasteur.com'
+  },
+  sitemap: {
+    sources: [
+      '/api/__sitemap__/urls'
+    ]
   }
 })
