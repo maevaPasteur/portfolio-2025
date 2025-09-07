@@ -24,8 +24,18 @@ definePageMeta({
   layout: 'default'
 })
 
+// SEO Meta
 useSeoMeta({
   title: t('about.seo.title'),
   description: t('about.seo.description'),
 })
+
+// Schema.org JSON-LD
+const { definePerson, defineBreadcrumbList, defineServices } = useSchemaOrgPersonal()
+
+useSchemaOrg([
+  definePerson(),
+  defineBreadcrumbList(),
+  ...defineServices()
+])
 </script>

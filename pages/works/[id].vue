@@ -100,10 +100,28 @@ const mockupFullImage = computed(() => client.value?.mockups?.full);
 watch(client, (data) => {
     if (data) {
         const seoDescKey = `clients.${clientId.value}.seo.description`;
+        
+        // SEO Meta
         useSeoMeta({
             title: t('client.seo.title', {name: data.title}),
             description: te(seoDescKey) ? t(seoDescKey) : null
         })
+        
+        // Schema.org JSON-LD pour projet spécifique
+        const { defineBreadcrumbList } = useSchemaOrgPersonal()
+        const { defineProject } = useSchemaOrgProject({
+          name: data.title,
+          description: description.value || data.title,
+          image: mockupFullImage.value || mockupSingleImage.value || mockupDesktop.value,
+          url: data.url,
+          technologies: data.keywords,
+          dateCreated: data.year ? `${data.year}-01-01` : undefined
+        })
+        
+        useSchemaOrg([
+          defineBreadcrumbList(),
+          defineProject()
+        ])
     }
 }, {immediate: true, deep: true});
 

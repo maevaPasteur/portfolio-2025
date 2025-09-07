@@ -1,0 +1,47 @@
+{
+  "schema": {
+    "person": {
+      "name": "Maëva Pasteur",
+      "jobTitle": "Développeuse Frontend",
+      "description": "Développeuse Frontend spécialisée en Vue.js, Nuxt, et technologies web modernes. Passionnée par l'expérience utilisateur et les interfaces élégantes.",
+      "disambiguatingDescription": "Développeuse web française spécialisée dans le développement frontend avec plus de 8 ans d'expérience"
+    },
+    "website": {
+      "name": "Portfolio de Maëva Pasteur",
+      "description": "Portfolio professionnel de Maëva Pasteur, développeuse frontend spécialisée en Vue.js et Nuxt.js",
+      "about": "Découvrez mes projets, compétences et expériences en développement web frontend"
+    },
+    "organization": {
+      "name": "Maëva Pasteur - Développement Web",
+      "description": "Services de développement web frontend, spécialisée en Vue.js, Nuxt.js et technologies modernes"
+    },
+    "breadcrumb": {
+      "home": "Accueil",
+      "about": "À propos",
+      "works": "Réalisations",
+      "contact": "Contact"
+    },
+    "services": [
+      {
+        "name": "Développement Frontend",
+        "description": "Développement d'interfaces utilisateur modernes avec Vue.js, Nuxt.js et TypeScript"
+      },
+      {
+        "name": "Intégration Web",
+        "description": "Intégration de maquettes responsive avec HTML5, CSS3, SCSS et Tailwind CSS"
+      },
+      {
+        "name": "Optimisation Performance",
+        "description": "Optimisation des performances web et amélioration de l'expérience utilisateur"
+      },
+      {
+        "name": "E-commerce Shopify",
+        "description": "Développement et personnalisation de boutiques en ligne Shopify"
+      }
+    ],
+    "skills": [
+      "Vue.js", "Nuxt.js", "TypeScript", "JavaScript", "HTML5", "CSS3", "SCSS", "Tailwind CSS",
+      "Shopify", "Node.js", "MongoDB", "Git", "Responsive Design", "Performance Web"
+    ]
+  }
+}

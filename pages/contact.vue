@@ -24,8 +24,44 @@ definePageMeta({
     layout: 'default'
 })
 
+// SEO Meta
 useSeoMeta({
     title: t('contact.seo.title'),
     description: t('contact.seo.description'),
 })
+
+// Schema.org JSON-LD
+const { definePerson, defineBreadcrumbList } = useSchemaOrgPersonal()
+
+// Schema ContactPage
+const defineContactPage = () => {
+  const { t } = useI18n()
+  return {
+    '@type': 'ContactPage',
+    name: t('contact.seo.title'),
+    description: t('contact.seo.description'),
+    url: 'https://maevapasteur.com/contact',
+    mainEntity: {
+      '@type': 'ContactPoint',
+      contactType: 'customer service',
+      email: 'contact@maevapasteur.com',
+      url: 'https://maevapasteur.com/contact',
+      areaServed: {
+        '@type': 'Country',
+        name: 'France'
+      },
+      availableLanguage: ['French', 'English']
+    },
+    about: {
+      '@type': 'Person',
+      name: t('schema.person.name')
+    }
+  }
+}
+
+useSchemaOrg([
+  definePerson(),
+  defineBreadcrumbList(),
+  defineContactPage()
+])
 </script>

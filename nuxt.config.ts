@@ -8,7 +8,8 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
     '@nuxt/eslint',
     '@nuxt/icon',
-    '@nuxtjs/sitemap'
+    '@nuxtjs/sitemap',
+    'nuxt-schema-org'
   ],
   i18n: {
     baseUrl: 'maevapasteur.com',
@@ -56,8 +57,10 @@ export default defineNuxtConfig({
         { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/images/favicon/favicon-32x32.png' },
         { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/images/favicon/favicon-16x16.png' },
         { rel: 'apple-touch-icon', sizes: '180x180', href: '/images/favicon/apple-touch-icon.png' },
-        { rel: 'manifest', href: '/images/favicon/site.webmanifest' }
-      ]
+        { rel: 'manifest', href: '/site.webmanifest' }
+      ],
+      charset: 'utf-16',
+      viewport: 'width=device-width, initial-scale=1, maximum-scale=1',
     },
     pageTransition: { name: 'page', mode: 'out-in' },
     layoutTransition: { name: 'layout', mode: 'out-in' }
@@ -73,6 +76,11 @@ export default defineNuxtConfig({
   },
   site: {
     url: 'https://maevapasteur.com'
+  },
+  schemaOrg: {
+    host: 'https://maevapasteur.com',
+    canonicalHost: 'https://maevapasteur.com',
+    inLanguage: 'fr-FR'
   },
   sitemap: {
     sources: [
