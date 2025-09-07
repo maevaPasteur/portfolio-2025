@@ -15,7 +15,7 @@ export const useSchemaOrgPersonal = () => {
       description: t('schema.person.description'),
       disambiguatingDescription: t('schema.person.disambiguatingDescription'),
       url: baseUrl,
-      image: `${baseUrl}/images/maeva-pasteur.jpg`,
+      image: `${baseUrl}/images/maeva-pasteur.webp`,
       sameAs: [
         'https://linkedin.com/in/maeva-pasteur',
         'https://github.com/maevapasteur',
