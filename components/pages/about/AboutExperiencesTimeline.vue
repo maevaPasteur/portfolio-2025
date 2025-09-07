@@ -94,7 +94,11 @@
 
             <div class="absolute top-0 left-0 w-full h-full flex z-[0] p-3" v-reveal>
                 <div class="flex w-full gap-3 pt-[100px]">
-                    <span v-for="i in 12" class="bg-gray-50 rounded-xl block w-full"></span>
+                    <span
+                            v-for="i in 12"
+                            class="bg-gray-50 rounded-xl block w-full"
+                            :class="{'hidden md:block': i>=6}"
+                    ></span>
                 </div>
             </div>
 

@@ -1,10 +1,10 @@
 <template>
     <div class="min-h-screen w-full bg-gray-100 flex flex-col items-center">
         <section class="text-center my-auto px-6 text-gray-900">
-            <h1 class="text-xl font-mono mb-6">
+            <h1 class="font-semibold md:font-normal text-md md:text-xl font-mono mb-6">
                 <span>{{ $t('contact.title') }}</span>
             </h1>
-            <a class="font-[Neutral] text-6xl" href="mailto:contact@maevapasteur.com" target="_blank">
+            <a class="sm:font-[Neutral] font-light text-xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl" href="mailto:contact@maevapasteur.com" target="_blank">
                 <AnimationLetterFromLeft :text="email"/>
             </a>
         </section>

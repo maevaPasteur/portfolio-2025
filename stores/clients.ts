@@ -631,7 +631,7 @@ export const useClientsStore = defineStore('clients', {
                 tech: ['Shopify', 'Liquid', 'SCSS', 'JavaScript'],
                 keywords: ['SHOPIFY', 'LIQUID', 'SCSS', 'JAVASCRIPT', 'ES6', 'SEO', 'PERFORMANCES', 'PIXEL PERFECT', 'THEME SECTIONS'],
                 mockups: {
-                    full: '/mockup/editions-didier.png'
+                    full: '/mockups/editions-didier.png'
                 },
                 url: '',
                 sectors: ['culture']
@@ -705,7 +705,7 @@ export const useClientsStore = defineStore('clients', {
                 tech: ['HTML', 'SCSS', 'JavaScript', 'TWIG'],
                 keywords: ['HTML', 'SCSS', 'JAVASCRIPT', 'TWIG', 'PERFORMANCES', 'SEO', 'ACCESSIBILITÉ', 'PIXEL PERFECT'],
                 mockups: {
-                    full: '/mockup/butagaz.png'
+                    full: '/mockups/butagaz.png'
                 },
                 url: '',
                 sectors: ['energy']
@@ -722,7 +722,7 @@ export const useClientsStore = defineStore('clients', {
                 tech: ['HTML', 'SCSS', 'JavaScript', 'TWIG'],
                 keywords: ['HTML', 'SCSS', 'JAVASCRIPT', 'TWIG', 'SEO', 'PERFORMANCES', 'ANIMATIONS', 'PIXEL PERFECT'],
                 mockups: {
-                    full: '/mockup/groupe-soufflet.png'
+                    full: '/mockups/groupe-soufflet.png'
                 },
                 url: '',
                 sectors: ['agriculture']

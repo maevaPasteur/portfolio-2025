@@ -2,7 +2,7 @@
     <div>
         <div v-if="client" class="px-6 min-h-screen pb-10">
 
-            <div class="pt-[80px] md:pt-[100px] grid gap-9 w-full grid-cols-1 lg:grid-cols-[1fr_50%] md:grid-rows-[auto_1fr]">
+            <div class="pt-[80px] md:pt-[100px] grid gap-16 w-full grid-cols-1 lg:grid-cols-[1fr_50%] md:grid-rows-[auto_1fr] relative">
 
                 <div>
                     <h1 class="font-[Neutral] mb-6"
@@ -14,12 +14,34 @@
                     </h1>
                     <AnimationWordFromBottom
                             v-if="client.keywords?.length"
-                            class="gap-2 font-mono text-sm md:text-md flex-wrap gap-y-1"
+                            class="gap-2 font-mono text-sm md:text-md flex-wrap gap-y-1 mb-8"
                             :words="client.keywords"
                     />
+                    <div class="gap-1 md:gap-8 grid-rows-[auto] grid grid-cols-1 md:grid-cols-[25%_1fr]">
+                        <h2 class="font-[Neutral] uppercase text-lg">{{ $t('client.client') }}</h2>
+                        <div v-html="description" class="prose text-sm prose-strong:font-medium prose-ul:pl-3"></div>
+                        <h2 class="font-[Neutral] uppercase text-lg mt-6 md:mt-0">{{ $t('client.mission') }}</h2>
+                        <div>
+                            <div v-html="mission" class="prose text-sm prose-strong:font-medium prose-ul:pl-3"></div>
+                            <p v-if="info?.length" class="text-xs text-gray-400 mt-6 italic">{{ info }}</p>
+                            <Button v-if="client.url" :to="client.url" icon="mdi:arrow-top-right" class="mt-6">
+                                {{ $t('client.see_website') }}
+                            </Button>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="pl-6 md:pl-0 max-w-xl order-3 lg:order-none mx-auto lg:max-w-full lg:row-span-2 lg:col-start-2 flex justify-center items-center">
+                <div
+                        v-if="mockupFullImage"
+                        class="lg:row-span-2 lg:col-start-2 flex justify-center"
+                >
+                    <ImageAnimated
+                           class="w-full h-auto max-w-2xl"
+                            :image="mockupFullImage"
+                            :alt="client.title"
+                    />
+                </div>
+                <div v-else class="pl-[5%] max-w-2xl mx-auto lg:max-w-full flex justify-center items-center">
                     <div class="media-container flex items-center">
                         <ImageAnimated v-if="mockupSingleImage" :image="mockupSingleImage" :alt="client.title"/>
                         <div v-else-if="mockupMobile && mockupTablet && mockupDesktop" class="flex flex-col relative gap-3 relative">
@@ -33,21 +55,9 @@
                     </div>
                 </div>
 
-                <div class="w-full grid grid-cols-1 md:grid-cols-[25%_1fr] pr-[5vw] gap-1 md:gap-4" v-reveal-group>
-                    <h2 class="font-[Neutral] uppercase text-lg">{{ $t('client.client') }}</h2>
-                    <div v-html="description" class="prose text-sm prose-strong:font-medium prose-ul:pl-3"></div>
-                    <h2 class="font-[Neutral] uppercase text-lg mt-6 md:mt-0">{{ $t('client.mission') }}</h2>
-                    <div>
-                        <div v-html="mission" class="prose text-sm prose-strong:font-medium prose-ul:pl-3"></div>
-                        <p v-if="info?.length" class="text-xs text-gray-400 mt-6 italic">{{ info }}</p>
-                        <Button v-if="client.url" :to="client.url" icon="mdi:arrow-top-right" class="mt-6">
-                            {{ $t('client.see_website') }}
-                        </Button>
-                    </div>
-                    <div v-if="previousClient?.id || nextClient?.id" class="fixed z-[3] bottom-6 left-6 flex gap-2">
-                        <ButtonClient :client="previousClient" :is-previous="true"/>
-                        <ButtonClient :client="nextClient" :is-next="true"/>
-                    </div>
+                <div v-if="previousClient?.id || nextClient?.id" class="fixed z-[3] bottom-6 left-6 flex gap-2">
+                    <ButtonClient :client="previousClient" :is-previous="true"/>
+                    <ButtonClient :client="nextClient" :is-next="true"/>
                 </div>
 
             </div>
@@ -85,6 +95,7 @@ const mockupDesktop = computed(() => client.value?.mockups?.desktop);
 const mockupTablet = computed(() => client.value?.mockups?.tablet);
 const mockupMobile = computed(() => client.value?.mockups?.mobile);
 const mockupSingleImage = computed(() => client.value?.mockups?.image);
+const mockupFullImage = computed(() => client.value?.mockups?.full);
 
 watch(client, (data) => {
     if (data) {
