@@ -6,7 +6,7 @@
         <h1 class="text-sm md:text-md font-mono text-gray-800 md:text-gray-600">
             <span>{{ $t('contact.title') }}</span>
         </h1>
-        <a class="font-[Neutral] text-lg md:text-2xl lg:text-4xl" href="mailto:maeva.pasteur.pro@gmail.com" target="_blank">
+        <a class="font-[Neutral] text-lg md:text-2xl lg:text-4xl" href="mailto:contact@maevapasteur.com" target="_blank">
             <AnimationLetterFromLeft :text="email"/>
         </a>
     </section>
@@ -14,5 +14,5 @@
 
 <script setup lang="ts">
 import AnimationLetterFromLeft from "@/components/animations/AnimationLetterFromLeft.vue";
-const email = "maeva.pasteur.pro@gmail.com";
+const email = "contact@maevapasteur.com";
 </script>

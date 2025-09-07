@@ -1,5 +1,4 @@
 export default defineSitemapEventHandler(async () => {
-  // Import clients data
   const clients = [
     'citadium', 'jimmy-fairly', 'lacoste', 'ami', 'cabaia', 'g-star', 'isotoner', 'leo-violette',
     'airbus', 'petites-jupes-de-prune', 'temperley-london', 'kids-around', 'faume-page-builder',

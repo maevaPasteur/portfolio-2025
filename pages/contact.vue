@@ -4,7 +4,7 @@
             <h1 class="text-xl font-mono mb-6">
                 <span>{{ $t('contact.title') }}</span>
             </h1>
-            <a class="font-[Neutral] text-6xl" href="mailto:maeva.pasteur.pro@gmail.com" target="_blank">
+            <a class="font-[Neutral] text-6xl" href="mailto:contact@maevapasteur.com" target="_blank">
                 <AnimationLetterFromLeft :text="email"/>
             </a>
         </section>
@@ -18,7 +18,7 @@ import Footer from "@/components/sections/Footer.vue";
 
 const { t } = useI18n();
 
-const email = "maeva.pasteur.pro@gmail.com";
+const email = "contact@maevapasteur.com";
 
 definePageMeta({
     layout: 'default'

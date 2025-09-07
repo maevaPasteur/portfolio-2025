@@ -11,9 +11,18 @@ export default defineNuxtConfig({
     '@nuxtjs/sitemap'
   ],
   i18n: {
+    baseUrl: 'maevapasteur.com',
     locales: [
-      { code: 'fr', file: 'fr.json', name: 'Français' },
-      { code: 'en', file: 'en.json', name: 'English' }
+      {
+        code: 'fr',
+        file: 'fr.json',
+        name: 'Français'
+      },
+      {
+        code: 'en',
+        file: 'en.json',
+        name: 'English'
+      }
     ],
     lazy: true,
     langDir: 'locales',
