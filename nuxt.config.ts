@@ -1,11 +1,9 @@
-const isGitHubPages = process.env.NITRO_PRESET === 'github-pages'
-
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
   runtimeConfig: {
     public: {
-      siteUrl: 'https://maevapasteur.com'
+      siteUrl: 'https://www.maevapasteur.com'
     }
   },
   modules: [
@@ -19,7 +17,7 @@ export default defineNuxtConfig({
     'nuxt-schema-org'
   ],
   i18n: {
-    baseUrl: 'maevapasteur.com',
+    baseUrl: 'www.maevapasteur.com',
     locales: [
       {
         code: 'fr',
@@ -48,17 +46,20 @@ export default defineNuxtConfig({
   },
   css: ['~/assets/css/fonts.css', '~/assets/css/tailwind.css'],
   nitro: {
-    ...(isGitHubPages && { preset: 'github-pages' }),
+    preset: 'github-pages',
     prerender: {
       routes: ['/robots.txt', '/sitemap.xml']
     }
   },
   app: {
-    baseURL: isGitHubPages ? '/portfolio-2025/' : '/',
-    ...(isGitHubPages && { cdnURL: '/portfolio-2025/' }),
+    baseURL: '/',
     head: {
       title: 'Portfolio 2025',
-      meta: [{ name: 'description', content: 'Portfolio 2025' }],
+      meta: [
+        { name: 'description', content: 'Portfolio 2025' },
+        { charset: 'utf-8' },
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' }
+      ],
       link: [
         {
           rel: 'icon',
@@ -83,9 +84,7 @@ export default defineNuxtConfig({
           href: '/images/favicon/apple-touch-icon.png'
         },
         { rel: 'manifest', href: '/site.webmanifest' }
-      ],
-      charset: 'utf-16',
-      viewport: 'width=device-width, initial-scale=1, maximum-scale=1'
+      ]
     },
     pageTransition: { name: 'page', mode: 'out-in' },
     layoutTransition: { name: 'layout', mode: 'out-in' }
@@ -103,11 +102,11 @@ export default defineNuxtConfig({
     }
   },
   site: {
-    url: 'https://maevapasteur.com'
+    url: 'https://www.maevapasteur.com'
   },
   schemaOrg: {
-    host: 'https://maevapasteur.com',
-    canonicalHost: 'https://maevapasteur.com',
+    host: 'https://www.maevapasteur.com',
+    canonicalHost: 'https://www.maevapasteur.com',
     inLanguage: 'fr-FR'
   },
   sitemap: {
