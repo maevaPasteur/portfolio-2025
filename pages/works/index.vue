@@ -1,14 +1,14 @@
 <template>
-    <div class="pt-[100px]">
-        <h1 class="px-6 font-[Neutral] text-4xl md:text-6xl lg:text-8xl xl:text-9xl">
-            <AnimationLetterFromLeft :text="$t('works.title')"/>
-        </h1>
-        <WorkLogos class="mt-12 mb-6"/>
-        <WorkClients/>
-        <WorkSectors/>
-        <Contact/>
-        <Footer/>
-    </div>
+  <div class="pt-[100px]">
+    <h1 class="px-6 font-[Neutral] text-4xl md:text-6xl lg:text-8xl xl:text-9xl">
+      <AnimationLetterFromLeft :text="$t('works.title')"/>
+    </h1>
+    <WorkLogos class="mt-12 mb-6"/>
+    <WorkClients/>
+    <WorkSectors/>
+    <Contact/>
+    <Footer/>
+  </div>
 </template>
 
 <script setup lang="ts">
@@ -28,7 +28,7 @@ definePageMeta({
 // SEO Meta
 useSeoMeta({
     title: t('works.seo.title'),
-    description: t('works.seo.description'),
+    description: t('works.seo.description')
 })
 
 // Schema.org JSON-LD
@@ -48,7 +48,7 @@ const defineWorksCollection = () => {
       itemListElement: [
         { '@type': 'CreativeWork', name: 'Citadium' },
         { '@type': 'CreativeWork', name: 'Isabel Marant' },
-        { '@type': 'CreativeWork', name: 'Jimmy Fairly' },
+        { '@type': 'CreativeWork', name: 'Jimmy Fairly' }
         // ... autres projets
       ]
     },

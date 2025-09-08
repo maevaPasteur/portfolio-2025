@@ -29,11 +29,11 @@ export const vRevealGroup: Directive<HTMLElement, RevealGroupOptions | undefined
             threshold = 0.1,
             rootMargin = '0px 0px 0px 0px',
             once = false,
-            staggerDelay = 100,
+            staggerDelay = 100
         } = binding.value || {}
 
         const children = Array.from(el.children) as HTMLElement[]
-        
+
         children.forEach((child, index) => {
             child.classList.add('reveal');
             const delay = getDelay(index, staggerDelay);
@@ -65,11 +65,11 @@ export const vRevealGroup: Directive<HTMLElement, RevealGroupOptions | undefined
         }, { threshold, rootMargin })
 
         observer.observe(el)
-        ;(el as any).__revealGroupObserver = observer
+        ;(el as HTMLElement & { __revealGroupObserver?: IntersectionObserver }).__revealGroupObserver = observer
     },
     unmounted(el) {
-        const obs: IntersectionObserver | undefined = (el as any).__revealGroupObserver
+        const obs: IntersectionObserver | undefined = (el as HTMLElement & { __revealGroupObserver?: IntersectionObserver }).__revealGroupObserver
         if (obs) obs.unobserve(el)
-        delete (el as any).__revealGroupObserver
-    },
+        delete (el as HTMLElement & { __revealGroupObserver?: IntersectionObserver }).__revealGroupObserver
+    }
 }

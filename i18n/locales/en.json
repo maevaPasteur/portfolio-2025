@@ -578,5 +578,67 @@
   },
   "footer": {
     "follow": "Follow me:"
+  },
+  "schema": {
+    "person": {
+      "name": "Maëva Pasteur",
+      "jobTitle": "Frontend Developer",
+      "description": "Fullstack frontend developer specialized in Vue.js and Nuxt.js. Expert in Node.js Express REST APIs with MongoDB. PWA and MVP from prototype to final product.",
+      "disambiguatingDescription": "French web developer specialized in frontend and fullstack development with over 7 years of experience"
+    },
+    "website": {
+      "name": "Maëva Pasteur's Portfolio",
+      "description": "Professional portfolio of Maëva Pasteur, fullstack frontend developer specialized in Vue.js, Nuxt, REST APIs and PWA",
+      "about": "Discover my frontend architectures, REST APIs and fullstack development projects"
+    },
+    "organization": {
+      "name": "Maëva Pasteur - Web Development",
+      "description": "Fullstack web development services: Vue.js/Nuxt frontend, Node.js Express MongoDB REST APIs, PWA and MVP"
+    },
+    "breadcrumb": {
+      "home": "Home",
+      "about": "About",
+      "works": "Works",
+      "contact": "Contact"
+    },
+    "services": [
+      {
+        "name": "Frontend Development",
+        "description": "Vue.js and Nuxt.js frontend architectures. Pixel-perfect integrations and scalable applications."
+      },
+      {
+        "name": "Backend Development",
+        "description": "Robust REST APIs with Node.js, Express and MongoDB. NoSQL architecture and secure authentication."
+      },
+      {
+        "name": "Fullstack Development",
+        "description": "Complete Vue.js/Nuxt + Node.js/Express solutions. PWA and MVP from prototype to production deployment."
+      },
+      {
+        "name": "Shopify E-commerce",
+        "description": "Custom Shopify themes and applications. 30+ projects delivered generating $150M+ GMV."
+      }
+    ],
+    "skills": [
+      "Frontend developer", "Fullstack developer", "Vue.js", "Nuxt.js", "Node.js", "Express", "MongoDB", "REST APIs", "PWA", "MVP", "TypeScript", "JavaScript", "Pixel perfect", "HTML5", "CSS3", "SCSS", "Tailwind CSS", "Shopify", "Git", "Responsive Design", "Scalable architecture"
+    ],
+    "faq": {
+      "question1": {
+        "question": "What services does Maëva Pasteur offer?",
+        "answer": "Maëva Pasteur offers fullstack development services: Vue.js and Nuxt frontend architectures, REST API development with Node.js Express and MongoDB, PWA and MVP from prototype to final product, pixel-perfect integrations, and Shopify e-commerce development."
+      },
+      "question2": {
+        "question": "What technologies does Maëva Pasteur use?",
+        "answer": "Maëva Pasteur masters Vue.js, Nuxt.js, Node.js, Express, MongoDB, TypeScript, JavaScript, SCSS, Tailwind CSS and Shopify to create performant and scalable fullstack web solutions."
+      },
+      "question3": {
+        "question": "How to contact Maëva Pasteur?",
+        "answer": "You can contact Maëva Pasteur by email at contact@maevapasteur.com to discuss your fullstack web development projects."
+      }
+    },
+    "business": {
+      "name": "Maëva Pasteur - Fullstack Development",
+      "description": "Expert fullstack developer: Vue.js/Nuxt frontend, Node.js/Express/MongoDB REST APIs, PWA and MVP, pixel-perfect integrations and e-commerce solutions"
+    }
   }
 }

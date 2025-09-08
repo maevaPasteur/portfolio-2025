@@ -2,7 +2,7 @@
 export default {
   content: [
     './components/**/*.{js,vue,ts}',
-    './layouts/**/*.vue', 
+    './layouts/**/*.vue',
     './pages/**/*.vue',
     './plugins/**/*.{js,ts}',
     './composables/**/*.{js,ts}',
@@ -14,9 +14,9 @@ export default {
     extend: {
       fontFamily: {
         creative: ['Creative', 'serif'],
-        neutral: ['Neutral', 'sans-serif'],
+        neutral: ['Neutral', 'sans-serif']
       }
     }
   },
-  plugins: [require('@tailwindcss/typography')],
+  plugins: [require('@tailwindcss/typography')]
 }

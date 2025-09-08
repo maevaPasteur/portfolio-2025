@@ -1,16 +1,16 @@
 <template>
-    <div
-        ref="cursorFollower"
-        class="cursor fixed top-0 left-0 pointer-events-none z-[9999] flex items-center duration-[50ms] ease-in-out  mix-blend-difference"
-        style="will-change: transform; transform: translate3d(0, 0, 0);"
-        aria-hidden="true"
-    >
-        <div class="cursor__circle w-[8px] h-[8px] bg-white rounded-full duration-200 ease-in-out" />
-        <div v-if="hasText" class="ml-3 text-sm font-medium text-white whitespace-nowrap">
-            {{ text }}
-        </div>
-        <NuxtImg v-if="hasImage" :src="image" class="invert absolute top-0 left-0 translate-x-[50px] w-[100px] h-[140px] max-w-none object-cover" />
+  <div
+    ref="cursorFollower"
+    class="cursor fixed top-0 left-0 pointer-events-none z-[9999] flex items-center duration-[50ms] ease-in-out  mix-blend-difference"
+    style="will-change: transform; transform: translate3d(0, 0, 0);"
+    aria-hidden="true"
+  >
+    <div class="cursor__circle w-[8px] h-[8px] bg-white rounded-full duration-200 ease-in-out" />
+    <div v-if="hasText" class="ml-3 text-sm font-medium text-white whitespace-nowrap">
+      {{ text }}
     </div>
+    <NuxtImg v-if="hasImage" :src="image" class="invert absolute top-0 left-0 translate-x-[50px] w-[100px] h-[140px] max-w-none object-cover" />
+  </div>
 </template>
 
 <script setup lang="ts">
@@ -28,7 +28,7 @@ const { text, hasText, image, hasImage } = storeToRefs(cursorStore)
 
 const cursorFollower: Ref<HTMLElement | null> = ref(null)
 
-let mousePosition: CursorPosition = { x: 0, y: 0 }
+const mousePosition: CursorPosition = { x: 0, y: 0 }
 let rafId = 0
 
 const updateCursor = () => {
@@ -56,7 +56,7 @@ const handleMouseLeave = () => {
 }
 
 onMounted(() => {
-    if (!process.client) return
+    if (!import.meta.client) return
 
     document.addEventListener('mousemove', handleMouseMove, { passive: true })
     document.addEventListener('mouseenter', handleMouseEnter)
@@ -70,7 +70,7 @@ onBeforeUnmount(() => {
         cancelAnimationFrame(rafId)
     }
 
-    if (process.client) {
+    if (import.meta.client) {
         document.removeEventListener('mousemove', handleMouseMove)
         document.removeEventListener('mouseenter', handleMouseEnter)
         document.removeEventListener('mouseleave', handleMouseLeave)

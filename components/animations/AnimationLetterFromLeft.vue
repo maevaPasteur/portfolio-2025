@@ -1,31 +1,32 @@
 <template>
-    <span
-            v-if="words?.length"
-            ref="el"
-            class="parent flex flex-wrap"
-            :class="{'is-visible': isVisible}"
-    >
-        <span v-for="(word, i) in words">
+  <span
+    v-if="words?.length"
+    ref="el"
+    class="parent flex flex-wrap"
+    :class="{'is-visible': isVisible}"
+  >
+    <span v-for="(word, i) in words" :key="i">
 
-            <span class="whitespace-nowrap inline-flex">
-               <span
-                   v-for="(letter, y) in word"
-                   class="block overflow-hidden letter-container pt-[.05em]"
-                   :style="{'animation-delay': `${(i*100) + (y*30)}ms`}"
-               >
-                   <span
-                           class="block letter"
-                           :style="{'animation-delay': `${(i*100) + (y*30)}ms`}"
-                   >
-                       {{ letter }}
-                   </span>
-               </span>
-            </span>
-
-            <template v-if="i !== words?.length -1">&nbsp;</template>
-
+      <span class="whitespace-nowrap inline-flex">
+        <span
+          v-for="(letter, y) in word"
+          :key="y"
+          class="block overflow-hidden letter-container pt-[.05em]"
+          :style="{'animation-delay': `${(i*100) + (y*30)}ms`}"
+        >
+          <span
+            class="block letter"
+            :style="{'animation-delay': `${(i*100) + (y*30)}ms`}"
+          >
+            {{ letter }}
+          </span>
         </span>
+      </span>
+
+      <template v-if="i !== words?.length -1">&nbsp;</template>
+
     </span>
+  </span>
 </template>
 
 <script setup lang="ts">

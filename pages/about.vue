@@ -1,12 +1,12 @@
 <template>
-    <div>
-        <AboutIntroduction/>
-        <AboutSkillsTimeline/>
-        <AboutCompetences/>
-        <AboutExperiencesTimeline/>
-        <Contact/>
-        <Footer/>
-    </div>
+  <div>
+    <AboutIntroduction/>
+    <AboutSkillsTimeline/>
+    <AboutCompetences/>
+    <AboutExperiencesTimeline/>
+    <Contact/>
+    <Footer/>
+  </div>
 </template>
 
 <script setup lang="ts">
@@ -27,7 +27,7 @@ definePageMeta({
 // SEO Meta
 useSeoMeta({
   title: t('about.seo.title'),
-  description: t('about.seo.description'),
+  description: t('about.seo.description')
 })
 
 // Schema.org JSON-LD

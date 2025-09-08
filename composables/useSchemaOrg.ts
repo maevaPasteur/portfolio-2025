@@ -1,13 +1,13 @@
 import type { Person, WebSite, Organization, BreadcrumbList, Service } from 'schema-dts'
 
 export const useSchemaOrgPersonal = () => {
-  const { $i18n, $localePath } = useNuxtApp()
+  const { $i18n } = useNuxtApp()
   const route = useRoute()
   const { t } = useI18n()
 
   const definePerson = (): Person => {
     const baseUrl = 'https://maevapasteur.com'
-    
+
     return {
       '@type': 'Person',
       name: t('schema.person.name'),
@@ -18,7 +18,7 @@ export const useSchemaOrgPersonal = () => {
       image: `${baseUrl}/images/maeva-pasteur.webp`,
       sameAs: [
         'https://linkedin.com/in/maeva-pasteur',
-        'https://github.com/maevapasteur',
+        'https://github.com/maevapasteur'
       ],
       address: {
         '@type': 'PostalAddress',
@@ -40,7 +40,7 @@ export const useSchemaOrgPersonal = () => {
 
   const defineWebSite = (): WebSite => {
     const baseUrl = 'https://maevapasteur.com'
-    
+
     return {
       '@type': 'WebSite',
       name: t('schema.website.name'),
@@ -68,7 +68,7 @@ export const useSchemaOrgPersonal = () => {
 
   const defineOrganization = (): Organization => {
     const baseUrl = 'https://maevapasteur.com'
-    
+
     return {
       '@type': 'Organization',
       name: t('schema.organization.name'),
@@ -96,25 +96,26 @@ export const useSchemaOrgPersonal = () => {
   const defineBreadcrumbList = (): BreadcrumbList => {
     const baseUrl = 'https://maevapasteur.com'
     const pathSegments = route.path.split('/').filter(Boolean)
-    
+
+    // Determine if we have a language prefix
+    const hasLangPrefix = pathSegments.length > 0 && (pathSegments[0] === 'en' || pathSegments[0] === 'fr')
+    const langPrefix = hasLangPrefix ? pathSegments[0] : ''
+    const actualSegments = hasLangPrefix ? pathSegments.slice(1) : pathSegments
+
     const items = [
       {
         '@type': 'ListItem' as const,
         position: 1,
         name: t('schema.breadcrumb.home'),
-        item: baseUrl
+        item: langPrefix ? `${baseUrl}/${langPrefix}` : baseUrl
       }
     ]
 
-    let currentPath = ''
-    pathSegments.forEach((segment, index) => {
-      if (index === 0 && (segment === 'en' || segment === 'fr')) {
-        return
-      }
-      
+    let currentPath = langPrefix ? `/${langPrefix}` : ''
+    actualSegments.forEach((segment) => {
       currentPath += `/${segment}`
       const breadcrumbKey = `schema.breadcrumb.${segment}`
-      
+
       items.push({
         '@type': 'ListItem' as const,
         position: items.length + 1,
@@ -132,8 +133,8 @@ export const useSchemaOrgPersonal = () => {
   const defineServices = (): Service[] => {
     const baseUrl = 'https://maevapasteur.com'
     const services = t('schema.services') as Array<{name: string, description: string}>
-    
-    return services.map((service, index) => ({
+
+    return services.map((service) => ({
       '@type': 'Service',
       name: service.name,
       description: service.description,
@@ -167,9 +168,12 @@ export const useSchemaOrgProject = (projectData: {
   technologies?: string[]
 }) => {
   const { t } = useI18n()
+  const { $i18n } = useNuxtApp()
   const baseUrl = 'https://maevapasteur.com'
 
   const defineProject = () => {
+    const langCode = $i18n.locale.value === 'fr' ? 'fr-FR' : 'en-US'
+
     return {
       '@type': 'CreativeWork',
       name: projectData.name,
@@ -182,7 +186,7 @@ export const useSchemaOrgProject = (projectData: {
       url: projectData.url || `${baseUrl}/works/${projectData.name.toLowerCase().replace(/\s+/g, '-')}`,
       dateCreated: projectData.dateCreated,
       keywords: projectData.technologies?.join(', '),
-      inLanguage: 'fr-FR',
+      inLanguage: langCode,
       audience: {
         '@type': 'Audience',
         audienceType: 'Business Professional'

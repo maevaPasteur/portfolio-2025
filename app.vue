@@ -1,10 +1,10 @@
 <template>
   <div>
-      <NuxtRouteAnnouncer />
+    <NuxtRouteAnnouncer />
     <NuxtLayout>
       <NuxtPage />
     </NuxtLayout>
-      <Cursor v-if="isDesktop"/>
+    <Cursor v-if="isDesktop"/>
   </div>
 </template>
 

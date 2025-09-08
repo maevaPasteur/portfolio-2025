@@ -7,13 +7,17 @@ type RevealOptions = {
     delay?: number // ms
 }
 
+interface RevealHTMLElement extends HTMLElement {
+  __revealObserver?: IntersectionObserver
+}
+
 export const vReveal: Directive<HTMLElement, RevealOptions | undefined> = {
     mounted(el, binding) {
         const {
             threshold = 0.1,
             rootMargin = '0px 0px 0px 0px',
             once = false,
-            delay = 0,
+            delay = 0
         } = binding.value || {}
 
         el.classList.add('reveal')
@@ -31,11 +35,12 @@ export const vReveal: Directive<HTMLElement, RevealOptions | undefined> = {
         }, { threshold, rootMargin })
 
         observer.observe(el)
-        ;(el as any).__revealObserver = observer
+        ;(el as RevealHTMLElement).__revealObserver = observer
     },
     unmounted(el) {
-        const obs: IntersectionObserver | undefined = (el as any).__revealObserver
+        const revealEl = el as RevealHTMLElement
+        const obs = revealEl.__revealObserver
         if (obs) obs.unobserve(el)
-        delete (el as any).__revealObserver
-    },
+        delete revealEl.__revealObserver
+    }
 }

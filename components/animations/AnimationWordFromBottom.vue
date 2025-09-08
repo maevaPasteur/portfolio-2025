@@ -1,26 +1,26 @@
 <template>
-    <ul
-            v-if="words?.length"
-            ref="el"
-            class="parent flex"
-            :class="{'is-visible': isVisible}"
-    >
+  <ul
+    v-if="words?.length"
+    ref="el"
+    class="parent flex"
+    :class="{'is-visible': isVisible}"
+  >
 
-            <li v-for="(word, i) in words" class="block overflow-hidden word-container">
-                <span
-                        class="block word"
-                        :style="{'animation-delay': `${i*30}ms`}"
-                >
-                    {{ word }}
-                </span>
-            </li>
+    <li v-for="(word, i) in words" :key="i" class="block overflow-hidden word-container">
+      <span
+        class="block word"
+        :style="{'animation-delay': `${i*30}ms`}"
+      >
+        {{ word }}
+      </span>
+    </li>
 
-    </ul>
+  </ul>
 </template>
 
 <script setup lang="ts">
-import {ref} from 'vue'
-import {useElementVisibility} from '@vueuse/core'
+import { ref } from 'vue'
+import { useElementVisibility } from '@vueuse/core'
 
 const el = ref<HTMLElement | null>(null)
 const isVisible = useElementVisibility(el)

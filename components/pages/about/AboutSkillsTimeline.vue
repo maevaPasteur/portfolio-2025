@@ -1,54 +1,56 @@
 
 <template>
-    <section ref="root" class="relative bg-white" :style="{ height: scrollContainerHeight + 'px' }">
-        <div ref="stage" class="sticky top-0 h-screen w-full bg-white z-10 overflow-hidden">
-            <div ref="barsWrap" class="about-skills-bars absolute inset-x-1 md:inset-x-6 top-0 left-0 pt-28 lg:pt-36 pb-6 h-full flex items-center">
-                <div class="w-full h-full flex flex-col gap-2">
-                    <div v-for="s in skills" :key="s.label" class="relative h-full overflow-hidden">
-                        <div class="bg-gray-50 absolute inset-x-0 top-0 h-full rounded-md">
-                            <div class="absolute inset-0" />
-                        </div>
-                        <div
-                                class="about-skills-bar absolute top-0 h-full"
-                                :data-start="s.start" :data-end="s.end"
-                        >
-                            <div
-                                    class="about-skills-fill h-full overflow-hidden p-[2px]"
-                                    :data-start="s.start" :data-end="s.end"
-                                    style="width: 0%"
-                            >
-                                <div class="h-full flex items-center whitespace-nowrap overflow-hidden text-ellipsis">
+  <section ref="root" class="relative bg-white" :style="{ height: scrollContainerHeight + 'px' }">
+    <div ref="stage" class="sticky top-0 h-screen w-full bg-white z-10 overflow-hidden">
+      <div ref="barsWrap" class="about-skills-bars absolute inset-x-1 md:inset-x-6 top-0 left-0 pt-28 lg:pt-36 pb-6 h-full flex items-center">
+        <div class="w-full h-full flex flex-col gap-2">
+          <div v-for="s in skills" :key="s.label" class="relative h-full overflow-hidden">
+            <div class="bg-gray-50 absolute inset-x-0 top-0 h-full rounded-md">
+              <div class="absolute inset-0" />
+            </div>
+            <div
+              class="about-skills-bar absolute top-0 h-full"
+              :data-start="s.start"
+              :data-end="s.end"
+            >
+              <div
+                class="about-skills-fill h-full overflow-hidden p-[2px]"
+                :data-start="s.start"
+                :data-end="s.end"
+                style="width: 0%"
+              >
+                <div class="h-full flex items-center whitespace-nowrap overflow-hidden text-ellipsis">
                   <span class="inline-flex items-center min-w-full px-1 md:px-3 py-1 text-xs lg:text-sm font-mono bg-white border rounded-md overflow-visible">
                     {{ s.label }}
                   </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
+              </div>
             </div>
-
-            <div v-reveal class="absolute top-14 left-6 right-6 sm:left-10 sm:right-10 md:left-16 md:right-16">
-                <div class="relative h-16">
-                    <div class="absolute left-0 right-0 top-5 h-[2px] bg-black"></div>
-                    <div class="about-skills-marker absolute -translate-x-1/2 top-[14px]">
-                        <div class="w-3 h-3 bg-black rounded-full"></div>
-                    </div>
-                    <div
-                            v-for="(y, i) in Array.from({ length: (years.max - years.min) + 1 }, (_, k) => years.min + k)"
-                            :key="`tick-${y}`"
-                            class="about-skills-tick absolute -translate-x-1/2 opacity-40 transition-opacity top-4"
-                            :class="{'hidden md:block': i%2 !== 0}"
-                            :style="{ left: toPct(y) + '%' }"
-                            :data-year="y"
-                    >
-                        <div class="mx-auto w-2.5 h-2.5 bg-black rounded-full"></div>
-                        <div class="-translate-y-[35px] md:translate-y-0 mt-2 text-xs md:text-lg md:text-xl font-semibold text-black">{{ y }}</div>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
-    </section>
+      </div>
+
+      <div v-reveal class="absolute top-14 left-6 right-6 sm:left-10 sm:right-10 md:left-16 md:right-16">
+        <div class="relative h-16">
+          <div class="absolute left-0 right-0 top-5 h-[2px] bg-black"/>
+          <div class="about-skills-marker absolute -translate-x-1/2 top-[14px]">
+            <div class="w-3 h-3 bg-black rounded-full"/>
+          </div>
+          <div
+            v-for="(y, i) in Array.from({ length: (years.max - years.min) + 1 }, (_, k) => years.min + k)"
+            :key="`tick-${y}`"
+            class="about-skills-tick absolute -translate-x-1/2 opacity-40 transition-opacity top-4"
+            :class="{'hidden md:block': i%2 !== 0}"
+            :style="{ left: toPct(y) + '%' }"
+            :data-year="y"
+          >
+            <div class="mx-auto w-2.5 h-2.5 bg-black rounded-full"/>
+            <div class="-translate-y-[35px] md:translate-y-0 mt-2 text-xs md:text-lg md:text-xl font-semibold text-black">{{ y }}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 </template>
 
 
@@ -60,7 +62,6 @@ import ScrollTrigger from 'gsap/ScrollTrigger'
 type Skill = { label: string; start: number; end: number; bgColor: string }
 
 const years = { min: 2016, max: 2026 }
-const range = years.max - years.min
 
 const skills: Skill[] = [
     { label: 'CSS SCSS', start: 2016, end: 2025.5, bgColor: 'bg-gray-100' },
@@ -78,7 +79,7 @@ const skills: Skill[] = [
     { label: 'Laravel Symfony', start: 2019, end: 2021, bgColor: 'bg-gray-50' },
     { label: 'Vue 3 Pinia NUXT', start: 2022.5, end: 2025.5, bgColor: 'bg-cyan-100' },
     { label: 'Tailwind', start: 2023, end: 2025.5, bgColor: 'bg-gray-200' },
-    { label: 'Vuetify', start: 2024.5, end: 2025.5, bgColor: 'bg-cyan-100' },
+    { label: 'Vuetify', start: 2024.5, end: 2025.5, bgColor: 'bg-cyan-100' }
 ]
 
 const root = ref<HTMLElement | null>(null)
@@ -109,7 +110,7 @@ onMounted(async () => {
         })
 
         scrollContainerHeight.value = window.innerHeight * 3
-        
+
         const st = ScrollTrigger.create({
             id: 'about-skills',
             trigger: root.value,
@@ -126,10 +127,10 @@ onMounted(async () => {
                     const s = Number(el.dataset.start)
                     const e = Number(el.dataset.end)
                     const r = y <= s ? 0 : y >= e ? 1 : (y - s) / (e - s)
-                    
+
                     // Calculer la largeur basée sur l'animation normale
                     let widthPct = r * 100
-                    
+
                     // Si l'animation est terminée (r = 1), vérifier si le contenu nécessite plus d'espace
                     if (r >= 1) {
                         const contentEl = el.querySelector('span')
@@ -137,7 +138,7 @@ onMounted(async () => {
                             const contentWidth = contentEl.scrollWidth + 8 // +8 pour le padding
                             const parentWidth = el.parentElement?.offsetWidth || 0
                             const minWidthPct = (contentWidth / parentWidth) * 100
-                            
+
                             // Si le contenu nécessite plus d'espace, continuer l'animation
                             if (minWidthPct > 100) {
                                 // Calculer le progrès supplémentaire nécessaire
@@ -147,7 +148,7 @@ onMounted(async () => {
                             }
                         }
                     }
-                    
+
                     gsap.set(el, { width: `${widthPct}%` })
                 })
                 const markerPct = Math.min(100, Math.max(0, toPct(y)))

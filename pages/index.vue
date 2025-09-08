@@ -1,24 +1,26 @@
 <template>
   <div class="relative z-0">
-      <div class="top-[80px] md-top-auto fixed md:top-auto md:bottom-8 w-full left-0 px-6 md:px-8 flex flex-col md:flex-col-reverse gap-4 md:gap-8">
-          <h2 class="font-[Neutral] text-3xl sm:text-4xl md:text-6xl lg:text-9xl">
-              <AnimationLetterFromLeft :text="$t('home.developer')" class="block"/>
-              <span class="flex">
-                  <span class="italic relative">
-                      <span :key="currentClient" class="relative z-[2] flex anim-text-job"><span class="anim-text-job__letter" v-for="letter in $t('home.front')">{{ letter }}</span></span>
-                      <span
-                              v-if="currentClient"
-                              :class="colors[currentClient]"
-                              class="absolute z-[1] block w-full h-full top-0 left-0 transition-background duration-[800ms] ease-[cubic-bezier(.19,1,.22,1)]"
-                      ></span>
-                      <span class="bg-gray-100 absolute z-0 block w-full h-full top-0 left-0 transition-background duration-[800ms] ease-[cubic-bezier(.19,1,.22,1)]"></span>
-                  </span>&nbsp;<AnimationLetterFromLeft text="End"/>
-              </span>
-          </h2>
-          <p v-reveal class="max-w-xl text-sm font-light md:whitespace-break-spaces">{{ $t('home.text') }}</p>
-      </div>
-      <HomeSlider v-model="currentClient"/>
-      <span class="text-sm font-light fixed bottom-8 right-8 font-mono">© 2025</span>
+    <div class="top-[80px] md-top-auto fixed md:top-auto md:bottom-8 w-full left-0 px-6 md:px-8 flex flex-col md:flex-col-reverse gap-4 md:gap-8">
+      <h2 class="font-[Neutral] text-3xl sm:text-4xl md:text-6xl lg:text-9xl">
+        <AnimationLetterFromLeft :text="$t('home.developer')" class="block"/>
+        <span class="flex">
+          <span class="italic relative">
+            <span :key="currentClient" class="relative z-[2] flex anim-text-job">
+              <span v-for="(letter, i) in $t('home.front')" :key="i" class="anim-text-job__letter">{{ letter }}</span>
+            </span>
+            <span
+              v-if="currentClient"
+              :class="colors[currentClient]"
+              class="absolute z-[1] block w-full h-full top-0 left-0 transition-background duration-[800ms] ease-[cubic-bezier(.19,1,.22,1)]"
+            />
+            <span class="bg-gray-100 absolute z-0 block w-full h-full top-0 left-0 transition-background duration-[800ms] ease-[cubic-bezier(.19,1,.22,1)]"/>
+          </span>&nbsp;<AnimationLetterFromLeft text="End"/>
+        </span>
+      </h2>
+      <p v-reveal class="max-w-xl text-sm font-light md:whitespace-break-spaces">{{ $t('home.text') }}</p>
+    </div>
+    <HomeSlider v-model="currentClient"/>
+    <span class="text-sm font-light fixed bottom-8 right-8 font-mono">© 2025</span>
   </div>
 </template>
 
@@ -84,7 +86,7 @@ definePageMeta({
 // SEO Meta
 useSeoMeta({
     title: t('home.seo.title'),
-    description: t('home.seo.description'),
+    description: t('home.seo.description')
 })
 
 // Schema.org JSON-LD

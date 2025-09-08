@@ -38,7 +38,7 @@ export const useClientsStore = defineStore('clients', {
                 mockups: {
                     desktop: '/mockups/citadium3.png',
                     tablet: '/mockups/citadium1.png',
-                    mobile: '/mockups/citadium2.png',
+                    mobile: '/mockups/citadium2.png'
                 },
                 url: "https://www.citadium.com/",
                 sectors: ['ecommerce', 'fashion', 'accessories']
@@ -57,7 +57,7 @@ export const useClientsStore = defineStore('clients', {
                 mockups: {
                     desktop: '/mockups/jimmy-fairly1.png',
                     tablet: '/mockups/jimmy-fairly2.png',
-                    mobile: '/mockups/jimmy-fairly3.png',
+                    mobile: '/mockups/jimmy-fairly3.png'
                 },
                 url: 'https://jimmyfairly.com/',
                 sectors: ['ecommerce', 'accessories']
@@ -76,7 +76,7 @@ export const useClientsStore = defineStore('clients', {
                 mockups: {
                     desktop: '/mockups/lacoste2.png',
                     tablet: '/mockups/lacoste1.png',
-                    mobile: '/mockups/lacoste3.png',
+                    mobile: '/mockups/lacoste3.png'
                 },
                 url: 'https://secondemain.lacoste.com/',
                 sectors: ['ecommerce', 'fashion']
@@ -95,7 +95,7 @@ export const useClientsStore = defineStore('clients', {
                 mockups: {
                     desktop: '/mockups/ami2.png',
                     tablet: '/mockups/ami1.png',
-                    mobile: '/mockups/ami3.png',
+                    mobile: '/mockups/ami3.png'
                 },
                 url: 'https://forever.amiparis.com/',
                 sectors: ['ecommerce', 'fashion', 'luxury']
@@ -114,7 +114,7 @@ export const useClientsStore = defineStore('clients', {
                 mockups: {
                     desktop: '/mockups/cabaia2.png',
                     tablet: '/mockups/cabaia1.png',
-                    mobile: '/mockups/cabaia3.png',
+                    mobile: '/mockups/cabaia3.png'
                 },
                 sectors: ['ecommerce', 'accessories']
             },
@@ -132,7 +132,7 @@ export const useClientsStore = defineStore('clients', {
                 mockups: {
                     desktop: '/mockups/g-star2.png',
                     tablet: '/mockups/g-star1.png',
-                    mobile: '/mockups/g-star3.png',
+                    mobile: '/mockups/g-star3.png'
                 },
                 url: 'https://rewear.g-star.com/',
                 sectors: ['ecommerce', 'fashion']
@@ -151,7 +151,7 @@ export const useClientsStore = defineStore('clients', {
                 mockups: {
                     desktop: '/mockups/isotoner2.png',
                     tablet: '/mockups/isotoner1.png',
-                    mobile: '/mockups/isotoner3.png',
+                    mobile: '/mockups/isotoner3.png'
                 },
                 url: 'https://www.isotoner.fr/',
                 sectors: ['ecommerce', 'accessories']
@@ -169,7 +169,7 @@ export const useClientsStore = defineStore('clients', {
                 mockups: {
                     desktop: '/mockups/leo-et-violette3.png',
                     tablet: '/mockups/leo-et-violette2.png',
-                    mobile: '/mockups/leo-et-violette1.png',
+                    mobile: '/mockups/leo-et-violette1.png'
                 },
                 url: 'https://www.leoetviolette.com/',
                 sectors: ['ecommerce', 'accessories', 'luxury']
@@ -188,7 +188,7 @@ export const useClientsStore = defineStore('clients', {
                 mockups: {
                     desktop: '/mockups/airbus2.png',
                     tablet: '/mockups/airbus1.png',
-                    mobile: '/mockups/airbus3.png',
+                    mobile: '/mockups/airbus3.png'
                 },
                 url: 'https://www.airbus.com/fr',
                 sectors: ['aerospace']
@@ -207,7 +207,7 @@ export const useClientsStore = defineStore('clients', {
                 mockups: {
                     desktop: '/mockups/petites-jupes-de-prune1.png',
                     tablet: '/mockups/petites-jupes-de-prune2.png',
-                    mobile: '/mockups/petites-jupes-de-prune3.png',
+                    mobile: '/mockups/petites-jupes-de-prune3.png'
                 },
                 url: 'https://www.lespetitesjupesdeprune.com/',
                 sectors: ['ecommerce', 'fashion']
@@ -226,7 +226,7 @@ export const useClientsStore = defineStore('clients', {
                 mockups: {
                     desktop: '/mockups/temperley3.png',
                     tablet: '/mockups/temperley2.png',
-                    mobile: '/mockups/temperley1.png',
+                    mobile: '/mockups/temperley1.png'
                 },
                 url: 'https://vintage.temperleylondon.com/',
                 sectors: ['ecommerce', 'fashion', 'luxury']
@@ -245,7 +245,7 @@ export const useClientsStore = defineStore('clients', {
                 mockups: {
                     desktop: '/mockups/kids-around2.png',
                     tablet: '/mockups/kids-around1.png',
-                    mobile: '/mockups/kids-around3.png',
+                    mobile: '/mockups/kids-around3.png'
                 },
                 url: 'https://secondround.kidsaround.com/',
                 sectors: ['ecommerce', 'fashion', 'luxury']
@@ -281,7 +281,7 @@ export const useClientsStore = defineStore('clients', {
                 mockups: {
                     desktop: '/mockups/french-bandit2.png',
                     tablet: '/mockups/french-bandit1.png',
-                    mobile: '/mockups/french-bandit3.png',
+                    mobile: '/mockups/french-bandit3.png'
                 },
                 url: 'https://www.french-bandit.com/',
                 sectors: ['ecommerce', 'accessories', 'animal']
@@ -300,7 +300,7 @@ export const useClientsStore = defineStore('clients', {
                 mockups: {
                     desktop: '/mockups/sandro2.png',
                     tablet: '/mockups/sandro1.png',
-                    mobile: '/mockups/sandro3.png',
+                    mobile: '/mockups/sandro3.png'
                 },
                 url: 'https://secondemain.sandro-paris.com/',
                 sectors: ['ecommerce', 'fashion']
@@ -336,7 +336,7 @@ export const useClientsStore = defineStore('clients', {
                 mockups: {
                     desktop: '/mockups/victoria-beckham2.png',
                     tablet: '/mockups/victoria-beckham1.png',
-                    mobile: '/mockups/victoria-beckham3.png',
+                    mobile: '/mockups/victoria-beckham3.png'
                 },
                 url: 'https://reloved-archive.victoriabeckham.com/',
                 sectors: ['ecommerce', 'fashion', 'luxury']
@@ -355,7 +355,7 @@ export const useClientsStore = defineStore('clients', {
                 mockups: {
                     desktop: '/mockups/carel3.png',
                     tablet: '/mockups/carel2.png',
-                    mobile: '/mockups/carel1.png',
+                    mobile: '/mockups/carel1.png'
                 },
                 url: 'https://archives.carel-paris.com/',
                 sectors: ['ecommerce', 'accessories']
@@ -390,7 +390,7 @@ export const useClientsStore = defineStore('clients', {
                 mockups: {
                     desktop: '/mockups/armor-lux3.png',
                     tablet: '/mockups/armor-lux2.png',
-                    mobile: '/mockups/armor-lux1.png',
+                    mobile: '/mockups/armor-lux1.png'
                 },
                 url: 'https://secondemain.armorlux.com/',
                 sectors: ['ecommerce', 'fashion']
@@ -409,7 +409,7 @@ export const useClientsStore = defineStore('clients', {
                 mockups: {
                     desktop: '/mockups/sud-express2.png',
                     tablet: '/mockups/sud-express1.png',
-                    mobile: '/mockups/sud-express3.png',
+                    mobile: '/mockups/sud-express3.png'
                 },
                 url: 'https://secondemain.sudexpress.fr/',
                 sectors: ['ecommerce', 'fashion']
@@ -445,7 +445,7 @@ export const useClientsStore = defineStore('clients', {
                 mockups: {
                     desktop: '/mockups/soeur2.png',
                     tablet: '/mockups/soeur1.png',
-                    mobile: '/mockups/soeur3.png',
+                    mobile: '/mockups/soeur3.png'
                 },
                 url: 'https://secondhand.soeur.fr/',
                 sectors: ['ecommerce', 'fashion']
@@ -464,7 +464,7 @@ export const useClientsStore = defineStore('clients', {
                 mockups: {
                     desktop: '/mockups/hugo-boss2.png',
                     tablet: '/mockups/hugo-boss1.png',
-                    mobile: '/mockups/hugo-boss3.png',
+                    mobile: '/mockups/hugo-boss3.png'
                 },
                 sectors: ['ecommerce', 'fashion']
             },
@@ -482,7 +482,7 @@ export const useClientsStore = defineStore('clients', {
                 mockups: {
                     desktop: '/mockups/mali-hakika2.png',
                     tablet: '/mockups/mali-hakika1.png',
-                    mobile: '/mockups/mali-hakika3.png',
+                    mobile: '/mockups/mali-hakika3.png'
                 },
                 url: '',
                 sectors: ['real-estate']
@@ -501,7 +501,7 @@ export const useClientsStore = defineStore('clients', {
                 mockups: {
                     desktop: '/mockups/jerome-dreyfuss2.png',
                     tablet: '/mockups/jerome-dreyfuss1.png',
-                    mobile: '/mockups/jerome-dreyfuss3.png',
+                    mobile: '/mockups/jerome-dreyfuss3.png'
                 },
                 url: 'https://vintage.jerome-dreyfuss.com/',
                 sectors: ['ecommerce', 'accessories', 'luxury']
@@ -520,7 +520,7 @@ export const useClientsStore = defineStore('clients', {
                 mockups: {
                     desktop: '/mockups/tara-jarmon2.png',
                     tablet: '/mockups/tara-jarmon1.png',
-                    mobile: '/mockups/tara-jarmon3.png',
+                    mobile: '/mockups/tara-jarmon3.png'
                 },
                 url: 'https://secondemain.tarajarmon.com',
                 sectors: ['ecommerce', 'fashion']
@@ -539,7 +539,7 @@ export const useClientsStore = defineStore('clients', {
                 mockups: {
                     desktop: '/mockups/maison123-3.png',
                     tablet: '/mockups/maison123-2.png',
-                    mobile: '/mockups/maison123-1.png',
+                    mobile: '/mockups/maison123-1.png'
                 },
                 url: 'https://secondevie.maison123.com/',
                 sectors: ['ecommerce', 'fashion']
@@ -558,7 +558,7 @@ export const useClientsStore = defineStore('clients', {
                 mockups: {
                     desktop: '/mockups/vanessa-bruno2.png',
                     tablet: '/mockups/vanessa-bruno1.png',
-                    mobile: '/mockups/vanessa-bruno3.png',
+                    mobile: '/mockups/vanessa-bruno3.png'
                 },
                 url: 'https://secondemain.vanessabruno.fr/',
                 sectors: ['ecommerce', 'fashion']
@@ -577,7 +577,7 @@ export const useClientsStore = defineStore('clients', {
                 mockups: {
                     desktop: '/mockups/bonpoint2.png',
                     tablet: '/mockups/bonpoint1.png',
-                    mobile: '/mockups/bonpoint3.png',
+                    mobile: '/mockups/bonpoint3.png'
                 },
                 url: 'https://bonpoint-vintage.com/',
                 sectors: ['ecommerce', 'fashion']
@@ -596,7 +596,7 @@ export const useClientsStore = defineStore('clients', {
                 mockups: {
                     desktop: '/mockups/bash1.png',
                     tablet: '/mockups/bash2.png',
-                    mobile: '/mockups/bash3.png',
+                    mobile: '/mockups/bash3.png'
                 },
                 url: 'https://seconde-main.ba-sh.com/',
                 sectors: ['ecommerce', 'fashion']
@@ -650,7 +650,7 @@ export const useClientsStore = defineStore('clients', {
                 mockups: {
                     desktop: '/mockups/epycure1.png',
                     tablet: '/mockups/epycure2.png',
-                    mobile: '/mockups/epycure3.png',
+                    mobile: '/mockups/epycure3.png'
                 },
                 url: 'https://epycure.com/',
                 sectors: ['ecommerce', 'beauty']
@@ -669,7 +669,7 @@ export const useClientsStore = defineStore('clients', {
                 mockups: {
                     desktop: '/mockups/faume-backoffice2.png',
                     tablet: '/mockups/faume-backoffice1.png',
-                    mobile: '/mockups/faume-backoffice3.png',
+                    mobile: '/mockups/faume-backoffice3.png'
                 },
                 url: '',
                 sectors: ['administration']
@@ -688,7 +688,7 @@ export const useClientsStore = defineStore('clients', {
                 mockups: {
                     desktop: '/mockups/balzac2.png',
                     tablet: '/mockups/balzac1.png',
-                    mobile: '/mockups/balzac3.png',
+                    mobile: '/mockups/balzac3.png'
                 },
                 url: 'https://secondevie.balzac-paris.fr/',
                 sectors: ['ecommerce', 'fashion']
@@ -741,7 +741,7 @@ export const useClientsStore = defineStore('clients', {
                 mockups: {
                     desktop: '/mockups/claudie-pierlot2.png',
                     tablet: '/mockups/claudie-pierlot3.png',
-                    mobile: '/mockups/claudie-pierlot1.png',
+                    mobile: '/mockups/claudie-pierlot1.png'
                 },
                 url: "https://secondemain.claudiepierlot.com/",
                 sectors: ['ecommerce', 'fashion']
@@ -760,7 +760,7 @@ export const useClientsStore = defineStore('clients', {
                 mockups: {
                     desktop: '/mockups/theater-in-paris1.png',
                     tablet: '/mockups/theater-in-paris2.png',
-                    mobile: '/mockups/theater-in-paris3.png',
+                    mobile: '/mockups/theater-in-paris3.png'
                 },
                 url: 'https://www.theatreinparis.com/',
                 sectors: ['culture']
@@ -779,7 +779,7 @@ export const useClientsStore = defineStore('clients', {
                 mockups: {
                     desktop: '/mockups/aigle2.png',
                     tablet: '/mockups/aigle1.png',
-                    mobile: '/mockups/aigle3.png',
+                    mobile: '/mockups/aigle3.png'
                 },
                 url: 'https://aigle-second-souffle.com/',
                 sectors: ['ecommerce', 'fashion']
@@ -813,7 +813,7 @@ export const useClientsStore = defineStore('clients', {
                 mockups: {
                     desktop: '/mockups/lancaster2.png',
                     tablet: '/mockups/lancaster1.png',
-                    mobile: '/mockups/lancaster3.png',
+                    mobile: '/mockups/lancaster3.png'
                 },
                 url: 'https://seconde-main.lancaster.com/',
                 sectors: ['ecommerce', 'accessories']
@@ -832,7 +832,7 @@ export const useClientsStore = defineStore('clients', {
                 mockups: {
                     desktop: '/mockups/account-package2.png',
                     tablet: '/mockups/account-package1.png',
-                    mobile: '/mockups/account-package3.png',
+                    mobile: '/mockups/account-package3.png'
                 },
                 url: null,
                 sectors: ['ecommerce']
@@ -851,7 +851,7 @@ export const useClientsStore = defineStore('clients', {
                 mockups: {
                     desktop: '/mockups/isabel-marant2.png',
                     tablet: '/mockups/isabel-marant1.png',
-                    mobile: '/mockups/isabel-marant3.png',
+                    mobile: '/mockups/isabel-marant3.png'
                 },
                 url: "https://www.isabelmarant-vintage.com/",
                 sectors: ['ecommerce', 'fashion', 'luxury']
@@ -870,7 +870,7 @@ export const useClientsStore = defineStore('clients', {
                 mockups: {
                     desktop: '/mockups/order-tracking2.png',
                     tablet: '/mockups/order-tracking1.png',
-                    mobile: '/mockups/order-tracking3.png',
+                    mobile: '/mockups/order-tracking3.png'
                 },
                 url: null,
                 sectors: ['ecommerce']
@@ -887,12 +887,12 @@ export const useClientsStore = defineStore('clients', {
                 tech: ['REACT', 'GATSBY', 'TypeScript', 'SCSS', 'ANIMATIONS'],
                 keywords: ['REACT', 'GATSBY', 'TypeScript', 'SCSS', 'ANIMATIONS', 'SEO', 'ES6'],
                 mockups: {
-                    image: '/mockups/W3lead.png',
+                    image: '/mockups/W3lead.png'
                 },
                 url: null,
                 sectors: ['agency']
             }
-        ] as Client[],
+        ] as Client[]
     }),
 
     getters: {
@@ -910,8 +910,8 @@ export const useClientsStore = defineStore('clients', {
             state.clients?.forEach(client => {
                 client.sectors.forEach(sector => {
                     if (!sectors[sector]) sectors[sector] = [];
-                    const {id, title} = client;
-                    sectors[sector].push({id, title});
+                    const { id, title } = client;
+                    sectors[sector].push({ id, title });
                 })
             });
             return sectors;
@@ -923,7 +923,7 @@ export const useClientsStore = defineStore('clients', {
             )
         },
         getAllClients: (state): Client[] => state.clients,
-        highlightClients: (state): Client[] => state.clients?.filter(client => client.portrait?.length),
+        highlightClients: (state): Client[] => state.clients?.filter(client => client.portrait?.length)
     },
 
     actions: {
