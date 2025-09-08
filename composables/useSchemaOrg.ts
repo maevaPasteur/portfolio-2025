@@ -1,4 +1,10 @@
-import type { Person, WebSite, Organization, BreadcrumbList, Service } from 'schema-dts'
+import type {
+  Person,
+  WebSite,
+  Organization,
+  BreadcrumbList,
+  Service
+} from 'schema-dts'
 
 export const useSchemaOrgPersonal = () => {
   const { $i18n } = useNuxtApp()
@@ -8,32 +14,46 @@ export const useSchemaOrgPersonal = () => {
   const definePerson = (): Person => {
     const baseUrl = 'https://maevapasteur.com'
 
-    return {
-      '@type': 'Person',
-      name: t('schema.person.name'),
-      jobTitle: t('schema.person.jobTitle'),
-      description: t('schema.person.description'),
-      disambiguatingDescription: t('schema.person.disambiguatingDescription'),
-      url: baseUrl,
-      image: `${baseUrl}/images/maeva-pasteur.webp`,
-      sameAs: [
-        'https://linkedin.com/in/maeva-pasteur',
-        'https://github.com/maevapasteur'
-      ],
-      address: {
-        '@type': 'PostalAddress',
-        addressLocality: 'Dubai',
-        addressCountry: 'AE'
-      },
-      knowsAbout: t('schema.skills'),
-      hasOccupation: {
-        '@type': 'Occupation',
-        name: t('schema.person.jobTitle'),
-        occupationLocation: {
-          '@type': 'City',
-          name: 'Dubai'
+    try {
+      const skills = t('schema.skills') as string[]
+
+      return {
+        '@type': 'Person',
+        name: t('schema.person.name'),
+        jobTitle: t('schema.person.jobTitle'),
+        description: t('schema.person.description'),
+        disambiguatingDescription: t('schema.person.disambiguatingDescription'),
+        url: baseUrl,
+        image: `${baseUrl}/images/maeva-pasteur.webp`,
+        sameAs: [
+          'https://linkedin.com/in/maeva-pasteur',
+          'https://github.com/maevapasteur'
+        ],
+        address: {
+          '@type': 'PostalAddress',
+          addressLocality: 'Dubai',
+          addressCountry: 'AE'
         },
-        skills: t('schema.skills')
+        knowsAbout: Array.isArray(skills) ? skills : [],
+        hasOccupation: {
+          '@type': 'Occupation',
+          name: t('schema.person.jobTitle'),
+          occupationLocation: {
+            '@type': 'City',
+            name: 'Dubai'
+          },
+          skills: Array.isArray(skills) ? skills : []
+        }
+      }
+    } catch (error) {
+      console.warn('Schema person not available yet:', error)
+      return {
+        '@type': 'Person',
+        name: 'Maëva Pasteur',
+        jobTitle: 'Frontend Developer',
+        description: 'Frontend developer specialized in Vue.js and Nuxt',
+        url: baseUrl,
+        image: `${baseUrl}/images/maeva-pasteur.webp`
       }
     }
   }
@@ -98,7 +118,9 @@ export const useSchemaOrgPersonal = () => {
     const pathSegments = route.path.split('/').filter(Boolean)
 
     // Determine if we have a language prefix
-    const hasLangPrefix = pathSegments.length > 0 && (pathSegments[0] === 'en' || pathSegments[0] === 'fr')
+    const hasLangPrefix =
+      pathSegments.length > 0 &&
+      (pathSegments[0] === 'en' || pathSegments[0] === 'fr')
     const langPrefix = hasLangPrefix ? pathSegments[0] : ''
     const actualSegments = hasLangPrefix ? pathSegments.slice(1) : pathSegments
 
@@ -132,22 +154,35 @@ export const useSchemaOrgPersonal = () => {
 
   const defineServices = (): Service[] => {
     const baseUrl = 'https://maevapasteur.com'
-    const services = t('schema.services') as Array<{name: string, description: string}>
 
-    return services.map((service) => ({
-      '@type': 'Service',
-      name: service.name,
-      description: service.description,
-      provider: {
-        '@type': 'Person',
-        name: t('schema.person.name')
-      },
-      areaServed: {
-        '@type': 'Country',
-        name: 'France'
-      },
-      url: `${baseUrl}/works`
-    }))
+    try {
+      const services = t('schema.services') as Array<{
+        name: string
+        description: string
+      }>
+
+      if (!services || !Array.isArray(services)) {
+        return []
+      }
+
+      return services.map((service) => ({
+        '@type': 'Service',
+        name: service.name,
+        description: service.description,
+        provider: {
+          '@type': 'Person',
+          name: t('schema.person.name')
+        },
+        areaServed: {
+          '@type': 'Country',
+          name: 'France'
+        },
+        url: `${baseUrl}/works`
+      }))
+    } catch (error) {
+      console.warn('Schema services not available yet:', error)
+      return []
+    }
   }
 
   return {
@@ -183,7 +218,9 @@ export const useSchemaOrgProject = (projectData: {
         name: t('schema.person.name')
       },
       image: projectData.image ? `${baseUrl}${projectData.image}` : undefined,
-      url: projectData.url || `${baseUrl}/works/${projectData.name.toLowerCase().replace(/\s+/g, '-')}`,
+      url:
+        projectData.url ||
+        `${baseUrl}/works/${projectData.name.toLowerCase().replace(/\s+/g, '-')}`,
       dateCreated: projectData.dateCreated,
       keywords: projectData.technologies?.join(', '),
       inLanguage: langCode,

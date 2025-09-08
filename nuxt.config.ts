@@ -1,3 +1,5 @@
+const isGitHubPages = process.env.NITRO_PRESET === 'github-pages'
+
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
@@ -41,22 +43,40 @@ export default defineNuxtConfig({
   },
   css: ['~/assets/css/fonts.css', '~/assets/css/tailwind.css'],
   nitro: {
+    ...(isGitHubPages && { preset: 'github-pages' }),
     prerender: {
       routes: ['/robots.txt', '/sitemap.xml']
     }
   },
   app: {
-    baseURL: '/',
+    baseURL: isGitHubPages ? '/portfolio-2025/' : '/',
+    ...(isGitHubPages && { cdnURL: '/portfolio-2025/' }),
     head: {
       title: 'Portfolio 2025',
-      meta: [
-        { name: 'description', content: 'Portfolio 2025' }
-      ],
+      meta: [{ name: 'description', content: 'Portfolio 2025' }],
       link: [
-        { rel: 'icon', type: 'image/x-icon', href: '/images/favicon/favicon.ico' },
-        { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/images/favicon/favicon-32x32.png' },
-        { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/images/favicon/favicon-16x16.png' },
-        { rel: 'apple-touch-icon', sizes: '180x180', href: '/images/favicon/apple-touch-icon.png' },
+        {
+          rel: 'icon',
+          type: 'image/x-icon',
+          href: '/images/favicon/favicon.ico'
+        },
+        {
+          rel: 'icon',
+          type: 'image/png',
+          sizes: '32x32',
+          href: '/images/favicon/favicon-32x32.png'
+        },
+        {
+          rel: 'icon',
+          type: 'image/png',
+          sizes: '16x16',
+          href: '/images/favicon/favicon-16x16.png'
+        },
+        {
+          rel: 'apple-touch-icon',
+          sizes: '180x180',
+          href: '/images/favicon/apple-touch-icon.png'
+        },
         { rel: 'manifest', href: '/site.webmanifest' }
       ],
       charset: 'utf-16',
@@ -83,8 +103,6 @@ export default defineNuxtConfig({
     inLanguage: 'fr-FR'
   },
   sitemap: {
-    sources: [
-      '/api/__sitemap__/urls'
-    ]
+    sources: ['/api/__sitemap__/urls']
   }
 })

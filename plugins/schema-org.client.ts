@@ -1,9 +1,6 @@
 export default defineNuxtPlugin(() => {
-  const { locale } = useI18n()
-
   useSchemaOrg({
-    host: 'https://maevapasteur.com',
-    inLanguage: locale.value === 'fr' ? 'fr-FR' : 'en-US'
+    host: 'https://maevapasteur.com'
   })
 
   const defineFAQSchema = () => {
