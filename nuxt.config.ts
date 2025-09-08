@@ -97,7 +97,10 @@ export default defineNuxtConfig({
     dir: 'public/images'
   },
   icon: {
-    mode: 'svg'
+    mode: 'svg',
+    serverBundle: {
+      collections: ['bitcoin-icons', 'heroicons']
+    }
   },
   site: {
     url: 'https://maevapasteur.com'
