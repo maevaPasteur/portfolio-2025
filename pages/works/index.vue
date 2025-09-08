@@ -27,46 +27,18 @@ definePageMeta({
   layout: 'default'
 })
 
-// SEO Meta
 useSeoMeta({
   title: t('works.seo.title'),
   description: t('works.seo.description')
 })
 
-// Schema.org JSON-LD
-const { definePerson, defineBreadcrumbList, defineServices } =
+// Schémas spécifiques à la page works (globaux gérés par le plugin)
+const { defineBreadcrumbList, defineServices, defineWorksCollection } =
   useSchemaOrgPersonal()
 
-// Schema pour la page works avec collection de projets
-const defineWorksCollection = () => {
-  const { t } = useI18n()
-  return {
-    '@type': 'CollectionPage',
-    name: t('works.seo.title'),
-    description: t('works.seo.description'),
-    url: 'https://maevapasteur.com/works',
-    mainEntity: {
-      '@type': 'ItemList',
-      numberOfItems: 44, // Nombre approximatif de projets
-      itemListElement: [
-        { '@type': 'CreativeWork', name: 'Citadium' },
-        { '@type': 'CreativeWork', name: 'Isabel Marant' },
-        { '@type': 'CreativeWork', name: 'Jimmy Fairly' }
-        // ... autres projets
-      ]
-    },
-    creator: {
-      '@type': 'Person',
-      name: t('schema.person.name')
-    }
-  }
-}
-
-// Attendre que i18n soit prêt avant d'initialiser les schémas
 await nextTick()
 
 useSchemaOrg([
-  definePerson(),
   defineBreadcrumbList(),
   defineWorksCollection(),
   ...defineServices()

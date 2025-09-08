@@ -1,123 +1,15 @@
-import type {
-  Person,
-  WebSite,
-  Organization,
-  BreadcrumbList,
-  Service
-} from 'schema-dts'
+import type { BreadcrumbList, Service } from 'schema-dts'
 
 export const useSchemaOrgPersonal = () => {
-  const { $i18n } = useNuxtApp()
   const route = useRoute()
   const { t } = useI18n()
+  const baseUrl = 'https://maevapasteur.com'
 
-  const definePerson = (): Person => {
-    const baseUrl = 'https://maevapasteur.com'
-
-    try {
-      const skills = t('schema.skills') as string[]
-
-      return {
-        '@type': 'Person',
-        name: t('schema.person.name'),
-        jobTitle: t('schema.person.jobTitle'),
-        description: t('schema.person.description'),
-        disambiguatingDescription: t('schema.person.disambiguatingDescription'),
-        url: baseUrl,
-        image: `${baseUrl}/images/maeva-pasteur.webp`,
-        sameAs: [
-          'https://linkedin.com/in/maeva-pasteur',
-          'https://github.com/maevapasteur'
-        ],
-        address: {
-          '@type': 'PostalAddress',
-          addressLocality: 'Dubai',
-          addressCountry: 'AE'
-        },
-        knowsAbout: Array.isArray(skills) ? skills : [],
-        hasOccupation: {
-          '@type': 'Occupation',
-          name: t('schema.person.jobTitle'),
-          occupationLocation: {
-            '@type': 'City',
-            name: 'Dubai'
-          },
-          skills: Array.isArray(skills) ? skills : []
-        }
-      }
-    } catch (error) {
-      console.warn('Schema person not available yet:', error)
-      return {
-        '@type': 'Person',
-        name: 'Maëva Pasteur',
-        jobTitle: 'Frontend Developer',
-        description: 'Frontend developer specialized in Vue.js and Nuxt',
-        url: baseUrl,
-        image: `${baseUrl}/images/maeva-pasteur.webp`
-      }
-    }
-  }
-
-  const defineWebSite = (): WebSite => {
-    const baseUrl = 'https://maevapasteur.com'
-
-    return {
-      '@type': 'WebSite',
-      name: t('schema.website.name'),
-      description: t('schema.website.description'),
-      url: baseUrl,
-      inLanguage: $i18n.locale.value,
-      isPartOf: {
-        '@type': 'Organization',
-        name: t('schema.organization.name')
-      },
-      about: {
-        '@type': 'Person',
-        name: t('schema.person.name')
-      },
-      potentialAction: {
-        '@type': 'SearchAction',
-        target: {
-          '@type': 'EntryPoint',
-          urlTemplate: `${baseUrl}/search?q={search_term_string}`
-        },
-        'query-input': 'required name=search_term_string'
-      }
-    }
-  }
-
-  const defineOrganization = (): Organization => {
-    const baseUrl = 'https://maevapasteur.com'
-
-    return {
-      '@type': 'Organization',
-      name: t('schema.organization.name'),
-      description: t('schema.organization.description'),
-      url: baseUrl,
-      logo: `${baseUrl}/images/logo.png`,
-      founder: {
-        '@type': 'Person',
-        name: t('schema.person.name')
-      },
-      foundingDate: '2016-01-01',
-      address: {
-        '@type': 'PostalAddress',
-        addressLocality: 'Dubai',
-        addressCountry: 'AE'
-      },
-      contactPoint: {
-        '@type': 'ContactPoint',
-        contactType: 'customer service',
-        url: `${baseUrl}/contact`
-      }
-    }
-  }
+  // Note: Person, WebSite, Organization, FAQ are included globally by a plugin
 
   const defineBreadcrumbList = (): BreadcrumbList => {
-    const baseUrl = 'https://maevapasteur.com'
     const pathSegments = route.path.split('/').filter(Boolean)
 
-    // Determine if we have a language prefix
     const hasLangPrefix =
       pathSegments.length > 0 &&
       (pathSegments[0] === 'en' || pathSegments[0] === 'fr')
@@ -153,8 +45,6 @@ export const useSchemaOrgPersonal = () => {
   }
 
   const defineServices = (): Service[] => {
-    const baseUrl = 'https://maevapasteur.com'
-
     try {
       const services = t('schema.services') as Array<{
         name: string
@@ -185,12 +75,141 @@ export const useSchemaOrgPersonal = () => {
     }
   }
 
+  const defineProfilePage = () => {
+    try {
+      return {
+        '@type': 'ProfilePage',
+        '@id': `${baseUrl}/#homepage`,
+        mainEntity: {
+          '@type': 'Person',
+          name: t('schema.person.name'),
+          jobTitle: t('schema.person.jobTitle'),
+          description: t('schema.person.description')
+        },
+        name: t('home.seo.title'),
+        description: t('home.seo.description'),
+        url: baseUrl,
+        primaryImageOfPage: {
+          '@type': 'ImageObject',
+          url: `${baseUrl}/images/maeva-pasteur.webp`
+        }
+      }
+    } catch (error) {
+      console.warn('Schema profile page not available yet:', error)
+      return {
+        '@type': 'ProfilePage',
+        '@id': `${baseUrl}/#homepage`,
+        name: 'Maëva Pasteur Portfolio',
+        description: 'Frontend developer specialized in Vue.js and Nuxt',
+        url: baseUrl
+      }
+    }
+  }
+
+  const defineWorksCollection = () => {
+    try {
+      return {
+        '@type': 'CollectionPage',
+        '@id': `${baseUrl}/works#collection`,
+        name: t('works.seo.title'),
+        description: t('works.seo.description'),
+        url: `${baseUrl}/works`,
+        mainEntity: {
+          '@type': 'ItemList',
+          numberOfItems: 44,
+          itemListElement: [
+            {
+              '@type': 'CreativeWork',
+              name: 'Citadium',
+              url: `${baseUrl}/works/citadium`
+            },
+            {
+              '@type': 'CreativeWork',
+              name: 'Isabel Marant',
+              url: `${baseUrl}/works/isabel-marant`
+            },
+            {
+              '@type': 'CreativeWork',
+              name: 'Jimmy Fairly',
+              url: `${baseUrl}/works/jimmy-fairly`
+            },
+            {
+              '@type': 'CreativeWork',
+              name: 'Lacoste',
+              url: `${baseUrl}/works/lacoste`
+            },
+            {
+              '@type': 'CreativeWork',
+              name: 'AMI Paris',
+              url: `${baseUrl}/works/ami`
+            }
+          ]
+        },
+        creator: {
+          '@type': 'Person',
+          name: t('schema.person.name')
+        }
+      }
+    } catch (error) {
+      console.warn('Schema works collection not available yet:', error)
+      return {
+        '@type': 'CollectionPage',
+        '@id': `${baseUrl}/works#collection`,
+        name: 'Works - Maëva Pasteur',
+        description: 'Frontend development projects and case studies',
+        url: `${baseUrl}/works`
+      }
+    }
+  }
+
+  const defineContactPage = () => {
+    try {
+      return {
+        '@type': 'ContactPage',
+        '@id': `${baseUrl}/contact#page`,
+        name: t('contact.seo.title'),
+        description: t('contact.seo.description'),
+        url: `${baseUrl}/contact`,
+        mainEntity: {
+          '@type': 'ContactPoint',
+          contactType: 'customer service',
+          email: 'contact@maevapasteur.com',
+          url: `${baseUrl}/contact`,
+          areaServed: [
+            {
+              '@type': 'Country',
+              name: 'France'
+            },
+            {
+              '@type': 'Country',
+              name: 'United Arab Emirates'
+            }
+          ],
+          availableLanguage: ['French', 'English']
+        },
+        about: {
+          '@type': 'Person',
+          name: t('schema.person.name')
+        }
+      }
+    } catch (error) {
+      console.warn('Schema contact page not available yet:', error)
+      return {
+        '@type': 'ContactPage',
+        '@id': `${baseUrl}/contact#page`,
+        name: 'Contact - Maëva Pasteur',
+        description: 'Contact information for frontend development services',
+        url: `${baseUrl}/contact`
+      }
+    }
+  }
+
   return {
-    definePerson,
-    defineWebSite,
-    defineOrganization,
     defineBreadcrumbList,
-    defineServices
+    defineServices,
+    defineProfilePage,
+    defineWorksCollection,
+    defineContactPage
   }
 }
 

@@ -3,6 +3,11 @@ const isGitHubPages = process.env.NITRO_PRESET === 'github-pages'
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
+  runtimeConfig: {
+    public: {
+      siteUrl: 'https://maevapasteur.com'
+    }
+  },
   modules: [
     '@nuxt/image',
     '@pinia/nuxt',

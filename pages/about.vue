@@ -23,18 +23,15 @@ definePageMeta({
   layout: 'default'
 })
 
-// SEO Meta
 useSeoMeta({
   title: t('about.seo.title'),
   description: t('about.seo.description')
 })
 
-// Schema.org JSON-LD
-const { definePerson, defineBreadcrumbList, defineServices } =
-  useSchemaOrgPersonal()
+// Schémas spécifiques à la page about (globaux gérés par le plugin)
+const { defineBreadcrumbList, defineServices } = useSchemaOrgPersonal()
 
-// Attendre que i18n soit prêt avant d'initialiser les schémas
 await nextTick()
 
-useSchemaOrg([definePerson(), defineBreadcrumbList(), ...defineServices()])
+useSchemaOrg([defineBreadcrumbList(), ...defineServices()])
 </script>
