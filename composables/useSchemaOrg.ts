@@ -223,7 +223,7 @@ export const useSchemaOrgProject = (projectData: {
 }) => {
   const { t } = useI18n()
   const { $i18n } = useNuxtApp()
-  const baseUrl = 'https://maevapasteur.com'
+  const baseUrl = 'https://www.maevapasteur.com'
 
   const defineProject = () => {
     const langCode = $i18n.locale.value === 'fr' ? 'fr-FR' : 'en-US'

@@ -15,7 +15,8 @@
     "postinstall": "nuxt prepare",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "prepare": "husky"
+    "prepare": "husky",
+    "cleanup": "npx nuxt cleanup"
   },
   "lint-staged": {
     "*.{vue,ts,js}": [

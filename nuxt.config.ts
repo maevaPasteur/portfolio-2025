@@ -17,23 +17,22 @@ export default defineNuxtConfig({
     'nuxt-schema-org'
   ],
   i18n: {
-    baseUrl: 'www.maevapasteur.com',
+    lazy: true,
+    langDir: '../locales',
+    strategy: 'prefix_except_default',
     locales: [
       {
         code: 'fr',
-        file: 'fr.json',
-        name: 'Français'
+        name: 'Français',
+        file: 'fr.json'
       },
       {
         code: 'en',
-        file: 'en.json',
-        name: 'English'
+        name: 'English',
+        file: 'en.json'
       }
     ],
-    lazy: true,
-    langDir: 'locales',
     defaultLocale: 'fr',
-    strategy: 'prefix_except_default',
     detectBrowserLanguage: {
       useCookie: true,
       cookieKey: 'i18n_redirected',
@@ -54,7 +53,7 @@ export default defineNuxtConfig({
   app: {
     baseURL: '/',
     head: {
-      title: 'Portfolio 2025',
+      title: 'Maëva Pasteur - Front end developer',
       meta: [
         { name: 'description', content: 'Portfolio 2025' },
         { charset: 'utf-8' },

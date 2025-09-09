@@ -6,12 +6,13 @@ Portfolio personnel développé avec **Nuxt 3**, **TypeScript**, **Tailwind CSS*
 
 - **Framework** : Nuxt 3
 - **Langage** : TypeScript
-- **Styling** : Tailwind CSS + SCSS
+- **Styling** : Tailwind
 - **Animations** : GSAP
 - **Internationalisation** : @nuxtjs/i18n (Français/Anglais)
 - **SEO** : Nuxt SEO, Schema.org, Sitemap
 - **State Management** : Pinia
 - **Qualité Code** : ESLint, Prettier, Husky, Commitlint
+- **Performances** : NuxtImg, SVG minify
 
 ## 🛠️ Installation
 
@@ -124,14 +125,13 @@ Les fichiers de traduction se trouvent dans `/i18n/locales/`.
 ├── components/       # Composants Vue réutilisables
 ├── composables/      # Composables Vue
 ├── directives/       # Directives Vue personnalisées
-├── i18n/locales/     # Fichiers de traduction
+├── locales/     # Fichiers de traduction
 ├── layouts/          # Layouts Nuxt
 ├── pages/            # Pages/routes Nuxt
 ├── plugins/          # Plugins Nuxt
 ├── public/           # Assets statiques
 ├── server/           # API routes Nuxt
 ├── stores/           # Stores Pinia
-└── types/            # Types TypeScript
 ```
 
 ## 🚦 Workflow de Développement
@@ -143,29 +143,3 @@ Les fichiers de traduction se trouvent dans `/i18n/locales/`.
 5. **CI automatique** : Tests ESLint + Build
 6. **Merge** vers `main` après validation
 7. **Déploiement automatique** sur GitHub Pages
-
-## 🔧 Configuration ESLint
-
-Règles personnalisées dans `eslint.config.js` :
-
-- Standards Vue 3 + TypeScript
-- Formatage automatique
-- Règles strictes pour la qualité code
-- `v-html` autorisé pour le contenu i18n
-
-## 📱 Progressive Web App
-
-Le site fonctionne comme une PWA avec :
-
-- Service Worker automatique
-- Cache des assets
-- Mode hors ligne basique
-- Optimisations Core Web Vitals
-
-## 🎨 Design System
-
-- **Composants atomiques** réutilisables
-- **Tokens design** Tailwind
-- **Animations GSAP** performantes
-- **Responsive** mobile-first
-- **Accessibilité** WCAG AA
