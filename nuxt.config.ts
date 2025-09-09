@@ -91,9 +91,28 @@ export default defineNuxtConfig({
   },
   ssr: true,
   image: {
+    provider: 'ipx',
     format: ['webp'],
-    densities: [1, 2, 3],
-    dir: 'public/images'
+    densities: [1, 2],
+    dir: 'public/images',
+    presets: {
+      portrait: {
+        modifiers: {
+          width: 400,
+          height: 500,
+          fit: 'cover',
+          format: 'webp'
+        }
+      },
+      portraitSmall: {
+        modifiers: {
+          width: 250,
+          height: 312,
+          fit: 'cover',
+          format: 'webp'
+        }
+      }
+    }
   },
   icon: {
     mode: 'svg',

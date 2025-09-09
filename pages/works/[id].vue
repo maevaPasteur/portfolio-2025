@@ -79,21 +79,28 @@
               class="flex flex-col relative gap-3 relative"
             >
               <ImageAnimated
-                v-for="(image, i) in [
-                  mockupTablet,
-                  mockupDesktop,
-                  mockupMobile
-                ]"
-                :key="image"
+                :image="mockupTablet"
+                img-class="h-auto relative z-0 w-full"
                 :alt="client.title"
-                :image="image"
-                :img-class="
-                  i === 0
-                    ? 'h-auto relative z-0 w-full'
-                    : i === 1
-                      ? 'h-auto relative z-[1] ml-auto w-[70%] delay-100'
-                      : 'h-auto absolute z-[2] w-[35%] bottom-[10%] left-[-5%] delay-200'
-                "
+                width="641"
+                height="433"
+                sizes="420px md:629px xl:641px"
+              />
+              <ImageAnimated
+                :image="mockupDesktop"
+                img-class="h-auto relative z-[1] ml-auto w-[70%] delay-100"
+                :alt="client.title"
+                width="594"
+                height="386"
+                sizes="262px md:440px xl:594px"
+              />
+              <ImageAnimated
+                :image="mockupMobile"
+                img-class="h-auto absolute z-[2] w-[35%] bottom-[10%] left-[-5%] delay-200"
+                :alt="client.title"
+                width="296"
+                height="600"
+                sizes="130px md:220px xl:296px"
               />
             </div>
           </div>

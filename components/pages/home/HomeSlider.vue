@@ -1,44 +1,59 @@
 <template>
-  <div v-if="clients?.length" ref="slider" class="fixed w-full z-0 md:h-full md:top-0 h-[calc(100vh-270px)] bottom-0">
+  <div
+    v-if="clients?.length"
+    ref="slider"
+    class="fixed w-full z-0 md:h-full md:top-0 h-[calc(100vh-270px)] bottom-0"
+  >
     <div
       ref="sliderWrapper"
       class="md:absolute absolute md:h-full h-full px-6 md:px-[50vw] lg:px-[600px] flex items-center gap-1 md:gap-[100px]"
     >
       <div
-        v-for="client in clients"
+        v-for="(client, clientIndex) in clients"
         :key="client.id"
         :ref="setSlideRef"
         class="group/home-slide w-[250px] h-[312px] md:w-[400px] md:h-[500px] shrink-0 relative"
         @mouseenter="handleMouseEnter(client)"
         @mouseleave="handleMouseLeave"
-        @click.prevent="e => selectImage(e, client)"
+        @click.prevent="(e) => selectImage(e, client)"
       >
-        <div class="w-full h-full overflow-hidden duration-[1250ms] ease-[cubic-bezier(.19,1,.22,1)] group-hover/home-slide:scale-105 will-change-[transform]">
+        <div
+          class="w-full h-full overflow-hidden duration-[1250ms] ease-[cubic-bezier(.19,1,.22,1)] group-hover/home-slide:scale-105 will-change-[transform]"
+        >
           <NuxtImg
             :src="client.portrait"
             :alt="client.title"
             class="w-full h-full bg-gray-100 object-cover scale-105 duration-[1250ms] ease-[cubic-bezier(.19,1,.22,1)] group-hover/home-slide:scale-100 transform-gpu will-change-[transform] grayscale group-hover/home-slide:grayscale-0"
-            loading="lazy"
+            width="400"
+            height="500"
+            sizes="250px md:400px"
+            densities="x1 x2"
+            :preload="clientIndex < 3"
+            :loading="clientIndex < 3 ? 'eager' : 'lazy'"
+            fit="cover"
           />
         </div>
-        <span class="lg:hidden absolute left-O top-0 w-full pb-1 -translate-y-full text-xs font-semibold">{{ client.title }}</span>
-        <div class="absolute left-0 -bottom-[2%] lg:bottom-auto lg:top-[-2%] w-full pb-1 translate-y-full lg:-translate-y-full text-right font-mono text-xs overflow-hidden">
+        <span
+          class="lg:hidden absolute left-O top-0 w-full pb-1 -translate-y-full text-xs font-semibold"
+        >{{ client.title }}</span
+        >
+        <div
+          class="absolute left-0 -bottom-[2%] lg:bottom-auto lg:top-[-2%] w-full pb-1 translate-y-full lg:-translate-y-full text-right font-mono text-xs overflow-hidden"
+        >
           <span class="flex gap-2 overflow-hidden">
             <span
               v-for="(techno, i) in client.tech"
               :key="techno"
-              :style="{'transition-delay': `${i*50}ms`}"
+              :style="{ 'transition-delay': `${i * 50}ms` }"
               class="shrink-0 block lg:opacity-0 duration-[700ms] ease-[cubic-bezier(.19,1,.22,1)] lg:translate-y-2 group-hover/home-slide:translate-y-0 group-hover/home-slide:opacity-100"
-            >{{ techno }}</span>
+            >{{ techno }}</span
+            >
           </span>
         </div>
       </div>
     </div>
   </div>
-  <div
-    ref="selectedImageEl"
-    class="fixed z-[1]"
-  >
+  <div ref="selectedImageEl" class="fixed z-[1]">
     <NuxtImg
       v-if="selectedImage"
       :src="selectedImage"
@@ -77,19 +92,19 @@ const config: SliderConfig = {
 } as const
 
 const localePath = useLocalePath()
-const { setText, clearText } = useCursorStore();
-const clientsStore = useClientsStore();
+const { setText, clearText } = useCursorStore()
+const clientsStore = useClientsStore()
 
-const currentClient = defineModel<string | null>();
+const currentClient = defineModel<string | null>()
 
-const { highlightClients: clients } = storeToRefs(clientsStore);
+const { highlightClients: clients } = storeToRefs(clientsStore)
 
-const slider: Ref<HTMLElement | null> = ref(null);
-const sliderWrapper: Ref<HTMLElement | null> = ref(null);
-const slideEls: Ref<HTMLElement[]> = ref([]);
+const slider: Ref<HTMLElement | null> = ref(null)
+const sliderWrapper: Ref<HTMLElement | null> = ref(null)
+const slideEls: Ref<HTMLElement[]> = ref([])
 
-const selectedImage: Ref<string | null> = ref(null);
-const selectedImageEl: Ref<HTMLElement | null> = ref(null);
+const selectedImage: Ref<string | null> = ref(null)
+const selectedImageEl: Ref<HTMLElement | null> = ref(null)
 
 const sliderState: SliderState = reactive({
   target: 0,
@@ -132,27 +147,43 @@ const updateScaleAndPosition = () => {
     const centerPosition = (rect.left + rect.right) / 2
     const distanceFromCenter = centerPosition - wHalf
 
-    const { scale, offsetX } = calculateTransform(distanceFromCenter, window.innerWidth)
+    const { scale, offsetX } = calculateTransform(
+      distanceFromCenter,
+      window.innerWidth
+    )
 
     gsap.set(slide, { scale, x: offsetX })
   })
 }
 
-const calculateTransform = (distanceFromCenter: number, windowWidth: number) => {
+const calculateTransform = (
+  distanceFromCenter: number,
+  windowWidth: number
+) => {
   const isRightSide = distanceFromCenter > 0
 
   if (isRightSide) {
-    const scale = Math.min(config.maxScale, 1 + distanceFromCenter / windowWidth)
+    const scale = Math.min(
+      config.maxScale,
+      1 + distanceFromCenter / windowWidth
+    )
     const offsetX = (scale - 1) * config.scaleOffset
     return { scale, offsetX }
   } else {
-    const scale = Math.max(config.minScale, 1 - Math.abs(distanceFromCenter) / windowWidth)
+    const scale = Math.max(
+      config.minScale,
+      1 - Math.abs(distanceFromCenter) / windowWidth
+    )
     return { scale, offsetX: 0 }
   }
 }
 
 const update = () => {
-  sliderState.current = lerp(sliderState.current, sliderState.target, config.ease)
+  sliderState.current = lerp(
+    sliderState.current,
+    sliderState.target,
+    config.ease
+  )
 
   if (sliderWrapper.value) {
     gsap.set(sliderWrapper.value, { x: -sliderState.current })
@@ -213,37 +244,37 @@ const handleTouchEnd = () => {
 }
 
 const handleMouseEnter = (client: Client) => {
-  if (!isDesktop.value) return;
-  setText(client.title);
-    currentClient.value = client.id;
-};
+  if (!isDesktop.value) return
+  setText(client.title)
+  currentClient.value = client.id
+}
 
 const handleMouseLeave = () => {
-  if (!isDesktop.value) return;
-  clearText();
-    currentClient.value = null;
-};
+  if (!isDesktop.value) return
+  clearText()
+  currentClient.value = null
+}
 
 const selectImage = (e: Event, client: Client) => {
-    const rect = e.target.getBoundingClientRect();
-    const { width, height, top, left } = rect;
-    clientsStore.selectedClient = client;
-    selectedImageEl.value.style.transition = 'none';
-    selectedImageEl.value.style.width = `${width}px`;
-    selectedImageEl.value.style.height = `${height}px`;
-    selectedImageEl.value.style.top = `${top}px`;
-    selectedImageEl.value.style.left = `${left}px`;
-    selectedImage.value = client.portrait;
-    requestAnimationFrame(() => {
-        selectedImageEl.value.style.transition = 'cubic-bezier(.19,1,.22,1) 1.5s';
-        selectedImageEl.value.style.width = '100%';
-        selectedImageEl.value.style.height = '100%';
-        selectedImageEl.value.style.top = '0px';
-        selectedImageEl.value.style.left = '0px';
-        setTimeout(() => {
-            navigateTo(localePath({ name: 'works-id', params: { id: client.id } }))
-        }, 200)
-    });
+  const rect = e.target.getBoundingClientRect()
+  const { width, height, top, left } = rect
+  clientsStore.selectedClient = client
+  selectedImageEl.value.style.transition = 'none'
+  selectedImageEl.value.style.width = `${width}px`
+  selectedImageEl.value.style.height = `${height}px`
+  selectedImageEl.value.style.top = `${top}px`
+  selectedImageEl.value.style.left = `${left}px`
+  selectedImage.value = client.portrait
+  requestAnimationFrame(() => {
+    selectedImageEl.value.style.transition = 'cubic-bezier(.19,1,.22,1) 1.5s'
+    selectedImageEl.value.style.width = '100%'
+    selectedImageEl.value.style.height = '100%'
+    selectedImageEl.value.style.top = '0px'
+    selectedImageEl.value.style.left = '0px'
+    setTimeout(() => {
+      navigateTo(localePath({ name: 'works-id', params: { id: client.id } }))
+    }, 200)
+  })
 }
 
 onMounted(async (): Promise<void> => {
@@ -257,16 +288,22 @@ onMounted(async (): Promise<void> => {
   window.addEventListener('resize', handleResize)
 
   if (!isDesktop.value && sliderWrapper.value) {
-    sliderWrapper.value.addEventListener('touchstart', handleTouchStart, { passive: true })
-    sliderWrapper.value.addEventListener('touchmove', handleTouchMove, { passive: true })
-    sliderWrapper.value.addEventListener('touchend', handleTouchEnd, { passive: true })
+    sliderWrapper.value.addEventListener('touchstart', handleTouchStart, {
+      passive: true
+    })
+    sliderWrapper.value.addEventListener('touchmove', handleTouchMove, {
+      passive: true
+    })
+    sliderWrapper.value.addEventListener('touchend', handleTouchEnd, {
+      passive: true
+    })
   }
 
   sliderState.rafId = requestAnimationFrame(update)
 })
 
 onBeforeUnmount(() => {
-    selectedImage.value = null;
+  selectedImage.value = null
 
   if (sliderState.rafId) {
     cancelAnimationFrame(sliderState.rafId)
@@ -280,5 +317,5 @@ onBeforeUnmount(() => {
     sliderWrapper.value.removeEventListener('touchmove', handleTouchMove)
     sliderWrapper.value.removeEventListener('touchend', handleTouchEnd)
   }
-});
+})
 </script>
