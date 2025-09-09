@@ -291,7 +291,15 @@
         "description": "Redesign of Citadium’s international e-commerce front end, 95% delivered solo in a PHP/Twig environment. Performance, SEO, accessibility, and well-crafted animations."
       },
       "description": "Citadium is a flagship fashion retail brand in France with a demanding and engaged community. Its international e-commerce platform handles high volumes and targets ambitious business goals.<ul><li><strong>+400,000</strong> unique users / month</li><li><strong>~2.3%</strong> conversion rate</li><li><strong>~$20M</strong> annual revenue</li><li>Desktop and mobile journeys with high UX/UI stakes</li></ul>",
-      "mission": "As part of the full brand overhaul led by W3lead, I redeveloped the entire front end of Citadium’s international e-commerce site in a PHP/Twig environment. Ambitious project with very high expectations in UX, UI, and animation. I delivered <strong>95%</strong> of the front end solo.<ul><li><strong>Architecture</strong>: modular templates (Twig partials), reusable layout system, <em>pixel-perfect</em> UI components.</li><li><strong>Stack</strong>: HTML · SCSS (clear architecture) · JavaScript ES6.</li><li><strong>Performance & Core Web Vitals</strong>: media lazy loading, responsive images (<code>srcset</code>/<code>sizes</code>), <code>preload</code>/<code>preconnect</code>, critical CSS, minification.</li><li><strong>Technical SEO</strong>: clean semantic markup, metadata, carefully designed internal linking.</li><li><strong>Accessibility</strong>: keyboard navigation, focus states, contrasts, essential ARIA roles.</li><li><strong>Creative development</strong>: micro-interactions and refined animations with no impact on load and overall fluidity.</li></ul>"
+      "mission": "As part of the full brand overhaul led by W3lead, I redeveloped the entire front end of Citadium’s international e-commerce site in a PHP/Twig environment. Ambitious project with very high expectations in UX, UI, and animation. I delivered <strong>95%</strong> of the front end solo.<ul><li><strong>Architecture</strong>: modular templates (Twig partials), reusable layout system, <em>pixel-perfect</em> UI components.</li><li><strong>Stack</strong>: HTML · SCSS (clear architecture) · JavaScript ES6.</li><li><strong>Performance & Core Web Vitals</strong>: media lazy loading, responsive images (<code>srcset</code>/<code>sizes</code>), <code>preload</code>/<code>preconnect</code>, critical CSS, minification.</li><li><strong>Technical SEO</strong>: clean semantic markup, metadata, carefully designed internal linking.</li><li><strong>Accessibility</strong>: keyboard navigation, focus states, contrasts, essential ARIA roles.</li><li><strong>Creative development</strong>: micro-interactions and refined animations with no impact on load and overall fluidity.</li></ul>",
+      "wishlist": {
+        "title": "Wishlist animation",
+        "text": "We spark surprise at the exact moment of intent. CSS/SVG-first with minimal JS: a tiny script spawns randomized hearts that glide along SVG paths with smooth transitions. The result is a lightweight, fluid micro-interaction that sticks in memory and quietly builds loyalty without sacrificing performance."
+      },
+      "conditions": {
+        "title": "Legal pages “opening crawl”",
+        "text": "I made the legal pages roll like Star Wars, because why not ? Mostly CSS, tiny JS, big drama, fully accessible."
+      }
     },
     "isabel-marant": {
       "seo": {
@@ -305,14 +313,22 @@
         "description": "Creation and continuous evolution of a Shopify theme for Jimmy Fairly with FittingBox virtual try-on and cross-sell mechanisms."
       },
       "description": "Jimmy Fairly is an eyewear brand founded in Paris, positioned on quality frames at fair prices and expanding rapidly across Europe.<ul><li><strong>Revenue</strong>: €95M</li><li><strong>Network</strong>: 147 stores in Europe</li><li><strong>Team</strong>: 380 employees</li></ul>",
-      "mission": "Theme design and ongoing improvements at W3Lead, with a focus on performance and boosting average order value.<ul><li>Integration in HTML · SCSS · ES6 on Shopify</li><li>Virtual try-on via the <strong>FittingBox API</strong></li><li>Cross-sell: listings and carousels with <strong>smart suggestions</strong></li><li><strong>GitHub CI/CD</strong> pipeline and regular deployments</li><li>Post-launch follow-up: optimizations and fixes</li></ul>"
+      "mission": "Theme design and ongoing improvements at W3Lead, with a focus on performance and boosting average order value.<ul><li>Integration in HTML · SCSS · ES6 on Shopify</li><li>Virtual try-on via the <strong>FittingBox API</strong></li><li>Cross-sell: listings and carousels with <strong>smart suggestions</strong></li><li><strong>GitHub CI/CD</strong> pipeline and regular deployments</li><li>Post-launch follow-up: optimizations and fixes</li></ul>",
+      "virtual-try": {
+        "title": "Virtual Try-On",
+        "text": "I integrated the virtual eyewear try-on solution into Jimmy Fairly’s e-commerce website by connecting the FittingBox API. This immersive feature allows users to try on frames in real time from their device, enhancing the online shopping experience and reducing returns."
+      }
     },
     "lacoste": {
       "seo": {
         "description": "Nuxt/Vue 3 front end for Lacoste Second Hand, with trade-in flow and interactive map."
       },
       "description": "Lacoste is an iconic French brand founded by René Lacoste, with a major global retail and digital footprint.<ul><li><strong>Stores</strong>: 1,100</li><li><strong>Countries</strong>: 98</li><li><strong>Employees</strong>: 8,200</li><li><strong>Revenue level</strong>: brand near <strong>€3B</strong></li></ul>",
-      "mission": "Development, as a freelancer for Faume, of a circular e-commerce experience in Vue 3 and Nuxt: dedicated site where Lacoste customers can exchange their worn items for store credits to acquire refurbished pieces from the brand.<ul><li>Vue 3 · Nuxt component architecture and modular SCSS</li><li><strong>Clothing-for-credit exchange system</strong> and second-hand marketplace</li><li>Interactive <strong>Mapbox</strong> map</li><li>SSR and responsive media for performance</li><li>Integration without mockups, based solely on existing brand guidelines</li></ul>"
+      "mission": "Development, as a freelancer for Faume, of a circular e-commerce experience in Vue 3 and Nuxt: dedicated site where Lacoste customers can exchange their worn items for store credits to acquire refurbished pieces from the brand.<ul><li>Vue 3 · Nuxt component architecture and modular SCSS</li><li><strong>Clothing-for-credit exchange system</strong> and second-hand marketplace</li><li>Interactive <strong>Mapbox</strong> map</li><li>SSR and responsive media for performance</li><li>Integration without mockups, based solely on existing brand guidelines</li></ul>",
+      "tradein": {
+        "title": "Online Trade-In Module",
+        "text": "A simple and fast service that allows users to resell their Lacoste pieces in exchange for a voucher. They receive a price estimate in just a few clicks and give their items a second life."
+      }
     },
     "ami": {
       "seo": {
@@ -424,7 +440,11 @@
         "description": "Shopify themes for Les Petites Jupes de Prune and Les Mariés de Prune. CI/CD, SEO, and performance with advanced animations."
       },
       "description": "Les Petites Jupes de Prune is a French brand with a creative, digital-native positioning, an engaged audience, and strong social potential. The site showcases highly visual womenswear collections.",
-      "mission": "Front-end development at W3Lead of highly interactive Shopify themes, with strict pixel-perfect standards and a CI/CD pipeline.<ul><li><strong>Integration</strong> refined animations and micro-interactions</li><li><strong>Shopify</strong> flexible sections and maintainable templates</li><li><strong>Growth</strong> smart suggestions for cross-sell</li><li><strong>Ops</strong> continuous GitHub integration and controlled deployments</li><li><strong>Performance</strong> lazy loading, minification, and Lighthouse audits</li></ul>"
+      "mission": "Front-end development at W3Lead of highly interactive Shopify themes, with strict pixel-perfect standards and a CI/CD pipeline.<ul><li><strong>Integration</strong> refined animations and micro-interactions</li><li><strong>Shopify</strong> flexible sections and maintainable templates</li><li><strong>Growth</strong> smart suggestions for cross-sell</li><li><strong>Ops</strong> continuous GitHub integration and controlled deployments</li><li><strong>Performance</strong> lazy loading, minification, and Lighthouse audits</li></ul>",
+      "animations": {
+        "title": "Micro-Interactions",
+        "text": "I designed and implemented numerous micro-interactions and subtle animations on Les Petites Jupes de Prune’s website. Their purpose is to make navigation smoother and more intuitive, add a touch of dynamism to the brand’s universe, and enhance user engagement by creating a more lively and memorable experience."
+      }
     },
     "faume-backoffice": {
       "seo": {

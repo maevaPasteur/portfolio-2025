@@ -114,6 +114,33 @@
           <ButtonClient :client="nextClient" :is-next="true" />
         </div>
       </div>
+      <div
+        v-if="client.videos?.length"
+        class="mt-16 md:mt-24 lg:mt-10 flex flex-col gap-14 md:gap-16 lg:gap-24 lg:items-center"
+      >
+        <div
+          v-for="(video, i) in client.videos"
+          :key="i"
+          v-reveal
+          class="flex flex-col lg:flex-row gap-8 lg:gap-12 items-start"
+        >
+          <div
+            v-if="video.text || video.title"
+            class="lg:order-1 w-full lg:w-auto flex flex-col gap-2 flex-grow max-w-lg lg:max-w-md lg:mt-12 min-w-xs"
+          >
+            <h2 v-if="video.title" class="text-lg font-semibold">
+              {{ $t(video.title) }}
+            </h2>
+            <p class="text-sm text-gray-700">{{ $t(video.text) }}</p>
+          </div>
+          <div
+            class="w-full border mx-auto lg:mx-0 bg-gray-50 shrink-0"
+            :class="video.maxWidth"
+          >
+            <VideoAutoPlay :video="video.src" />
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -125,6 +152,7 @@ import AnimationWordFromBottom from '@/components/animations/AnimationWordFromBo
 import ButtonClient from '@/components/ui/ButtonClient.vue'
 import Button from '@/components/ui/Button.vue'
 import ImageAnimated from '@/components/animations/ImageAnimated.vue'
+import VideoAutoPlay from '@/components/ui/VideoAutoPlay.vue'
 
 const route = useRoute()
 const { t, te } = useI18n()

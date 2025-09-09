@@ -49,6 +49,20 @@ export const useClientsStore = defineStore('clients', {
           tablet: '/mockups/citadium1.png',
           mobile: '/mockups/citadium2.png'
         },
+        videos: [
+          {
+            src: '/videos/citadium-conditions.webm',
+            title: 'clients.citadium.conditions.title',
+            text: 'clients.citadium.conditions.text',
+            maxWidth: 'max-w-xl'
+          },
+          {
+            src: '/videos/citadium-wishlist.webm',
+            title: 'clients.citadium.wishlist.title',
+            text: 'clients.citadium.wishlist.text',
+            maxWidth: 'max-w-sm'
+          }
+        ],
         url: 'https://www.citadium.com/',
         sectors: ['ecommerce', 'fashion', 'accessories']
       },
@@ -75,6 +89,14 @@ export const useClientsStore = defineStore('clients', {
           tablet: '/mockups/jimmy-fairly2.png',
           mobile: '/mockups/jimmy-fairly3.png'
         },
+        videos: [
+          {
+            src: '/videos/jimmy-fairly-virtual-try.mp4',
+            title: 'clients.jimmy-fairly.virtual-try.title',
+            text: 'clients.jimmy-fairly.virtual-try.text',
+            maxWidth: 'max-w-xl'
+          }
+        ],
         url: 'https://jimmyfairly.com/',
         sectors: ['ecommerce', 'accessories']
       },
@@ -102,6 +124,14 @@ export const useClientsStore = defineStore('clients', {
           tablet: '/mockups/lacoste1.png',
           mobile: '/mockups/lacoste3.png'
         },
+        videos: [
+          {
+            src: '/videos/lacoste-tradein.webm',
+            title: 'clients.lacoste.tradein.title',
+            text: 'clients.lacoste.tradein.text',
+            maxWidth: 'max-w-xl'
+          }
+        ],
         url: 'https://secondemain.lacoste.com/',
         sectors: ['ecommerce', 'fashion']
       },
@@ -302,6 +332,14 @@ export const useClientsStore = defineStore('clients', {
           tablet: '/mockups/petites-jupes-de-prune2.png',
           mobile: '/mockups/petites-jupes-de-prune3.png'
         },
+        videos: [
+          {
+            src: '/videos/petites-jupes-de-prune-eyes.mp4',
+            title: 'clients.petites-jupes-de-prune.animations.title',
+            text: 'clients.petites-jupes-de-prune.animations.text',
+            maxWidth: 'max-w-xl'
+          }
+        ],
         url: 'https://www.lespetitesjupesdeprune.com/',
         sectors: ['ecommerce', 'fashion']
       },

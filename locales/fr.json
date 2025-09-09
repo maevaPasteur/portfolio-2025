@@ -291,7 +291,15 @@
         "description": "Refonte du front-end du site e-commerce international de Citadium, livrée à 95% en solo dans un environnement PHP/Twig. Performance, SEO, accessibilité et animations maîtrisées."
       },
       "description": "Citadium est une enseigne phare du retail mode en France, avec une communauté exigeante et engagée. Sa plateforme e-commerce internationale traite des volumétries élevées et vise des objectifs business ambitieux.<ul><li><strong>+400 000</strong> utilisateurs uniques / mois</li><li><strong>~2,3 %</strong> de taux de conversion</li><li><strong>~20 M$</strong> de revenus annuels</li><li>Parcours desktop & mobile à fort enjeu d’UX/UI</li></ul>",
-      "mission": "Dans le cadre de la refonte intégrale du branding menée par W3lead, j’ai redéveloppé l’ensemble du front du site e-commerce international de Citadium dans un environnement PHP/Twig. Projet ambitieux avec un niveau d’attente très élevé en UX, UI et animations. J’ai assuré la livraison de <strong>95 %</strong> du front en solo.<ul><li><strong>Architecture</strong> : templates modulaires (Twig partials), layout system réutilisable, composants UI <em>pixel-perfect</em>.</li><li><strong>Stack</strong> : HTML · SCSS (architecture claire) · JavaScript ES6.</li><li><strong>Performance & Core Web Vitals</strong> : lazy-loading médias, images responsives (<code>srcset</code>/<code>sizes</code>), <code>preload</code>/<code>preconnect</code>, CSS critique, minification.</li><li><strong>SEO technique</strong> : balisage sémantique propre, métadonnées, maillage interne soigné.</li><li><strong>Accessibilité</strong> : navigation clavier, focus states, contrastes, rôles ARIA essentiels.</li><li><strong>Creative development</strong> : micro-interactions et animations maîtrisées, sans impacte sur le chargement des pages et la fluidité de l'expérience utilisateur.</li></ul>"
+      "mission": "Dans le cadre de la refonte intégrale du branding menée par W3lead, j’ai redéveloppé l’ensemble du front du site e-commerce international de Citadium dans un environnement PHP/Twig. Projet ambitieux avec un niveau d’attente très élevé en UX, UI et animations. J’ai assuré la livraison de <strong>95 %</strong> du front en solo.<ul><li><strong>Architecture</strong> : templates modulaires (Twig partials), layout system réutilisable, composants UI <em>pixel-perfect</em>.</li><li><strong>Stack</strong> : HTML · SCSS (architecture claire) · JavaScript ES6.</li><li><strong>Performance & Core Web Vitals</strong> : lazy-loading médias, images responsives (<code>srcset</code>/<code>sizes</code>), <code>preload</code>/<code>preconnect</code>, CSS critique, minification.</li><li><strong>SEO technique</strong> : balisage sémantique propre, métadonnées, maillage interne soigné.</li><li><strong>Accessibilité</strong> : navigation clavier, focus states, contrastes, rôles ARIA essentiels.</li><li><strong>Creative development</strong> : micro-interactions et animations maîtrisées, sans impacte sur le chargement des pages et la fluidité de l'expérience utilisateur.</li></ul>",
+      "wishlist": {
+        "title": "Animation de wishlist",
+        "text": "On déclenche la surprise au moment précis de l'intention. Approche CSS/SVG d'abord avec un JS minimal : un micro-script génère des cœurs aléatoires qui glissent le long de chemins SVG avec des transitions fluides. Résultat : une micro-interaction légère et fluide qui marque les esprits et renforce discrètement la fidélité sans sacrifier les performances."
+      },
+      "conditions": {
+        "title": "Générique déroulant \"opening crawl\" pour les pages légales",
+        "text": "J'ai fait défiler les pages légales comme dans Star Wars, parce que pourquoi pas ? Principalement du CSS, un soupçon de JS, grand spectacle, et le tout entièrement accessible."
+      }
     },
     "isabel-marant": {
       "seo": {
@@ -305,14 +313,22 @@
         "description": "Création et évolutions d’un thème Shopify pour Jimmy Fairly avec essayage virtuel FittingBox et dispositifs de cross-sell."
       },
       "description": "Jimmy Fairly est une enseigne d’optique fondée à Paris, positionnée sur des montures de qualité à prix maîtrisé et en forte expansion européenne.<ul><li><strong>Chiffre d’affaires</strong> : 95 M€</li><li><strong>Réseau</strong> : 147 magasins en Europe</li><li><strong>Équipe</strong> : 380 collaborateurs</li></ul>",
-      "mission": "Conception du thème Shopify puis amélioration continue chez W3Lead, avec un focus performance et augmentation du panier moyen.<ul><li>Intégration en HTML · SCSS · ES6 sur Shopify</li><li>Essayage virtuel via <strong>API FittingBox</strong></li><li>Cross-sell : listings et carrousels à <strong>suggestions intelligentes</strong></li><li>Pipeline <strong>CI/CD GitHub</strong> et déploiements réguliers</li><li>Suivi post-lancement : optimisations et correctifs</li></ul>"
+      "mission": "Conception du thème Shopify puis amélioration continue chez W3Lead, avec un focus performance et augmentation du panier moyen.<ul><li>Intégration en HTML · SCSS · ES6 sur Shopify</li><li>Essayage virtuel via <strong>API FittingBox</strong></li><li>Cross-sell : listings et carrousels à <strong>suggestions intelligentes</strong></li><li>Pipeline <strong>CI/CD GitHub</strong> et déploiements réguliers</li><li>Suivi post-lancement : optimisations et correctifs</li></ul>",
+      "virtual-try": {
+        "title": "Essayage virtuel",
+        "text": "J’ai intégré la solution d’essayage virtuel de lunettes sur le site e-commerce de Jimmy Fairly en connectant l’API de FittingBox. Cette fonctionnalité immersive permet aux utilisateurs de tester leurs montures en temps réel depuis leur appareil, améliorant l’expérience d’achat en ligne et réduisant les retours."
+      }
     },
     "lacoste": {
       "seo": {
         "description": "Front Nuxt/Vue 3 pour la plateforme Lacoste Seconde Main, avec parcours de reprise et carte interactive."
       },
       "description": "Lacoste est une marque française iconique fondée par René Lacoste, présente mondialement avec une empreinte retail et digitale majeure.<ul><li><strong>Réseau</strong> : 1 100 magasins</li><li><strong>Pays</strong> : 98</li><li><strong>Effectif</strong> : 8 200 employés</li><li><strong>Niveau de revenus</strong> : marque proche de <strong>3 Md€</strong></li></ul>",
-      "mission": "Développement, en freelance pour Faume, d'une expérience e-commerce circulaire en Vue 3 et Nuxt : site dédié où les clients Lacoste peuvent échanger leurs articles usagés contre des bons d'achat pour acquérir des pièces reconditionnées de la marque.<ul><li>Architecture composants Vue 3 · Nuxt et SCSS modulaires</li><li>Système d'<strong>échange vêtement contre crédit boutique</strong> et marketplace seconde main</li><li>Carte interactive <strong>Mapbox</strong></li><li>SSR et médias responsives pour la performance</li><li>Intégration sans maquettes basée uniquement sur la charte existante</li></ul>"
+      "mission": "Développement, en freelance pour Faume, d'une expérience e-commerce circulaire en Vue 3 et Nuxt : site dédié où les clients Lacoste peuvent échanger leurs articles usagés contre des bons d'achat pour acquérir des pièces reconditionnées de la marque.<ul><li>Architecture composants Vue 3 · Nuxt et SCSS modulaires</li><li>Système d'<strong>échange vêtement contre crédit boutique</strong> et marketplace seconde main</li><li>Carte interactive <strong>Mapbox</strong></li><li>SSR et médias responsives pour la performance</li><li>Intégration sans maquettes basée uniquement sur la charte existante</li></ul>",
+      "tradein": {
+        "title": "Module de reprise en ligne",
+        "text": "Un service simple et rapide qui permet aux utilisateurs de revendre leurs pièces Lacoste en échange d’un bon d’achat. Ils obtiennent une estimation de prix en quelques clics et peuvent donner une seconde vie à leurs articles."
+      }
     },
     "ami": {
       "seo": {
@@ -424,7 +440,11 @@
         "description": "Thèmes Shopify pour Les Petites Jupes de Prune et Les Mariés de Prune. CI/CD, SEO et performance avec animations avancées."
       },
       "description": "Les Petites Jupes de Prune est une marque française au positionnement créatif et digital natif, avec une audience engagée et un fort potentiel social. Le site met en scène des collections féminines très visuelles.",
-      "mission": "Développement en tant que front-end chez W3Lead de thèmes Shopify très interactifs, avec un haut niveau d’exigence pixel perfect et un pipeline CI/CD.<ul><li><strong>Intégration</strong> animations soignées et micro-interactions</li><li><strong>Shopify</strong> sections flexibles et templates maintenables</li><li><strong>Growth</strong> suggestions intelligentes pour le cross sell</li><li><strong>Ops</strong> intégration continue GitHub et déploiements maîtrisés</li><li><strong>Performance</strong> lazy loading, minification et audit Lighthouse</li></ul>"
+      "mission": "Développement en tant que front-end chez W3Lead de thèmes Shopify très interactifs, avec un haut niveau d’exigence pixel perfect et un pipeline CI/CD.<ul><li><strong>Intégration</strong> animations soignées et micro-interactions</li><li><strong>Shopify</strong> sections flexibles et templates maintenables</li><li><strong>Growth</strong> suggestions intelligentes pour le cross sell</li><li><strong>Ops</strong> intégration continue GitHub et déploiements maîtrisés</li><li><strong>Performance</strong> lazy loading, minification et audit Lighthouse</li></ul>",
+      "animations": {
+        "title": "Micro-interactions",
+        "text": "J’ai conçu et intégré de nombreuses micro-interactions et petites animations sur le site Les Petites Jupes de Prune. Leur rôle est de rendre la navigation plus fluide et intuitive, d’apporter une touche de dynamisme à l’univers de la marque, et de renforcer l’engagement en rendant l’expérience utilisateur plus vivante et mémorable."
+      }
     },
     "faume-backoffice": {
       "seo": {
