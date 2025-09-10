@@ -37,7 +37,9 @@
       </p>
     </div>
     <HomeSlider v-model="currentClient" />
-    <span class="text-sm font-light fixed bottom-8 right-8 font-mono"
+    <span
+      v-reveal
+      class="text-sm font-light fixed bottom-8 right-8 font-mono"
     >© 2025</span
     >
   </div>

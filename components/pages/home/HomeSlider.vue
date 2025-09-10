@@ -6,7 +6,7 @@
   >
     <div
       ref="sliderWrapper"
-      class="md:absolute absolute md:h-full h-full px-6 md:px-[50vw] lg:px-[600px] flex items-center gap-1 md:gap-[100px]"
+      class="md:absolute absolute md:h-full h-full pr-[50vw] pl-[100vw] flex items-center gap-1 md:gap-[100px]"
     >
       <div
         v-for="(client, clientIndex) in clients"
@@ -91,6 +91,14 @@ const config: SliderConfig = {
   scaleOffset: 300
 } as const
 
+// Configuration mobile
+const mobileConfig: SliderConfig = {
+  ease: 0.12,
+  maxScale: 1.3,
+  minScale: 0.7,
+  scaleOffset: 200
+} as const
+
 const localePath = useLocalePath()
 const { setText, clearText } = useCursorStore()
 const clientsStore = useClientsStore()
@@ -160,18 +168,19 @@ const calculateTransform = (
   distanceFromCenter: number,
   windowWidth: number
 ) => {
+  const currentConfig = isDesktop.value ? config : mobileConfig
   const isRightSide = distanceFromCenter > 0
 
   if (isRightSide) {
     const scale = Math.min(
-      config.maxScale,
+      currentConfig.maxScale,
       1 + distanceFromCenter / windowWidth
     )
-    const offsetX = (scale - 1) * config.scaleOffset
+    const offsetX = (scale - 1) * currentConfig.scaleOffset
     return { scale, offsetX }
   } else {
     const scale = Math.max(
-      config.minScale,
+      currentConfig.minScale,
       1 - Math.abs(distanceFromCenter) / windowWidth
     )
     return { scale, offsetX: 0 }
@@ -179,10 +188,11 @@ const calculateTransform = (
 }
 
 const update = () => {
+  const currentConfig = isDesktop.value ? config : mobileConfig
   sliderState.current = lerp(
     sliderState.current,
     sliderState.target,
-    config.ease
+    currentConfig.ease
   )
 
   if (sliderWrapper.value) {
@@ -300,6 +310,19 @@ onMounted(async (): Promise<void> => {
   }
 
   sliderState.rafId = requestAnimationFrame(update)
+
+  const isMobile = window.matchMedia('(max-width: 767px)').matches
+
+  gsap.to(sliderState, {
+    target: isMobile
+      ? window.innerWidth
+      : isDesktop.value
+        ? window.innerWidth - 600
+        : window.innerWidth * 0.5,
+    duration: 1.2,
+    ease: isMobile ? 'power2.out' : 'cubic-bezier(0.19, 1, 0.22, 1)',
+    delay: isMobile ? 0 : 0.3
+  })
 })
 
 onBeforeUnmount(() => {
