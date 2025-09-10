@@ -108,7 +108,7 @@
 
         <div
           v-if="previousClient?.id || nextClient?.id"
-          class="fixed z-[3] bottom-6 left-6 flex gap-2"
+          class="flex fixed z-[3] overflow-hidden bg-white sm:bg-none w-full sm:w-auto bottom-0 sm:bottom-6 left-0 sm:left-6 gap-[1px] sm:gap-2"
         >
           <ButtonClient :client="previousClient" :is-previous="true" />
           <ButtonClient :client="nextClient" :is-next="true" />
