@@ -271,6 +271,8 @@
   },
   "contact": {
     "title": "For any request:",
+    "download_portfolio": "Download my Portfolio",
+    "download_resume": "Download my resume",
     "seo": {
       "title": "Contact - Maëva Pasteur { '|' } Front-End Developer Freelance",
       "description": "Let's discuss your front-end project (Vue.js, Nuxt, e-commerce, PWA, MVP). Availability, quotes and freelance collaboration terms."
