@@ -1,7 +1,7 @@
 <template>
   <div
     ref="cursorFollower"
-    class="cursor fixed top-0 left-0 pointer-events-none z-[9999] flex items-center duration-[50ms] ease-in-out mix-blend-difference"
+    class="cursor fixed top-0 left-0 pointer-events-none z-[9999] hidden lg:flex items-center duration-[50ms] ease-in-out mix-blend-difference"
     style="will-change: transform; transform: translate3d(0, 0, 0)"
     aria-hidden="true"
   >

@@ -1,13 +1,11 @@
-export default defineNuxtPlugin((nuxtApp) => {
+export default defineNuxtPlugin(async (nuxtApp) => {
   if (import.meta.client) {
-    // Import real directives only on client-side
-    import('../directives/v-reveal').then(({ vReveal }) => {
-      nuxtApp.vueApp.directive('reveal', vReveal)
-    })
+    // Import real directives synchronously on client-side
+    const { vReveal } = await import('../directives/v-reveal')
+    const { vRevealGroup } = await import('../directives/v-reveal-group')
 
-    import('../directives/v-reveal-group').then(({ vRevealGroup }) => {
-      nuxtApp.vueApp.directive('reveal-group', vRevealGroup)
-    })
+    nuxtApp.vueApp.directive('reveal', vReveal)
+    nuxtApp.vueApp.directive('reveal-group', vRevealGroup)
   } else {
     // Stub directives for SSR
     const stubDirective = {

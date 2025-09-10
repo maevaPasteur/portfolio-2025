@@ -1,16 +1,15 @@
 <template>
-  <div>
+  <div class="app opacity-0">
     <NuxtRouteAnnouncer />
     <NuxtLayout>
       <NuxtPage />
     </NuxtLayout>
-    <Cursor v-if="isDesktop"/>
+    <Cursor v-if="isDesktop" />
   </div>
 </template>
 
 <script setup lang="ts">
-import Cursor from "@/components/ui/Cursor.vue";
-import { ref, onMounted } from 'vue'
+import Cursor from '@/components/ui/Cursor.vue'
 
 const isDesktop = ref(false)
 
@@ -22,21 +21,34 @@ onMounted(() => {
 <style>
 .page-enter-active,
 .page-leave-active {
-    transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
 }
 
 .page-enter-from,
 .page-leave-to {
-    opacity: 0;
+  opacity: 0;
 }
 
 .v-enter-active,
 .v-leave-active {
-    transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
 }
 
 .v-enter-from,
 .v-leave-to {
+  opacity: 0;
+}
+
+@keyframes animApp {
+  from {
     opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.app {
+  animation: animApp ease-out 0.5s forwards;
 }
 </style>
