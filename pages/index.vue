@@ -1,9 +1,11 @@
 <template>
   <div class="relative z-0">
     <div
-      class="top-[80px] md-top-auto fixed md:top-auto md:bottom-8 w-full left-0 px-6 md:px-8 flex flex-col md:flex-col-reverse gap-4 md:gap-8"
+      class="px-6 pt-20 md:fixed md:top-auto md:bottom-8 w-full md:left-0 md:px-8 flex flex-col gap-4 md:gap-8 mb-10 md:mb-0"
     >
-      <h2 class="font-[Neutral] text-3xl sm:text-4xl md:text-6xl lg:text-9xl">
+      <h2
+        class="font-[Neutral] text-3xl sm:text-4xl md:text-6xl lg:text-8xl xl:text-9xl"
+      >
         <AnimationLetterFromLeft :text="$t('home.developer')" class="block" />
         <span class="flex">
           <span class="italic relative">
@@ -29,24 +31,25 @@
           >&nbsp;<AnimationLetterFromLeft text="End" />
         </span>
       </h2>
-      <p
-        v-reveal
-        class="max-w-xl text-sm font-light md:whitespace-break-spaces"
-      >
+      <p v-reveal class="max-w-xl text-sm font-light">
         {{ $t('home.text') }}
       </p>
     </div>
-    <HomeSlider v-model="currentClient" />
+
+    <HomeDesktopSlider v-if="!isMobile" v-model="currentClient" />
+    <HomeMobileSlider v-if="isMobile" />
     <span
       v-reveal
-      class="text-sm font-light fixed bottom-8 right-8 font-mono"
+      class="text-sm font-light fixed bottom-8 right-8 font-mono hidden md:block"
+      aria-hidden="true"
     >© 2025</span
     >
   </div>
 </template>
 
 <script setup lang="ts">
-import HomeSlider from '@/components/pages/home/HomeSlider.vue'
+import HomeDesktopSlider from '@/components/pages/home/HomeDesktopSlider.vue'
+import HomeMobileSlider from '@/components/pages/home/HomeMobileSlider.vue'
 import AnimationLetterFromLeft from '@/components/animations/AnimationLetterFromLeft.vue'
 
 const { t } = useI18n()
@@ -99,6 +102,7 @@ const colors = {
 }
 
 const currentClient = ref<null | string>(null)
+const isMobile = ref(false)
 
 definePageMeta({
   layout: 'default'
@@ -109,8 +113,24 @@ useSeoMeta({
   description: t('home.seo.description')
 })
 
-// Schéma spécifique à la page d'accueil (globaux gérés par le plugin)
 const { defineProfilePage } = useSchemaOrgPersonal()
+
+const updateIsMobile = () => {
+  if (import.meta.client) {
+    isMobile.value = window.innerWidth < 768
+  }
+}
+
+onMounted(() => {
+  updateIsMobile()
+  window.addEventListener('resize', updateIsMobile)
+})
+
+onBeforeUnmount(() => {
+  if (import.meta.client) {
+    window.removeEventListener('resize', updateIsMobile)
+  }
+})
 
 await nextTick()
 

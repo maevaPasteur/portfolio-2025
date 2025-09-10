@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div v-if="client" class="px-6 min-h-screen pb-10">
+    <div v-if="client" class="px-6 min-h-screen pb-24 md:pb)10">
       <div
         class="pt-[80px] md:pt-[100px] grid gap-16 w-full grid-cols-1 lg:grid-cols-[1fr_50%] md:grid-rows-[auto_1fr] relative"
       >
