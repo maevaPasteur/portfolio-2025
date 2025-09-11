@@ -299,8 +299,8 @@
         "text": "On déclenche la surprise au moment précis de l'intention. Approche CSS/SVG d'abord avec un JS minimal : un micro-script génère des cœurs aléatoires qui glissent le long de chemins SVG avec des transitions fluides. Résultat : une micro-interaction légère et fluide qui marque les esprits et renforce discrètement la fidélité sans sacrifier les performances."
       },
       "conditions": {
-        "title": "Générique déroulant \"opening crawl\" pour les pages légales",
-        "text": "J'ai fait défiler les pages légales comme dans Star Wars, parce que pourquoi pas ? Principalement du CSS, un soupçon de JS, grand spectacle, et le tout entièrement accessible."
+        "title": "Conditions générales façon Star Wars",
+        "text": "J'ai fait défilé les pages légales comme le générique Star Wars, parce que pourquoi pas ? Principalement du CSS, un soupçon de JS, grand spectacle, et le tout entièrement accessible."
       }
     },
     "isabel-marant": {
@@ -622,7 +622,8 @@
         "description": "Plateforme seconde main internationale The Kooples en Nuxt et Vue 3. Modules Vue 2 et multilingue."
       },
       "description": "The Kooples est une maison française du groupe SMCP, présente dans plus de 30 pays avec un fort ADN rock-chic. L’initiative seconde main soutient sa stratégie de durabilité et fidélise sa communauté.",
-      "mission": "Mise en place, en freelance pour Faume, d'une boutique rock-chic durable The Kooples multilingue avec Nuxt et Vue 3 : les clients peuvent revendre leurs pièces iconiques contre des bons d'achat pour des articles de seconde main sélectionnés par les stylistes.<ul><li><strong>i18n</strong> internationalisation et hreflang</li><li><strong>Revente</strong> parcours en <strong>Vue 2</strong></li><li><strong>Compte</strong> suivi commandes en <strong>Vue 2</strong></li><li><strong>Carte</strong> intégration Mapbox</li><li><strong>Perf</strong> SSR et optimisation Lighthouse</li></ul>"
+      "mission": "Mise en place, en freelance pour Faume, d'une boutique rock-chic durable The Kooples multilingue avec Nuxt et Vue 3 : les clients peuvent revendre leurs pièces iconiques contre des bons d'achat pour des articles de seconde main sélectionnés par les stylistes.<ul><li><strong>i18n</strong> internationalisation et hreflang</li><li><strong>Revente</strong> parcours en <strong>Vue 2</strong></li><li><strong>Compte</strong> suivi commandes en <strong>Vue 2</strong></li><li><strong>Carte</strong> intégration Mapbox</li><li><strong>Perf</strong> SSR et optimisation Lighthouse</li></ul>",
+      "info": "Le site de seconde main n'est plus disponible."
     },
     "account-package": {
       "seo": {

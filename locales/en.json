@@ -622,7 +622,8 @@
         "description": "International The Kooples second-hand platform in Nuxt and Vue 3. Vue 2 modules and multilingual."
       },
       "description": "The Kooples is a French house of the SMCP group, present in 30+ countries with a strong rock-chic DNA. The second-hand initiative supports its sustainability strategy and retains its community.",
-      "mission": "Implementation, as a freelancer for Faume, of a sustainable rock-chic boutique The Kooples multilingual with Nuxt and Vue 3: customers can resell their iconic pieces for store credits for second-hand articles selected by the stylists.<ul><li><strong>i18n</strong> internationalization and hreflang</li><li><strong>Resale</strong> journey in <strong>Vue 2</strong></li><li><strong>Account</strong> order tracking in <strong>Vue 2</strong></li><li><strong>Map</strong> Mapbox integration</li><li><strong>Performance</strong> SSR and Lighthouse optimization</li></ul>"
+      "mission": "Implementation, as a freelancer for Faume, of a sustainable rock-chic boutique The Kooples multilingual with Nuxt and Vue 3: customers can resell their iconic pieces for store credits for second-hand articles selected by the stylists.<ul><li><strong>i18n</strong> internationalization and hreflang</li><li><strong>Resale</strong> journey in <strong>Vue 2</strong></li><li><strong>Account</strong> order tracking in <strong>Vue 2</strong></li><li><strong>Map</strong> Mapbox integration</li><li><strong>Performance</strong> SSR and Lighthouse optimization</li></ul>",
+      "info": "The second-hand website is no longer available."
     },
     "account-package": {
       "seo": {

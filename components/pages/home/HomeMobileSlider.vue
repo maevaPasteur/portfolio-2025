@@ -19,13 +19,9 @@
           :src="client.portrait"
           :alt="client.title"
           class="w-full h-full bg-gray-100 object-cover duration-[800ms] ease-[cubic-bezier(.19,1,.22,1)] transform-gpu will-change-transform"
-          width="340"
-          height="425"
-          sizes="340px"
-          densities="x1 x2"
+          v-bind="imagesSizes.homeMobile"
           :preload="clientIndex < 3"
           :loading="clientIndex < 3 ? 'eager' : 'lazy'"
-          fit="cover"
         />
       </div>
       <div class="pt-1 text-right font-mono text-xs overflow-hidden">
@@ -46,6 +42,7 @@
 import gsap from 'gsap'
 import type { Ref, ComponentPublicInstance } from 'vue'
 import { storeToRefs } from 'pinia'
+import { imagesSizes } from '@utils/images-sizes'
 
 const localePath = useLocalePath()
 const clientsStore = useClientsStore()

@@ -59,9 +59,10 @@
           class="lg:row-span-2 lg:col-start-2 flex justify-center"
         >
           <ImageAnimated
-            class="w-full h-auto max-w-2xl"
+            class="w-full h-auto max-w-2xl self-start"
             :image="mockupFullImage"
             :alt="client.title"
+            v-bind="imagesSizes?.mockupFull"
           />
         </div>
         <div
@@ -69,38 +70,27 @@
           class="pl-[5%] max-w-2xl mx-auto lg:max-w-full flex justify-center items-center"
         >
           <div class="media-container flex items-center">
-            <ImageAnimated
-              v-if="mockupSingleImage"
-              :image="mockupSingleImage"
-              :alt="client.title"
-            />
             <div
-              v-else-if="mockupMobile && mockupTablet && mockupDesktop"
+              v-if="mockupMobile && mockupTablet && mockupDesktop"
               class="flex flex-col relative gap-3 relative"
             >
               <ImageAnimated
                 :image="mockupTablet"
                 img-class="h-auto relative z-0 w-full"
                 :alt="client.title"
-                width="641"
-                height="433"
-                sizes="420px md:629px xl:641px"
+                v-bind="imagesSizes.mockupTablet"
               />
               <ImageAnimated
                 :image="mockupDesktop"
                 img-class="h-auto relative z-[1] ml-auto w-[70%] delay-100"
                 :alt="client.title"
-                width="594"
-                height="386"
-                sizes="262px md:440px xl:594px"
+                v-bind="imagesSizes?.mockupDesktop"
               />
               <ImageAnimated
                 :image="mockupMobile"
                 img-class="h-auto absolute z-[2] w-[35%] bottom-[10%] left-[-5%] delay-200"
                 :alt="client.title"
-                width="296"
-                height="600"
-                sizes="130px md:220px xl:296px"
+                v-bind="imagesSizes?.mockupMobile"
               />
             </div>
           </div>
@@ -135,7 +125,7 @@
           </div>
           <div
             class="w-full border mx-auto lg:mx-0 bg-gray-50 shrink-0"
-            :class="video.maxWidth"
+            :class="getVideoMaxWidthClass(video.maxWidth)"
           >
             <VideoAutoPlay :video="video.src" />
           </div>
@@ -153,6 +143,7 @@ import ButtonClient from '@/components/ui/ButtonClient.vue'
 import Button from '@/components/ui/Button.vue'
 import ImageAnimated from '@/components/animations/ImageAnimated.vue'
 import VideoAutoPlay from '@/components/ui/VideoAutoPlay.vue'
+import { imagesSizes } from '@utils/images-sizes'
 
 const route = useRoute()
 const { t, te } = useI18n()
@@ -174,8 +165,22 @@ const info = computed(() => getClientText('info'))
 const mockupDesktop = computed(() => client.value?.mockups?.desktop)
 const mockupTablet = computed(() => client.value?.mockups?.tablet)
 const mockupMobile = computed(() => client.value?.mockups?.mobile)
-const mockupSingleImage = computed(() => client.value?.mockups?.image)
 const mockupFullImage = computed(() => client.value?.mockups?.full)
+
+const getVideoMaxWidthClass = (maxWidth: 'sm' | 'md' | 'lg' | 'xl' | '2xl') => {
+  switch (maxWidth) {
+    case 'sm':
+      return 'max-w-sm'
+    case 'md':
+      return 'max-w-md'
+    case 'lg':
+      return 'max-w-lg'
+    case 'xl':
+      return 'max-w-xl'
+    case '2xl':
+      return 'max-w-2xl'
+  }
+}
 
 watch(
   client,
@@ -192,10 +197,7 @@ watch(
       const { defineProject } = useSchemaOrgProject({
         name: data.title,
         description: description.value || data.title,
-        image:
-          mockupFullImage.value ||
-          mockupSingleImage.value ||
-          mockupDesktop.value,
+        image: mockupFullImage.value || mockupDesktop.value,
         url: data.url,
         technologies: data.keywords,
         dateCreated: data.year ? `${data.year}-01-01` : undefined

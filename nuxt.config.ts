@@ -1,3 +1,6 @@
+import { resolve } from 'pathe'
+import { ipxRoutes } from './utils/ipx-routes'
+
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
@@ -47,7 +50,7 @@ export default defineNuxtConfig({
   nitro: {
     preset: 'github-pages',
     prerender: {
-      routes: ['/robots.txt', '/sitemap.xml']
+      routes: ['/robots.txt', '/sitemap.xml', ...ipxRoutes]
     }
   },
   app: {
@@ -93,25 +96,7 @@ export default defineNuxtConfig({
     provider: 'ipx',
     format: ['webp'],
     densities: [1, 2],
-    dir: 'public/images',
-    presets: {
-      portrait: {
-        modifiers: {
-          width: 400,
-          height: 500,
-          fit: 'cover',
-          format: 'webp'
-        }
-      },
-      portraitSmall: {
-        modifiers: {
-          width: 250,
-          height: 312,
-          fit: 'cover',
-          format: 'webp'
-        }
-      }
-    }
+    dir: 'public/images'
   },
   icon: {
     mode: 'svg',
@@ -129,5 +114,9 @@ export default defineNuxtConfig({
   },
   sitemap: {
     sources: ['/api/__sitemap__/urls']
+  },
+  alias: {
+    '@utils': resolve(__dirname, 'utils'),
+    '@data': resolve(__dirname, 'data')
   }
 })

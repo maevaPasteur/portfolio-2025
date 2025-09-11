@@ -54,6 +54,7 @@
         alt="Maëva Pasteur - Portfolio"
         class="w-full h-full object-cover"
         loading="lazy"
+        v-bind="imagesSizes.homeDesktop"
       />
     </div>
   </div>
@@ -64,6 +65,7 @@ import gsap from 'gsap'
 import type { Ref } from 'vue'
 import type { Client } from '~/stores/clients'
 import { storeToRefs } from 'pinia'
+import { imagesSizes } from '@utils/images-sizes'
 
 interface SliderState {
   target: number

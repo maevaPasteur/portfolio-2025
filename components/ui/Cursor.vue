@@ -17,11 +17,9 @@
     <NuxtImg
       v-if="hasImage"
       :src="image"
+      :alt="text || 'Image'"
       loading="lazy"
-      width="100"
-      height="140"
-      density="x1"
-      sizes="100px"
+      v-bind="imagesSizes?.cursor"
       class="invert absolute top-0 left-0 translate-x-[50px] w-[100px] h-[140px] max-w-none object-cover"
     />
   </div>
@@ -31,6 +29,7 @@
 import { ref, onMounted, onBeforeUnmount } from 'vue'
 import type { Ref } from 'vue'
 import { storeToRefs } from 'pinia'
+import { imagesSizes } from '@utils/images-sizes'
 
 interface CursorPosition {
   x: number

@@ -1,14 +1,7 @@
+import { clientsData } from '../../../data/clients'
+
 export default defineSitemapEventHandler(async () => {
-  const clients = [
-    'citadium', 'jimmy-fairly', 'lacoste', 'ami', 'cabaia', 'g-star', 'isotoner', 'leo-violette',
-    'airbus', 'petites-jupes-de-prune', 'temperley-london', 'kids-around', 'faume-page-builder',
-    'french-bandit', 'sandro', 'faume-design-system', 'victoria-beckham', 'carel', 'armor-lux',
-    'sud-express', 'soeur', 'hugo-boss', 'mali-hakika', 'jerome-dreyfuss', 'tara-jarmon',
-    'maison-123', 'vanessa-bruno', 'bonpoint', 'bash', 'editions-didier', 'epycure',
-    'faume-backoffice', 'balzac', 'butagaz', 'groupe-soufflet', 'claudie-pierlot',
-    'theater-in-paris', 'aigle', 'leo-pharma', 'lancaster', 'account-package', 'isabel-marant',
-    'order-tracking', 'w3lead'
-  ]
+  const clients = clientsData.map((client) => client.id)
 
   const urls = []
 
@@ -26,7 +19,7 @@ export default defineSitemapEventHandler(async () => {
     { loc: '/en/contact', priority: 0.7, changefreq: 'monthly' }
   )
 
-  clients.forEach(clientId => {
+  clients.forEach((clientId) => {
     urls.push(
       { loc: `/works/${clientId}`, priority: 0.6, changefreq: 'weekly' },
       { loc: `/en/works/${clientId}`, priority: 0.6, changefreq: 'weekly' }
