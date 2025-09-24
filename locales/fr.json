@@ -314,7 +314,7 @@
       "seo": {
         "description": "Création et évolutions d’un thème Shopify pour Jimmy Fairly avec essayage virtuel FittingBox et dispositifs de cross-sell."
       },
-      "description": "Jimmy Fairly est une enseigne d’optique fondée à Paris, positionnée sur des montures de qualité à prix maîtrisé et en forte expansion européenne.<ul><li><strong>Chiffre d’affaires</strong> : 95 M€</li><li><strong>Réseau</strong> : 147 magasins en Europe</li><li><strong>Équipe</strong> : 380 collaborateurs</li></ul>",
+      "description": "Jimmy Fairly est une enseigne d’optique fondée à Paris, reconnue pour ses montures tendance et accessibles, ainsi que pour son engagement en faveur d’une mode responsable.<ul><li><strong>Positionnement</strong> : lunettes de qualité à prix maîtrisé</li><li><strong>Engagement</strong> : démarche responsable & solidaire (plus d’un million de lunettes offertes via Restoring Vision)</li><li><strong>Expansion</strong> : réseau en forte croissance en France et en Europe</li></ul>",
       "mission": "Conception du thème Shopify puis amélioration continue chez W3Lead, avec un focus performance et augmentation du panier moyen.<ul><li>Intégration en HTML · SCSS · ES6 sur Shopify</li><li>Essayage virtuel via <strong>API FittingBox</strong></li><li>Cross-sell : listings et carrousels à <strong>suggestions intelligentes</strong></li><li>Pipeline <strong>CI/CD GitHub</strong> et déploiements réguliers</li><li>Suivi post-lancement : optimisations et correctifs</li></ul>",
       "virtual-try": {
         "title": "Essayage virtuel",

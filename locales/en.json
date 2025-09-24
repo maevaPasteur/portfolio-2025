@@ -314,7 +314,7 @@
       "seo": {
         "description": "Creation and continuous evolution of a Shopify theme for Jimmy Fairly with FittingBox virtual try-on and cross-sell mechanisms."
       },
-      "description": "Jimmy Fairly is an eyewear brand founded in Paris, positioned on quality frames at fair prices and expanding rapidly across Europe.<ul><li><strong>Revenue</strong>: €95M</li><li><strong>Network</strong>: 147 stores in Europe</li><li><strong>Team</strong>: 380 employees</li></ul>",
+      "description": "Jimmy Fairly is an eyewear brand founded in Paris, known for its trendy and affordable frames, as well as its strong commitment to responsible fashion.<ul><li><strong>Positioning</strong>: stylish eyewear at fair prices</li><li><strong>Commitment</strong>: responsible & solidarity-driven approach (over one million glasses donated through Restoring Vision)</li><li><strong>Expansion</strong>: a rapidly growing network in France and across Europe</li></ul>",
       "mission": "Theme design and ongoing improvements at W3Lead, with a focus on performance and boosting average order value.<ul><li>Integration in HTML · SCSS · ES6 on Shopify</li><li>Virtual try-on via the <strong>FittingBox API</strong></li><li>Cross-sell: listings and carousels with <strong>smart suggestions</strong></li><li><strong>GitHub CI/CD</strong> pipeline and regular deployments</li><li>Post-launch follow-up: optimizations and fixes</li></ul>",
       "virtual-try": {
         "title": "Virtual Try-On",
