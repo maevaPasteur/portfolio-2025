@@ -854,19 +854,17 @@ export const clientsData: Client[] = [
     portrait: '/portraits/editions-didier.webp',
     startup: null,
     agency: 'W3lead',
-    filters: ['SHOPIFY', 'FRONT', 'PHP ENV'],
+    filters: ['FRONT', 'PHP ENV'],
     role: 'Front-End',
-    tech: ['Shopify', 'Liquid', 'SCSS', 'JavaScript'],
+    tech: ['Pixel Perfect', 'TWIG', 'SCSS', 'JavaScript', 'PHP ENV'],
     keywords: [
-      'SHOPIFY',
-      'LIQUID',
+      'PHP ENV',
+      'TWIG',
       'SCSS',
       'JAVASCRIPT',
-      'ES6',
       'SEO',
       'PERFORMANCES',
-      'PIXEL PERFECT',
-      'THEME SECTIONS'
+      'PIXEL PERFECT'
     ],
     mockups: {
       full: '/mockups/editions-didier.png'
