@@ -6,7 +6,11 @@
       <h2
         class="font-[Neutral] text-3xl sm:text-4xl md:text-6xl lg:text-8xl xl:text-9xl"
       >
-        <AnimationLetterFromLeft :text="$t('home.developer')" class="block" />
+        <AnimationLetterFromLeft
+          v-if="isFr"
+          :text="$t('home.developer')"
+          class="block"
+        />
         <span class="flex">
           <span class="italic relative">
             <span
@@ -14,7 +18,7 @@
               class="relative z-[2] flex anim-text-job"
             >
               <span
-                v-for="(letter, i) in $t('home.front')"
+                v-for="(letter, i) in $t('home.fullstack')"
                 :key="i"
                 class="anim-text-job__letter"
               >{{ letter }}</span
@@ -27,9 +31,14 @@
             />
             <span
               class="bg-gray-100 absolute z-0 block w-full h-full top-0 left-0 transition-background duration-[800ms] ease-[cubic-bezier(.19,1,.22,1)]"
-            /> </span
-          >&nbsp;<AnimationLetterFromLeft text="End" />
+            />
+          </span>
         </span>
+        <AnimationLetterFromLeft
+          v-if="!isFr"
+          :text="$t('home.developer')"
+          class="block"
+        />
       </h2>
       <p v-reveal class="max-w-xl text-sm font-light">
         {{ $t('home.text') }}
@@ -52,7 +61,7 @@ import HomeDesktopSlider from '@/components/pages/home/HomeDesktopSlider.vue'
 import HomeMobileSlider from '@/components/pages/home/HomeMobileSlider.vue'
 import AnimationLetterFromLeft from '@/components/animations/AnimationLetterFromLeft.vue'
 
-const { t } = useI18n()
+const { t, locale } = useI18n()
 
 const colors = {
   citadium: 'bg-emerald-100',
@@ -114,6 +123,8 @@ useSeoMeta({
 })
 
 const { defineProfilePage } = useSchemaOrgPersonal()
+
+const isFr = computed(() => locale.value === 'fr')
 
 const updateIsMobile = () => {
   if (import.meta.client) {

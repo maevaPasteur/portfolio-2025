@@ -1,8 +1,8 @@
 <template>
   <div>
     <AboutIntroduction />
-    <AboutSkillsTimeline />
     <AboutCompetences />
+    <AboutSkillsTimeline />
     <AboutExperiencesTimeline />
     <Contact />
     <Footer />

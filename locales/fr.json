@@ -13,6 +13,7 @@
   "home": {
     "developer": "Développeur",
     "front": "Front",
+    "fullstack": "FullStack",
     "text": "Guidée par la curiosité et le goût du défi,\nj’évolue à la croisée de la créativité et de la technologie.\nAu-delà du code, j’apporte une vision, du leadership et une quête d'efficacité.\nJe transforme les idées en solutions scalables qui font grandir les équipes et les marques.",
     "seo": {
       "title": "Maëva Pasteur { '|' } Développeur Front-End Freelance",
@@ -53,14 +54,14 @@
     "subtitle": "Je fais le pont entre créativité et ingénierie.<br>Livrant des solutions propres et scalables en qui les grandes marques ont confiance.",
     "metrics": {
       "1": {
-        "title": "7",
+        "title": "8",
         "subtitle": "Années d'expérience",
         "text": "2021 - 2025 { '|' } Indépendante<br>2019 - 2021 { '|' } W3Lead<br>2017 - 2019 { '|' } Fidesio"
       },
       "2": {
         "title": "50",
         "subtitle": "Sites web développés",
-        "text": "+35 sites e-commerce<br>+200M générés annuellement<br>Sites vitrine<br>PWA back-office<br>CMS sur mesure<br>API REST<br>PWA<br>MVP"
+        "text": "+35 sites e-commerce<br>+300M générés annuellement<br>Sites vitrine<br>PWA back-office<br>CMS sur mesure<br>API REST<br>PWA<br>MVP"
       },
       "3": {
         "title": "1",
@@ -87,15 +88,15 @@
         }
       },
       "back": {
-        "title": "FullStack",
+        "title": "Back-End",
         "paragraphs": {
           "1": {
             "title": "API & Architecture",
-            "text": "API REST<br>Node.js / Express<br>Authentification & Autorisation (JWT, OAuth)<br>Gestion de données chiffrées"
+            "text": "API REST<br>Node.js / Express<br>NestJS<br>Authentification & Autorisation (JWT, OAuth)<br>Gestion de données chiffrées<br>Documentation Swagger / Postman"
           },
           "2": {
             "title": "Data & DevOps",
-            "text": "MongoDB & MySQL<br>Hébergement cloud (AWS, Vercel, Cloudinary, Railway, Heroku)<br>Pipelines CI/CD (GitHub Actions)<br>Logging & monitoring (Datadog)"
+            "text": "MongoDB & MySQL<br>PostgreSQL<br>Hébergement cloud (AWS, Vercel, Cloudinary, Railway, Heroku)<br>Pipelines CI/CD (GitHub Actions)<br>Logging & monitoring (Datadog)"
           }
         }
       },
@@ -124,7 +125,7 @@
           "HTML CSS",
           "JavaScript",
           "jQuery",
-          "PHP MySQL",
+          "PHP MySQL PostgreSQL",
           "JSON",
           "SVG",
           "Illustrator",
@@ -176,7 +177,14 @@
           "Vue.js 3 & Pinia"
         ],
         "2024": ["AWS", "Solidity", "Design atomique", "Nuxt"],
-        "2025": ["Cloudinary", "Vuetify", "Vercel", "Datadog", "Claude AI"]
+        "2025": [
+          "Cloudinary",
+          "Vuetify",
+          "Vercel",
+          "Datadog",
+          "Claude AI",
+          "NestJS"
+        ]
       },
       "labels": {
         "education": "Formation",
