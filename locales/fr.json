@@ -17,14 +17,14 @@
     "text": "Guidée par la curiosité et le goût du défi,\nj’évolue à la croisée de la créativité et de la technologie.\nAu-delà du code, j’apporte une vision, du leadership et une quête d'efficacité.\nJe transforme les idées en solutions scalables qui font grandir les équipes et les marques.",
     "seo": {
       "title": "Maëva Pasteur { '|' } Développeur Front-End Freelance",
-      "description": "Développeur front-end freelance spécialisée vue.js et Nuxt. Je conçois des interfaces rapides, accessibles et scalables pour des marques ambitieuses, du prototype au déploiement."
+      "description": "Bienvenu sur mon portfolio. Développeur FullStack freelance, je suis spécialisée en Vue.js, Nuxt, Nest, TypeScript et Shopify."
     }
   },
   "works": {
     "title": "Réalisations",
     "seo": {
-      "title": "Réalisations - Maëva Pasteur { '|' } Développeur Front-End Freelance",
-      "description": "Études de cas et réalisations : e-commerce, design system, performance et accessibilité. Stack : vue.js, Nuxt, TypeScript, Shopify. Travaux menés en freelance pour des marques exigeantes."
+      "title": "Réalisations - Maëva Pasteur { '|' } Développeur FullStack Freelance",
+      "description": "Découvrez mes réalisations en Vue.js, Nuxt, TypeScript, Nest et Shopify. Site vitrine, e-commerce, landing page, progressive web app et API Rest."
     },
     "sectors": {
       "title": "Secteurs d'activité",
@@ -272,8 +272,8 @@
       }
     },
     "seo": {
-      "title": "À propos - Maëva Pasteur { '|' } Développeur Front-End Freelance",
-      "description": "Parcours, méthodologie et valeurs d’un développeur front-end freelance vue.js : vision produit, leadership et efficacité au service de solutions scalables pour les équipes et les marques."
+      "title": "À propos - Maëva Pasteur { '|' } Développeur FullStack Freelance",
+      "description": "Découvrez mon parcours, mes technologies préférées et les services que je propose."
     }
   },
   "contact": {
@@ -281,13 +281,13 @@
     "download_portfolio": "Télécharger mon Portfolio",
     "download_resume": "Télécharger mon CV",
     "seo": {
-      "title": "Contact - Maëva Pasteur { '|' } Développeur Front-End Freelance",
-      "description": "Discutons de votre projet front-end (vue.js, Nuxt, e-commerce, PWA, MVP). Disponibilités, devis et modalités de collaboration en freelance."
+      "title": "Contact - Maëva Pasteur { '|' } Développeur FullStack Freelance",
+      "description": "Discutons de votre projet (Vue.js, Nuxt, e-commerce, PWA, MVP, API Nest...). Disponibilités, devis et modalités de collaboration en freelance."
     }
   },
   "client": {
     "seo": {
-      "title": "{name} - Maëva Pasteur { '|' } Développeur Front-End Freelance"
+      "title": "{name} - Maëva Pasteur { '|' } Développeur FullStack Freelance"
     },
     "see_website": "Voir le site",
     "filter": "Filtrer par : ",
@@ -663,11 +663,11 @@
       "name": "Maëva Pasteur",
       "jobTitle": "Développeur Front-End",
       "description": "Développeur front-end fullstack spécialisé Vue.js et Nuxt.js. Expert en développement d'APIs REST Node.js Express avec MongoDB. PWA et MVP, du prototype au produit final.",
-      "disambiguatingDescription": "Développeur web français spécialisé en développement front-end et fullstack avec plus de 7 ans d'expérience"
+      "disambiguatingDescription": "Développeur web français spécialisé en développement front-end et fullstack avec plus de 8 ans d'expérience"
     },
     "website": {
       "name": "Portfolio de Maëva Pasteur",
-      "description": "Portfolio professionnel de Maëva Pasteur, développeur front-end fullstack spécialisé Vue.js, Nuxt, APIs REST et PWA",
+      "description": "Portfolio de Maëva Pasteur, développeur fullstack spécialisée Vue.js, Nuxt, API Rest et PWA",
       "about": "Découvrez mes projets d'architectures front-end, APIs REST et développement fullstack"
     },
     "organization": {
@@ -687,11 +687,11 @@
       },
       {
         "name": "Développement Backend",
-        "description": "APIs REST robustes avec Node.js, Express et MongoDB. Architecture NoSQL et authentification sécurisée."
+        "description": "APIs REST robustes avec Node.js, Nest, Express, PostgreSQL et MongoDB. Architecture NoSQL et authentification sécurisée."
       },
       {
         "name": "Développement Fullstack",
-        "description": "Solutions complètes Vue.js/Nuxt + Node.js/Express. PWA et MVP du prototype au déploiement en production."
+        "description": "Solutions complètes Vue.js/Nuxt + Node.js/Nest/Express. PWA et MVP du prototype au déploiement en production."
       },
       {
         "name": "E-commerce Shopify",
@@ -724,7 +724,7 @@
     "faq": {
       "question1": {
         "question": "Quels services propose Maëva Pasteur ?",
-        "answer": "Maëva Pasteur propose des services de développement fullstack : architectures front-end Vue.js et Nuxt, développement d'APIs REST avec Node.js Express et MongoDB, PWA et MVP du prototype au produit final, intégrations pixel perfect, et développement e-commerce Shopify."
+        "answer": "Maëva Pasteur propose des services de développement fullstack : architectures front-end Vue.js et Nuxt, développement d'APIs REST avec Node.js Nest Express PostgreSQL et MongoDB, PWA et MVP du prototype au produit final, intégrations pixel perfect, et développement e-commerce Shopify."
       },
       "question2": {
         "question": "Quelles technologies utilise Maëva Pasteur ?",
@@ -737,7 +737,7 @@
     },
     "business": {
       "name": "Maëva Pasteur - Développement Fullstack",
-      "description": "Développeur fullstack expert : Vue.js/Nuxt front-end, APIs REST Node.js/Express/MongoDB, PWA et MVP, intégrations pixel perfect et solutions e-commerce"
+      "description": "Développeur fullstack expert : Vue.js/Nuxt front-end, APIs REST Node.js/Nest/Express/MongoDB/PostgreSQL, PWA et MVP, intégrations pixel perfect et solutions e-commerce"
     }
   }
 }

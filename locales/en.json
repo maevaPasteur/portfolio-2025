@@ -16,14 +16,14 @@
     "fullstack": "FullStack",
     "text": "Driven by curiosity and a love for challenges, \nI thrive at the intersection of creativity and technology. \nBeyond coding, I bring vision, leadership, and a relentless focus on efficiency. \nTurning ideas into scalable solutions that empower teams and brands to grow.",
     "seo": {
-      "title": "Maëva Pasteur { '|' } Front-End Developer Freelance",
-      "description": "Freelance front-end developer specialized in Vue.js and Nuxt. I design fast, accessible and scalable interfaces for ambitious brands, from prototype to deployment."
+      "title": "Maëva Pasteur { '|' } FullStack Developer Freelance",
+      "description": "Freelance FullStack developer specialized in Vue.js, Nuxt & Nest. I design fast, accessible and scalable interfaces for ambitious brands, from prototype to deployment."
     }
   },
   "works": {
     "title": "Works",
     "seo": {
-      "title": "Works - Maëva Pasteur { '|' } Front-End Developer Freelance",
+      "title": "Works - Maëva Pasteur { '|' } FullStack Developer Freelance",
       "subtitle": "My journey has led me to explore multiple worlds: from the elegance of luxury to the innovation of digital, through the rigor of healthcare and the creativity of culture. Each sector has offered me new challenges and perspectives, strengthening my ability to design tailored, relevant, and high-performing solutions.",
       "description": "Case studies and achievements: e-commerce, design system, performance and accessibility. Stack: Vue.js, Nuxt, TypeScript, Shopify. Freelance work for demanding brands."
     },
@@ -273,8 +273,8 @@
       }
     },
     "seo": {
-      "title": "About - Maëva Pasteur { '|' } Front-End Developer Freelance",
-      "description": "Background, methodology and values of a freelance front-end developer Vue.js: product vision, leadership and efficiency in service of scalable solutions for teams and brands."
+      "title": "About - Maëva Pasteur { '|' } FullStack Developer Freelance",
+      "description": "Background, methodology and values of a freelance fullstack developer Vue.js & Nest: product vision, leadership and efficiency in service of scalable solutions for teams and brands."
     }
   },
   "contact": {
@@ -282,13 +282,13 @@
     "download_portfolio": "Download my Portfolio",
     "download_resume": "Download my resume",
     "seo": {
-      "title": "Contact - Maëva Pasteur { '|' } Front-End Developer Freelance",
-      "description": "Let's discuss your front-end project (Vue.js, Nuxt, e-commerce, PWA, MVP). Availability, quotes and freelance collaboration terms."
+      "title": "Contact - Maëva Pasteur { '|' } FullStack Developer Freelance",
+      "description": "Let's discuss your fullstack project (Vue.js, Nuxt, e-commerce, PWA, MVP, API). Availability, quotes and freelance collaboration terms."
     }
   },
   "client": {
     "seo": {
-      "title": "{name} - Maëva Pasteur { '|' } Front-End Developer Freelance"
+      "title": "{name} - Maëva Pasteur { '|' } FullStack Developer Freelance"
     },
     "see_website": "View website",
     "filter": "Filter by:",
