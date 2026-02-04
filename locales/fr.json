@@ -74,16 +74,24 @@
         "title": "Front-End",
         "paragraphs": {
           "1": {
-            "title": "Vue.js & Nuxt",
-            "text": "Architecture complexe from scratch<br>CMS sur mesure & back-office scalable<br>Plateformes e-commerce à fort trafic<br>Progressive Web Apps (PWA)<br>ES6+ / TypeScript<br>SSR & CSR<br>Gestion d'état avancée<br>(Vuex / Pinia)<br>Intégration API transparente<br>Orchestration API côté serveur<br>Storybook"
+            "title": "React & Next",
+            "text": "React.js & React Native<br>Next.js avec SSR & SSG<br>Gatsby pour sites statiques<br>Redux & Context API<br>ES6+ / TypeScript<br>Storybook<br>Jest & Testing Library"
           },
           "2": {
-            "title": "Shopify",
-            "text": "30+ thèmes sur mesure livrés<br>+5 Shopify Plus<br>$150M+ GMV annuel à travers les clients<br>Multi-langues (10+ locales)<br>Expertise Shopify Plus<br>Axé performance (Core Web Vitals, SEO, json+ld)<br>Apps personnalisées"
+            "title": "Vue.js & Nuxt",
+            "text": "Architecture complexe from scratch<br>CMS sur mesure & back-office scalable<br>Progressive Web Apps (PWA)<br>ES6+ / TypeScript<br>SSR & CSR<br>Gestion d'état (Vuex / Pinia)<br>Orchestration API côté serveur<br>Storybook"
           },
           "3": {
+            "title": "E-commerce",
+            "text": "30+ thèmes Shopify sur mesure<br>+5 projets Shopify Plus<br>$150M+ GMV annuel<br>Multi-langues (10+ locales)<br>Apps Shopify personnalisées<br>WooCommerce & PrestaShop<br>Headless commerce"
+          },
+          "4": {
             "title": "Pixel Perfect",
-            "text": "Intégration pixel perfect depuis Figma/Sketch<br>Design responsive sur tous appareils<br>Animations UI complexes & micro-interactions<br>Intégration écosystème PHP (Symfony, Laravel, Drupal, custom)<br>Accessibilité<br>Design systems atomiques pour la scalabilité"
+            "text": "Intégration fidèle depuis Figma/Sketch<br>Design responsive sur tous appareils<br>Animations UI & micro-interactions<br>Intégration écosystème PHP<br>(Symfony, Laravel, Drupal)<br>Accessibilité WCAG<br>Design systems atomiques"
+          },
+          "5": {
+            "title": "Intégrations",
+            "text": "Stripe & systèmes de paiement<br>Mapbox & cartographie<br>APIs tierces (REST, GraphQL)<br>CMS headless (Contentful, Sanity)<br>Analytics (GA4, GTM, Segment)<br>Auth (OAuth, JWT, SSO)<br>Cloudinary & gestion médias"
           }
         }
       },
@@ -96,7 +104,7 @@
           },
           "2": {
             "title": "Data & DevOps",
-            "text": "MongoDB & MySQL<br>PostgreSQL<br>Hébergement cloud (AWS, Vercel, Cloudinary, Railway, Heroku)<br>Pipelines CI/CD (GitHub Actions)<br>Logging & monitoring (Datadog)"
+            "text": "Supabase<br>MongoDB & MySQL<br>PostgreSQL<br>Hébergement cloud (AWS, Vercel, Cloudinary, Railway, Heroku)<br>Pipelines CI/CD (GitHub Actions)<br>Logging & monitoring (Datadog)"
           }
         }
       },
@@ -149,7 +157,7 @@
           "Heroku"
         ],
         "2020": [
-          "React & Gatsby",
+          "React & Gatsby & Next",
           "Vue.js 2 & Vuex",
           "Node/Express",
           "MongoDB",
@@ -184,7 +192,8 @@
           "Datadog",
           "Claude AI",
           "NestJS"
-        ]
+        ],
+        "2026": ["Next Cache", "Supabase", "Stripe"]
       },
       "labels": {
         "education": "Formation",
@@ -266,8 +275,26 @@
         },
         "xp_mali_hakika_pwa": {
           "type": "experience",
-          "title": "Mali Hakika — PWA",
-          "subtitle": "Freelance · Full-stack Vue 3 + REST API"
+          "title": "Développeur FullStack",
+          "subtitle": "Mali Hakika · Freelance",
+          "bullets": {
+            "1": "MVP : Progressive Web App + API",
+            "2": "Real estate plateform in Kenya",
+            "3": "Vue.js 3 & Nuxt & Vuetify",
+            "4": "Node Express MongoDB"
+          }
+        },
+        "xp_daresonly": {
+          "type": "experience",
+          "title": "Développeur FullStack",
+          "subtitle": "DaresOnly · Freelance",
+          "bullets": {
+            "1": "Réseau social de challenges payants",
+            "2": "Progressive Web App",
+            "3": "React, Next, Supabase, Cloudinary",
+            "4": "Moderation avec OpenAI",
+            "5": "Stripe / Stripe Connect"
+          }
         }
       }
     },

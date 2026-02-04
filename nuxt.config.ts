@@ -56,7 +56,7 @@ export default defineNuxtConfig({
   app: {
     baseURL: '/',
     head: {
-      title: 'Maëva Pasteur - Front end developer',
+      title: 'Maëva Pasteur - FullStack Developer',
       meta: [
         { name: 'description', content: 'Portfolio 2025' },
         { charset: 'utf-8' },

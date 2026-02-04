@@ -94,10 +94,14 @@ const skills: Skill[] = [
   { label: 'JavaScript', start: 2016, end: 2025.5, bgColor: 'bg-gray-200' },
   { label: 'PHP SQL', start: 2016.5, end: 2020, bgColor: 'bg-gray-50' },
   { label: 'TWIG', start: 2017, end: 2025.5, bgColor: 'bg-gray-50' },
-  { label: 'Wordpress', start: 2017, end: 2019, bgColor: 'bg-gray-50' },
   { label: 'Bootstrap', start: 2017, end: 2019, bgColor: 'bg-gray-50' },
   { label: 'Angular', start: 2017, end: 2019, bgColor: 'bg-gray-50' },
-  { label: 'React Gatsby', start: 2018, end: 2020, bgColor: 'bg-pink-50' },
+  {
+    label: 'React Gatsby Next',
+    start: 2018,
+    end: 2025.5,
+    bgColor: 'bg-pink-50'
+  },
   { label: 'Typescript', start: 2018, end: 2025.5, bgColor: 'bg-gray-200' },
   { label: 'Shopify', start: 2018.5, end: 2025.5, bgColor: 'bg-green-100' },
   { label: 'Vue 2 Vuex', start: 2019, end: 2025.5, bgColor: 'bg-cyan-100' },
@@ -114,6 +118,7 @@ const skills: Skill[] = [
     end: 2025.5,
     bgColor: 'bg-cyan-100'
   },
+  { label: 'Stripe', start: 2023, end: 2025.5, bgColor: 'bg-gray-50' },
   { label: 'Tailwind', start: 2023, end: 2025.5, bgColor: 'bg-gray-200' },
   { label: 'NestJS', start: 2024.5, end: 2025.5, bgColor: 'bg-cyan-100' }
 ]

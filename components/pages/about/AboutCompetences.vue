@@ -15,7 +15,7 @@
         v-reveal-group
         class="grid grid-cols-1 sm:grid-cols-2 sm:grid-cols-3 gap-3 grow flex-grow col-span-12 md:col-span-9 lg:col-span-[70%]"
       >
-        <template v-for="i in 3" :key="i">
+        <template v-for="i in 5" :key="i">
           <div
             v-if="$te(`about.competences.${competence}.paragraphs.${i}.title`)"
             class="bg-gray-50 p-4 rounded-lg"

@@ -75,16 +75,24 @@
         "title": "Front-End",
         "paragraphs": {
           "1": {
-            "title": "Vue.js & Nuxt",
-            "text": "Complex architecture from scratch<br>Custom CMS & scalable back-office<br>High-traffic e-commerce platforms<br>Progressive Web Apps (PWA)<br>ES6+ / TypeScript<br>SSR & CSR<br>Advanced state management<br>(Vuex / Pinia)<br>Seamless API integration<br>Server-side API orchestration<br>Storybook"
+            "title": "React & Next",
+            "text": "React.js & React Native<br>Next.js with SSR & SSG<br>Gatsby for static sites<br>Redux & Context API<br>ES6+ / TypeScript<br>Storybook<br>Jest & Testing Library"
           },
           "2": {
-            "title": "Shopify",
-            "text": "30+ custom themes delivered<br>+5 Shopify Plus<br>$150M+ annual GMV across clients<br>Multi-language (10+ locales)<br>Shopify Plus expertise<br>Performance-driven (Core Web Vitals, SEO, json+ld)<br>Custom apps"
+            "title": "Vue.js & Nuxt",
+            "text": "Complex architecture from scratch<br>Custom CMS & scalable back-office<br>Progressive Web Apps (PWA)<br>ES6+ / TypeScript<br>SSR & CSR<br>State management (Vuex / Pinia)<br>Server-side API orchestration<br>Storybook"
           },
           "3": {
+            "title": "E-commerce",
+            "text": "30+ custom Shopify themes<br>+5 Shopify Plus projects<br>$150M+ annual GMV<br>Multi-language (10+ locales)<br>Custom Shopify apps<br>WooCommerce & PrestaShop<br>Headless commerce"
+          },
+          "4": {
             "title": "Pixel Perfect",
-            "text": "Pixel-accurate integration from Figma/Sketch<br>Responsive design across devices<br>Complex UI animations & micro-interactions<br>PHP ecosystem integration (Symfony, Laravel, Drupal, custom)<br>Accessibility<br>Atomic design systems for scalability"
+            "text": "Faithful integration from Figma/Sketch<br>Responsive design across devices<br>UI animations & micro-interactions<br>PHP ecosystem integration<br>(Symfony, Laravel, Drupal)<br>WCAG Accessibility<br>Atomic design systems"
+          },
+          "5": {
+            "title": "Integrations",
+            "text": "Stripe & payment systems<br>Mapbox & mapping<br>Third-party APIs (REST, GraphQL)<br>Headless CMS (Contentful, Sanity)<br>Analytics (GA4, GTM, Segment)<br>Auth (OAuth, JWT, SSO)<br>Cloudinary & media management"
           }
         }
       },
@@ -97,7 +105,7 @@
           },
           "2": {
             "title": "Data & DevOps",
-            "text": "MongoDB & MySQL<br>PostgreSQL<br>Cloud hosting (AWS, Vercel, Cloudinary, Railway, Heroku)<br>CI/CD pipelines (GitHub Actions)<br>Logging & monitoring (Datadog)"
+            "text": "Supabase<br>MongoDB & MySQL<br>PostgreSQL<br>Cloud hosting (AWS, Vercel, Cloudinary, Railway, Heroku)<br>CI/CD pipelines (GitHub Actions)<br>Logging & monitoring (Datadog)"
           }
         }
       },
@@ -150,7 +158,7 @@
           "Heroku"
         ],
         "2020": [
-          "React & Gatsby",
+          "React & Gatsby & Next",
           "Vue.js 2 & Vuex",
           "Node/Express",
           "MongoDB",
@@ -185,7 +193,8 @@
           "Datadog",
           "Claude AI",
           "NestjS"
-        ]
+        ],
+        "2026": ["Next Cache", "Supabase", "Stripe"]
       },
       "labels": {
         "education": "Education",
@@ -267,8 +276,26 @@
         },
         "xp_mali_hakika_pwa": {
           "type": "experience",
-          "title": "Mali Hakika — PWA",
-          "subtitle": "Freelance · Full-stack Vue 3 + REST API"
+          "title": "FullStack Developer",
+          "subtitle": "Mali Hakika · Freelance",
+          "bullets": {
+            "1": "MVP : Progressive Web App + API",
+            "2": "Real estate plateform in Kenya",
+            "3": "Vue.js 3 & Nuxt & Vuetify",
+            "4": "Node Express MongoDB"
+          }
+        },
+        "xp_daresonly": {
+          "type": "experience",
+          "title": "FullStack Developer",
+          "subtitle": "DaresOnly · Freelance",
+          "bullets": {
+            "1": "Social network, infinity scroll, videos",
+            "2": "Progressive Web App",
+            "3": "React, Next, Supabase, Cloudinary",
+            "4": "Moderation with OpenAI",
+            "5": "Stripe / Stripe Connect"
+          }
         }
       }
     },

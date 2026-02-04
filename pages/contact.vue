@@ -44,11 +44,14 @@ const cta = computed(() => [
   {
     text: 'contact.download_resume',
     pdf: `/pdf/maeva-pasteur-${locale.value === 'fr' ? 'cv' : 'resume'}.pdf`
-  },
+  }
+  /*
   {
     text: 'contact.download_portfolio',
     pdf: '/pdf/maeva-pasteur-portfolio.pdf'
   }
+
+         */
 ])
 
 definePageMeta({
